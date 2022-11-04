@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F1FF19EC-B69B-4D1F-BEF1-78F887022947}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{3255759B-AFEA-4989-80B7-B1443BB5973C}"
+	ProjectSection(SolutionItems) = preProject
+		docs\ClassDiagram.drawio = docs\ClassDiagram.drawio
+		docs\SubDomains.drawio = docs\SubDomains.drawio
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{B3BD9597-3591-48AF-A287-50339FC5F23A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{CDAFBBC7-33A5-4FE0-BA9D-564B07E2478E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{BA0CC1BD-D9F5-438E-9AC6-481102175823}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog", "Blog", "{F44ACD75-44B0-4AD4-AC56-33EB33D401D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogModule", "src\Modules\Blog\BlogModule\BlogModule.csproj", "{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3BD9597-3591-48AF-A287-50339FC5F23A} = {F1FF19EC-B69B-4D1F-BEF1-78F887022947}
+		{CDAFBBC7-33A5-4FE0-BA9D-564B07E2478E} = {F1FF19EC-B69B-4D1F-BEF1-78F887022947}
+		{BA0CC1BD-D9F5-438E-9AC6-481102175823} = {F1FF19EC-B69B-4D1F-BEF1-78F887022947}
+		{F44ACD75-44B0-4AD4-AC56-33EB33D401D0} = {B3BD9597-3591-48AF-A287-50339FC5F23A}
+		{02654EDA-90DF-4DA6-9D5A-3C887DB2BDEB} = {F44ACD75-44B0-4AD4-AC56-33EB33D401D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E3590F8-90D4-4262-8345-AACE391D9339}
+	EndGlobalSection
+EndGlobal
