@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Common.Application.FileUtil.Services;
 
-public class LocalFileService
+public class LocalFileService : ILocalFileService
 {
     public void DeleteDirectory(string directoryPath)
     {
@@ -41,7 +41,7 @@ public class LocalFileService
 
         await file.CopyToAsync(stream);
     }
-    public async Task SaveFile(IFormFile file, string directoryPath,string fileName)
+    public async Task SaveFile(IFormFile file, string directoryPath, string fileName)
     {
         if (file == null)
             throw new InvalidDataException("file is Null");

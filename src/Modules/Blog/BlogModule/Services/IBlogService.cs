@@ -4,7 +4,10 @@ using BlogModule.Repositories.Categories;
 using BlogModule.Repositories.Posts;
 using BlogModule.Services.DTOs.Command;
 using BlogModule.Services.DTOs.Query;
+using BlogModule.Utils;
 using Common.Application;
+using Common.Application.FileUtil.Interfaces;
+using Common.Application.SecurityUtil;
 
 namespace BlogModule.Services;
 
@@ -14,19 +17,26 @@ public interface IBlogService
     Task<OperationResult> EditCategory(EditCategoryCommand command);
     Task<OperationResult> DeleteCategory(Guid categoryId);
     Task<List<BlogCategoryDto>> GetAllCategories();
-    Task<BlogCategoryDto> GetCategoryByIdTask(Guid id);
+    Task<BlogCategoryDto> GetCategoryById(Guid id);
+
+
+    Task<OperationResult> CreatePost(CreatePostCommand command);
+    Task<OperationResult> EditPost(EditPostCommand command);
+    Task<OperationResult> DeletePost(Guid postId);
+    Task<BlogPostDto?> GetPostById(Guid postId);
 }
 class BlogService : IBlogService
 {
     private readonly ICategoryRepository _categoryRepository;
     private readonly IPostRepository _postRepository;
     private readonly IMapper _mapper;
-
-    public BlogService(ICategoryRepository categoryRepository, IMapper mapper, IPostRepository postRepository)
+    private readonly ILocalFileService _localFileService;
+    public BlogService(ICategoryRepository categoryRepository, IMapper mapper, IPostRepository postRepository, ILocalFileService localFileService)
     {
         _categoryRepository = categoryRepository;
         _mapper = mapper;
         _postRepository = postRepository;
+        _localFileService = localFileService;
     }
 
     public async Task<OperationResult> CreateCategory(CreateCategoryCommand command)
@@ -84,9 +94,77 @@ class BlogService : IBlogService
         return _mapper.Map<List<BlogCategoryDto>>(categories);
     }
 
-    public async Task<BlogCategoryDto> GetCategoryByIdTask(Guid id)
+    public async Task<BlogCategoryDto> GetCategoryById(Guid id)
     {
         var category = await _categoryRepository.GetAsync(id);
         return _mapper.Map<BlogCategoryDto>(category);
+    }
+
+    public async Task<OperationResult> CreatePost(CreatePostCommand command)
+    {
+        var post = _mapper.Map<Post>(command);
+        if (await _postRepository.ExistsAsync(f => f.Slug == command.Slug))
+            return OperationResult.Error("Slug is Exist");
+
+        if (command.ImageFile.IsImage() == false)
+            return OperationResult.Error("عکس وارد شده نامعتبر است");
+
+        var imageName = await _localFileService.SaveFileAndGenerateName(command.ImageFile, BlogDirectories.PostImage);
+        post.ImageName = imageName;
+        post.Visit = 1;
+        post.Description = post.Description.SanitizeText();
+
+        _postRepository.Add(post);
+        await _postRepository.Save();
+        return OperationResult.Success();
+    }
+
+    public async Task<OperationResult> EditPost(EditPostCommand command)
+    {
+        var post = await _postRepository.GetTracking(command.Id);
+        if (post == null) return OperationResult.NotFound();
+
+        if (post.Slug != command.Slug)
+            if (await _postRepository.ExistsAsync(f => f.Slug == command.Slug))
+                return OperationResult.Error("Slug is Exist");
+
+        if (command.ImageFile != null)
+            if (command.ImageFile.IsImage() == false)
+                return OperationResult.Error("عکس وارد شده نامعتبر است");
+            else
+            {
+                var imageName = await _localFileService.SaveFileAndGenerateName(command.ImageFile, BlogDirectories.PostImage);
+                post.ImageName = imageName;
+            }
+
+        post.Description = command.Description.SanitizeText();
+        post.OwnerName = command.OwnerName;
+        post.Title = command.Title;
+        post.CategoryId = command.CategoryId;
+        post.UserId = command.UserId;
+        post.Slug = command.Slug;
+
+        await _postRepository.Save();
+        return OperationResult.Success();
+    }
+
+    public async Task<OperationResult> DeletePost(Guid postId)
+    {
+        var post = await _postRepository.GetAsync(postId);
+        if (post == null) return OperationResult.NotFound();
+
+        _postRepository.Delete(post);
+        await _postRepository.Save();
+        _localFileService.DeleteFile(BlogDirectories.PostImage, post.ImageName);
+        return OperationResult.Success();
+    }
+
+    public async Task<BlogPostDto?> GetPostById(Guid postId)
+    {
+        var post = await _postRepository.GetAsync(postId);
+        if (post == null)
+            return null;
+
+        return _mapper.Map<BlogPostDto>(post);
     }
 }
