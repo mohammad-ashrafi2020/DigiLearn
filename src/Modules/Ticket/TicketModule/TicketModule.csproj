@@ -16,11 +16,11 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Core\DTOs\Tickets\" />
 	  <Folder Include="Core\Services\" />
 	  <Folder Include="Data\Entities\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Common\Common.Application\Common.Application.csproj" />
 	  <ProjectReference Include="..\..\..\Common\Common.Domain\Common.Domain.csproj" />
 	</ItemGroup>
 </Project>
