@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="19 5.5 238.5 188.6" style="enable-background:new 19 5.5 238.5 188.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+	.st4{fill:url(#SVGID_5_);}
+	.st5{fill:none;}
+	.st6{fill:#00AED7;}
+	.st7{font-family:'IRHoma';}
+	.st8{font-size:34.7429px;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="131.9751" y1="30.9167" x2="179.2079" y2="30.9167">
+		<stop  offset="0" style="stop-color:#71EE6F"/>
+		<stop  offset="0.9946" style="stop-color:#0CC32E"/>
+	</linearGradient>
+	<polygon class="st0" points="179.2,13.4 132,48.4 132,13.4 	"/>
+	<g>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="20.6726" y1="46.25" x2="118.4483" y2="46.25">
+			<stop  offset="0" style="stop-color:#71EE6F"/>
+			<stop  offset="0.9946" style="stop-color:#0CC32E"/>
+		</linearGradient>
+		<polygon class="st1" points="118.4,13.4 118.4,54.9 85.8,79.1 85.8,46 20.7,46 20.7,13.4 		"/>
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="154.7746" y1="-2.7406" x2="71.5768" y2="222.4815">
+			<stop  offset="0" style="stop-color:#00D3FF"/>
+			<stop  offset="0.9946" style="stop-color:#008EB6"/>
+		</linearGradient>
+		<polygon class="st2" points="118.2,71.1 118.2,183.1 86.7,183 86.7,94.6 		"/>
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="222.0037" y1="20.0421" x2="122.0764" y2="290.5519" gradientTransform="matrix(0 -1 -1 0 313.5492 313.5492)">
+			<stop  offset="0" style="stop-color:#00D3FF"/>
+			<stop  offset="0.9946" style="stop-color:#008EB6"/>
+		</linearGradient>
+		<polygon class="st3" points="256.4,117.5 132.5,117.5 132.5,149 228.8,149 		"/>
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="184.3911" y1="7.199" x2="96.3896" y2="245.425">
+			<stop  offset="0" style="stop-color:#00D3FF"/>
+			<stop  offset="0.9946" style="stop-color:#008EB6"/>
+		</linearGradient>
+		<polygon class="st4" points="163.5,40.6 163.5,148.3 132,148.3 132,64.6 		"/>
+	</g>
+</g>
+<rect x="132" y="162.5" class="st5" width="127.5" height="32"/>
+<text transform="matrix(0.9 0 0 1 131.9753 182.1286)" class="st6 st7 st8">TopLearn</text>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>

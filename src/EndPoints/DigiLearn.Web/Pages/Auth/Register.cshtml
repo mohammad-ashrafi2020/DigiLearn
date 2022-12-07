@@ -1,0 +1,34 @@
+﻿@page
+@model DigiLearn.Web.Pages.Auth.RegisterModel
+@{
+    Layout = "Shared/_Auth";
+    ViewData["title"] = "ثبت نام در سایت";
+}
+<form class="login mt-4 pt-0">
+    <div class="emailOrUserName">
+        <p>ایمیل یا نام کاربری</p>
+        <input type="text" class="form-control" required />
+    </div>
+    <div class="password mt-5">
+        <p>کلمه عبور </p>
+        <input type="password" class="form-control" required />
+    </div>
+    <div class="checkbox mt-4">
+        <input type="checkbox" id="check1" />
+        <span checkfor="check1">مرا بخاطر بسپار</span>
+    </div>
+    <button class="btn btn-success btn-login mt-4 d-flex justify-content-center align-items-center">
+        <span> ورود</span>
+        <i class="fa fa-chevron-left"></i>
+    </button>
+</form>
+<div class="login-footer">
+    <a href="#">
+        <i class="zmdi zmdi-lock"></i>
+        کلمه عبور خود را فراموش کرده ام !
+    </a>
+    <a href="/Register.html">
+        <i class="zmdi zmdi-account-add"></i>
+        عضویت در سایت
+    </a>
+</div>

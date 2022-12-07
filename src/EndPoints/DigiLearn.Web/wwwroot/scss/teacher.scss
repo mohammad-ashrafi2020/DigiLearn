@@ -1,0 +1,162 @@
+.top-title {
+    padding: 20px 10px !important;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.308);
+    padding-bottom: 0px !important;
+    border-radius: 0;
+    background-color: white;
+    h5 {
+        display: inline-block;
+    }
+    span {
+        display: inline-block;
+        font-size: 12px;
+        position: relative;
+        color: rgb(0, 170, 91);
+        top: 8px;
+    }
+}
+.teacher-layer {
+    background: url(images/article-pattern.png) repeat, #eeeeee;
+}
+.breadcrumb {
+    background-color: white;
+    border-radius: 0;
+    padding: 8px !important ;
+    p {
+        margin-bottom: 0 !important;
+    }
+    ul {
+        margin-bottom: 0;
+        li {
+            display: inline-block;
+            a {
+                font-size: 13px;
+                color: rgb(21, 59, 41);
+                text-decoration: none;
+                transition: all ease 0.3s;
+                &:hover {
+                    color: #048b53;
+                }
+            }
+            .current {
+                color: rgb(1, 151, 114) !important;
+            }
+            i {
+                font-size: 10px !important;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .top-title {
+        padding-bottom: 20px !important;
+    }
+    .breadcrumb {
+        display: none !important;
+    }
+}
+
+.teacher-item {
+    box-shadow: 0 0px 3px 0 gray;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    background-color: white;
+    transition: all ease 0.3s;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 3px 5px 0 gray;
+    }
+    .image-layer {
+        height: 210px;
+        position: relative;
+
+        .image-cover {
+            opacity: 0.5;
+            background-color: rgba(179, 255, 0, 0.349);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: all ease 0.3s;
+        }
+        .image-link {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.678);
+        }
+        &:hover {
+            .image-cover {
+                opacity: 1;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    h5 {
+        text-align: center;
+        padding: 8px;
+        font-weight: bolder;
+        font-size: 16px;
+        color: rgb(19, 19, 19);
+        transition: all ease 0.3s;
+        &:hover {
+            color: #048b53;
+        }
+    }
+    .link {
+        border: 1px solid rgb(102, 255, 0);
+        padding: 4px;
+        display: block;
+        text-align: center;
+        width: 90%;
+        box-shadow: 0 0 2px 1px rgb(2, 146, 33);
+        margin: auto;
+        margin-bottom: 5px;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all ease 0.3s;
+        background-color: rgb(29, 202, 81);
+        color: white;
+        &:hover {
+            background-color: rgb(253, 251, 247);
+            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.589);
+            color: rgb(29, 202, 81);
+            transform: translateY(-4px);
+        }
+    }
+}
+.about-teacher{
+    font-size: 13px;
+    text-align: justify;
+    h1{
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 18px;
+        margin-right: 10px;
+        color: rgb(22, 129, 12);
+    }
+    p{
+        margin-bottom: 5px;
+    }
+    img{
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+    }
+}
+h4{
+    color: rgb(15, 99, 7);
+    font-size: 20px;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.712);
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
