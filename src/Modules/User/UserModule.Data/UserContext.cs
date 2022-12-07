@@ -4,7 +4,7 @@ using UserModule.Data.Entities.Users;
 
 namespace UserModule.Data;
 
-class UserContext : DbContext
+public class UserContext : DbContext
 {
     public UserContext(DbContextOptions<UserContext> options):base(options)
     {

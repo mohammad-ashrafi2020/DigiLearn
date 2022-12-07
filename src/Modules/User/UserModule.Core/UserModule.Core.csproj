@@ -7,7 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.Query\Common.Query.csproj" />
     <ProjectReference Include="..\UserModule.Data\UserModule.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Roles\" />
+    <Folder Include="Commands\Users\Register\" />
+    <Folder Include="Services\" />
+    <Folder Include="Queries\_DTOs\" />
+    <Folder Include="Queries\Roles\" />
+    <Folder Include="Queries\Users\GetById\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 
 </Project>

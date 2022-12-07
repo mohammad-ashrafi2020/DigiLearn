@@ -3,7 +3,7 @@ using Common.Domain;
 
 namespace UserModule.Data.Entities.Roles;
 
-class Role : BaseEntity
+public class Role : BaseEntity
 {
 
     [Required]

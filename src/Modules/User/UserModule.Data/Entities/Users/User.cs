@@ -3,7 +3,7 @@ using Common.Domain;
 
 namespace UserModule.Data.Entities.Users;
 
-class User : BaseEntity
+public class User : BaseEntity
 {
     [MaxLength(50)]
     public string? Name { get; set; }
