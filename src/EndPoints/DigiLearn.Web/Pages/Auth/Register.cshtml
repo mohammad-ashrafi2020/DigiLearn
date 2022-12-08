@@ -4,31 +4,27 @@
     Layout = "Shared/_Auth";
     ViewData["title"] = "ثبت نام در سایت";
 }
-<form class="login mt-4 pt-0">
-    <div class="emailOrUserName">
-        <p>ایمیل یا نام کاربری</p>
-        <input type="text" class="form-control" required />
+<form method="post" class="row register mt-4 pt-0">
+    <div class="text-danger col-12" asp-validation-summary="All"></div>
+    <div class="phone mb-5 col-12">
+        <input type="number" class="form-control" asp-for="PhoneNumber" placeholder="موبایل">
     </div>
-    <div class="password mt-5">
-        <p>کلمه عبور </p>
-        <input type="password" class="form-control" required />
+    <div class="password mb-5 col-12 col-xl-6 col-lg-6">
+        <input type="password" class="form-control" asp-for="Password" placeholder="کلمه عبور">
+
     </div>
-    <div class="checkbox mt-4">
-        <input type="checkbox" id="check1" />
-        <span checkfor="check1">مرا بخاطر بسپار</span>
+    <div class="rePassword mb-5 col-12 col-xl-6 col-lg-6">
+        <input type="password" class="form-control" asp-for="ConfirmPassword" placeholder="تکرار کلمه عبور">
     </div>
-    <button class="btn btn-success btn-login mt-4 d-flex justify-content-center align-items-center">
-        <span> ورود</span>
+    <button class="btn btn-success btn-register  mt-4 d-flex justify-content-center align-items-center">
+        <span> ثبت نام</span>
         <i class="fa fa-chevron-left"></i>
     </button>
 </form>
+
 <div class="login-footer">
-    <a href="#">
-        <i class="zmdi zmdi-lock"></i>
-        کلمه عبور خود را فراموش کرده ام !
-    </a>
-    <a href="/Register.html">
+    <a asp-page="Login">
         <i class="zmdi zmdi-account-add"></i>
-        عضویت در سایت
+        ورود به سایت
     </a>
 </div>

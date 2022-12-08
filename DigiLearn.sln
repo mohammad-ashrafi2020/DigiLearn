@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Infrastructure", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Query", "src\Common\Common.Query\Common.Query.csproj", "{85B0575F-B70A-4308-9DF5-5729B9A93313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiLearn.Web", "src\EndPoints\DigiLearn.Web\DigiLearn.Web.csproj", "{DFC89877-DD74-4F70-B827-CB403B76E27F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiLearn.Web", "src\EndPoints\DigiLearn.Web\DigiLearn.Web.csproj", "{DFC89877-DD74-4F70-B827-CB403B76E27F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

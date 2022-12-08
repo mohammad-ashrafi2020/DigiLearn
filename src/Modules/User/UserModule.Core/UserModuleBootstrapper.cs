@@ -22,7 +22,7 @@ public static class UserModuleBootstrapper
 
         services.AddScoped<IUserFacade, UserFacade>();
 
-
+        services.AddAutoMapper(typeof(UserModuleBootstrapper).Assembly);
         services.AddValidatorsFromAssembly(typeof(UserModuleBootstrapper).Assembly);
         return services;
     }

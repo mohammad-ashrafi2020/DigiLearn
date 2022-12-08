@@ -16,4 +16,11 @@ public class UserDto
     public string Password { get; set; }
 
     public string Avatar { get; set; }
+    public List<RoleDto> Roles { get; set; } = new();
+}
+
+public class RoleDto
+{
+    public Guid Id { get; set; }
+    public string Title { get; set; }
 }

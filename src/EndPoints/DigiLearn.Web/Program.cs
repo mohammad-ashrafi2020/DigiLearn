@@ -1,7 +1,16 @@
+using DigiLearn.Web.Infrastructure.JwtUtil;
+using UserModule.Core;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var services=builder.Services;
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.InitUserModule(builder.Configuration);
+
+
+
+services.AddJwtAuthentication(builder.Configuration);
 
 var app = builder.Build();
 
@@ -13,11 +22,22 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.Use(async (context, next) =>
+{
+    var token = context.Request.Cookies["Token"]?.ToString();
+    if (string.IsNullOrWhiteSpace(token) == false)
+    {
+        context.Request.Headers.Append("Authorization", $"Bearer {token}");
+    }
+    await next();
+});
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
