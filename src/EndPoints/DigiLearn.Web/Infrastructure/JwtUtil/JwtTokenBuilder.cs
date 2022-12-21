@@ -24,7 +24,7 @@ public class JwtTokenBuilder
             issuer: configuration["JwtConfig:Issuer"],
             audience: configuration["JwtConfig:Audience"],
             claims: claims,
-            expires: DateTime.Now.AddDays(7),
+            expires: DateTime.Now.AddDays(30),
             signingCredentials: credential);
 
         return new JwtSecurityTokenHandler().WriteToken(token);

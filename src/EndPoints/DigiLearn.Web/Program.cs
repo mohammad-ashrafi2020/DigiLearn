@@ -3,9 +3,9 @@ using UserModule.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var services=builder.Services;
+var services = builder.Services;
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.InitUserModule(builder.Configuration);
 
 

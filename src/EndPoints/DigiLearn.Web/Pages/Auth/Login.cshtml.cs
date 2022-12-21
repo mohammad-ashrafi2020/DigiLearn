@@ -52,12 +52,23 @@ public class LoginModel : BaseRazor
         }
 
         var token = JwtTokenBuilder.BuildToken(user, _configuration);
-        HttpContext.Response.Cookies.Append("Token", token, new CookieOptions()
+        if (IsRememberMe)
         {
-            HttpOnly = true,
-            Expires = DateTimeOffset.Now.AddDays(15),
-            Secure = true
-        });
+            HttpContext.Response.Cookies.Append("Token", token, new CookieOptions()
+            {
+                HttpOnly = true,
+                Expires = DateTimeOffset.Now.AddDays(30),
+                Secure = true
+            });
+        }
+        else
+        {
+            HttpContext.Response.Cookies.Append("Token", token, new CookieOptions()
+            {
+                HttpOnly = true,
+                Secure = true
+            });
+        }
 
         return RedirectToPage("../Index");
     }
