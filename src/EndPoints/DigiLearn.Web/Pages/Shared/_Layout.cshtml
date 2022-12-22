@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
     @await RenderSectionAsync("meta",false)
 </head>
 
@@ -237,22 +238,22 @@
                     </a>
                 </li>
             </ul>
-           @if (User.Identity.IsAuthenticated)
-           {
-               <a asp-page="/Profile/Index" class="auth">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-page="/Profile/Index" class="auth">
 
-                   <i class="zmdi zmdi-account auth-link" data-toggle="tooltip" data-placement="right"
-                      title="حساب کاربری"></i>
-               </a>
-           }
-           else
-           {
-               <a asp-page="/Auth/Login" class="auth">
+                    <i class="zmdi zmdi-account auth-link" data-toggle="tooltip" data-placement="right"
+                   title="حساب کاربری"></i>
+                </a>
+            }
+            else
+            {
+                <a asp-page="/Auth/Login" class="auth">
 
-                   <i class="zmdi zmdi-sign-in auth-link" data-toggle="tooltip" data-placement="right"
-                      title="ورود به سایت"></i>
-               </a>
-           }
+                    <i class="zmdi zmdi-sign-in auth-link" data-toggle="tooltip" data-placement="right"
+                   title="ورود به سایت"></i>
+                </a>
+            }
         </div>
         @await RenderSectionAsync("middel_header",required:false)
         <div class="last-header container-fluid">
@@ -444,11 +445,11 @@
     <script src="/js/Bootstrap/bootstrap.min.js"></script>
     <script src="/js/Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/js/main.js"></script>
-<script src="/js/particles.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/global/global.js"></script>
-@await RenderSectionAsync("Scripts",false)
-  
+    <script src="/js/particles.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/global/global.js"></script>
+    @await RenderSectionAsync("Scripts",false)
+
 </body>
 
 </html>

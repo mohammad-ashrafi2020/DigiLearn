@@ -1,0 +1,13 @@
+.field-validation-error {
+    font-size: 13px;
+    color: red
+}
+.form-element-row {
+    margin-bottom: 1rem
+}
+.form-element-row label {
+    font-size: 14px
+}
+.input-validation-error {
+    border-color: red
+}
