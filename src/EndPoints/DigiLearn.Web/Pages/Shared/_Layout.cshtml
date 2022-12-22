@@ -444,36 +444,11 @@
     <script src="/js/Bootstrap/bootstrap.min.js"></script>
     <script src="/js/Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/particles.js"></script>
-    <script>
-        $(document).ready(function () {
-            particlesJS.load('particles-js', '/js/particlesjs-config.json');
-
-            $(".owl-carousel").owlCarousel();
-        });
-        $('.owl-carousel').owlCarousel({
-            rtl: true,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplaySpeed: 1500,
-            responsive: {
-                0: {
-                    items: 1,
-                    dots: false
-                },
-                550: {
-                    items: 2
-                },
-                762: {
-                    items: 2
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        });
-    </script>
+<script src="/js/particles.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/global/global.js"></script>
+@await RenderSectionAsync("Scripts",false)
+  
 </body>
 
 </html>

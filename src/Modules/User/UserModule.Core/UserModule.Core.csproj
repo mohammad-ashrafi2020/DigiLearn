@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Commands\Roles\" />
+    <Folder Include="Commands\Users\Edit\" />
     <Folder Include="Commands\Users\Register\" />
     <Folder Include="Services\" />
     <Folder Include="Queries\_DTOs\" />

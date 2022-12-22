@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Profile\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\css\fonts\" />
   </ItemGroup>
 
@@ -22,6 +26,22 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Modules\User\UserModule.Core\UserModule.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Profile\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Profile\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Profile\Edit.cshtml" />
+    <None Include="Pages\Shared\EditorTemplates\Enum.cshtml" />
+    <None Include="Pages\Shared\EditorTemplates\IFormFile.cshtml" />
+    <None Include="Pages\Shared\EditorTemplates\Password.cshtml" />
+    <None Include="Pages\Shared\EditorTemplates\String.cshtml" />
   </ItemGroup>
 
 </Project>

@@ -54,7 +54,7 @@ public class LoginModel : BaseRazor
         var token = JwtTokenBuilder.BuildToken(user, _configuration);
         if (IsRememberMe)
         {
-            HttpContext.Response.Cookies.Append("Token", token, new CookieOptions()
+            HttpContext.Response.Cookies.Append("digi-token", token, new CookieOptions()
             {
                 HttpOnly = true,
                 Expires = DateTimeOffset.Now.AddDays(30),
@@ -63,7 +63,7 @@ public class LoginModel : BaseRazor
         }
         else
         {
-            HttpContext.Response.Cookies.Append("Token", token, new CookieOptions()
+            HttpContext.Response.Cookies.Append("digi-token", token, new CookieOptions()
             {
                 HttpOnly = true,
                 Secure = true

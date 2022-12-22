@@ -24,7 +24,7 @@ if (!app.Environment.IsDevelopment())
 
 app.Use(async (context, next) =>
 {
-    var token = context.Request.Cookies["Token"]?.ToString();
+    var token = context.Request.Cookies["digi-token"]?.ToString();
     if (string.IsNullOrWhiteSpace(token) == false)
     {
         context.Request.Headers.Append("Authorization", $"Bearer {token}");
