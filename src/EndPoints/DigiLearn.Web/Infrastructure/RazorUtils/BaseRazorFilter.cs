@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DigiLearn.Web.Infrastructure.RazorUtils
 {
-    public class BaseRazorFilter<T> : BaseRazor where T : BaseFilterParam, new()
+    public class BaseRazorFilter<TFilterParam> : BaseRazor where TFilterParam : BaseFilterParam, new()
     {
         public BaseRazorFilter()
         {
-            FilterParams = new T();
+            FilterParams = new TFilterParam();
         }
         [BindProperty(SupportsGet = true)]
-        public T FilterParams { get; set; }
+        public TFilterParam FilterParams { get; set; }
     }
 }

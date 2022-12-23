@@ -1,0 +1,74 @@
+﻿@page
+@model DigiLearn.Web.Pages.Profile.Tickets.AddModel
+@{
+    ViewData["Title"] = "  افرودن تیک جدید";
+}
+@section meta
+    {
+    <link rel="stylesheet" href="/css/profile.min.css">
+}
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 breadcrumb">
+                <ul class="">
+                    <li>
+                        <a href="/">
+                            خانه
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/profile">
+                            پنل کاربری
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/profile/tickets">
+                            تیکت ها
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="current">
+                            @ViewData["Title"]
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <partial name="Shared/_ProfileSideBar" />
+            <div class="col-12 col-xl-9 col-lg-9 col-md-8 profile-body">
+                <div class="row ">
+                    <div class="col-12 info shadow pl-0 pr-0">
+                        <p class="title">
+                            <i class="fa fa-address-card-o"></i>
+                            @ViewData["Title"]
+                        </p>
+                        <div class="info-body p-2">
+                            <form method="post" class="row">
+                                <div class="col-12">
+                                    @Html.EditorFor(f=>f.Title)
+                                </div>
+                                <div class="col-12">
+                                    @Html.EditorFor(f=>f.Text)
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn  btn-save  mt-3">ثبت تیکت</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+                                    }
