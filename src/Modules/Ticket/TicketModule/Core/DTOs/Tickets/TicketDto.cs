@@ -1,4 +1,6 @@
-﻿namespace TicketModule.Core.DTOs.Tickets;
+﻿using TicketModule.Data.Entities;
+
+namespace TicketModule.Core.DTOs.Tickets;
 
 public class TicketDto
 {
@@ -9,6 +11,7 @@ public class TicketDto
     public string Title { get; set; }
     public string Text { get; set; }
     public DateTime CreationDate { get; set; }
+    public TicketStatus TicketStatus { get; set; }
 
     public List<TicketMessageDto> Messages { get; set; }
 }

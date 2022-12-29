@@ -15,7 +15,7 @@ public interface ITicketService
     Task<OperationResult> SendMessageInTicket(SendTicketMessageCommand command);
     Task<OperationResult> CloseTicket(Guid ticketId);
 
-    Task<TicketDto> GetTicket(Guid ticketId);
+    Task<TicketDto?> GetTicket(Guid ticketId);
     Task<TicketFilterResult> GetTicketsByFilter(TicketFilterParams filterParams);
 }
 
@@ -45,7 +45,8 @@ class TicketService : ITicketService
         {
             return OperationResult.NotFound();
         }
-
+        if (string.IsNullOrWhiteSpace(command.Text))
+            return OperationResult.Error("متن پیام را وارد کنید");
         var message = new TicketMessage()
         {
             Text = command.Text.SanitizeText(),
@@ -83,7 +84,7 @@ class TicketService : ITicketService
         return OperationResult.Success();
     }
 
-    public async Task<TicketDto> GetTicket(Guid ticketId)
+    public async Task<TicketDto?> GetTicket(Guid ticketId)
     {
         var ticket = await _context.Tickets
             .Include(c => c.Messages)
@@ -113,7 +114,7 @@ class TicketService : ITicketService
                     CreationDate = n.CreationDate
                 }).ToListAsync()
         };
-        data.GeneratePaging(result,filterParams.Take,filterParams.PageId);
+        data.GeneratePaging(result, filterParams.Take, filterParams.PageId);
         return data;
     }
 }
