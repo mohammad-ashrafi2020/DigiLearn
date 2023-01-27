@@ -5,7 +5,7 @@ using CoreModule.Domain.Category.DomainServices;
 
 namespace CoreModule.Domain.Category.Models;
 
-public class CourseCategory : BaseEntity
+public class CourseCategory : AggregateRoot
 {
     public CourseCategory(string title, string slug, Guid? parentId, ICategoryDomainService domainService)
     {

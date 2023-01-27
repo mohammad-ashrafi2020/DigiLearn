@@ -6,7 +6,7 @@ using CoreModule.Domain.Course.Enums;
 
 namespace CoreModule.Domain.Course.Models;
 
-public class Course : BaseEntity
+public class Course : AggregateRoot
 {
     public Course(string title, Guid teacherId, string description, string imageName, string? videoName, int price,
         SeoData seoData, CourseLevel courseLevel, Guid categoryId, Guid subCategoryId, string slug, ICourseDomainService domainService)

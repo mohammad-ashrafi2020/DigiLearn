@@ -8,12 +8,16 @@
 
   <ItemGroup>
     <Folder Include="Category\Models\" />
-    <Folder Include="Category\Repositories\" />
+    <Folder Include="Category\Repository\" />
     <Folder Include="Course\Events\" />
     <Folder Include="Course\Exceptions\" />
     <Folder Include="Course\DomainServices\" />
     <Folder Include="Course\Models\" />
     <Folder Include="Course\Enums\" />
+    <Folder Include="Course\Repository\" />
+    <Folder Include="Teacher\Enums\" />
+    <Folder Include="Teacher\Models\" />
+    <Folder Include="Teacher\Repository\" />
   </ItemGroup>
 
   <ItemGroup>
