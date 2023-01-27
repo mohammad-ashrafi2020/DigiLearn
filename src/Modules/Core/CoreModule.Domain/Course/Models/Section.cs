@@ -1,11 +1,13 @@
 ﻿using Common.Domain;
+using Common.Domain.Exceptions;
 
-namespace CoreModule.Domain.Course.Entities;
+namespace CoreModule.Domain.Course.Models;
 
 public class Section : BaseEntity
 {
     public Section(int displayOrder, string title, Guid courseId)
     {
+        NullOrEmptyDomainDataException.CheckString(title,nameof(title));
         DisplayOrder = displayOrder;
         Title = title;
         CourseId = courseId;
@@ -19,8 +21,16 @@ public class Section : BaseEntity
     public IEnumerable<Episode> Episodes { get; private set; }
 
 
+    public void Edit(int displayOrder, string title)
+    {
+        NullOrEmptyDomainDataException.CheckString(title, nameof(title));
+        DisplayOrder = displayOrder;
+        Title = title;
+    }
     public void AddEpisode(string? attachmentName, string videoName, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
     {
         Episodes = Episodes.Append(new Episode(attachmentName, videoName, timeSpan, token, title, isActive, Id,englishTitle));
     }
+
+
 }

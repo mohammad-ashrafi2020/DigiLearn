@@ -1,9 +1,8 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
 using Common.Domain.Utils;
-using System;
 
-namespace CoreModule.Domain.Course.Entities;
+namespace CoreModule.Domain.Course.Models;
 
 public class Episode : BaseEntity
 {
@@ -32,9 +31,14 @@ public class Episode : BaseEntity
 
 
 
+    public void ToggleStatus()
+    {
+        IsActive = !IsActive;
+    }
+    
     void Guard(string videoName, string englishTitle, string title)
     {
-        NullOrEmptyDomainDataException.CheckString(videoName,nameof(videoName));
+        NullOrEmptyDomainDataException.CheckString(videoName, nameof(videoName));
         NullOrEmptyDomainDataException.CheckString(englishTitle, nameof(englishTitle));
         NullOrEmptyDomainDataException.CheckString(title, nameof(title));
         if (englishTitle.IsUniCode())
