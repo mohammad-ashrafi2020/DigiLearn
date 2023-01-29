@@ -7,8 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Category\Models\" />
-    <Folder Include="Category\Repository\" />
     <Folder Include="Course\Events\" />
     <Folder Include="Course\Exceptions\" />
     <Folder Include="Course\DomainServices\" />

@@ -31,7 +31,6 @@ public class Teacher : AggregateRoot
     public TeacherStatus Status { get; private set; }
 
 
-
     public void ToggleStatus()
     {
         if (Status == TeacherStatus.Active)
@@ -43,7 +42,6 @@ public class Teacher : AggregateRoot
             Status = TeacherStatus.Active;
         }
     }
-
     public void AcceptRequest()
     {
         if (Status == TeacherStatus.Pending)
