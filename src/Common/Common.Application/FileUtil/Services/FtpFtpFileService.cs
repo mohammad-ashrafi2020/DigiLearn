@@ -12,6 +12,7 @@ public class FtpFtpFileService : IFtpFileService
     {
         return new NetworkCredential("1114418", "xmaFRChj");
     }
+
     public async Task SaveFile(IFormFile file, string directoryPath)
     {
         var ftpAddress = _ftpServer;

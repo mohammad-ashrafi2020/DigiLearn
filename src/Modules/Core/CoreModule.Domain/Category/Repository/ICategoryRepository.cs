@@ -5,5 +5,5 @@ namespace CoreModule.Domain.Category.Repository;
 
 public interface ICategoryRepository : IBaseRepository<CourseCategory>
 {
-
+    Task Delete(CourseCategory category);
 }
