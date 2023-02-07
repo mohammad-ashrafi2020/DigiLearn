@@ -7,12 +7,12 @@ namespace CoreModule.Application.Category.AddChild;
 
 public class AddChildCategoryCommandHandler : IBaseCommandHandler<AddChildCategoryCommand>
 {
-    private readonly ICategoryRepository _categoryRepository;
+    private readonly ICourseCategoryRepository _courseCategoryRepository;
     private readonly ICategoryDomainService _categoryDomainService;
 
-    public AddChildCategoryCommandHandler(ICategoryRepository categoryRepository, ICategoryDomainService categoryDomainService)
+    public AddChildCategoryCommandHandler(ICourseCategoryRepository courseCategoryRepository, ICategoryDomainService categoryDomainService)
     {
-        _categoryRepository = categoryRepository;
+        _courseCategoryRepository = courseCategoryRepository;
         _categoryDomainService = categoryDomainService;
     }
 
@@ -20,8 +20,8 @@ public class AddChildCategoryCommandHandler : IBaseCommandHandler<AddChildCatego
     {
         var category = new CourseCategory(request.Title, request.Slug, request.ParentCategoryId, _categoryDomainService);
 
-        _categoryRepository.Add(category);
-        await _categoryRepository.Save();
+        _courseCategoryRepository.Add(category);
+        await _courseCategoryRepository.Save();
         return OperationResult.Success();
     }
 }

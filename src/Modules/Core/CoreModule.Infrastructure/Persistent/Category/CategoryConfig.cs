@@ -20,9 +20,9 @@ public class CategoryConfig : IEntityTypeConfiguration<CourseCategory>
     }
 }
 
-public class CategoryRepository : BaseRepository<CourseCategory, CoreModuleEfContext>, ICategoryRepository
+public class CourseCategoryRepository : BaseRepository<CourseCategory, CoreModuleEfContext>, ICourseCategoryRepository
 {
-    public CategoryRepository(CoreModuleEfContext context) : base(context)
+    public CourseCategoryRepository(CoreModuleEfContext context) : base(context)
     {
     }
 

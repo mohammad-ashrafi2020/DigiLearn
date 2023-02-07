@@ -15,7 +15,7 @@ public class CoreModuleEfContext : BaseEfContext<CoreModuleEfContext>
     {
     }
 
-    public DbSet<Course> Courses { get; set; }
+    public DbSet<Domain.Course.Models.Course> Courses { get; set; }
     public DbSet<Domain.Teacher.Models.Teacher> Teachers { get; set; }
     public DbSet<CourseCategory> Categories { get; set; }
     private DbSet<User> Users { get; set; }

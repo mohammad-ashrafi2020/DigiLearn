@@ -5,22 +5,22 @@ namespace CoreModule.Application.Category.Delete;
 
 public class DeleteCategoryCommandHandler : IBaseCommandHandler<DeleteCategoryCommand>
 {
-    private readonly ICategoryRepository _categoryRepository;
+    private readonly ICourseCategoryRepository _courseCategoryRepository;
 
-    public DeleteCategoryCommandHandler(ICategoryRepository categoryRepository)
+    public DeleteCategoryCommandHandler(ICourseCategoryRepository courseCategoryRepository)
     {
-        _categoryRepository = categoryRepository;
+        _courseCategoryRepository = courseCategoryRepository;
     }
 
     public async Task<OperationResult> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
     {
-        var category = await _categoryRepository.GetTracking(request.CategoryId);
+        var category = await _courseCategoryRepository.GetTracking(request.CategoryId);
         if (category == null)
         {
             return OperationResult.NotFound();
         }
 
-        await _categoryRepository.Delete(category);
+        await _courseCategoryRepository.Delete(category);
         return OperationResult.Success();
     }
 }

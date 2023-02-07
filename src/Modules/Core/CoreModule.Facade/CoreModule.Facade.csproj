@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Category\" />
+    <Folder Include="Course\" />
+    <Folder Include="Teacher\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreModule.Application\CoreModule.Application.csproj" />
+    <ProjectReference Include="..\CoreModule.Query\CoreModule.Query.csproj" />
+  </ItemGroup>
+
+</Project>
