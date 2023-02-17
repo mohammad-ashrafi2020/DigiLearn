@@ -1,6 +1,7 @@
 ﻿using CoreModule.Application.Category.Create;
 using CoreModule.Facade;
 using CoreModule.Infrastructure;
+using CoreModule.Query;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ namespace CoreModule.Config
         {
             CoreModuleFacadeBootstrapper.RegisterDependency(services);
             CoreModuleInfrastructureBootstrapper.RegisterDependency(services, configuration);
+            CoreModuleQueryBootstrapper.RegisterDependency(services, configuration);
 
             services.AddMediatR(typeof(CreateCategoryCommand).Assembly);
             services.AddValidatorsFromAssembly(typeof(CreateCategoryCommand).Assembly);

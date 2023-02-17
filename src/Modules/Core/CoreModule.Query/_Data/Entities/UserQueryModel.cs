@@ -1,9 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Common.Domain;
+﻿using Common.Domain;
+using CoreModule.Domain.Course.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CoreModule.Infrastructure.Persistent.Users;
+namespace CoreModule.Query._Data.Entities;
 
-class User : BaseEntity
+
+[Table("Users", Schema = "dbo")]
+class UserQueryModel : BaseEntity
 {
     [MaxLength(12)]
     public string PhoneNumber { get; set; }
@@ -20,5 +24,4 @@ class User : BaseEntity
 
     [MaxLength(110)]
     public string? Email { get; set; }
-
 }
