@@ -7,6 +7,10 @@ namespace CoreModule.Domain.Category.Models;
 
 public class CourseCategory : AggregateRoot
 {
+    private CourseCategory()
+    {
+
+    }
     public CourseCategory(string title, string slug, Guid? parentId, ICategoryDomainService domainService)
     {
         Guard(title, slug);
@@ -16,8 +20,6 @@ public class CourseCategory : AggregateRoot
         Title = title;
         Slug = slug;
         ParentId = parentId;
-
-
     }
 
     public string Title { get; private set; }

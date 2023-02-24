@@ -1,0 +1,29 @@
+﻿@page
+@model DigiLearn.Web.Pages.Profile.RegisterTeacherModel
+@{
+    ViewData["Title"] = "ثبت نام مدرس";
+    Layout = "Shared/_ProfileLayout";
+}
+<div class="row ">
+    <div class="col-12 info shadow pl-0 pr-0">
+        <p class="title">
+            <i class="fa fa-address-card-o"></i>
+            @ViewData["title"]
+        </p>
+        <div class="info-body p-2">
+            <form method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-6">
+                        @Html.EditorFor(f=>f.UserName)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.EditorFor(f=>f.CvFile)
+                    </div>
+                    <div class="col-12">
+                        <button class="btn  btn-save  mt-3">ثبت درخواست</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

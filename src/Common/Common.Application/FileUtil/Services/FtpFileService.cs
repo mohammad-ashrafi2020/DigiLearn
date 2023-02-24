@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Common.Application.FileUtil.Services;
 
-public class FtpFtpFileService : IFtpFileService
+public class FtpFileService : IFtpFileService
 {
     //Fake Server
     private string _ftpServer = "ftp://111.111.111.111/public_html";

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\Shared\Menu\" />
     <Folder Include="wwwroot\css\fonts\" />
   </ItemGroup>
 
@@ -25,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Core\CoreModule.Config\CoreModule.Config.csproj" />
     <ProjectReference Include="..\..\Modules\Ticket\TicketModule\TicketModule.csproj" />
     <ProjectReference Include="..\..\Modules\User\UserModule.Core\UserModule.Core.csproj" />
   </ItemGroup>

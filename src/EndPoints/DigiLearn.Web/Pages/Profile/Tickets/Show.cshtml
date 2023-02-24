@@ -3,125 +3,84 @@
 @using DigiLearn.Web.Infrastructure
 @using TicketModule.Data.Entities
 @model DigiLearn.Web.Pages.Profile.Tickets.ShowModel
-@section meta
-    {
-    <link rel="stylesheet" href="/css/profile.min.css">
-}
 @{
     ViewData["title"] = Model.Ticket.Title;
+    Layout = "Shared/_ProfileLayout";
 }
+<div class="row ">
+    <div class="col-12 info shadow pl-0 pr-0">
+        <p class="title">
+            @ViewData["title"]
+            @switch (Model.Ticket.TicketStatus)
+            {
+                case TicketStatus.Pending:
+                    <span class="badge badge-info">درحال برسی</span>
+                    break;
+                case TicketStatus.Answered:
+                    <span class="badge badge-success">پاسخ داده شده</span>
+                    break;
+                case TicketStatus.Closed:
+                    <span class="badge badge-danger">بسته شده</span>
+                    break;
+            }
+            @if (Model.Ticket.TicketStatus != TicketStatus.Closed)
+            {
+                <delete-item description="آیا از بستن تیکت اطمینان دارید ؟"
+                         url="@Url.Page("Show","CloseTicket",new {ticketId=Model.Ticket.Id})"
+                         class="btn btn-sm  btn-close pull-left">بستن تیکت</delete-item>
+            }
 
-<main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 breadcrumb">
-                <ul class="">
-                    <li>
-                        <a href="/">
-                            خانه
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/profile">
-                            پنل کاربری
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/profile/tickets">
-                            تیکت ها
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="current">
-                            @Model.Ticket.Title
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <partial name="Shared/_ProfileSideBar" />
-            <div class="col-12 col-xl-9 col-lg-9 col-md-8 profile-body">
-                <div class="row ">
-                    <div class="col-12 info shadow pl-0 pr-0">
-                        <p class="title">
-                            @ViewData["title"]
-                            @switch (Model.Ticket.TicketStatus)
-                            {
-                                case TicketStatus.Pending:
-                                    <span class="badge badge-info">درحال برسی</span>
-                                    break;
-                                case TicketStatus.Answered:
-                                    <span class="badge badge-success">پاسخ داده شده</span>
-                                    break;
-                                case TicketStatus.Closed:
-                                    <span class="badge badge-danger">بسته شده</span>
-                                    break;
-                            }
-                           @if (Model.Ticket.TicketStatus != TicketStatus.Closed)
-                           {
-                               <delete-item
-                                   description="آیا از بستن تیکت اطمینان دارید ؟"
-                                   url="@Url.Page("Show","CloseTicket",new {ticketId=Model.Ticket.Id})"
-                                   class="btn btn-sm  btn-close pull-left">بستن تیکت</delete-item>
-                           }
-
-                        </p>
+        </p>
 
 
-                        <div class="ticket-Body">
-                            <div class="chat">
-                                <div class="chat-m">
-                                    <div class="chat-me">
-                                        <p>@Model.Ticket.Text</p>
-                                        <span>@Model.Ticket.CreationDate.ToPersianDateTime()</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            @foreach (var item in Model.Ticket.Messages.OrderBy(d => d.CreationDate))
-                            {
-                                <div class="chat">
-                                    @if (item.UserId == User.GetUserId())
-                                    {
-                                        <div class="chat-m">
-                                            <div class="chat-me">
-                                                <p>@item.Text</p>
-                                                <span>@item.CreationDate.ToPersianDateTime()</span>
-                                            </div>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <div class="chat-y">
-                                            <div class="chat-you">
-                                                <label>@item.OwnerFullName</label>
-                                                <p>@item.Text</p>
-                                                <span>@item.CreationDate.ToPersianDateTime()</span>
-                                            </div>
-                                        </div>
-                                    }
-                                </div>
-                            }
-                        </div>
-                        <form class="send-message" method="post">
-                            @if (Model.Ticket.TicketStatus == TicketStatus.Closed)
-                            {
-                                <input type="text" disabled="" class="form-control" placeholder="امکان ثبت پیام در این تیکت وجود ندارد">
-                            }
-                            else
-                            {
-                                <input type="text" asp-for="Text" class="form-control" placeholder="متن پیام">
-                                <button type="submit" class="btn btn-sm btn-sendMessage">
-                                    <i class="zmdi zmdi-mail-send"></i>
-                                </button>
-                            }
-
-                        </form>
+        <div class="ticket-Body">
+            <div class="chat">
+                <div class="chat-m">
+                    <div class="chat-me">
+                        <p>@Model.Ticket.Text</p>
+                        <span>@Model.Ticket.CreationDate.ToPersianDateTime()</span>
                     </div>
                 </div>
             </div>
+
+            @foreach (var item in Model.Ticket.Messages.OrderBy(d => d.CreationDate))
+            {
+                <div class="chat">
+                    @if (item.UserId == User.GetUserId())
+                    {
+                        <div class="chat-m">
+                            <div class="chat-me">
+                                <p>@item.Text</p>
+                                <span>@item.CreationDate.ToPersianDateTime()</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="chat-y">
+                            <div class="chat-you">
+                                <label>@item.OwnerFullName</label>
+                                <p>@item.Text</p>
+                                <span>@item.CreationDate.ToPersianDateTime()</span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
         </div>
+        <form class="send-message" method="post">
+            @if (Model.Ticket.TicketStatus == TicketStatus.Closed)
+            {
+                <input type="text" disabled="" class="form-control" placeholder="امکان ثبت پیام در این تیکت وجود ندارد">
+            }
+            else
+            {
+                <input type="text" asp-for="Text" class="form-control" placeholder="متن پیام">
+                <button type="submit" class="btn btn-sm btn-sendMessage">
+                    <i class="zmdi zmdi-mail-send"></i>
+                </button>
+            }
+
+        </form>
     </div>
-</main>
+</div>

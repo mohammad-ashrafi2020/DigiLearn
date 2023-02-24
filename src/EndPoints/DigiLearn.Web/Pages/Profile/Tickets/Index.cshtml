@@ -2,112 +2,79 @@
 @using TicketModule.Data.Entities
 @using Common.Application.DateUtil
 @model DigiLearn.Web.Pages.Profile.Tickets.IndexModel
-@section meta
-    {
-    <link rel="stylesheet" href="/css/profile.min.css">
-}
 @{
+    ViewData["Title"] = "ثبت نام مدرس";
+    Layout = "Shared/_ProfileLayout";
     var counter = 1;
 }
+<div class="row ">
+    <div class="col-12 info shadow pl-0 pr-0">
+        <p class="title">
+            <i class="fa fa-paper-plane"></i>
+            تیکت ها
+        </p>
 
-<main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 breadcrumb">
-                <ul class="">
-                    <li>
-                        <a href="/">
-                            خانه
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/profile">
-                            پنل کاربری
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="current">
-                            تیکت ها
-                        </a>
-                    </li>
-                </ul>
+        <br>
+        <a asp-page="Add" class="btn btn-save mr-2 mb-4 float-right">ثبت تیکت جدید</a>
+        <div class="info-body p-2">
+            <div class="table-responsive">
+                <h5>
+                    <i class="fa fa-list"></i>
+                    لیست تیکت ها
+                </h5>
+                <table class="table   table-hover  table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>عنوان</th>
+                            <td>وضعیت</td>
+                            <th>تاریخ ثبت</th>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.FilterResult.Data)
+                        {
+                            <tr>
+                                <td>@counter</td>
+                                <td>@item.Title</td>
+
+                                <td>
+                                    @switch (item.Status)
+                                    {
+                                        case TicketStatus.Pending:
+                                            <span class="badge badge-info">درحال برسی</span>
+                                            break;
+                                        case TicketStatus.Answered:
+                                            <span class="badge badge-success">پاسخ داده شده</span>
+                                            break;
+                                        case TicketStatus.Closed:
+                                            <span class="badge badge-danger">بسته شده</span>
+                                            break;
+                                    }
+                                </td>
+                                <td>
+                                    @item.CreationDate.ToPersianDate()
+                                </td>
+                                <td>
+                                    <a asp-page="Show" asp-route-ticketId="@item.Id" class="btn btn-sm btn-primary">نمایش</a>
+                                </td>
+                            </tr>
+                            counter += 1;
+                        }
+                        @if (Model.FilterResult.EntityCount == 0)
+                        {
+                            <tr>
+                                <td colspan="5">موردی برای نمایش وجود ندارد</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
-            <partial name="Shared/_ProfileSideBar" />
-            <div class="col-12 col-xl-9 col-lg-9 col-md-8 profile-body">
-                <div class="row ">
-                    <div class="col-12 info shadow pl-0 pr-0">
-                        <p class="title">
-                            <i class="fa fa-paper-plane"></i>
-                            تیکت ها
-                        </p>
-
-                        <br>
-                        <a asp-page="Add" class="btn btn-save mr-2 mb-4 float-right">ثبت تیکت جدید</a>
-                        <div class="info-body p-2">
-                            <div class="table-responsive">
-                                <h5>
-                                    <i class="fa fa-list"></i>
-                                    لیست تیکت ها
-                                </h5>
-                                <table class="table   table-hover  table-striped text-center">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>عنوان</th>
-                                            <td>وضعیت</td>
-                                            <th>تاریخ ثبت</th>
-                                            <td></td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach (var item in Model.FilterResult.Data)
-                                        {
-                                            <tr>
-                                                <td>@counter</td>
-                                                <td>@item.Title</td>
-
-                                                <td>
-                                                    @switch (item.Status)
-                                                    {
-                                                        case TicketStatus.Pending:
-                                                            <span class="badge badge-info">درحال برسی</span>
-                                                            break;
-                                                        case TicketStatus.Answered:
-                                                            <span class="badge badge-success">پاسخ داده شده</span>
-                                                            break;
-                                                        case TicketStatus.Closed:
-                                                            <span class="badge badge-danger">بسته شده</span>
-                                                            break;
-                                                    }
-                                                </td>
-                                                <td>
-                                                    @item.CreationDate.ToPersianDate()
-                                                </td>
-                                                <td>
-                                                    <a asp-page="Show" asp-route-ticketId="@item.Id" class="btn btn-sm btn-primary">نمایش</a>
-                                                </td>
-                                            </tr>
-                                            counter += 1;
-                                        }
-                                        @if (Model.FilterResult.EntityCount == 0)
-                                        {
-                                            <tr>
-                                                <td colspan="5">موردی برای نمایش وجود ندارد</td>
-                                            </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
-                            <hr class="mt-0">
-                          <partial name="Shared/_Pagination" model="Model.FilterResult"/>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+            <hr class="mt-0">
+            <partial name="Shared/_Pagination" model="Model.FilterResult" />
         </div>
     </div>
-</main>
+
+
+</div>

@@ -1,3 +1,6 @@
+using Common.Application.FileUtil.Interfaces;
+using Common.Application.FileUtil.Services;
+using CoreModule.Config;
 using DigiLearn.Web.Infrastructure.JwtUtil;
 using TicketModule;
 using UserModule.Core;
@@ -6,10 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 var services = builder.Services;
 // Add services to the container.
+
+builder.Services.AddScoped<ILocalFileService, LocalFileService>();
+builder.Services.AddScoped<IFtpFileService, FtpFileService>();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services
     .InitUserModule(builder.Configuration)
-    .InitTicketModule(builder.Configuration);
+    .InitTicketModule(builder.Configuration)
+    .InitCoreModule(builder.Configuration);
 
 
 

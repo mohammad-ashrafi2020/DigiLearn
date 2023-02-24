@@ -1,115 +1,84 @@
 ﻿@page "{handler?}"
 @using Common.Application.DateUtil
 @model DigiLearn.Web.Pages.Profile.NotificationsModel
-@section meta
-    {
-    <link rel="stylesheet" href="/css/profile.min.css">
-}
+
 @{
     ViewData["title"] = "پیغام ها";
+    Layout = "Shared/_ProfileLayout";
 }
-<main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 breadcrumb">
-                <ul class="">
-                    <li>
-                        <a href="/">
-                            خانه
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/profile">
-                            پنل کاربری
-                            <i class="fa fa-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="current">
-                            @ViewData["title"]
-                        </a>
-                    </li>
-                </ul>
 
-            </div>
-            <partial name="Shared/_ProfileSideBar" />
-            <div class="col-12 col-xl-9 col-lg-9 col-md-8 profile-body">
-                <div class="info shadow pl-0 pr-0">
-                    <p class="title">
-                        <i class="zmdi zmdi-notifications text-warning"></i>
-                        @ViewData["title"]
-                        <delete-item is-button-tag="false" class="pull-left pointer" data-toggle="tooltip" title="حذف همه"
-                                     url="@Url.Page("Notifications","DeleteAll")">
-                            <i class="fa fa-trash-o text-danger" style="font-size: 25px;"></i>
-                        </delete-item>
+<div class="info shadow pl-0 pr-0">
+    <p class="title">
+        <i class="zmdi zmdi-notifications text-warning"></i>
+        @ViewData["title"]
+        <delete-item is-button-tag="false" class="pull-left pointer" data-toggle="tooltip" title="حذف همه"
+                     url="@Url.Page("Notifications","DeleteAll")">
+            <i class="fa fa-trash-o text-danger" style="font-size: 25px;"></i>
+        </delete-item>
 
-                    </p>
+    </p>
 
-                    <div class="info-body ">
-                        <div class="table-responsive">
-                            <table class="table text-center  table-hover  table-striped text-center">
-                                <thead>
-                                    <tr>
-                                        <th>متن</th>
-                                        <th>وضعیت</th>
-                                        <th>تاریخ</th>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var item in Model.FilterResult.Data)
-                                    {
-                                        <tr>
-                                            <td>
-                                                <p><b>@item.Title</b></p>
-                                                <p>
-                                                    @item.Text
-                                                </p>
-                                            </td>
-                                            <td>
-                                                @if (item.IsSeen)
-                                                {
-                                                    <span class="badge badge-success">مشاهده شده</span>
-                                                }
-                                                else
-                                                {
-                                                    <span class="badge badge-danger">جدید</span>
-                                                }
-                                            </td>
-                                            <td>
-                                                @item.CreationDate.ToPersianDateTime()
-                                            </td>
-                                            <td>
-                                                @if (item.IsSeen == false)
-                                                {
-                                                    <form method="post" asp-page-handler="SeenNotification" class="d-inline-block">
-                                                        <input type="hidden" name="notificationId" value="@item.Id" />
-                                                        <button class="btn btn-success btn-sm" data-toggle="tooltip" title="این پیام خواندم" onclick="return confirm('آیا از انجام عملیات اطمینان دارید ؟')">
-                                                            <i class="fa fa-check text-white"></i>
-                                                        </button>
-                                                    </form>
-                                                }
-                                                <delete-item url="@Url.Page("Notifications", "DeleteNotification", new { id = item.Id })" data-toggle="tooltip" title="حذف" class=" btn btn-sm btn-danger">
-                                                    <i class="fa fa-trash"></i>
-                                                </delete-item>
-                                            </td>
-                                        </tr>
-                                    }
-                                    @if (Model.FilterResult.EntityCount == 0)
-                                    {
-                                        <tr>
-                                            <td colspan="4">موردی برای نمایش وجود ندارد</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                        <partial name="Shared/_Pagination" model="Model.FilterResult" />
-                    </div>
-                </div>
-            </div>
+    <div class="info-body ">
+        <div class="table-responsive">
+            <table class="table text-center  table-hover  table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>متن</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ</th>
+                        <td>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.FilterResult.Data)
+                    {
+                        <tr>
+                            <td>
+                                <p><b>@item.Title</b></p>
+                                <p>
+                                    @item.Text
+                                </p>
+                            </td>
+                            <td>
+                                @if (item.IsSeen)
+                                {
+                                    <span class="badge badge-success">مشاهده شده</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-danger">جدید</span>
+                                }
+                            </td>
+                            <td>
+                                @item.CreationDate.ToPersianDateTime()
+                            </td>
+                            <td>
+                                @if (item.IsSeen == false)
+                                {
+                                    <form method="post" asp-page-handler="SeenNotification" class="d-inline-block">
+                                        <input type="hidden" name="notificationId" value="@item.Id" />
+                                        <button class="btn btn-success btn-sm" data-toggle="tooltip" title="این پیام خواندم" onclick="return confirm('آیا از انجام عملیات اطمینان دارید ؟')">
+                                            <i class="fa fa-check text-white"></i>
+                                        </button>
+                                    </form>
+                                }
+                                <delete-item url="@Url.Page("Notifications", "DeleteNotification", new { id = item.Id })" data-toggle="tooltip" title="حذف" class=" btn btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </delete-item>
+                            </td>
+                        </tr>
+                    }
+                    @if (Model.FilterResult.EntityCount == 0)
+                    {
+                        <tr>
+                            <td colspan="4">موردی برای نمایش وجود ندارد</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         </div>
+        <partial name="Shared/_Pagination" model="Model.FilterResult" />
     </div>
-</main>
+</div>
+
