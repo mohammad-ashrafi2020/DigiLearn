@@ -7,16 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="_DTOs\" />
+    <Folder Include="Teacher\GetById\" />
+    <Folder Include="Teacher\GetByUserId\" />
+    <Folder Include="Teacher\GetList\" />
+    <Folder Include="Teacher\_DTOs\" />
     <Folder Include="_Data\Entities\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.Query\Common.Query.csproj" />
-    <ProjectReference Include="..\CoreModule.Infrastructure\CoreModule.Infrastructure.csproj" />
+    <ProjectReference Include="..\CoreModule.Domain\CoreModule.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
-﻿using CoreModule.Infrastructure.Persistent.Course;
-using CoreModule.Query._Data.Entities;
+﻿using CoreModule.Query._Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoreModule.Query._Data;
