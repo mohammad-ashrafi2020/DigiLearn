@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Course\GetByFilter\" />
+    <Folder Include="Course\_DTOs\" />
     <Folder Include="_DTOs\" />
     <Folder Include="Teacher\GetById\" />
     <Folder Include="Teacher\GetByUserId\" />

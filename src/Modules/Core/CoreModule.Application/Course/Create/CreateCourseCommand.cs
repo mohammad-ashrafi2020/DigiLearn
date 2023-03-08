@@ -25,15 +25,16 @@ public class CreateCourseCommand : IBaseCommand
     public SeoData SeoData { get; set; }
 
     public CourseLevel CourseLevel { get; set; }
+    public CourseActionStatus Status { get; set; }
 
 }
 
 class CreateCourseCommandHandler : IBaseCommandHandler<CreateCourseCommand>
 {
-    private IFtpFileService _ftpFileService;
-    private ILocalFileService _localFileService;
-    private ICourseRepository _repository;
-    private ICourseDomainService _domainService;
+    private readonly IFtpFileService _ftpFileService;
+    private readonly ILocalFileService _localFileService;
+    private readonly ICourseRepository _repository;
+    private readonly ICourseDomainService _domainService;
     public CreateCourseCommandHandler(IFtpFileService fileService, ILocalFileService localFileService, ICourseDomainService domainService, ICourseRepository repository)
     {
         _ftpFileService = fileService;
@@ -62,7 +63,7 @@ class CreateCourseCommandHandler : IBaseCommandHandler<CreateCourseCommand>
 
         var course = new Domain.Course.Models.Course(request.Title, request.TeacherId, request.Description, imageName, videoPath,
             request.Price,
-            request.SeoData, request.CourseLevel, request.CategoryId, request.SubCategoryId, request.Slug, _domainService)
+            request.SeoData, request.CourseLevel, request.CategoryId, request.SubCategoryId, request.Slug, request.Status, _domainService)
         {
             Id = courseId
         };

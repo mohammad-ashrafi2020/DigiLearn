@@ -16,4 +16,6 @@ class SectionQueryModel : BaseEntity
 
     [ForeignKey("CourseId")]
     public CourseQueryModel Course { get; set; }
+
+
 }
