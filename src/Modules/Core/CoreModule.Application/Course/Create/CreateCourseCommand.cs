@@ -20,7 +20,7 @@ public class CreateCourseCommand : IBaseCommand
     public string Slug { get; set; }
     public string Description { get; set; }
     public IFormFile ImageFile { get; set; }
-    public IFormFile? VideoFileName { get; set; }
+    public IFormFile? VideoFile { get; set; }
     public int Price { get; set; }
     public SeoData SeoData { get; set; }
 
@@ -50,14 +50,14 @@ class CreateCourseCommandHandler : IBaseCommandHandler<CreateCourseCommand>
 
         string videoPath = null;
         Guid courseId = Guid.NewGuid();
-        if (request.VideoFileName != null)
+        if (request.VideoFile != null)
         {
-            if (request.VideoFileName.IsValidMp4File() == false)
+            if (request.VideoFile.IsValidMp4File() == false)
             {
                 return OperationResult.Error("فایل وارد شده نامعتبر است");
             }
 
-            videoPath = await _ftpFileService.SaveFileAndGenerateName(request.VideoFileName, CoreModuleDirectories.CourseDemo(courseId));
+            //videoPath = await _ftpFileService.SaveFileAndGenerateName(request.VideoFile, CoreModuleDirectories.CourseDemo(courseId));
         }
 
 

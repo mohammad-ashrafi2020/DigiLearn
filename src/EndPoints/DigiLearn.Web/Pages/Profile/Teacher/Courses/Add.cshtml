@@ -1,0 +1,80 @@
+﻿@page
+@using CoreModule.Domain.Course.Enums
+@using CoreModule.Facade.Category
+@model DigiLearn.Web.Pages.Profile.Teacher.Courses.AddModel
+@inject ICourseCategoryFacade _CategoryFacade
+@{
+    ViewData["Title"] = "افرودن دوره جدید";
+    Layout = "Shared/_ProfileLayout";
+    var categories = await _CategoryFacade.GetMainCategories();
+}
+<div class="row ">
+    <div class="col-12 info shadow pl-0 pr-0">
+        <p class="title">
+            <i class="fa fa-paper-plane"></i>
+            @ViewData["Title"]
+        </p>
+        <form method="post" enctype="multipart/form-data" class="row">
+            <div class="col-md-6">
+                @Html.EditorFor(f=>f.Title)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(f=>f.Slug)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(f=>f.Price)
+            </div>
+            <div class="col-md-6">
+                <label asp-for="CourseLevel"></label>
+                <select asp-for="CourseLevel" class="form-control">
+                    <option value="@CourseLevel.Beginner">مقدماتی</option>
+                    <option value="@CourseLevel.Intermediate">از مقدماتی تا پیشرفته</option>
+                    <option value="@CourseLevel.Expert">پیشرفته</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="CategoryId"></label>
+                <select asp-for="CategoryId" class="form-control">
+                    <option>انتخاب کنید</option>
+                    @foreach (var item in categories)
+                    {
+                        <option value="@item.Id">@item.Title</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="SubCategoryId"></label>
+                <select asp-for="SubCategoryId" class="form-control">
+                </select>
+            </div>
+            <div class="col-md-12">
+                @Html.EditorFor(f=>f.Description)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(f=>f.ImageFile)
+            </div>
+            <div class="col-md-6">
+                @Html.EditorFor(f=>f.VideoFile)
+            </div>
+            
+            <div class="col-12">
+                <button class="btn  btn-save  mt-3">ویرایش اطلاعات</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts
+    {
+    <script>
+        $("#CategoryId").change(function () {
+            var id = $(this).val();
+            $.ajax({
+                url: "/ajax/getCategoryChildren?id=" + id,
+                method: "get"
+            }).done(function (data) {
+                $("#SubCategoryId").html(data);
+            });
+        });
+    </script>
+}

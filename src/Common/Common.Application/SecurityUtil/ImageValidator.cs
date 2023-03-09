@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using Common.Application.FileUtil;
 using Microsoft.AspNetCore.Http;
 
 namespace Common.Application.SecurityUtil;
@@ -9,14 +10,7 @@ public static class ImageValidator
     {
         if (file == null)
             return false;
-        try
-        {
-            using var img = Image.FromStream(file.OpenReadStream());
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
+
+        return FileValidation.IsValidImageFile(file.FileName);
     }
 }

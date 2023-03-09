@@ -23,7 +23,7 @@ namespace DigiLearn.Web.Infrastructure.Utils.CustomValidation.IFormFile
 
 
             var fileType = Path.GetExtension(fileInput.FileName);
-            return fileType == type;
+            return fileType == $".{type}";
         }
 
         public void AddValidation(ClientModelValidationContext context)

@@ -1,0 +1,24 @@
+--- v1.7
+added translation to Chinese-Simplified by @Gnodiah
+
+--- v1.6
+added support for source-code title
+added support for TAP
+
+--- v1.5.1
+something went wrong during upload, so we are forced to use a new version number
+
+--- v1.5
+added support for typescript
+
+--- v1.4
+replace "&nbsp;" with space in input
+
+--- v1.3
+validate user- and ckeditor's inputs
+filter out invalid input characters
+
+--- v1.2
+added support for ckeditor 4.1 advanced content filter
+added support for several new brush-modes
+added possibility to change all default settings by config

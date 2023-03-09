@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.IdentityModel.Tokens;
 
 namespace DigiLearn.Web.Infrastructure.Utils.CustomValidation.IFormFile
 {
@@ -27,15 +28,14 @@ namespace DigiLearn.Web.Infrastructure.Utils.CustomValidation.IFormFile
     {
         public static bool IsImage(this Microsoft.AspNetCore.Http.IFormFile file)
         {
-            try
+            if (string.IsNullOrEmpty(file.FileName)) return false;
+            var path = Path.GetExtension(file.FileName);
+            path = path.ToLower();
+            if (path == ".jpg" || path == ".png" || path == ".bmp" || path == ".svg" || path == ".jpeg" || path == ".webp")
             {
-                var img = Image.FromStream(file.OpenReadStream());
                 return true;
             }
-            catch
-            {
-                return false;
-            }
+            return false;
         }
     }
 }

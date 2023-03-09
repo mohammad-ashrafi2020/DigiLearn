@@ -13,6 +13,7 @@ class QueryContext : DbContext
     public DbSet<UserQueryModel> Users { get; set; }
     public DbSet<TeacherQueryModel> Teachers { get; set; }
     public DbSet<CourseQueryModel> Courses { get; set; }
+    public DbSet<CategoryQueryModel> CourseCategories { get; set; }
     public DbSet<EpisodeQueryModel> Episodes { get; set; }
     public DbSet<SectionQueryModel> Sections { get; set; }
 

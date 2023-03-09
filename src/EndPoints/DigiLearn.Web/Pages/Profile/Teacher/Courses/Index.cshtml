@@ -14,7 +14,6 @@
             <i class="fa fa-paper-plane"></i>
             @ViewData["Title"]
         </p>
-
         <br>
         <a asp-page="Add" class="btn btn-save mr-2 mb-4 float-right">ثبت دوره جدید</a>
         <div class="info-body p-2">
@@ -42,7 +41,7 @@
                                     <img src="@CoreModuleDirectories.GetCourseImage(item.ImageName)" style="max-width: 200px" />
                                 </td>
                                 <td>@item.Title</td>
-                                <td>@item.Price.TooMan()</td>
+                                <td>@item.Price.TooMan(true)</td>
                                 <td>
                                     @switch (item.CourseStatus)
                                     {
