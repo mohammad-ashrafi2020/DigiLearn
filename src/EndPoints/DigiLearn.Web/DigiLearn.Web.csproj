@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Profile\Teacher\Courses\Sections\" />
     <Folder Include="Pages\Shared\Menu\" />
     <Folder Include="wwwroot\css\fonts\" />
   </ItemGroup>

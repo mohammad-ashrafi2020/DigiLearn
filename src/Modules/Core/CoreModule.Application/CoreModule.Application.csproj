@@ -15,10 +15,8 @@
     <Folder Include="Course\Episodes\Edit\" />
     <Folder Include="Course\Episodes\Accept\" />
     <Folder Include="Course\Episodes\Delete\" />
-    <Folder Include="Course\Sections\AddSection\" />
     <Folder Include="Course\Sections\EditSection\" />
     <Folder Include="Course\Sections\DeleteSection\" />
-    <Folder Include="Course\Sections\" />
     <Folder Include="_Utilities\" />
     <Folder Include="Teacher\AcceptRequest\" />
     <Folder Include="Teacher\Register\" />
