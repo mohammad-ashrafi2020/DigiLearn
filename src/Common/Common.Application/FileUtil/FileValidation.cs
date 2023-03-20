@@ -22,6 +22,18 @@ public static class FileValidation
         }
         return false;
     }
+    public static bool IsValidCompressFile(this IFormFile file)
+    {
+        if (file == null) return false;
+        var path = Path.GetExtension(file.FileName);
+        path = path.ToLower();
+        if (path == ".zip" ||
+            path == ".rar")
+        {
+            return true;
+        }
+        return false;
+    }
     public static bool IsValidMp4File(this IFormFile file)
     {
         if (file == null) return false;

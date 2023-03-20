@@ -7,7 +7,7 @@ public class Section : BaseEntity
 {
     public Section(int displayOrder, string title, Guid courseId)
     {
-        NullOrEmptyDomainDataException.CheckString(title,nameof(title));
+        NullOrEmptyDomainDataException.CheckString(title, nameof(title));
         DisplayOrder = displayOrder;
         Title = title;
         CourseId = courseId;
@@ -18,7 +18,7 @@ public class Section : BaseEntity
     public string Title { get; private set; }
     public int DisplayOrder { get; private set; }
 
-    public IEnumerable<Episode> Episodes { get; private set; }
+    public List<Episode> Episodes { get; private set; }
 
 
     public void Edit(int displayOrder, string title)
@@ -27,9 +27,11 @@ public class Section : BaseEntity
         DisplayOrder = displayOrder;
         Title = title;
     }
-    public void AddEpisode(string? attachmentName, string videoName, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
+    public Episode AddEpisode(string? attachmentName, string videoName, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
     {
-        Episodes = Episodes.Append(new Episode(attachmentName, videoName, timeSpan, token, title, isActive, Id,englishTitle));
+        var episode = new Episode(attachmentName, videoName, timeSpan, token, title, isActive, Id, englishTitle);
+        Episodes.Add(episode);
+        return episode;
     }
 
 

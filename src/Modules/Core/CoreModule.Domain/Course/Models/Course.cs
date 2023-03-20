@@ -101,7 +101,7 @@ public class Course : AggregateRoot
 
         Sections.Remove(section);
     }
-    public void AddEpisode(Guid sectionId, string? attachmentExtension, string videoExtension, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
+    public Episode AddEpisode(Guid sectionId, string? attachmentExtension, string videoExtension, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
     {
 
         var section = Sections.FirstOrDefault(f => f.Id == sectionId);
@@ -114,7 +114,7 @@ public class Course : AggregateRoot
 
         if (string.IsNullOrWhiteSpace(attachmentExtension) == false)
             attName = $"{episodeTitle}.{attachmentExtension}";
-        var vidName = $"{episodeTitle}.${videoExtension}";
+        var vidName = $"{episodeTitle}.{videoExtension}";
 
         if (isActive)
         {
@@ -124,7 +124,8 @@ public class Course : AggregateRoot
                 CourseStatus = CourseStatus.InProgress;
             }
         }
-        section.AddEpisode(attName, vidName, timeSpan, token, title, isActive, englishTitle);
+        return section.AddEpisode(attName, vidName, timeSpan, token, title, isActive, englishTitle);
+
     }
     public void AcceptEpisode(Guid episodeId)
     {

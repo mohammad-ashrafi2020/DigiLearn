@@ -7,10 +7,10 @@ namespace Common.Application.FileUtil.Services;
 public class FtpFileService : IFtpFileService
 {
     //Fake Server
-    private string _ftpServer = "ftp://111.111.111.111/public_html";
+    private string _ftpServer = "ftp://130.185.79.155/public_html";
     private NetworkCredential CreateNetworkCredential()
     {
-        return new NetworkCredential("1114418", "xmaFRChj");
+        return new NetworkCredential("pz16162", "G9xna4oN");
     }
 
     public async Task SaveFile(IFormFile file, string directoryPath)

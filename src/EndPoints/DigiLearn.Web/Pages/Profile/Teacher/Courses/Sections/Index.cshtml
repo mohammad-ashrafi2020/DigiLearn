@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "مدیریت فصل های دوره" + $"`{Model.Course.Title}`";
     Layout = "Shared/_ProfileLayout";
+    var counter = 1;
+
 }
 <div class="row ">
     <a asp-page="Add" asp-route-courseId="@Model.Course.Id" class="btn btn-save mr-2 mb-4 float-right">افزودن فصل جدید</a>
@@ -12,14 +14,13 @@
             <i class="fa fa-paper-plane"></i>
             @ViewData["Title"]
         </p>
-        <br>
-        <div class="info-body p-2">
+        <div class="info-body ">
             <div id="accordion">
                 @foreach (var item in Model.Course.Sections.OrderBy(d => d.DisplayOrder))
                 {
                     <div class="card">
                         <div class="card-header" id="h_@item.Id">
-                            <h5 class="mb-0" >
+                            <h5 class="mb-0">
                                 <button class="btn btn-link " data-toggle="collapse" data-target="#a_@item.Id" aria-expanded="true" aria-controls="a_@item.Id">
                                     @item.Title
                                 </button>
@@ -28,7 +29,42 @@
 
                         <div id="a_@item.Id" class="collapse " aria-labelledby="h_@item.Id" data-parent="#accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <a asp-page="Episodes/Add" asp-route-courseId="@Model.Course.Id" asp-route-sectionId="@item.Id" class="btn btn-save mr-2 mb-4 float-right">افزودن قسمت جدید</a>
+
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>عنوان</th>
+                                            <th>زمان</th>
+                                            <th>وضعیت</th>
+                                            <th>عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var episode in item.Episodes)
+                                        {
+                                            <tr>
+                                                <td>@counter</td>
+                                                <td>@episode.Title</td>
+                                                <td>@episode.TimeSpan</td>
+                                                <td>
+                                                    @if (episode.IsActive)
+                                                    {
+                                                        <label>فعال</label>
+                                                    }
+                                                    else
+                                                    {
+                                                        <label>غیر فعال</label>
+
+                                                    }
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            counter += 1;
+                                        }
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

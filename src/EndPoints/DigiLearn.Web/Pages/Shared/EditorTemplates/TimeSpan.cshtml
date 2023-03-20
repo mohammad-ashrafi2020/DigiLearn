@@ -1,0 +1,7 @@
+﻿@model TimeSpan
+<div class="form-element-row">
+    <label class="mb-0" asp-for="@Model">
+    </label>
+    <input type="text" asp-for="@Model" class="form-control" placeholder="00:00:00">
+    <span asp-validation-for="@Model"></span>
+</div>

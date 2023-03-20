@@ -1,0 +1,36 @@
+﻿@page "{courseId}/{sectionId}"
+@model DigiLearn.Web.Pages.Profile.Teacher.Courses.Sections.Episodes.AddModel
+@{
+    ViewData["title"] = "افرودن قسمت  جدید";
+    Layout = "Shared/_ProfileLayout";
+}
+<div class="row ">
+    <div class="col-12 info shadow pl-0 pr-0">
+        <p class="title">
+            <i class="fa fa-address-card-o"></i>
+            @ViewData["title"]
+        </p>
+        <div class="info-body p-2">
+            <form method="post" class="row" enctype="multipart/form-data">
+                <div class="col-12 col-lg-6 col-md-6 ">
+                    @Html.EditorFor(f=>f.Title)
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 ">
+                    @Html.EditorFor(f=>f.EnglishTitle)
+                </div>
+                <div class="col-12 col-lg-12 col-md-6 ">
+                    @Html.EditorFor(f=>f.TimeSpan)
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 ">
+                    @Html.EditorFor(f=>f.VideoFile)
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 ">
+                    @Html.EditorFor(f=>f.AttachmentFile)
+                </div>
+                <div class="col-12">
+                    <button class="btn  btn-save  mt-3">ثبت اطلاعات</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
