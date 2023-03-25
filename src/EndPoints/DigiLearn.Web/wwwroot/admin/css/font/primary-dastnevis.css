@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "primary-font";
+	src: url("../../fonts/farsi-fonts/dastnevis-400.eot");
+	src: url("../../fonts/farsi-fonts/dastnevis-400.eot?#iefix") format("embedded-opentype"),
+		 url("../../fonts/farsi-fonts/dastnevis-400.woff2") format("woff2"),
+		 url("../../fonts/farsi-fonts/dastnevis-400.woff") format("woff"),
+		 url("../../fonts/farsi-fonts/dastnevis-400.ttf") format("truetype");
+	font-weight: 400;
+}

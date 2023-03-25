@@ -1,0 +1,92 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.8', 'repeat':'0', 'repeatDelay':'0.4'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'x':'-=26',
+								'y':'-=26',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'+=36',
+								'y':'+=42'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'0',
+								'y':'0'
+							}
+						}
+					]
+				}
+			">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'scale':'0.1',
+									'svgOrigin':'30 30'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'0.6'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1'
+								}
+							}
+						]
+					}
+				">
+					<path class="lievo-donotdraw lievo-altstroke" fill="#FFCF4B" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.7',
+									'vars':{
+										'opacity':'1',
+										'scale':'0.95',
+										'svgOrigin':'30 30'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'opacity':'0',
+										'scale':'1.62'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'scale':'1'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-altstroke" fill="#FFCF4B" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

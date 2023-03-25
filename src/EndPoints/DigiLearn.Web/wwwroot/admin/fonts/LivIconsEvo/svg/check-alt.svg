@@ -1,0 +1,51 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<circle fill="#3EDC81" transform="rotate(-90, 30, 30)" stroke="#1EBC61" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'0.2',
+							'vars':{
+								'delay':'0.4',
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			<polyline class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="20,29 28,37 42,23" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'drawSVG':'0%',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'1.5',
+							'vars':{
+								'drawSVG':'100%',
+								'ease':'Power1.easeIn'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

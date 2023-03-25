@@ -1,0 +1,55 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'1', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path class="lievo-likestroke lievo-altstroke" fill="#F9B32F" stroke="#F9B32F" stroke-width="0" d="M16.29,52.29L18.59,50H15c-0.89,0-1.34-1.08-0.71-1.71l4-4c0.94-0.94,2.35,0.48,1.41,1.41L17.41,48H21c0.89,0,1.33,1.08,0.71,1.71l-4,4C16.78,54.64,15.35,53.24,16.29,52.29z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.1',
+							'position':'0',
+							'vars':{
+								'opacity':'0',
+								'repeat':'7',
+								'repeatDelay':'0.2',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-likestroke lievo-altstroke" fill="#F9B32F" stroke="#F9B32F" stroke-width="0" d="M28.29,52.29L30.59,50H27c-0.89,0-1.34-1.08-0.71-1.71l4-4c0.93-0.93,2.35,0.48,1.41,1.41L29.41,48H33c0.89,0,1.34,1.08,0.71,1.71l-4,4C28.78,54.64,27.35,53.24,28.29,52.29z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.1',
+							'position':'0.2',
+							'vars':{
+								'opacity':'0',
+								'repeat':'7',
+								'repeatDelay':'0.2',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-likestroke lievo-altstroke" fill="#F9B32F" stroke="#F9B32F" stroke-width="0" d="M40.29,52.29L42.59,50H39c-0.89,0-1.33-1.08-0.71-1.71l4-4c0.94-0.94,2.35,0.48,1.41,1.41L41.41,48H45c0.89,0,1.33,1.08,0.71,1.71l-4,4C40.78,54.64,39.35,53.24,40.29,52.29z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.1',
+							'position':'0.4',
+							'vars':{
+								'opacity':'0',
+								'repeat':'7',
+								'repeatDelay':'0.2',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#ACBAC9" stroke="#8C9AA9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,7c6.38,0,11.74,4.26,13.44,10.09C48.39,17.81,53,22.86,53,29c0,6.63-5.37,12-12,12c-4.48,0-19.8,0-24,0c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2C15,13.27,21.27,7,29,7z"/>
+		</g>
+	</g>
+</svg>

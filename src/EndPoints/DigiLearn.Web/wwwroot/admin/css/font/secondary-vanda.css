@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "secondary-font";
+	src: url("../../fonts/farsi-fonts/vanda-300.eot");
+	src: url("../../fonts/farsi-fonts/vanda-300.eot?#iefix") format("embedded-opentype"),
+		 url("../../fonts/farsi-fonts/vanda-300.woff2") format("woff2"),
+		 url("../../fonts/farsi-fonts/vanda-300.woff") format("woff"),
+		 url("../../fonts/farsi-fonts/vanda-300.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "secondary-font";
+	src: url("../../fonts/farsi-fonts/vanda-400.eot");
+	src: url("../../fonts/farsi-fonts/vanda-400.eot?#iefix") format("embedded-opentype"),
+		 url("../../fonts/farsi-fonts/vanda-400.woff2") format("woff2"),
+		 url("../../fonts/farsi-fonts/vanda-400.woff") format("woff"),
+		 url("../../fonts/farsi-fonts/vanda-400.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "secondary-font";
+	src: url("../../fonts/farsi-fonts/vanda-500.eot");
+	src: url("../../fonts/farsi-fonts/vanda-500.eot?#iefix") format("embedded-opentype"),
+		 url("../../fonts/farsi-fonts/vanda-500.woff2") format("woff2"),
+		 url("../../fonts/farsi-fonts/vanda-500.woff") format("woff"),
+		 url("../../fonts/farsi-fonts/vanda-500.ttf") format("truetype");
+	font-weight: 500;
+}

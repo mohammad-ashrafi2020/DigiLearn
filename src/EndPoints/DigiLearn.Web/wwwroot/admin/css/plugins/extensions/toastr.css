@@ -1,0 +1,46 @@
+/* toast css */
+/* ----------*/
+/* toast container opacity */
+#toast-container>div {
+	opacity: 0.9;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	filter: alpha(opacity=90);
+	max-width: none;
+}
+
+/* toast container hover shadow */
+.toast-container>div {
+	box-shadow: none !important;
+}
+
+/* toast background colors starts */
+.toast {
+	background-color: #5A8DEE;
+}
+
+.toast-success {
+	background-color: #39DA8A;
+}
+
+.toast-error {
+	background-color: #FF5B5C;
+}
+
+.toast-info {
+	background-color: #00CFDD;
+}
+
+.toast-warning {
+	background-color: #FDAC41;
+}
+
+.toast-title,
+.toast-message {
+    line-height: 1.85;
+}
+
+button.toast-close-button {
+	overflow: hidden;
+	margin-top: -4px;
+	outline: none;
+}

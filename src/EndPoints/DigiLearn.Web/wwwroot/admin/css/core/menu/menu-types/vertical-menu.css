@@ -1,0 +1,351 @@
+/*=========================================================================================
+    Description: A calssic vertical modern style menu with expand and collops support. It support
+    light & dark version, filpped layout, right side icons, native scroll and borders menu
+    item seperation.
+==========================================================================================*/
+body.vertical-layout.vertical-menu-modern .main-menu .navigation>li>a>i {
+	width: 1.6rem !important;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	margin-left: 1rem;
+	float: right;
+}
+
+body.vertical-layout.vertical-menu-modern .main-menu .navigation>li>a>i:not(.menu-livicon) {
+	font-size: 1.4rem;
+}
+
+body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content>li>a {
+	-webkit-transition: all 0.35s ease !important;
+	transition: all 0.35s ease !important;
+}
+
+body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content>li>a>i {
+	margin-left: 1.25rem;
+}
+
+body.vertical-layout.vertical-menu-modern .main-menu {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+	width: 260px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation>li>a>span.badge {
+	position: absolute;
+	left: 7px;
+	top: 11px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+	content: '\ea4f';
+	font-family: 'boxicons';
+	font-size: 1.2rem;
+	color: #8494A7;
+	display: inline-block;
+	position: absolute;
+	left: 7px;
+	top: 8.5px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: -webkit-transform 0.4s ease-in-out;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.open>a:not(.mm-next):after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .footer {
+	margin-right: 260px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar.fixed-top {
+	right: 78px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
+	width: 78px;
+	-webkit-transition: 300ms ease all;
+	transition: 300ms ease all;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navbar-header .brand-text,
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .modern-nav-toggle {
+	display: none;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation-header {
+	margin: 0;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li a {
+	display: block;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li a .menu-title,
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li a .badge {
+	display: none;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li:last-child {
+	margin-bottom: 1.25rem !important;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.active a {
+	background: rgba(90, 141, 238, 0.2);
+	box-shadow: none;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.menu-collapsed-open {
+	background: rgba(90, 141, 238, 0.2);
+	border: none;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation {
+	overflow: visible;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation>li.navigation-header span {
+	display: none;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation>li>a {
+	text-overflow: inherit;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation>li>a>span.badge {
+	float: none !important;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation>li>a i {
+	margin-left: 2rem;
+	float: right;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded {
+	width: 260px;
+	box-shadow: -5px 0 25px 0 rgba(55, 70, 95, 0.3);
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation>li.navigation-header span {
+	display: block;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation>li>a i {
+	margin-left: 1rem;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation>li>a>span.badge {
+	position: absolute;
+	left: 7px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation li.has-sub>a:not(.mm-next):after {
+	content: '\ea4f';
+	font-family: 'boxicons';
+	font-size: 1.2rem;
+	color: #8494A7;
+	display: inline-block;
+	position: absolute;
+	left: 7px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: -webkit-transform 0.4s ease-in-out;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation li.open>a:not(.mm-next):after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .brand-text {
+	display: inline;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .modern-nav-toggle {
+	display: block;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar-static-top .navbar-wrapper,
+body.vertical-layout.vertical-menu-modern.menu-collapsed .app-content,
+body.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
+	margin-right: 78px;
+}
+
+@media (min-width: 992px) {
+	body.vertical-layout.vertical-menu-modern .main-menu {
+		border-left: 1px solid #DFE3E7;
+	}
+
+	body.vertical-layout.vertical-menu-modern .main-menu.menu-dark {
+		border-left: 1px solid #464D5C;
+	}
+
+	body.vertical-layout.vertical-menu-modern .footer {
+		margin-right: 260px;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	body.vertical-layout.vertical-menu-modern .main-menu {
+		width: 0;
+	}
+
+	body.vertical-layout.vertical-menu-modern .main-menu .navigation li.navigation-header span {
+		display: none;
+	}
+
+	body.vertical-layout.vertical-menu-modern .content,
+	body.vertical-layout.vertical-menu-modern .footer {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 767.98px) {
+	body.vertical-layout.vertical-menu-modern .main-menu {
+		width: 0;
+	}
+
+	body.vertical-layout.vertical-menu-modern .content,
+	body.vertical-layout.vertical-menu-modern .footer {
+		margin-right: 0;
+	}
+}
+
+/*=========================================================================================
+    Description: A overlay style vertical menu with show and hide support. It support
+    light & dark version, filpped layout, right side icons, native scroll and borders menu
+    item seperation.
+==========================================================================================*/
+.vertical-overlay-menu .content {
+	margin-right: 0;
+}
+
+.vertical-overlay-menu .navbar .navbar-header {
+	float: right;
+	width: 260px;
+}
+
+.vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header {
+	padding: 0;
+}
+
+.vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header .navbar-brand {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 0;
+}
+
+.vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header .navbar-brand .brand-logo {
+	height: 27px;
+	width: 35px;
+}
+
+.vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header .navbar-brand .brand-logo .logo {
+	height: 27px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	right: 6px;
+}
+
+.vertical-overlay-menu .navbar[data-nav='brand-center'] .navbar-header .navbar-brand .brand-text {
+	color: #FFFFFF;
+	padding-right: 1rem;
+	font-size: 1.57rem;
+}
+
+.vertical-overlay-menu .main-menu,
+.vertical-overlay-menu.menu-hide .main-menu {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+	width: 260px;
+	right: -260px;
+}
+
+.vertical-overlay-menu .main-menu .navigation>li>a>span.badge {
+	position: absolute;
+	left: 20px;
+}
+
+.vertical-overlay-menu .main-menu .navigation>li>a>i {
+	margin-left: 14px;
+	float: right;
+	width: 1.6rem !important;
+}
+
+.vertical-overlay-menu .main-menu .navigation>li ul li>a {
+	-webkit-transition: all 0.35s ease !important;
+	transition: all 0.35s ease !important;
+}
+
+.vertical-overlay-menu .main-menu .navigation>li ul li>a>i {
+	margin-left: 1.25rem;
+}
+
+.vertical-overlay-menu .main-menu .navigation>li ul li:hover a {
+	padding-right: 35px;
+}
+
+.vertical-overlay-menu .main-menu .navigation li.has-sub>a:not(.mm-next):after {
+	content: '\ea4f';
+	font-family: 'boxicons';
+	font-size: 1.2rem;
+	color: #8494A7;
+	display: inline-block;
+	position: absolute;
+	left: 7px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: -webkit-transform 0.4s ease-in-out;
+}
+
+.vertical-overlay-menu .main-menu .navigation li.open>a:not(.mm-next):after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.vertical-overlay-menu.menu-open .main-menu {
+	opacity: 1;
+	-webkit-transform: translate3d(-260px, 0, 0);
+	transform: translate3d(-260px, 0, 0);
+	-webkit-transition: width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, transform 0.25s;
+	transition: width 0.25s, opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+	top: 0;
+}
+
+@media (max-width: 1199.98px) {
+	.horizontal-layout.vertical-overlay-menu .app-content .content-wrapper {
+		margin-top: 3.5rem;
+	}
+}

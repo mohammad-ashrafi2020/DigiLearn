@@ -1,0 +1,116 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-solidicon">
+			<path fill="#AE7C5B" stroke="#AE7C5B" stroke-width="2" stroke-miterlimit="10" d="M30.02,7C30.56,7,31,7.44,31,7.98V53h-2V8.02C29,7.46,29.46,7,30.02,7z"/>
+			<path fill="#F6C4A3" stroke="#DFAD8C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49,16l-4,5H15V11h30L49,16z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M44,16l-3,4l-22,2V10l22,2L44,16z'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'path':'M49,16l-4,5H15V11h30L49,16z'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#F6C4A3" stroke="#DFAD8C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M11,32l4-5h30v10H15L11,32z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M16,32l3-4l22-2v12l-22-2L16,32z'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'path':'M11,32l4-5h30v10H15L11,32z'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class=" lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_two_pointers">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M49,16l-4,5H15V11h30L49,16z M11,32l4-5h30v10H15L11,32z M60,0H0v60h60V0z" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M44,16l-3,4l-22,2V10l22,2L44,16z M16,32l3-4l22-2v12l-22-2L16,32z M60,0H0v60h60V0z'
+									}
+								},
+								{
+									'duration':'1',
+									'position':'+=1',
+									'vars':{
+										'path':'M49,16l-4,5H15V11h30L49,16z M11,32l4-5h30v10H15L11,32z M60,0H0v60h60V0z'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+			</defs>
+			<path clip-path="url(#livicon_two_pointers)" fill="#AE7C5B" stroke="#AE7C5B" stroke-width="2" stroke-miterlimit="10" d="M30.02,7C30.56,7,31,7.44,31,7.98V53h-2V8.02C29,7.46,29.46,7,30.02,7z"/>
+		
+			<path class="lievo-altstroke" fill="#F6C4A3" stroke="#DFAD8C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49,16l-4,5H15V11h30L49,16z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M44,16l-3,4l-22,2V10l22,2L44,16z'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'path':'M49,16l-4,5H15V11h30L49,16z'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#F6C4A3" stroke="#DFAD8C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M11,32l4-5h30v10H15L11,32z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M16,32l3-4l22-2v12l-22-2L16,32z'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'path':'M11,32l4-5h30v10H15L11,32z'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

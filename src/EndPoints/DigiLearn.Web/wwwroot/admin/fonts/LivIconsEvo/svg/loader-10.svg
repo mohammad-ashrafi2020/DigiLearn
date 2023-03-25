@@ -1,0 +1,55 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path fill="#6BB9F0" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M17,28.32L7,11h20L17,28.32z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'rotation':'360',
+								'svgOrigin':'17 16.75',
+								'force3D':'true',
+								'ease':'none'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#EF7265" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M43,28.32L33,11h20L43,28.32z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'rotation':'360',
+								'svgOrigin':'43 16.75',
+								'force3D':'true',
+								'ease':'none'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="#36D7B7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M30,50.32L20,33h20L30,50.32z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'rotation':'360',
+								'svgOrigin':'30 38.75',
+								'force3D':'true',
+								'force3D':'true',
+								'ease':'none'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

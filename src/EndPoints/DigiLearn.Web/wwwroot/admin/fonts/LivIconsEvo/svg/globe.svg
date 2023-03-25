@@ -1,0 +1,145 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'0.7', 'repeat':'3', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-lineicon lievo-filledicon">
+			<defs>
+				<mask id="livicon_globe">
+					<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke lievo-savefill" fill="#ffffff" cx="30" cy="30" r="23.9"/>
+				</mask>
+			</defs>
+			<circle transform="rotate(-90, 30, 30)" stroke="#3498DB" stroke-width="0" fill="#9ee5ff" cx="30" cy="30" r="24"/>
+			<g mask="url(#livicon_globe)">
+				<g>
+					<line class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="20" x2="52" y2="20"/>
+					<line class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="6" y1="30" x2="56" y2="30"/>
+					<line class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="40" x2="52" y2="40"/>
+				</g>
+				<g>
+					<path class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,55C16.19,55,5,43.81,5,30C5,16.19,16.19,5,30,5" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M29.95,55C21.85,50.08,16,40.17,16,30c0-10.17,5.85-20.08,13.95-25'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.95,55C21.85,50.08,16,40.17,16,30c0-10.17,5.85-20.08,13.95-25" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,55c0-7.68,0-14.41,0-25c0-10.59,0-16.24,0-25'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,55c0-7.68,0-14.41,0-25c0-10.59,0-16.24,0-25" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,55c8.1-4.92,14-14.83,14-25c0-10.17-5.9-20.08-14-25'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-altstroke" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,55c8.1-4.92,14-14.83,14-25c0-10.17-5.9-20.08-14-25" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,5c13.81,0,25,11.19,25,25c0,13.81-11.19,25-25,25'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+			<circle class="lievo-altstroke" transform="rotate(-90, 30, 30)" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="24"/>	
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<mask id="livicon_globe_s">
+					<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke lievo-savefill" fill="#ffffff" cx="30" cy="30" r="26"/>
+				</mask>
+			</defs>
+			<g mask="url(#livicon_globe_s)">
+				<circle fill="#34495E" stroke="#34495E" stroke-width="0" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="25"/>
+				<g>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="6" y1="20" x2="54" y2="20"/>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="4" y1="30" x2="56" y2="30"/>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="6" y1="40" x2="54" y2="40"/>
+				</g>
+				<g>
+					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,56.04C15.62,56.04,3.96,44.38,3.96,30C3.96,15.62,15.62,3.96,30,3.96" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M29.95,56.04C21.51,50.92,15.42,40.6,15.42,30c0-10.59,6.09-20.92,14.53-26.04'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.95,56.04C21.51,50.92,15.42,40.6,15.42,30c0-10.59,6.09-20.92,14.53-26.04" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,56.04c0-8,0-15.01,0-26.04c0-11.04,0-16.92,0-26.04'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,56.04c0-8,0-15.01,0-26.04c0-11.04,0-16.92,0-26.04" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,56.04C38.44,50.92,44.58,40.6,44.58,30c0-10.59-6.14-20.92-14.58-26.04'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,56.04C38.44,50.92,44.58,40.6,44.58,30c0-10.59-6.14-20.92-14.58-26.04" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,3.96c14.38,0,26.04,11.66,26.04,26.04c0,14.38-11.66,26.04-26.04,26.04'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<circle class="lievo-solidbg" transform="rotate(-90, 30, 30)" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="25"/>
+			</g>
+		</g>
+	</g>
+</svg>

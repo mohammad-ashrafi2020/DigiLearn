@@ -1,0 +1,78 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="xy" data-animoptions="{'duration':'0.6', 'repeat':'1', 'repeatDelay':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<rect class="lievo-likestroke lievo-altstroke" x="29" y="19" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+			<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="29.05" y1="27" x2="29.05" y2="41"/>
+			<g opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'1',
+								'scaleX':'1',
+								'scaleY':'1',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scaleX':'2',
+								'scaleY':'1.5'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'0',
+								'scaleX':'4',
+								'scaleY':'2'
+							}
+						}
+					]
+				}
+			">
+				<rect class="lievo-likestroke lievo-altstroke" x="29" y="19" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="29.05" y1="27" x2="29.05" y2="41"/>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<rect class="lievo-likestroke lievo-altstroke" x="29" y="19" fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+			<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="29.05" y1="27" x2="29.05" y2="41"/>
+			<g opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'1',
+								'scaleX':'1',
+								'scaleY':'1',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scaleX':'2',
+								'scaleY':'1.5'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'0',
+								'scaleX':'4',
+								'scaleY':'2'
+							}
+						}
+					]
+				}
+			">
+				<rect class="lievo-likestroke lievo-altstroke" x="29" y="19" fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="29.05" y1="27" x2="29.05" y2="41"/>
+			</g>
+		</g>
+	</g>
+</svg>

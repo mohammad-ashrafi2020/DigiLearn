@@ -1,0 +1,119 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-animoptions="{'duration':'0.25'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_connect_s">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" y="3" width="48" height="54"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_connect_s)">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'+=4',
+										'ease':'Back.easeOut'
+									}
+								}
+							]
+						}
+					">
+						<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="19" y1="30" x2="-1" y2="30"/>
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.01,40L29.01,40C23.48,40,19,35.52,19,30s4.48-10,10-10h0.01" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'0.5',
+										'position':'0.5',
+										'vars':{
+											'path':'M36,37.14C34.2,38.91,31.73,40,29,40c-5.52,0-10-4.48-10-10s4.48-10,10-10c2.73,0,5.2,1.09,7,2.86'
+										}
+									}
+								]
+							}
+						"/>
+					</g>
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'-=4',
+										'ease':'Back.easeOut'
+									}
+								}
+							]
+						}
+					">
+						<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="41" y1="30" x2="59" y2="30"/>
+						<circle class="lievo-altstroke" fill="#4C5A69" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="37" cy="30" r="4"/>
+					</g>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_connect_e">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" y="3" width="48" height="54"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_connect_e)">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'-=4',
+										'ease':'Back.easeIn'
+									}
+								}
+							]
+						}
+					">
+						<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="23" y1="30" x2="3" y2="30"/>
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40,37.14C38.2,38.91,35.73,40,33,40c-5.52,0-10-4.48-10-10s4.48-10,10-10c2.73,0,5.2,1.09,7,2.86" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'0.5',
+										'position':'0',
+										'vars':{
+											'path':'M33.01,40L33.01,40C27.48,40,23,35.52,23,30s4.48-10,10-10h0.01'
+										}
+									}
+								]
+							}
+						"/>
+					</g>
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'+=4',
+										'ease':'Back.easeIn'
+									}
+								}
+							]
+						}
+					">
+						<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="37" y1="30" x2="58" y2="30"/>
+						<circle class="lievo-altstroke" fill="#4C5A69" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="33" cy="30" r="4"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

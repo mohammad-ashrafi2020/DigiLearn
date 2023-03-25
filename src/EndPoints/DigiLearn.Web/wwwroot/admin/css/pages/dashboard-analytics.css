@@ -1,0 +1,129 @@
+/* dashboard analytics page css */
+/*------------------------------*/
+#donut-chart .apexcharts-canvas {
+	margin: 0 auto;
+}
+
+.icon-light {
+	color: #B3C0CE;
+}
+
+.show>.btn-outline-secondary.dropdown-toggle {
+	color: #FFFFFF !important;
+}
+
+.activity-content {
+	margin-bottom: 2.13rem;
+}
+
+#bar-negative-chart .apexcharts-series[seriesName='RetainedxClients'] {
+	-webkit-transform: scaleY(1.08);
+	-ms-transform: scaleY(1.08);
+	transform: scaleY(1.08);
+}
+
+.widget-todo .dropdown .dropdown-toggle:after {
+	/* widget todo-task list - dropdown arrow position */
+	right: 0.1rem;
+	color: #B3C0CE;
+}
+
+.widget-todo .widget-todo-list-wrapper {
+	padding-right: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item {
+	padding: 0.6rem 0.5rem 0.1rem 1.5rem;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item .widget-todo-item-action .dropdown {
+	margin-top: -2px;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item .widget-todo-title-area i {
+	visibility: hidden;
+	color: #828D99;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item:hover {
+	background-color: #F2F4F4;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item:hover .widget-todo-title-area i {
+	visibility: visible;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item.completed .widget-todo-title {
+	text-decoration: line-through;
+}
+
+.widget-todo-title {
+	line-height: 2;
+}
+
+.widget-timeline .timeline-text {
+	color: #828D99;
+	font-size: 13px;
+}
+
+.widget-timeline .timeline-content {
+	color: #304156;
+	font-size: 13px;
+	font-weight: 500;
+	background-color: transparent !important;
+	padding-right: 0 !important;
+}
+
+.widget-timeline .timeline-time {
+	font-size: 0.8rem !important;
+}
+
+@media screen and (max-width: 600px) {
+	.widget-todo-list-wrapper .widget-todo-title-wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.widget-todo-list-wrapper .widget-todo-title-wrapper .widget-todo-title-area {
+		margin-left: auto;
+	}
+
+	.widget-todo-list-wrapper .widget-todo-title-wrapper .widget-todo-item-action {
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 960px) {
+
+	.activity-card,
+	.profit-report-card,
+	.sales-card,
+	.growth-card {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		min-width: 50%;
+	}
+}
+
+@media screen and (max-width: 1320px) and (min-width: 1200px) {
+	.dashboard-referral-impression .donut-chart-wrapper ul li {
+		font-size: 0.8rem;
+	}
+
+	#primary-line-chart,
+	#warning-line-chart {
+		display: none;
+	}
+}
+
+.profit-content h5 {
+	line-height: 1.45;
+	margin-top: -2px;
+}

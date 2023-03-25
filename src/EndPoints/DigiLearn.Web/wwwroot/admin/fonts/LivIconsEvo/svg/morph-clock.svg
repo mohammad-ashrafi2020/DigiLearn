@@ -1,0 +1,75 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.6'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90, 30, 30)" fill="#FDE3A7" stroke="#932210" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="31" cy="31" r="23"/>
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="31" x2="44" y2="31" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'+=120',
+									'svgOrigin':'31 31',
+									'force3D':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="31" x2="31" y2="14" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'+=1440',
+									'svgOrigin':'31 31',
+									'force3D':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90, 30, 30)" fill="#FDE3A7" stroke="#932210" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="31" cy="31" r="23"/>
+				<line class="lievo-altstroke lievo-solidbg" transform="matrix(-0.49999, 0.86602, -0.86602, -0.49999, 73.3468, 19.6532)" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="31" x2="44" y2="31" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'-=120',
+									'svgOrigin':'31 31',
+									'force3D':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="31" x2="31" y2="14" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'-=1440',
+									'svgOrigin':'31 31',
+									'force3D':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

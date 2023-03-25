@@ -1,0 +1,43 @@
+/* FAQ page css */
+/*--------------*/
+.faq-bg {
+	/* background image */
+	background: url(..//admin/images/pages/faq.png) repeat;
+}
+
+.faq-search button {
+	/* search button position */
+	left: 8px;
+	top: 6px;
+}
+
+.faq .wrapper-content {
+	display: none;
+}
+
+.faq .wrapper-content.active {
+	display: block;
+}
+
+@media only screen and (max-width: 575px) {
+	.faq-title {
+		font-size: 1.73rem;
+	}
+
+	.faq-subtitle {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.faq-search .faq-search-width {
+		/* search box responsive */
+		width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.faq-bg {
+		padding: 5rem 0 !important;
+	}
+}

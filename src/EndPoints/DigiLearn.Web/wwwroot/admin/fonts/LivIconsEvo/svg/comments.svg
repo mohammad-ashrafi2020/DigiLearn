@@ -1,0 +1,162 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<path fill="#AB69C6" stroke="#8E44AD" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,11h17c1.1,0,2,0.9,2,2v22c0,1.1-0.9,2-2,2H21l-8,8v-8H9c-1.1,0-2-0.9-2-2V13c0-1.1,0.9-2,2-2H26" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'13 45'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'3',
+							'position':'1',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#5EFCA1" stroke="#4EEC91" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40,27h11c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2h-2v4l-4-4H29c-1.1,0-2-0.9-2-2V29c0-1.1,0.9-2,2-2H40" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'49 49'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'3',
+							'position':'3',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,37h-1h-1l-8,8v-8H9c-1.1,0-2-0.9-2-2V13c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v9v1" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'path':'M44.41,36.41C44.05,36.78,43.55,37,43,37H21l-8,8v-8H9c-1.1,0-2-0.9-2-2V13c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v22C45,35.55,44.78,36.05,44.41,36.41',
+								'svgOrigin':'13 45'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'1',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'3',
+							'vars':{
+								'path':'M23,37h-1h-1l-8,8v-8H9c-1.1,0-2-0.9-2-2V13c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v9v1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40,27h11c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2h-2v4l-4-4H29c-1.1,0-2-0.9-2-2V29c0-1.1,0.9-2,2-2H40" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'49 49'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'3',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,29c0-3.31,2.69-6,6-6h16V13c0-1.1-0.9-2-2-2H26H9c-1.1,0-2,0.9-2,2v22c0,1.1,0.9,2,2,2h4v8l8-8h2V29z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'path':'M43,37c1.39,0,2-0.67,2-2V23V13c0-1.1-0.9-2-2-2H26H9c-1.1,0-2,0.9-2,2v22c0,1.1,0.9,2,2,2h4v8l8-8h2H43z',
+								'svgOrigin':'13 45'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'1',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'3.2',
+							'vars':{
+								'path':'M23,29c0-3.31,2.69-6,6-6h16V13c0-1.1-0.9-2-2-2H26H9c-1.1,0-2,0.9-2,2v22c0,1.1,0.9,2,2,2h4v8l8-8h2V29z',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40,27h11c1.1,0,2,0.9,2,2v16c0,1.1-0.9,2-2,2h-2v4l-4-4H29c-1.1,0-2-0.9-2-2V29c0-1.1,0.9-2,2-2H40" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'49 49'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'3',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

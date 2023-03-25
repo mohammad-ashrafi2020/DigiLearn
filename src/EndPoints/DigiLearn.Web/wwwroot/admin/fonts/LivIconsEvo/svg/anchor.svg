@@ -1,0 +1,97 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-solidshift="x" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'position':'0',
+						'vars':{
+							'x':'+=72',
+							'y':'-=72',
+							'rotation':'+=30',
+							'transformOrigin':'center center',
+							'ease':'Power1.easeIn'
+						}
+					},
+					{
+						'duration':'0',
+						'vars':{
+							'x':'-=72',
+							'rotation':'-=60'
+						}
+					},
+					{
+						'duration':'1',
+						'position':'+=1',
+						'vars':{
+							'y':'+=72'
+						}
+					},
+					{
+						'duration':'0.8',
+						'position':'+=0.2',
+						'vars':{
+							'rotation':'+=30',
+							'ease':'Back.easeOut.config(2)'
+						}
+					}
+				]
+			}
+		">
+			<path class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M48.98,38.99C45.61,46.09,38.38,51,30,51c-8.38,0-15.62-4.91-18.98-12.01"/>
+			<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="9.72,43.82 11.02,38.99 15.85,40.28"/>
+			<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="50.28,43.82 48.98,38.99 44.15,40.28"/>
+			<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="16" x2="30" y2="51"/>
+			<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="25" y1="23.01" x2="35" y2="23.01"/>
+			<circle class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" cx="30" cy="12.5" r="3.5"/>
+		</g>
+		
+		<g class="lievo-solidicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'position':'0',
+						'vars':{
+							'x':'+=72',
+							'y':'-=72',
+							'rotation':'+=30',
+							'transformOrigin':'center center',
+							'ease':'Power1.easeIn'
+						}
+					},
+					{
+						'duration':'0',
+						'vars':{
+							'x':'-=72',
+							'rotation':'-=60'
+						}
+					},
+					{
+						'duration':'1',
+						'position':'+=1',
+						'vars':{
+							'y':'+=72'
+						}
+					},
+					{
+						'duration':'0.8',
+						'position':'+=0.2',
+						'vars':{
+							'rotation':'+=30',
+							'ease':'Back.easeOut.config(2)'
+						}
+					}
+				]
+			}
+		">
+			<path class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="3" stroke-miterlimit="10" d="M48.98,39.49C45.61,46.59,38.38,51.5,30,51.5c-8.38,0-15.62-4.91-18.98-12.01"/>
+			<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="9.72,44.32 11.02,39.49 15.85,40.78"/>
+			<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="50.28,44.32 48.98,39.49 44.15,40.78"/>
+			<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="30" y1="15.5" x2="30" y2="51.5"/>
+			<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="25" y1="23.51" x2="35" y2="23.51"/>
+			<circle fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" cx="30" cy="12" r="3.5"/>
+		</g>
+	</g>
+</svg>

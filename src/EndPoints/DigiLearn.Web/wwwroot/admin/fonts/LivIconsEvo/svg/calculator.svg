@@ -1,0 +1,378 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7h17c1.1,0,2,0.9,2,2v42c0,1.1-0.9,2-2,2H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2H30"/>
+			<polyline fill="#DADFE1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,11 45,11 45,25 15,25 15,11 30,11"/>
+			
+			<rect x="15" y="29" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+
+			<rect x="23" y="29" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'3'
+						}
+					]
+				}
+			"/>
+
+			<rect x="31" y="29" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'6'
+						}
+					]
+				}
+			"/>
+
+			<rect class="lievo-altstroke" x="41" y="29" fill="#F24D44" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'10'
+						}
+					]
+				}
+			"/>
+
+			<g>
+				<rect x="15" y="37" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="23" y="37" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="31" y="37" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="15" y="45" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="23" y="45" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="31" y="45" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect x="41" y="37" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="12"/>
+			</g>
+
+			<g>
+				<rect class="lievo-donotdraw lievo-likestroke lievo-altstroke" stroke="none" x="20" y="14" fill="#34495E" width="2" height="8" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'x':'+=20'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'-=10'
+								},
+								'position':'3'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>
+				<polygon class="lievo-donotdraw lievo-likestroke lievo-altstroke" stroke="none" fill="#34495E" points="32,22 26,22 26,17.2 30,17.2 30,15.6 26,15.6 26,14 32,14 32,18.8 28,18.8 28,20.4 32,20.4" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'x':'+=10'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								},
+								'position':'3'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>
+				<polygon class="lievo-donotdraw lievo-likestroke lievo-altstroke" stroke="none" fill="#34495E" points="42,22 36,22 36,20.4 40,20.4 40,18.8 36,18.8 36,17.2 40,17.2 40,15.6 36,15.6 36,14 42,14" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7h17c1.1,0,2,0.9,2,2v42c0,1.1-0.9,2-2,2H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2H30"/>
+			<polyline class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,11 45,11 45,23 15,23 15,11 30,11"/>
+			
+			<rect class="lievo-solidbg" x="15" y="29" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+			
+			<rect class="lievo-solidbg" x="23" y="29" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'3'
+						}
+					]
+				}
+			"/>
+			
+			<rect class="lievo-solidbg" x="31" y="29" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'6'
+						}
+					]
+				}
+			"/>
+			
+			<rect class="lievo-solidbg" x="41" y="29" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'0.62',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+
+							},
+							'position':'10'
+						}
+					]
+				}
+			"/>
+			
+			<g>
+				<rect class="lievo-solidbg" x="15" y="37" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="23" y="37" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="31" y="37" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="15" y="45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="23" y="45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="31" y="45" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="4"/>
+				<rect class="lievo-solidbg" x="41" y="37" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="4" height="12"/>
+			</g>
+			<g>
+				<rect class="lievo-donotdraw lievo-likestroke" x="22" y="12" fill="#34495E" width="2" height="10" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'x':'+=20'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'-=10'
+								},
+								'position':'3'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>
+				<polygon class="lievo-donotdraw lievo-likestroke" fill="#34495E" points="34,22 28,22 28,16 32,16 32,14 28,14 28,12 34,12 34,18 30,18 30,20 34,20" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'x':'+=10'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								},
+								'position':'3'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>
+				<polygon class="lievo-donotdraw lievo-likestroke" fill="#34495E" points="44,22 38,22 38,20 42,20 42,18 38,18 38,16 42,16 42,14 38,14 38,12 44,12" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'vars':{
+									'opacity':'1'
+								},
+								'position':'6'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0'
+								},
+								'position':'10'
+							}
+						]
+					}
+				"/>/>
+			</g>
+		</g>
+	</g>
+</svg>

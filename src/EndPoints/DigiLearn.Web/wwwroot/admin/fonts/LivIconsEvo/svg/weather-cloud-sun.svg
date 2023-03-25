@@ -1,0 +1,85 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'3', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'rotation':'360',
+								'transformOrigin':'center center',
+								'force3D':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<path fill="#ffcf4b" stroke="#f5ae3d" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,13c5.52,0,10,4.48,10,10c0,5.52-4.48,10-10,10s-10-4.48-10-10C27,17.48,31.48,13,37,13z"/>
+				<path fill="none" stroke="#f5ae3d" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,9V7 M46.9,13.1l1.41-1.41 M51,23h2 M46.9,32.9l1.41,1.41 M37,37v2 M27.1,32.9l-1.41,1.41 M23,23h-2 M27.1,13.1l-1.41-1.41"/>
+			</g>
+			<path fill="#ECF0F1" stroke="#c2c6c7" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M28.04,18.48c6.1,0,11.23,4.08,12.85,9.65C46.59,28.81,51,33.65,51,39.52C51,45.86,45.86,51,39.52,51c-4.28,0-18.94,0-22.96,0C11.28,51,7,46.72,7,41.43c0-4.63,3.29-8.49,7.66-9.38C14.54,24.58,20.59,18.48,28.04,18.48z"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_weather_cl_sun_l">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M16.13,55C8.89,55,3,49.11,3,41.87c0-5.15,3.03-9.75,7.53-11.88c0.55-3.39,2.13-6.52,4.59-9.02c3.18-3.23,7.43-5.01,11.96-5.01c6.57,0,12.53,3.91,15.23,9.76C48.55,27.57,53,33.34,53,40.04C53,48.29,46.29,55,38.04,55H16.13z M-12,72h84v-84h-84V72z"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_weather_cl_sun_l)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'360',
+									'transformOrigin':'center center',
+									'force3D':'true'
+								},
+								'position':'0'
+							}
+						]
+					}
+				">
+					<path class="lievo-altstroke" fill="#F39C12" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,13c5.52,0,10,4.48,10,10c0,5.52-4.48,10-10,10s-10-4.48-10-10C27,17.48,31.48,13,37,13z"/>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,9V7 M46.9,13.1l1.41-1.41 M51,23h2 M46.9,32.9l1.41,1.41 M37,37v2 M27.1,32.9l-1.41,1.41 M23,23h-2 M27.1,13.1l-1.41-1.41"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M27.09,19.96c5.82,0,10.72,3.89,12.27,9.21C44.79,29.82,49,34.44,49,40.04C49,46.09,44.1,51,38.04,51c-4.09,0-18.08,0-21.91,0
+			C11.09,51,7,46.91,7,41.87c0-4.42,3.14-8.1,7.31-8.95C14.2,25.78,19.97,19.96,27.09,19.96z"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_weather_cl_sun_s">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M-9,69V-9h78v78H-9z M27.09,16.96c-4.26,0-8.26,1.67-11.25,4.71c-2.44,2.48-3.96,5.62-4.39,9.01C8.25,30,5.74,32.95,5.1,34.87c-0.8,2.38-1.1,4.19-1.1,7C4,48.56,9.44,54,16.13,54h21.91C45.74,54,52,47.74,52,40.04c0-6.41-4.36-11.91-10.4-13.49C39.15,20.82,33.42,16.96,27.09,16.96z"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_weather_cl_sun_s)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'360',
+									'transformOrigin':'center center',
+									'force3D':'true'
+								},
+								'position':'0'
+							}
+						]
+					}
+				">
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37.1,13c5.52,0,10,4.48,10,10c0,5.52-4.48,10-10,10s-10-4.48-10-10C27.1,17.48,31.58,13,37.1,13z"/>
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37.1,9V7 M47,13.1l1.41-1.41 M51.1,23h2 M47,32.9l1.41,1.41 M37.1,37v2 M27.2,32.9l-1.41,1.41 M23.1,23h-2 M27.2,13.1l-1.41-1.41"/>
+				</g>
+			</g>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M27.09,19.96c5.82,0,10.72,3.89,12.27,9.21C44.79,29.82,49,34.44,49,40.04C49,46.09,44.1,51,38.04,51c-4.09,0-18.08,0-21.91,0
+			C11.09,51,7,46.91,7,41.87c0-4.42,3.14-8.1,7.31-8.95C14.2,25.78,19.97,19.96,27.09,19.96z"/>
+		</g>
+	</g>
+</svg>

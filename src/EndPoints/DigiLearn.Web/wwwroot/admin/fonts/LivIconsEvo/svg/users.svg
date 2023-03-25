@@ -1,0 +1,135 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<path fill="none" stroke="#d99978" stroke-width="2" stroke-miterlimit="10" d="M45,49h8c0-1.9,0-7.18,0-7.18c-1.52-1.59-11.73-3.89-11.92-6.82v-3.37c1.66-0.94,1.94-3.74,2.16-4.75c1.93-0.21,2.28-3.93,0.95-4.74c0.6-1.74,1.25-6.47,0.43-8.32C43.8,11.97,41.77,9,36.59,9c-1.07,0.02-2.44,0.09-3.52,0.44" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'5'
+						}
+					]
+				}
+			"/>
+			<path fill="#f0c7b1" stroke="#daa488" stroke-width="2" stroke-miterlimit="10" d="M26,7c-2.15,0.04-4.17,0.25-4.8,2c-2.63-0.06-3.25,1.44-4.2,3.58s-0.39,7.72,0.3,9.73c-1.54,0.94-1.04,5.44,1.2,5.58c0.26,1.17,0.48,4.22,2.4,5.3v3.9C20.83,40.5,8.76,43.16,7,45c0,0,0,3.55,0,6h38c0-2.2,0-6,0-6c-1.76-1.84-13.58-4.5-13.8-7.9v-3.9c1.92-1.08,2.25-4.33,2.5-5.5c2.24-0.25,2.64-4.55,1.1-5.48c0.69-2.02,1.45-7.49,0.5-9.63S32,7,26,7z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'x':'-=70'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'4',
+							'vars':{
+								'x':'0',
+								'ease':'Power1.easeOut'
+							},
+							'position':'1'
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49,49h4c0-1.9,0-7.18,0-7.18c-1.52-1.59-11.73-3.89-11.92-6.82v-3.37c1.66-0.94,1.94-3.74,2.16-4.75c1.93-0.21,2.28-3.93,0.95-4.74c0.6-1.74,1.25-6.47,0.43-8.32c-0.74-1.67-2.27-4.33-6.4-4.82H38" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'5'
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M26,7c-2.15,0.04-4.17,0.25-4.8,2c-2.63-0.06-3.25,1.44-4.2,3.58s-0.39,7.72,0.3,9.73c-1.54,0.94-1.04,5.44,1.2,5.58c0.26,1.17,0.48,4.22,2.4,5.3v3.9C20.83,40.5,8.76,43.16,7,45c0,0,0,3.55,0,6h38c0-2.2,0-6,0-6c-1.76-1.84-13.58-4.5-13.8-7.9v-3.9c1.92-1.08,2.25-4.33,2.5-5.5c2.24-0.25,2.64-4.55,1.1-5.48c0.69-2.02,1.45-7.49,0.5-9.63S32,7,26,7z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'x':'-=70'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'4',
+							'vars':{
+								'x':'0',
+								'ease':'Power1.easeOut'
+							},
+							'position':'1'
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M45,49h8c0-1.9,0-7.18,0-7.18c-1.52-1.59-11.73-3.89-11.92-6.82v-3.37c1.66-0.94,1.94-3.74,2.16-4.75c1.93-0.21,2.28-3.93,0.95-4.74c0.6-1.74,1.25-6.47,0.43-8.32C43.8,11.97,41.77,9,36.59,9c-1.07,0.02-2.44,0.09-3.52,0.44" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'5'
+						}
+					]
+				}
+			"/>
+			<path fill="#E9E7D0" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M26,7c-2.15,0.04-4.17,0.25-4.8,2c-2.63-0.06-3.25,1.44-4.2,3.58s-0.39,7.72,0.3,9.73c-1.54,0.94-1.04,5.44,1.2,5.58c0.26,1.17,0.48,4.22,2.4,5.3v3.9C20.83,40.5,8.76,43.16,7,45c0,0,0,3.55,0,6h38c0-2.2,0-6,0-6c-1.76-1.84-13.58-4.5-13.8-7.9v-3.9c1.92-1.08,2.25-4.33,2.5-5.5c2.24-0.25,2.64-4.55,1.1-5.48c0.69-2.02,1.45-7.49,0.5-9.63S32,7,26,7z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'x':'-=70'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'4',
+							'vars':{
+								'x':'0',
+								'ease':'Power1.easeOut'
+							},
+							'position':'1'
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

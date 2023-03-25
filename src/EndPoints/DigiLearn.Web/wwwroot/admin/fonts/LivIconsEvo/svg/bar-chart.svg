@@ -1,0 +1,100 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,47V29h10v18" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scaleY':'0',
+								'transformOrigin':'center bottom',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'1.5',
+							'vars':{
+								'scaleY':'1',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			
+			<path fill="#F9BF3B" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,47V21h10v26" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scaleY':'0',
+								'transformOrigin':'center bottom',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'2.5',
+							'vars':{
+								'scaleY':'1',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+			
+			<path class="lievo-altstroke" fill="#F9B32F" stroke="#F1892D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M41,47V13h10v34" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scaleY':'0',
+								'transformOrigin':'center bottom',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'1.5',
+							'position':'3.5',
+							'vars':{
+								'scaleY':'1',
+								'ease':'Back.easeOut.config(3)'
+							}
+						}
+					]
+				}
+			"/>
+			
+			<line fill="none" stroke="#5C6A79" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="47" x2="53" y2="47" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'drawSVG':'0%',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'0.5',
+							'vars':{
+								'drawSVG':'100%',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

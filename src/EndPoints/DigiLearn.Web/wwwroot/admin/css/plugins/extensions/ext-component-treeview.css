@@ -1,0 +1,37 @@
+/* treeview Wrapper css */
+/* -------------------- */
+.bootstraptreeview .list-group .list-group-item.node-colourful-treeview:hover {
+	color: #FFFFFF;
+}
+
+.bootstraptreeview .list-group .list-group-item.node-colourful-treeview.node-selected .badge {
+	background-color: #E2ECFF;
+	color: #5A8DEE;
+}
+
+.bootstraptreeview .list-group .list-group-item.node-node-override-treeview:last-child .badge,
+.bootstraptreeview .list-group .list-group-item.node-node-override-treeview.node-selected .badge {
+	background-color: #FFFFFF;
+	color: #FDAC41;
+}
+
+.bootstraptreeview .list-group .list-group-item.node-node-override-treeview .badge {
+	background-color: #FDAC41;
+	color: #FFFFFF;
+}
+
+.bootstraptreeview .list-group .list-group-item .badge {
+	/* Comman badge style inside treeview */
+	margin-right: 0.8rem;
+	margin-top: 5px;
+	background-color: #E2ECFF;
+	color: #5A8DEE;
+}
+
+.bootstraptreeview .list-group .list-group-item .icon {
+	/* treeview icon alignment and spacing */
+	vertical-align: middle;
+	margin-left: 0.5rem;
+	margin-right: 0;
+	width: 19px;
+}

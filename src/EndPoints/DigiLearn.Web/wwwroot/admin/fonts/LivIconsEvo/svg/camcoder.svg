@@ -1,0 +1,89 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g>
+				<path fill="#336E7B" stroke="#2C3E50" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M41,30v8c0,1.66-1.34,3-3,3H10c-1.66,0-3-1.34-3-3V22c0-1.66,1.34-3,3-3h28c1.66,0,3,1.34,3,3V30z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'fillOpacity':'0.6',
+									'repeat':'1',
+									'repeatDelay':'6',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<polyline class="lievo-altstroke" fill="#336E7B" stroke="#2C3E50" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="53,30 53,39 45,35 45,25 53,21 53,30"/>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'1',
+									'repeat':'1',
+									'repeatDelay':'6',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-savelinecap lievo-donotdraw lievo-solidbg lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="16" y1="35" x2="32" y2="35"/>
+					<g id="left" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'7',
+									'position':'0',
+									'vars':{
+										'rotation':'-720',
+										'transformOrigin':'center center'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'rotation':'0'
+									}
+								}
+							]
+						}
+					">
+						<circle class="lievo-savelinecap lievo-donotdraw lievo-solidbg lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="16" cy="30" r="5"/>
+						<path class="lievo-savelinecap lievo-donotdraw lievo-solidbg lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M14,28l4,4 M18,28l-4,4"/>
+					</g>
+					<g id="right" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'7',
+									'position':'0',
+									'vars':{
+										'rotation':'-720',
+										'transformOrigin':'center center'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'rotation':'0'
+									}
+								}
+							]
+						}
+					">
+						<circle class="lievo-savelinecap lievo-donotdraw lievo-solidbg lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="32" cy="30" r="5"/>
+						<path class="lievo-savelinecap lievo-donotdraw lievo-solidbg lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M30,28l4,4 M34,28l-4,4"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

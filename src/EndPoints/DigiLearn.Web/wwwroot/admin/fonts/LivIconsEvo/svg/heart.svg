@@ -1,0 +1,23 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2', 'repeat':'2', 'repeatDelay':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path class="lievo-altstroke" fill="#D73C2C" stroke="#B71C0C" stroke-width="2" stroke-miterlimit="10" d="M30,16c6.88-6.87,14.43-6.18,19.18-1.52c4.95,4.85,5.24,12.84,0,17.98C43.94,37.6,30,49,30,49S15.98,37.6,10.73,32.46c-5.24-5.14-4.76-13.13,0.19-17.98C15.43,10.05,22.84,8.87,30,16z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.3',
+							'vars':{
+								'scale':'1.2',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0.4',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

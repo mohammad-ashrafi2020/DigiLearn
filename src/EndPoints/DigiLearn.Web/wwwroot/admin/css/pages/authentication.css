@@ -1,0 +1,33 @@
+/* Authentication page css */
+/*-------------------------*/
+.bg-authentication {
+	background-color: #F2F4F4;
+}
+
+.bg-authentication #icon-arrow {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+
+.bg-authentication .brand-text {
+	color: #5A8DEE;
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) {
+	.bg-authentication .disable-rounded-right {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+	/* IE Specific CSS */
+	.bg-authentication {
+		width: 100%;
+		display: block;
+	}
+}

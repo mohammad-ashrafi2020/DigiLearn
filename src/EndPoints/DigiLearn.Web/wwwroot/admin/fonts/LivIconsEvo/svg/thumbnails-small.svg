@@ -1,0 +1,102 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0',
+								'y':'+=32'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'1'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-=16',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'0',
+								'ease':'Power1.easeOut'
+							},
+							'position':'+=1'
+						}
+					]
+				}
+			">
+				<rect x="9" y="9" fill="#6BB9F0" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect x="25" y="9" fill="#EF7265" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect x="41" y="9" fill="#36D7B7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+			</g>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0',
+								'y':'+=16'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'3'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'0',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<rect x="9" y="25" fill="#F2CF5F" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect class="lievo-altstroke" x="25" y="25" fill="#2ECC71" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect x="41" y="25" fill="#AEA8D3" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+			</g>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'5'
+						}
+					]
+				}
+			">
+				<rect x="9" y="41" fill="#82CEF9" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect x="25" y="41" fill="#F4B350" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+				<rect x="41" y="41" fill="#A2DED0" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
+			</g>
+		</g>
+	</g>
+</svg>

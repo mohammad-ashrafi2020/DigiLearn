@@ -1,0 +1,45 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,5h9.36c0.55,0,1.32,0.32,1.71,0.71l13.23,13.23c0.39,0.39,0.71,1.15,0.71,1.71v18.71c0,0.55-0.32,1.32-0.71,1.71L41.06,54.29C40.67,54.68,39.91,55,39.36,55H20.64c-0.55,0-1.32-0.32-1.71-0.71L5.71,41.06C5.32,40.67,5,39.91,5,39.36V20.64c0-0.55,0.32-1.32,0.71-1.71L18.94,5.71C19.33,5.32,20.09,5,20.64,5H30z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M30,5h24.36H55v0.36v0.42v48.69V55h-0.56h-0.51H5.58H5v-0.44v-0.42V5.45V5h0.5h0.34H30z',
+										'shapeIndex':'0'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,5h24.36H55v0.36v0.42v48.69V55h-0.56h-0.51H5.58H5v-0.44v-0.42V5.45V5h0.5h0.34H30z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M30,5h9.36c0.55,0,1.32,0.32,1.71,0.71l13.23,13.23c0.39,0.39,0.71,1.15,0.71,1.71v18.71c0,0.55-0.32,1.32-0.71,1.71L41.06,54.29C40.67,54.68,39.91,55,39.36,55H20.64c-0.55,0-1.32-0.32-1.71-0.71L5.71,41.06C5.32,40.67,5,39.91,5,39.36V20.64c0-0.55,0.32-1.32,0.71-1.71L18.94,5.71C19.33,5.32,20.09,5,20.64,5H30z',
+										'shapeIndex':'0'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

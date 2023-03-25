@@ -1,0 +1,155 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="xy" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<g>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M52.97,28.91C52.99,29.27,53,29.63,53,30"/>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M51.55,21.96c0.26,0.7,0.48,1.4,0.67,2.11"/>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M46.84,14.33c0.78,0.83,1.49,1.73,2.14,2.67"/>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49.8,42.19C45.75,48.75,38.27,53,30,53C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7c4.17,0,8.22,1.11,11.78,3.24"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="43,41 51,41 51,49"/>
+			</g>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'y':'-1'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'0',
+								'y':'0'
+							},
+							'position':'4'
+						}
+					]
+				}
+			">
+				<line id="small" class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="31" x2="41" y2="24" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'rotation':'-95',
+									'svgOrigin':'30 31',
+									'force3D':'true'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'rotation':'0'
+								},
+								'position':'+=1'
+							}
+						]
+					}
+				"/>
+				<line id="big" class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="31" x2="18" y2="19" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'rotation':'-1170',
+									'svgOrigin':'30 31',
+									'force3D':'true'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'rotation':'0'
+								},
+								'position':'+=1'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M52.97,28.91C52.99,29.27,53,29.63,53,30"/>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M51.55,21.96c0.26,0.7,0.48,1.4,0.67,2.11"/>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M46.84,14.33c0.78,0.83,1.49,1.73,2.14,2.67"/>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M49.8,42.19C45.75,48.75,38.27,53,30,53C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7c4.17,0,8.22,1.11,11.78,3.24"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="43,41 51,41 51,49"/>
+			</g>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'y':'-1'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'0',
+								'y':'0'
+							},
+							'position':'4'
+						}
+					]
+				}
+			">
+				<line id="small" class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="31" x2="41" y2="24" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'rotation':'-95',
+									'svgOrigin':'30 31',
+									'force3D':'true'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'rotation':'0'
+								},
+								'position':'+=1'
+							}
+						]
+					}
+				"/>
+				<line id="big" class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="31" x2="18" y2="19" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'rotation':'-1170',
+									'svgOrigin':'30 31',
+									'force3D':'true'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'rotation':'0'
+								},
+								'position':'+=1'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

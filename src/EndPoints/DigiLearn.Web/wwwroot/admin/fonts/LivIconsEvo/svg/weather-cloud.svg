@@ -1,0 +1,131 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_weather_cloud">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M-13,73v-86h86v86H-13z M7,37c0,5.52,4.48,10,10,10c4.2,0,19.52,0,24,0c6.63,0,12-5.37,12-12c0-6.14-4.61-11.19-10.56-11.91C40.74,17.26,35.38,13,29,13c-7.73,0-14,6.27-14,14c0,0.07,0.01,0.13,0.01,0.2C10.44,28.12,7,32.16,7,37z"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_weather_cloud)">
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'1',
+									'repeat':'1',
+									'repeatDelay':'6',
+									'yoyo':'true'
+								}
+							},
+							{
+								'duration':'4',
+								'position':'0',
+								'vars':{
+									'x':'-=8',
+									'repeat':'1',
+									'repeatDelay':'0',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				">
+					<path class="lievo-donotdraw" fill="#BDC3C7" stroke="#b3b7b8" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M32.82,16.52c0-0.04,0-0.07,0-0.11c0-4.09-3.27-7.41-7.3-7.41c-3.33,0-6.13,2.26-7.01,5.34c-3.1,0.38-5.51,3.05-5.51,6.3c0,3.51,2.8,6.35,6.26,6.35c2.34,0,10.33,0,12.52,0c2.88,0,5.22-2.37,5.22-5.29C37,19.14,35.21,17.01,32.82,16.52z"/>
+				</g>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'1',
+								'vars':{
+									'opacity':'1',
+									'repeat':'1',
+									'repeatDelay':'6',
+									'yoyo':'true'
+								}
+							},
+							{
+								'duration':'4',
+								'position':'1',
+								'vars':{
+									'x':'+=8',
+									'repeat':'1',
+									'repeatDelay':'0',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				">
+					<path class="lievo-donotdraw" fill="#DADFE1" stroke="#b3b7b8" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.18,20.52c0-0.04,0-0.07,0-0.11c0-4.09,3.27-7.41,7.3-7.41c3.33,0,6.13,2.26,7.01,5.34c3.1,0.38,5.51,3.05,5.51,6.3c0,3.51-2.8,6.35-6.26,6.35c-2.33,0-10.33,0-12.52,0C27.34,31,25,28.63,25,25.71C25,23.14,26.79,21.01,29.18,20.52z"/>
+				</g>
+			</g>
+			<path class="lievo-altstroke" fill="#DADFE1" stroke="#b3b7b8" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,13c6.38,0,11.74,4.26,13.44,10.09C48.39,23.81,53,28.86,53,35c0,6.63-5.37,12-12,12c-4.48,0-19.8,0-24,0c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2C15,19.27,21.27,13,29,13z"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'opacity':'1',
+								'repeat':'1',
+								'repeatDelay':'6',
+								'yoyo':'true'
+							}
+						},
+						{
+							'duration':'4',
+							'position':'0',
+							'vars':{
+								'x':'-=8',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-donotdraw" opacity="0.6" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M32.82,16.52c0-0.04,0-0.07,0-0.11c0-4.09-3.27-7.41-7.3-7.41c-3.33,0-6.13,2.26-7.01,5.34c-3.1,0.38-5.51,3.05-5.51,6.3c0,3.51,2.8,6.35,6.26,6.35c2.34,0,10.33,0,12.52,0c2.88,0,5.22-2.37,5.22-5.29C37,19.14,35.21,17.01,32.82,16.52z"/>
+			</g>
+			<g opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'1',
+							'vars':{
+								'opacity':'1',
+								'repeat':'1',
+								'repeatDelay':'6',
+								'yoyo':'true'
+							}
+						},
+						{
+							'duration':'4',
+							'position':'1',
+							'vars':{
+								'x':'+=8',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-donotdraw" opacity="0.8" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.18,20.52c0-0.04,0-0.07,0-0.11c0-4.09,3.27-7.41,7.3-7.41c3.33,0,6.13,2.26,7.01,5.34c3.1,0.38,5.51,3.05,5.51,6.3c0,3.51-2.8,6.35-6.26,6.35c-2.33,0-10.33,0-12.52,0C27.34,31,25,28.63,25,25.71C25,23.14,26.79,21.01,29.18,20.52z"/>
+			</g>
+			
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,13c6.38,0,11.74,4.26,13.44,10.09C48.39,23.81,53,28.86,53,35c0,6.63-5.37,12-12,12c-4.48,0-19.8,0-24,0c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2C15,19.27,21.27,13,29,13z"/>
+		</g>
+	</g>
+</svg>

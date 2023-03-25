@@ -1,0 +1,174 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_settings_filled">
+					<rect class="lievo-donotdraw lievo-nohovercolor" x="0" y="9" width="60" height="42"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_settings_filled)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'y':'-=20'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'6',
+								'vars':{
+									'y':'0',
+									'ease':'Power1.easeOut'
+								}
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M14,81V44 M14,32V-5"/>
+					<rect x="10" y="36" fill="#336e7b" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'y':'+=20'
+								},
+								'position':'7'
+							},
+							{
+								'duration':'3',
+								'vars':{
+									'y':'-=14',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'3',
+								'vars':{
+									'y':'0'
+								},
+								'position':'25'
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,65V28 M30,16v-37"/>
+					<rect class="lievo-altstroke" x="26" y="20" fill="#336e7b" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'5',
+								'vars':{
+									'y':'-=10'
+								},
+								'position':'14'
+							},
+							{
+								'duration':'5',
+								'vars':{
+									'y':'0',
+									'ease':'Power1.easeOut'
+								}
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M46,75V38 M46,26v-37"/>
+					<rect x="42" y="30" fill="#336e7b" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_settings_solid">
+					<rect class="lievo-donotdraw lievo-nohovercolor" x="0" y="9" width="60" height="42"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_settings_solid)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'y':'-=20'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'6',
+								'vars':{
+									'y':'0',
+									'ease':'Power1.easeOut'
+								}
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M13.5,81.5v-35M13.5,30.5v-35"/>
+					<rect x="9.5" y="36.5" fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'vars':{
+									'y':'+=20'
+								},
+								'position':'7'
+							},
+							{
+								'duration':'3',
+								'vars':{
+									'y':'-=14',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'3',
+								'vars':{
+									'y':'0'
+								},
+								'position':'25'
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M29.5,64.5v-35M29.5,13.5v-35"/>
+					<rect x="25.5" y="19.5" fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'5',
+								'vars':{
+									'y':'-=10'
+								},
+								'position':'14'
+							},
+							{
+								'duration':'5',
+								'vars':{
+									'y':'0',
+									'ease':'Power1.easeOut'
+								}
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M45.5,74.5v-35M45.5,23.5v-35"/>
+					<rect x="41.5" y="29.5" fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" width="8" height="4"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

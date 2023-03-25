@@ -1,0 +1,46 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<circle class="lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-miterlimit="10" cx="30" cy="12" r="5" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'14',
+							'position':'1',
+							'vars':{
+								'rotation':'+=360',
+								'svgOrigin':'30 30',
+								'force3D':'true',
+								'ease':'Power2.easeInOut'
+							}
+						}
+					]
+				}
+			"/>
+			<circle fill="#FF8C7C" stroke="#E74C3C" stroke-width="2" stroke-miterlimit="10" cx="30" cy="48" r="5" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'7',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'svgOrigin':'30 30',
+								'force3D':'true',
+								'ease':'Power2.easeOut'
+							}
+						},
+						{
+							'duration':'7',
+							'position':'9',
+							'vars':{
+								'rotation':'+=180',
+								'ease':'Power2.easeIn'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

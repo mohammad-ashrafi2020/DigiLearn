@@ -1,0 +1,80 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.6', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon ">
+			<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36.31" y1="36.31" x2="52" y2="52"/>
+			<path class="lievo-savelinecap" fill="#A2DED0" stroke-linecap="butt" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+		</g>
+		
+		<g class="lievo-solidicon">
+			<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="36.31" y1="36.31" x2="52" y2="52"/>
+			<path class="lievo-savelinecap" fill="#A2DED0" stroke-linecap="butt" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+		</g>
+		
+		<g class="lievo-common">
+			<defs>
+				<mask id="livicon_zoom_in">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-savefill" fill="#ffffff" stroke="none" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69"/>
+				</mask>
+			</defs>
+			<g mask="url(#livicon_zoom_in)">
+				<rect class="lievo-donotdraw lievo-solidbg lievo-altstroke" x="0" y="0" fill="none" stroke="#34495E" stroke-width="8" stroke-linecap="square" stroke-miterlimit="10" width="50" height="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'vars':{
+									'scale':'0',
+									'transformOrigin':'center center',
+									'ease':'Power1.easeOut'
+								},
+								'position':'1'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'scale':'1',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'position':'0',
+							'vars':{
+								'scale':'1.2',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'opacity':'0',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'opacity':'1',
+								'ease':'none'
+							},
+							'position':'+=2.5'
+						}
+					]
+				}
+			">
+				<line class="lievo-altstroke lievo-solidbg" display="inline" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="17" y1="25" x2="33" y2="25"/>
+			</g>
+		</g>
+	</g>
+</svg>

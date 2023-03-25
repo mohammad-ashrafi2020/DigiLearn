@@ -1,0 +1,248 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<defs>
+				<clipPath id="livicon_hourglass">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M31,29c0-0.55,0.45-1,1-1l0,0c3.41,0,5.28-5.26,5.83-10H22.17c0.55,4.74,2.42,10,5.83,10c0.55,0,1,0.45,1,1v15h2V29z"/>
+				</clipPath>
+			</defs>
+		</g>
+		<g class="lievo-filledicon lievo-solidicon">
+			<g clip-path="url(#livicon_hourglass)">
+				<rect class="lievo-donotdraw" stroke-width="0" x="19" y="4" fill="#F2CF5F" width="22" height="24" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1',
+								'vars':{
+									'opacity':'1',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'y':'+=32',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<path class="lievo-donotdraw" fill="#F2CF5F" d="M30,33l3,2c3,2,4.45,4.26,5,9H22c0.55-4.74,2-7,5-9L30,33z" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'2',
+							'vars':{
+								'opacity':'1',
+								'scale':'0.125',
+								'transformOrigin':'center bottom'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'1'
+							}
+						},
+						{
+							'duration':'0',
+							'position':'3',
+							'vars':{
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.8',
+							'position':'0',
+							'vars':{
+								'rotation':'-=180',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'0',
+							'position':'2',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'+=180'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			">
+				<path fill="#F2CF5F" stroke-width="0" d="M30,33l3,2c3,2,4.45,4.26,5,9H22c0.55-4.74,2-7,5-9L30,33z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.2',
+								'position':'0.8',
+								'vars':{
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'3',
+								'vars':{
+									'y':'+=2',
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M19,13c0,0,0,1.32,0,2c0,8,3,15,8,15c-5,0-8,7-8,15c0,0.68,0,2,0,2"/>
+				<path fill="none" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M41,13c0,0,0,1.32,0,2c0,8-3,15-8,15c5,0,8,7,8,15c0,0.68,0,2,0,2"/>
+				<polyline fill="#5EFCA1" stroke="#3EDC81" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,47 43,47 43,49 45,49 45,53 15,53 15,49 17,49 17,47 30,47"/>
+				<polyline fill="#5EFCA1" stroke="#3EDC81" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,7 15,7 15,11 17,11 17,13 43,13 43,11 45,11 45,7 30,7"/>
+			</g>
+		</g>
+
+		<g class="lievo-lineicon">
+			<g clip-path="url(#livicon_hourglass)">
+				<rect class="lievo-donotdraw lievo-likestroke lievo-altstroke" stroke-width="0" x="19" y="4" fill="#F2CF5F" width="22" height="24" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1',
+								'vars':{
+									'opacity':'1',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'y':'+=32',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#F2CF5F" d="M30,33l3,2c3,2,4.45,4.26,5,9H22c0.55-4.74,2-7,5-9L30,33z" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'2',
+							'vars':{
+								'opacity':'1',
+								'scale':'0.125',
+								'transformOrigin':'center bottom'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'1'
+							}
+						},
+						{
+							'duration':'0',
+							'position':'3',
+							'vars':{
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.8',
+							'position':'0',
+							'vars':{
+								'rotation':'-=180',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'0',
+							'position':'2',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'+=180'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-likestroke lievo-altstroke" fill="#F2CF5F" stroke="#F2CF5F" stroke-width="0" d="M30,33l3,2c3,2,4.45,4.26,5,9H22c0.55-4.74,2-7,5-9L30,33z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.2',
+								'position':'0.8',
+								'vars':{
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'3',
+								'vars':{
+									'y':'+=2',
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M19,13c0,0,0,1.32,0,2c0,8,3,15,8,15c-5,0-8,7-8,15c0,0.68,0,2,0,2"/>
+				<path fill="none" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M41,13c0,0,0,1.32,0,2c0,8-3,15-8,15c5,0,8,7,8,15c0,0.68,0,2,0,2"/>
+				<polyline fill="#5EFCA1" stroke="#3EDC81" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,47 43,47 43,49 45,49 45,53 15,53 15,49 17,49 17,47 30,47"/>
+				<polyline fill="#5EFCA1" stroke="#3EDC81" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,7 15,7 15,11 17,11 17,13 43,13 43,11 45,11 45,7 30,7"/>
+			</g>
+		</g>
+	</g>
+</svg>

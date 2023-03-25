@@ -1,0 +1,258 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<path fill="#ECF0F1" stroke="#34495E" stroke-width="0" d="M47,53H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v42C49,52.1,48.1,53,47,53z"/>
+			<circle class="lievo-likestroke" fill="#34495E" stroke="none" cx="30" cy="49" r="2"/>
+			<rect x="14" y="10" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="32" height="35"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M47,53H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v42C49,52.1,48.1,53,47,53z"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M47,53H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v42C49,52.1,48.1,53,47,53z"/>
+			<circle class="lievo-solidbg" fill="#FFFFFF" stroke="none" cx="30" cy="50" r="2"/>
+			<rect class="lievo-solidbg" x="13" y="9" fill="#FFFFFF" stroke="none" width="34" height="37"/>
+		</g>
+
+		<g class="lievo-common" opacity="0" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'position':'0',
+						'vars':{
+							'opacity':'1',
+							'repeat':'1',
+							'repeatDelay':'6',
+							'yoyo':'true'
+						}
+					}
+				]
+			}
+		">
+			<clipPath id="livicon_tablet">
+				<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="15" y="10" fill="none" width="30" height="35"/>
+			</clipPath>
+			<g clip-path="url(#livicon_tablet)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'3.5',
+								'vars':{
+									'x':'-=30',
+									'ease':'Circ.easeInOut'
+								}
+							}
+						]
+					}
+				">
+					<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#F2CF5F" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" transform="matrix(0.001, 0, 0, 0.001, 29.97, 26.973)" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'scale':'1',
+										'transformOrigin':'center center'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#A2DED0" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M23,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#6BB9F0" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M33,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#F2CF5F" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M43,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#AEA8D3" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M23,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#36D7B7" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M43,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#BEEFBB" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M23,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#EF7265" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M33,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#F9E5A0" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1.5',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M43,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<g transform="translate(30,0)" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'3.5',
+								'vars':{
+									'x':'-=30',
+									'ease':'Circ.easeInOut'
+								}
+							}
+						]
+					}
+				">
+					<path class="lievo-donotdraw lievo-likestroke" fill="#BEEFBB" stroke="none" d="M33,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#F2CF5F" stroke="none" d="M23,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#6BB9F0" stroke="none" d="M33,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#36D7B7" stroke="none" d="M43,19c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V19z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#AEA8D3" stroke="none" d="M23,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#A2DED0" stroke="none" d="M43,29c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V29z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#F9E5A0" stroke="none" d="M23,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#EF7265" stroke="none" d="M33,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z"/>
+					<path class="lievo-donotdraw lievo-likestroke" fill="#F2CF5F" stroke="none" d="M43,39c0,0.55-0.45,1-1,1h-4c-0.55,0-1-0.45-1-1v-4c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1V39z"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-lineicon">
+			<circle class="lievo-likestroke lievo-altstroke" fill="#34495E" stroke="none" cx="30" cy="49" r="2"/>
+			<rect x="15" y="11" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="34"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M47,53H13c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h34c1.1,0,2,0.9,2,2v42C49,52.1,48.1,53,47,53z"/>
+		</g>
+	</g>
+</svg>

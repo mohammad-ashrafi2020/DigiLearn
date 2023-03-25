@@ -1,0 +1,41 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90,30,30)" fill="#FFCF4B" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="8.5"/>
+				<path class="lievo-altstroke" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,17v-2 M20.81,20.81L19,19 M17,30h-2 M20.81,39.19L19,41 M30,43l0,2 M39.19,39.19L41,41 M43,30l2,0 M39.19,20.81L41,19" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,17V8 M20.81,20.81L14,14 M17,30H8 M20.81,39.19L14,46 M30,43l0,9 M39.19,39.19L46,46 M43,30l9,0 M39.19,20.81L46,14'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90,30,30)" fill="#FFCF4B" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="8.5"/>
+				<path class="lievo-altstroke" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,17V8 M20.81,20.81L14,14 M17,30H8 M20.81,39.19L14,46 M30,43l0,9 M39.19,39.19L46,46 M43,30l9,0 M39.19,20.81L46,14" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,17v-2 M20.81,20.81L19,19 M17,30h-2 M20.81,39.19L19,41 M30,43l0,2 M39.19,39.19L41,41 M43,30l2,0 M39.19,20.81L41,19'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

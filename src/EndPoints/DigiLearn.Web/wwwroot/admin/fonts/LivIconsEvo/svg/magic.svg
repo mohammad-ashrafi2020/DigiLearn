@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_magic_fl">
+					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" y="-6" width="60" height="60"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_magic_fl)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'position':'0',
+								'vars':{
+									'rotation':'-=10',
+									'transformOrigin':'left bottom',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'0',
+									'ease':'Power1.easeIn'
+								}
+							}
+						]
+					}
+				">
+					<path fill="#F1C40F" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20.15,34.19L29.34,25c0,0,1.41,0,3.54,2.12S35,30.66,35,30.66l-9.19,9.19"/>
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M-1.06,66.72l-5.66-5.66l26.87-26.87c0,0,1.41,0,3.54,2.12s2.12,3.54,2.12,3.54L-1.06,66.72z"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_magic_s">
+					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" y="-6" width="60" height="60"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_magic_s)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'3',
+								'position':'0',
+								'vars':{
+									'rotation':'-=10',
+									'transformOrigin':'left bottom',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'0',
+									'ease':'Power1.easeIn'
+								}
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20.15,34.19L29.34,25c0,0,1.41,0,3.54,2.12S35,30.66,35,30.66l-9.19,9.19"/>
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M-1.06,66.72l-5.66-5.66l26.87-26.87c0,0,1.41,0,3.54,2.12s2.12,3.54,2.12,3.54L-1.06,66.72z"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-common">
+			<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M16,22c0,0-0.4-1.2-1.6-2.4C13.2,18.4,12,18,12,18s1.2-0.4,2.4-1.6C15.6,15.2,16,14,16,14s0.4,1.2,1.6,2.4C18.8,17.6,20,18,20,18s-1.2,0.4-2.4,1.6C16.4,20.8,16,22,16,22z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'3',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'scale':'2',
+								'opacity':'0',
+								'transformOrigin':'center center',
+								'x':'-=8',
+								'y':'-=8',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=360',
+								'scale':'0.5',
+								'x':'+=16',
+								'y':'+=16'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=1',
+							'vars':{
+								'rotation':'0',
+								'opacity':'1',
+								'scale':'1',
+								'x':'0',
+								'y':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,9c0,0-0.1-0.3-0.4-0.6C29.3,8.1,29,8,29,8s0.3-0.1,0.6-0.4C29.9,7.3,30,7,30,7s0.1,0.3,0.4,0.6C30.7,7.9,31,8,31,8s-0.3,0.1-0.6,0.4C30.1,8.7,30,9,30,9z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'3',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'scale':'2',
+								'opacity':'0',
+								'transformOrigin':'center center',
+								'y':'-=8',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=360',
+								'scale':'0.5',
+								'y':'+=16'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=1',
+							'vars':{
+								'rotation':'0',
+								'opacity':'1',
+								'scale':'1',
+								'y':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M44,22c0,0-0.6-1.8-2.4-3.6C39.8,16.6,38,16,38,16s1.8-0.6,3.6-2.4C43.4,11.8,44,10,44,10s0.6,1.8,2.4,3.6C48.2,15.4,50,16,50,16s-1.8,0.6-3.6,2.4C44.6,20.2,44,22,44,22z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'3',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'scale':'2',
+								'opacity':'0',
+								'transformOrigin':'center center',
+								'x':'+=8',
+								'y':'-=8',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=360',
+								'scale':'0.5',
+								'x':'-=16',
+								'y':'+=16'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=1',
+							'vars':{
+								'rotation':'0',
+								'opacity':'1',
+								'scale':'1',
+								'x':'0',
+								'y':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M52,31c0,0-0.1-0.3-0.4-0.6C51.3,30.1,51,30,51,30s0.3-0.1,0.6-0.4C51.9,29.3,52,29,52,29s0.1,0.3,0.4,0.6C52.7,29.9,53,30,53,30s-0.3,0.1-0.6,0.4C52.1,30.7,52,31,52,31z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'3',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'scale':'2',
+								'opacity':'0',
+								'transformOrigin':'center center',
+								'x':'+=8',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=360',
+								'scale':'0.5',
+								'x':'-=16'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=1',
+							'vars':{
+								'rotation':'0',
+								'opacity':'1',
+								'scale':'1',
+								'x':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42,48c0,0-0.4-1.2-1.6-2.4C39.2,44.4,38,44,38,44s1.2-0.4,2.4-1.6C41.6,41.2,42,40,42,40s0.4,1.2,1.6,2.4C44.8,43.6,46,44,46,44s-1.2,0.4-2.4,1.6C42.4,46.8,42,48,42,48z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'3',
+							'position':'0',
+							'vars':{
+								'rotation':'+=180',
+								'scale':'2',
+								'opacity':'0',
+								'transformOrigin':'center center',
+								'x':'+=8',
+								'y':'+=8',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=360',
+								'scale':'0.5',
+								'x':'-=16',
+								'y':'-=16'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=1',
+							'vars':{
+								'rotation':'0',
+								'opacity':'1',
+								'scale':'1',
+								'x':'0',
+								'y':'0'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

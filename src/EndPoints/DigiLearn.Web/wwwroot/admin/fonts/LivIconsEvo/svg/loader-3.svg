@@ -1,0 +1,25 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'360',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'none'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<path fill="#27CBC0" stroke="#07ABA0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,15.52c2.62,0,5.23,0.71,7.54,2.12l4.63-7.17c-7.42-4.63-16.9-4.62-24.32,0.01l4.61,7.16C24.77,16.23,27.38,15.52,30,15.52z"/>
+			<path class="lievo-altstroke" fill="#1297E0" stroke="#0077C0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M44.48,30c0,2.62-0.71,5.23-2.12,7.54l7.17,4.63c4.63-7.42,4.62-16.9-0.01-24.32l-7.16,4.61C43.77,24.77,44.48,27.38,44.48,30z"/>
+			<path fill="#27CBC0" stroke="#07ABA0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,44.48c-2.62,0-5.23-0.71-7.54-2.12l-4.63,7.17c7.42,4.63,16.9,4.62,24.32-0.01l-4.62-7.16C35.24,43.77,32.62,44.48,30,44.48z"/>
+			<path class="lievo-altstroke" fill="#1297E0" stroke="#0077C0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M15.52,30c0-2.62,0.7-5.23,2.11-7.54l-7.16-4.61c-4.63,7.42-4.64,16.9-0.01,24.32l7.17-4.63C16.23,35.23,15.52,32.62,15.52,30z"/>
+		</g>
+	</g>
+</svg>

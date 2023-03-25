@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<g>
+				<defs>
+					<clipPath id="livicon_box_filled">
+						<rect class="lievo-donotdraw lievo-nohovercolor" fill="none" stroke="none" x="10" y="-17" width="40" height="40"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_box_filled)">
+					<rect class="lievo-donotdraw" fill="#39D5FF" stroke="none" x="16" y="23" width="32" height="26" opacity="0.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'9'},
+										'repeat':'1',
+										'repeatDelay':'3',
+										'yoyo':'true'
+									},
+									'position':'0.5'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw" fill="#DCC6E0" stroke="none" x="14" y="23" width="32" height="26" opacity="0.9" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'13'},
+										'repeat':'1',
+										'repeatDelay':'2',
+										'yoyo':'true'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw" fill="#8EFFC1" stroke="none" x="12" y="23" width="32" height="26" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'17'},
+										'repeat':'1',
+										'repeatDelay':'1',
+										'yoyo':'true'
+									},
+									'position':'1.5'
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+			<path fill="#F6C4A3" stroke="#AE7C5B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,23h21v23c0,1.66-1.34,3-3,3H12c-1.66,0-3-1.34-3-3V23H30"/>
+			<line class="lievo-altstroke" fill="none" stroke="#9E6C4B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="35" y1="29" x2="25" y2="29"/>
+			<path fill="#F6C4A3" stroke="#AE7C5B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,11h20c1.66,0,3,1.34,3,3v9H7v-9c0-1.66,1.34-3,3-3H30" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-2px',
+								'x':'-2px',
+								'rotation':'-60',
+								'transformOrigin':'left bottom',
+								'repeat':'1',
+								'repeatDelay':'3',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<g>
+				<defs>
+					<clipPath id="livicon_box_line">
+						<rect class="lievo-donotdraw lievo-nohovercolor" fill="none" stroke="none" x="10" y="-17" width="40" height="40"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_box_line)">
+					<rect class="lievo-donotdraw lievo-likestroke lievo-altstroke" x="16" y="23" fill="#39D5FF" stroke="none" width="32" height="26" opacity="0.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'9'},
+										'repeat':'1',
+										'repeatDelay':'3',
+										'yoyo':'true'
+									},
+									'position':'0.5'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw lievo-likestroke lievo-altstroke" x="14" y="23" fill="#DCC6E0" stroke="none" width="32" height="26" opacity="0.9" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'13'},
+										'repeat':'1',
+										'repeatDelay':'2',
+										'yoyo':'true'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw lievo-likestroke lievo-altstroke" x="12" y="23" fill="#8EFFC1" stroke="none" width="32" height="26" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'17'},
+										'repeat':'1',
+										'repeatDelay':'1',
+										'yoyo':'true'
+									},
+									'position':'1.5'
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+			<path fill="#BEEFBB" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,23h21v23c0,1.66-1.34,3-3,3H12c-1.66,0-3-1.34-3-3V23H30"/>
+			<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="35" y1="29" x2="25" y2="29"/>
+			<path fill="#9DD898" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,11h20c1.66,0,3,1.34,3,3v9H7v-9c0-1.66,1.34-3,3-3H30" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-2px',
+								'x':'-2px',
+								'rotation':'-60',
+								'transformOrigin':'left bottom',
+								'repeat':'1',
+								'repeatDelay':'3',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g>
+				<defs>
+					<clipPath id="livicon_box_solid">
+						<rect class="lievo-donotdraw lievo-nohovercolor" fill="none" stroke="none" x="10" y="-15" width="40" height="40"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_box_solid)">
+					<rect class="lievo-donotdraw" x="16" y="25" fill="#39D5FF" width="32" height="26" opacity="0.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'9'},
+										'repeat':'1',
+										'repeatDelay':'3',
+										'yoyo':'true'
+									},
+									'position':'0.5'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw" x="14" y="25" fill="#DCC6E0" width="32" height="26"  opacity="0.9" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'13'},
+										'repeat':'1',
+										'repeatDelay':'2',
+										'yoyo':'true'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+					<rect class="lievo-donotdraw" x="12" y="25" fill="#8EFFC1" width="32" height="26" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.5',
+									'vars':{
+										'attr':{'y':'17'},
+										'repeat':'1',
+										'repeatDelay':'1',
+										'yoyo':'true'
+									},
+									'position':'1.5'
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h21v21c0,1.66-1.34,3-3,3H12c-1.66,0-3-1.34-3-3V25H30"/>
+			<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="35" y1="31" x2="25" y2="31"/>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,11h20c1.66,0,3,1.34,3,3v7H7v-7c0-1.66,1.34-3,3-3H30" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-2px',
+								'x':'-2px',
+								'rotation':'-60',
+								'transformOrigin':'left bottom',
+								'repeat':'1',
+								'repeatDelay':'3',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,128 @@
+/* knowledge base page css */
+/*-------------------------*/
+/* kb search button positioning */
+.kb-header button {
+	left: 7px;
+	top: 5px;
+}
+
+.kb-search input::-webkit-input-placeholder {
+	font-size: 1rem;
+}
+
+.kb-search input::-moz-placeholder {
+	font-size: 1rem;
+}
+
+.kb-search input:-ms-input-placeholder {
+	font-size: 1rem;
+}
+
+.kb-search input::-ms-input-placeholder {
+	font-size: 1rem;
+}
+
+.kb-search input::placeholder {
+	font-size: 1rem;
+}
+
+.kb-categories .kb-effect,
+.kb-question .kb-effect {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.kb-categories .kb-effect:hover,
+.kb-question .kb-effect:hover {
+	color: #5A8DEE !important;
+	margin-right: 0.5rem;
+}
+
+.kb-ellipsis {
+	/* multiline text with ellipsis */
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 1024px) {
+	.kb-header {
+		padding: 5rem 0 !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.kb-search .kb-search-width {
+		width: 100% !important;
+	}
+
+	.kb-sidebar {
+		/* knowledge-base-categories & knowledge-base-question sidebar */
+		box-shadow: 8px 12px 18px 0 rgba(25, 42, 70, 0.8);
+		height: 100%;
+		width: 260px;
+		background-color: #FFFFFF;
+		position: fixed;
+		-webkit-transform: translateX(105%);
+		-ms-transform: translateX(105%);
+		transform: translateX(105%);
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		z-index: 12;
+		right: 0rem;
+		top: 4.49rem;
+		padding: 1.2rem 1.1rem 0 0;
+	}
+
+	.kb-sidebar.show {
+		-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+
+	.kb-sidebar .kb-close-icon {
+		/* sidebar close icon */
+		position: absolute;
+		top: 12px;
+		left: 5px;
+	}
+
+	.kb-sidebar .kb-close-icon:focus {
+		outline: none;
+	}
+
+	.kb-overlay {
+		/* knowledge base categories & knowledge base question overlay dark effect */
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: 11;
+		visibility: hidden;
+	}
+
+	.kb-overlay.show {
+		visibility: visible;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.kb-title {
+		font-size: 1.73rem;
+	}
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+	/* IE Specific CSS */
+	.kb-ellipsis {
+		max-height: 67.5px;
+	}
+}

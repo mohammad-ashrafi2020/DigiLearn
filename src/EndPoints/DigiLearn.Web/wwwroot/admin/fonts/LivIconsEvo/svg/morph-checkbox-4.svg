@@ -1,0 +1,92 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.4'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon">
+				<polyline fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,15 45,15 45,45 15,45 15,15 30,15"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,15.5 44.5,15.5 44.5,44.5 15.5,44.5 15.5,15.5 30,15.5"/>
+			</g>
+
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_checkbox_4">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="15" y="15" width="30" height="30"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_checkbox_4)">
+					<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="6" stroke-linecap="square" stroke-miterlimit="10" points="13.32,16.98 16.03,14.28 20.27,14.27 14.02,20.52 14.02,24.77 24.77,14.02 28.85,14.18 14.18,28.85 14.09,33.18 33.09,14.18 37.22,14.3 14.3,37.22 13.8,41.96 41.5,14.26 44.85,15.15 15.15,44.85 18.25,46 45.87,18.37 45.7,22.78 22.49,45.99 26.86,45.86 45.82,26.91 45.9,31.07 30.74,46.23 35.19,46.02 45.94,35.27 45.94,39.52 39.06,46.39 43.64,46.06 47.02,42.68" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%',
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeIn'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+
+			<g class="lievo-lineicon">
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,15 45,15 45,45 15,45 15,15 30,15"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon">
+				<polyline fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,15 45,15 45,45 15,45 15,15 30,15"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,15.5 44.5,15.5 44.5,44.5 15.5,44.5 15.5,15.5 30,15.5"/>
+			</g>
+
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_checkbox_4">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="15" y="15" width="30" height="30"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_checkbox_4)">
+					<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="6" stroke-linecap="square" stroke-miterlimit="10" points="13.32,16.98 16.03,14.28 20.27,14.27 14.02,20.52 14.02,24.77 24.77,14.02 28.85,14.18 14.18,28.85 14.09,33.18 33.09,14.18 37.22,14.3 14.3,37.22 13.8,41.96 41.5,14.26 44.85,15.15 15.15,44.85 18.25,46 45.87,18.37 45.7,22.78 22.49,45.99 26.86,45.86 45.82,26.91 45.9,31.07 30.74,46.23 35.19,46.02 45.94,35.27 45.94,39.52 39.06,46.39 43.64,46.06 47.02,42.68" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'drawSVG':'0%',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+							]
+						}
+					"/>
+				</g>
+			</g>
+
+			<g class="lievo-lineicon">
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,15 45,15 45,45 15,45 15,15 30,15"/>
+			</g>
+		</g>
+	</g>
+</svg>

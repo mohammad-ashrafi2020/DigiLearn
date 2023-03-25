@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'360',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'none'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<path fill="#F39C12" d="M30,7c12.7,0,23,10.3,23,23h-8c0-8.72-6.99-15-15-15V7z" stroke="#34495E" stroke-width="0"/>
+			<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="30" y1="15" x2="30" y2="7"/>
+			<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45" y1="30" x2="53" y2="30"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,7c12.7,0,23,10.3,23,23c0,12.7-10.3,23-23,23S7,42.7,7,30C7,17.3,17.3,7,30,7"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,15c8.28,0,15,6.72,15,15c0,8.28-6.72,15-15,15c-8.28,0-15-6.72-15-15C15,21.72,21.72,15,30,15"/>
+		</g>
+	</g>
+</svg>

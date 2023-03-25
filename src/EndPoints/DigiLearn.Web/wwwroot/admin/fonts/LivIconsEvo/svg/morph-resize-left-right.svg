@@ -1,0 +1,143 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-solidshift="y" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="23.3" y1="30" x2="8.7" y2="30"/>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36.7" y1="30" x2="51.3" y2="30"/>
+
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="14,37 7,30 14,23" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'18,37 25,30 18,23',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="46,23 53,30 46,37" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'42,23 35,30 42,37',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="23.3" y1="30" x2="8.7" y2="30"/>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="36.7" y1="30" x2="51.3" y2="30"/>
+
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="14,37 7,30 14,23" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'18,37 25,30 18,23',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="46,23 53,30 46,37" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'42,23 35,30 42,37',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="23.3" y1="30" x2="8.7" y2="30"/>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36.7" y1="30" x2="51.3" y2="30"/>
+
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="18,37 25,30 18,23" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'14,37 7,30 14,23',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="42,23 35,30 42,37" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'46,23 53,30 46,37',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="23.3" y1="30" x2="8.7" y2="30"/>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="36.7" y1="30" x2="51.3" y2="30"/>
+
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="18,37 25,30 18,23" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'14,37 7,30 14,23',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="42,23 35,30 42,37" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'46,23 53,30 46,37',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

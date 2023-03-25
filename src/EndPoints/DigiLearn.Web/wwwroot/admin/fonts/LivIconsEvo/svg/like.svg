@@ -1,0 +1,78 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-lineicon lievo-filledicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'0',
+						'vars':{
+							'scale':'0.001',
+							'transformOrigin':'left bottom'
+						},
+						'position':'0'
+					},
+					{
+						'duration':'2',
+						'vars':{
+							'scale':'1',
+							'ease':'none'
+						},
+						'position':'+=0.5'
+					},
+					{
+						'duration':'1',
+						'vars':{
+							'y':'-=4',
+							'repeat':'5',
+							'repeatDelay':'0',
+							'yoyo':'true',
+							'ease':'Power1.easeOut'
+						},
+						'position':'+=0.5'
+					}
+				]
+			}
+		">
+			<path fill="#ffd0bc" stroke="#e9b995" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,33.11V29c0.81-0.12,0.92,0.04,1.52-0.23c1.88-0.84,4.04-3.87,7.55-6.92c7.1-6.18,5.96-12.84,8.26-12.84c4.67,0,3.08,13.33-2.18,17.66c-0.11,0.09-0.04,0.28,0.11,0.28c2.22,0,9.16,0,9.16,0c7.99,0,6.42,6.45,1.95,6.27h-0.89c-0.53,0.01-0.22-0.04-0.22,0c0.02,0.26,3.59,0.5,3.16,3.93c-0.35,2.75-4.14,1.91-4.19,2.17c-0.02,0.11,3.84,0.92,2.71,4.02c-0.76,2.09-3.48,1.78-3.57,2c-0.05,0.14,2.12,1.08,1.11,3.21C44,51.69,37,51,30,51c-3.29,0-4.18-1.82-9-2.57V33.11z"/>
+			<rect class="lievo-altstroke" x="9" y="27" fill="#1297E0" stroke="#0077C0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="24"/>
+		</g>
+
+		<g class="lievo-solidicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'0',
+						'vars':{
+							'scale':'0.001',
+							'transformOrigin':'left bottom'
+						},
+						'position':'0'
+					},
+					{
+						'duration':'2',
+						'vars':{
+							'scale':'1',
+							'ease':'none'
+						},
+						'position':'+=0.5'
+					},
+					{
+						'duration':'1',
+						'vars':{
+							'y':'-=4',
+							'repeat':'5',
+							'repeatDelay':'0',
+							'yoyo':'true',
+							'ease':'Power1.easeOut'
+						},
+						'position':'+=0.5'
+					}
+				]
+			}
+		">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="
+			M20,33.11V29c0.81-0.12,1.92-0.46,2.52-0.73c1.88-0.84,4.04-3.37,7.55-6.42c7.1-6.18,5.96-12.84,8.26-12.84c4.67,0,3.08,13.33-2.18,17.66c-0.11,0.09-0.04,0.28,0.11,0.28c2.22,0,9.16,0,9.16,0c7.99,0,6.42,6.45,1.95,6.27h-0.89c-0.53,0.01-0.22-0.04-0.22,0c0.02,0.26,3.59,0.5,3.16,3.93c-0.35,2.75-4.14,1.91-4.19,2.17c-0.02,0.11,3.84,0.92,2.71,4.02c-0.76,2.09-3.48,1.78-3.57,2c-0.05,0.14,2.12,1.08,1.11,3.21C44,51.69,37,51,30,51c-3.29,0-5.18-1.82-10-2.57V33.11z"/>
+			<rect x="9" y="27" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="24"/>
+		</g>
+	</g>
+</svg>

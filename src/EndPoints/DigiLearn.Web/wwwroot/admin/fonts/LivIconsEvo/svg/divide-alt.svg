@@ -1,0 +1,85 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<circle transform="rotate(-90, 30, 30)" fill="#CEA0E4" stroke="#AB69C6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+		
+		<g class="lievo-lineicon lievo-filledicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'0.5',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<circle class="lievo-altstroke" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="23.25" r="2.25"/>
+				<circle class="lievo-altstroke" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="36.75" r="2.25"/>
+				<line class="lievo-altstroke" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21" y1="30" x2="39" y2="30"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'0.5',
+							'vars':{
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<circle class="lievo-solidbg" fill="34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="23.25" r="2.25"/>
+				<circle class="lievo-solidbg" fill="34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="36.75" r="2.25"/>
+				<line class="lievo-solidbg" fill="34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21" y1="30" x2="39" y2="30"/>
+			</g>
+		</g>
+	</g>
+</svg>

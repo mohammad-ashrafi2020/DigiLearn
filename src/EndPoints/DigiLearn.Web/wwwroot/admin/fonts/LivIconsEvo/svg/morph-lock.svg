@@ -1,0 +1,228 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g>
+				<g class="lievo-common">
+					<defs>
+						<clipPath id="livicon_morph_lock_s">
+							<rect class="lievo-donotdraw lievo-savefill" x="15" y="-15" width="30" height="40"/>
+						</clipPath>
+					</defs>
+				</g>
+				<g class="lievo-filledicon">
+					<g clip-path="url(#livicon_morph_lock_s)">
+						<path fill="none" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'+=6'
+										},
+										'position':'0'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="#C5D3E2" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path fill="#C5D3E2" stroke="#7C8A99" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,33c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6S26.69,33,30,33z"/>
+					<line fill="none" stroke="#7C8A99" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="39" x2="32" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'+=180',
+										'transformOrigin':'center center'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g class="lievo-lineicon">
+					<g clip-path="url(#livicon_morph_lock_s)">
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'+=6'
+										},
+										'position':'0'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,33c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6S26.69,33,30,33z"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="39" x2="32" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'+=180',
+										'transformOrigin':'center center'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g class="lievo-solidicon">
+					<g clip-path="url(#livicon_morph_lock_s)">
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'+=6'
+										},
+										'position':'0'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,34c2.76,0,5,2.24,5,5s-2.24,5-5,5c-2.76,0-5-2.24-5-5S27.24,34,30,34z"/>
+					<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="27" y1="39" x2="33" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'+=180',
+										'transformOrigin':'center center'
+									},
+									'position':'1'
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+		<g class="lievo-morphendstate">
+			<g>
+				<g class="lievo-common">
+					<defs>
+						<clipPath id="livicon_morph_lock_e">
+							<rect class="lievo-donotdraw lievo-savefill" x="15" y="-15" width="30" height="40"/>
+						</clipPath>
+					</defs>
+				</g>
+				<g class="lievo-filledicon">
+					<g clip-path="url(#livicon_morph_lock_e)">
+						<path fill="none" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" transform="matrix(1, 0, 0, 1, 0, 6)" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'-=6'
+										},
+										'position':'1'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="#C5D3E2" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path fill="#C5D3E2" stroke="#7C8A99" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,33c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6S26.69,33,30,33z"/>
+					<line fill="none" stroke="#7C8A99" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="39" x2="32" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'-=180',
+										'transformOrigin':'center center'
+									},
+									'position':'0'
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g class="lievo-lineicon">
+					<g clip-path="url(#livicon_morph_lock_e)">
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" transform="matrix(1, 0, 0, 1, 0, 6)" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'-=6'
+										},
+										'position':'1'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,33c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6S26.69,33,30,33z"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="39" x2="32" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'-=180',
+										'transformOrigin':'center center'
+									},
+									'position':'0'
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g class="lievo-solidicon">
+					<g clip-path="url(#livicon_morph_lock_e)">
+						<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M21,19v-3c0-4.97,4.03-9,9-9c4.97,0,9,4.03,9,9v22" transform="matrix(1, 0, 0, 1, 0, 6)" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'vars':{
+											'y':'-=6'
+										},
+										'position':'1'
+									}
+								]
+							}
+						"/>
+					</g>
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,25h13.13c1.03,0,1.88,0.9,1.88,2v22c0,1.1-0.84,2-1.88,2H16.88C15.84,51,15,50.1,15,49V27c0-1.1,0.84-2,1.88-2H30z"/>
+					<path class="lievo-solidbg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,34c2.76,0,5,2.24,5,5s-2.24,5-5,5c-2.76,0-5-2.24-5-5S27.24,34,30,34z"/>
+					<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="27" y1="39" x2="33" y2="39" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'rotation':'-=180',
+										'transformOrigin':'center center'
+									},
+									'position':'0'
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

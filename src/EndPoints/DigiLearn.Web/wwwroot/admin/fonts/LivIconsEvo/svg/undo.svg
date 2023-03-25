@@ -1,0 +1,97 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="xy" data-animoptions="{'duration':'0.6', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-lineicon lievo-filledicon">
+			<defs>
+				<clipPath id="livicon_undo_fl">
+					<polyline class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" points="60,0 11,0 11,27 30,27 30,60 60,60 60,0"/>
+				</clipPath>
+			</defs>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'-=360',
+								'svgOrigin':'29.5 35.5',
+								'force3D':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<g clip-path="url(#livicon_undo_fl)">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M48.11,46C49.95,42.93,51,39.34,51,35.5C51,24.18,41.82,15,30.5,15c-8.09,0-15.09,4.69-18.42,11.5" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'drawSVG':'100% 100%'
+									},
+									'position':'0'
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'drawSVG':'0% 100%'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="19,27 11,27 11,19"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_undo_s">
+					<polyline class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" points="60,0 11,0 11,27 30,27 30,60 60,60 60,0"/>
+				</clipPath>
+			</defs>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'-=360',
+								'svgOrigin':'29.5 35.5',
+								'force3D':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<g clip-path="url(#livicon_undo_s)">
+					<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M48.11,46C49.95,42.93,51,39.34,51,35.5C51,24.18,41.82,15,30.5,15c-8.09,0-15.09,4.69-18.42,11.5" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'vars':{
+										'drawSVG':'100% 100%'
+									},
+									'position':'0'
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'drawSVG':'0% 100%'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="19,27 11,27 11,19"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,258 @@
+/* noUi Slider css */
+/* --------------- */
+/* default bg for noUi Slider */
+.noUi-background {
+	background: #eaeded;
+}
+
+.noUi-target {
+	background-color: #e4e8e8;
+	border: none;
+	box-shadow: none;
+	border-radius: 1rem;
+}
+
+.noUi-target.noUi-connect {
+	box-shadow: none;
+}
+
+.noUi-horizontal {
+	height: 10px;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 20px;
+	height: 20px;
+	top: -5px;
+	left: -1px;
+	cursor: pointer;
+}
+
+.noUi-horizontal .noUi-origin {
+	left: 17px;
+	right: -17px;
+}
+
+.noUi-horizontal.slider-xl {
+	height: 14px;
+}
+
+.noUi-horizontal.slider-xl .noUi-handle {
+	width: 28px;
+	height: 28px;
+	top: -7px;
+}
+
+.noUi-horizontal.slider-lg {
+	height: 12px;
+}
+
+.noUi-horizontal.slider-lg .noUi-handle {
+	width: 24px;
+	height: 24px;
+	top: -6px;
+}
+
+.noUi-horizontal.slider-sm {
+	height: 6px;
+}
+
+.noUi-horizontal.slider-sm .noUi-handle {
+	height: 15px;
+	width: 15px;
+}
+
+.noUi-horizontal.slider-xs {
+	height: 3px;
+}
+
+.noUi-horizontal.slider-xs .noUi-handle {
+	height: 10px;
+	width: 10px;
+	top: -4px;
+}
+
+/* slider handle styles */
+.noUi-handle {
+	box-shadow: none;
+	border: none;
+	border-radius: 50%;
+	background: #FFFFFF;
+	border: 5px solid #5A8DEE;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+	display: none;
+}
+
+/* for noUi square circle filled */
+.circle-filled .noUi-handle {
+	background: #5A8DEE;
+	border-radius: 50%;
+}
+
+.circle-filled .noUi-handle:after,
+.circle-filled .noUi-handle:before {
+	display: none;
+}
+
+/* for noUi square and it's sizes */
+.square .noUi-handle {
+	background: #5A8DEE;
+	border-radius: 3px;
+}
+
+.square .noUi-handle:before {
+	display: block;
+	width: 2px;
+	height: 10px;
+	left: 1px;
+	top: 0px;
+}
+
+.square .noUi-handle:after {
+	display: block;
+	width: 2px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+}
+
+.square.slider-xl .noUi-handle:before {
+	left: 5px;
+	top: 4px;
+}
+
+.square.slider-xl .noUi-handle:after {
+	left: 11px;
+	top: 4px;
+}
+
+.square.slider-lg .noUi-handle:before {
+	left: 3px;
+	top: 2px;
+}
+
+.square.slider-lg .noUi-handle:after {
+	left: 8px;
+	top: 2px;
+}
+
+.square.slider-sm .noUi-handle:before {
+	left: -1px;
+	top: -1px;
+	height: 7px;
+}
+
+.square.slider-sm .noUi-handle:after {
+	left: 4px;
+	top: -1px;
+	height: 7px;
+}
+
+.square.slider-xs .noUi-handle:before {
+	left: -3px;
+	top: -3px;
+	height: 5px;
+}
+
+.square.slider-xs .noUi-handle:after {
+	left: 1px;
+	top: -3px;
+	height: 5px;
+}
+
+/* default connect color */
+.noUi-connect {
+	background: #5A8DEE;
+	box-shadow: none;
+}
+
+/* noUi Vertical customization */
+.noUi-vertical {
+	display: inline-block;
+	width: 8px;
+	height: 150px;
+}
+
+.noUi-vertical .noUi-handle {
+	width: 20px;
+	height: 20px;
+	top: -5px;
+	left: -6px;
+}
+
+.noUi-vertical.square .noUi-handle {
+	background: #5A8DEE;
+	border-radius: 3px;
+}
+
+.noUi-vertical.square .noUi-handle:before {
+	display: block;
+	width: 12px;
+	height: 2px;
+	left: -1px;
+	top: 2px;
+}
+
+.noUi-vertical.square .noUi-handle:after {
+	display: block;
+	width: 12px;
+	height: 2px;
+	left: -1px;
+	top: 7px;
+}
+
+/* for example value of noUI Hover */
+.example-val {
+	font: 400 12px Arial;
+	color: #888;
+	display: block;
+	margin: 15px 0;
+}
+
+/* to remove outline on focus */
+.noUi-handle:focus {
+	outline: 0;
+}
+
+/* IE SPECIFIC FOR SLIDER WITH INPUT */
+:-ms-lang(x),
+.slider-select {
+	flex: 0 0 10%;
+	max-width: 10%;
+}
+
+html .noUi-horizontal .noUi-handle {
+	right: -10px !important;
+}
+
+html .noUi-horizontal.slider-xl .noUi-handle {
+	right: -14px !important;
+}
+
+html .noUi-horizontal.slider-lg .noUi-handle {
+	right: -12px !important;
+}
+
+html .noUi-horizontal.slider-sm .noUi-handle {
+	right: -8px !important;
+}
+
+html .noUi-horizontal.slider-xs .noUi-handle {
+	right: -5px !important;
+}
+
+.noUi-connects {
+    border-radius: 1rem;
+}
+
+html .noUi-vertical .noUi-handle {
+	top: -10px;
+}
+
+html .noUi-vertical .noUi-tooltip {
+	left: 190%;
+	right: auto;
+}

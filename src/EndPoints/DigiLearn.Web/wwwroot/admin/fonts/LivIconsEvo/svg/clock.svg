@@ -1,0 +1,57 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<circle transform="rotate(-90, 30, 30)" fill="#FDE3A7" stroke="#932210" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23"/>
+			
+			<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="35" y2="18" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'rotation':'95',
+								'svgOrigin':'30 30',
+								'force3D':'true'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 30',
+								'force3D':'true'
+							},
+							'position':'+=0.5'
+						}
+					]
+				}
+			"/>
+			
+			<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#303030" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="42" y2="42" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'rotation':'1170',
+								'svgOrigin':'30 30',
+								'force3D':'true'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 30',
+								'force3D':'true'
+							},
+							'position':'+=0.5'
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,111 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.6', 'repeat':'2', 'repeatDelay':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path class="lievo-altstroke" fill="none" stroke="#C5D3E2" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M15,39c0,3.31,2.69,6,6,6" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M11,39c0,5.52,4.48,10,10,10',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M7,39c0,7.73,6.27,14,14,14'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M3,39c0,9.94,8.06,18,18,18',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="none" stroke="#C5D3E2" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M15,39c0,3.31,2.69,6,6,6" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'1',
+							'vars':{
+								'path':'M11,39c0,5.52,4.48,10,10,10',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M7,39c0,7.73,6.27,14,14,14'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M3,39c0,9.94,8.06,18,18,18',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-altstroke" fill="none" stroke="#C5D3E2" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M15,39c0,3.31,2.69,6,6,6" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'2',
+							'vars':{
+								'path':'M11,39c0,5.52,4.48,10,10,10',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M7,39c0,7.73,6.27,14,14,14'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M3,39c0,9.94,8.06,18,18,18',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-filledicon">
+			<polyline fill="#3498DB" stroke="#2980B9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="43.51,29.21 52,37.7 42.1,47.6 33.62,39.11"/>
+			<polyline fill="#3498DB" stroke="#2980B9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="20.89,26.38 12.4,17.9 22.3,8 30.79,16.49"/>
+			<path fill="none" stroke="#6C7A89" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23.01,42.65c-1.17,1.17-3.39,0.86-4.95-0.71c-1.56-1.56-1.88-3.78-0.71-4.95"/>
+			<path fill="#ACBAC9" stroke="#8C9AA9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25.13,44.77l-9.9-9.9c2.34-2.34,6.46-2.03,9.19,0.71C27.16,38.31,27.47,42.43,25.13,44.77z"/>
+			<path fill="#BCCAD9" stroke="#9CAAB9" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M18.06,29.21l16.97-16.97c0.78-0.78,2.05-0.78,2.83,0l9.9,9.9c0.78,0.78,0.78,2.05,0,2.83L30.79,41.94L18.06,29.21z"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="46.34,32.04 52,37.7 42.1,47.6 36.44,41.94"/>
+			<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="18.06,23.56 12.4,17.9 22.3,8 27.96,13.66"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23.01,42.65c-1.17,1.17-3.39,0.86-4.95-0.71c-1.56-1.56-1.88-3.78-0.71-4.95"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25.13,44.77l-9.9-9.9c2.34-2.34,6.46-2.03,9.19,0.71C27.16,38.31,27.47,42.43,25.13,44.77z"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M18.06,29.21l16.97-16.97c0.78-0.78,2.05-0.78,2.83,0l9.9,9.9c0.78,0.78,0.78,2.05,0,2.83L30.79,41.94L18.06,29.21z"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<polyline class="lievo-savelinecap" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" points="45.64,31.34 52,37.7 42.1,47.6 35.74,41.23"/>
+			<polyline class="lievo-savelinecap" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" points="18.77,24.26 12.4,17.9 22.3,8 28.67,14.36"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23.01,42.65c-1.17,1.17-3.39,0.86-4.95-0.71c-1.56-1.56-1.88-3.78-0.71-4.95"/>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25.13,44.77l-9.9-9.9c2.34-2.34,6.46-2.03,9.19,0.71C27.16,38.31,27.47,42.43,25.13,44.77z"/>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M18.77,28.51l16.26-16.26c0.78-0.78,2.05-0.78,2.83,0l9.9,9.9c0.78,0.78,0.78,2.05,0,2.83L31.49,41.23L18.77,28.51z"/>
+		</g>
+	</g>
+</svg>

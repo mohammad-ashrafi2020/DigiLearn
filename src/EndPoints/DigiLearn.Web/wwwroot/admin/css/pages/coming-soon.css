@@ -1,0 +1,74 @@
+/* coming soon page css */
+/*----------------------*/
+.cs-btn-notify {
+	left: 7px;
+	top: 6px;
+}
+
+.coming-soon {
+	/* For counter - font size and color css */
+	font-size: 3rem;
+	color: #324356;
+	direction: ltr;
+}
+
+.cs-effect {
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.cs-effect.cs-effect-bounce {
+	-webkit-animation-name: cs-effect-bounce;
+	animation-name: cs-effect-bounce;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes cs-effect-bounce {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	50% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes cs-effect-bounce {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	50% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.coming-soon {
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		font-size: 2.5rem;
+	}
+
+	.coming-soon .clockCard {
+		padding: 0 0.5rem !important;
+	}
+}

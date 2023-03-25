@@ -1,0 +1,160 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.5', 'repeat':'2', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<defs>
+				<clipPath id="livicon_cloud_upload_f">
+					<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="29" cy="43" r="10"/>
+				</clipPath>
+			</defs>
+			<path fill="#51F5EA" stroke="#27CBC0" stroke-width="0" d="M42.44,19.09C40.74,13.26,35.38,9,29,9c-7.73,0-14,6.27-14,14c0,0.07,0.01,0.13,0.01,0.2C10.44,24.12,7,28.16,7,33c0,5.52,4.48,10,10,10c0.17,0,0.68,0,2,0c0-5.52,4.48-10,10-10s10,4.48,10,10h2c6.63,0,12-5.37,12-12C53,24.86,48.39,19.81,42.44,19.09z"/>
+			<path fill="none" stroke="#27CBC0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19,43h-2c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2c0-7.73,6.27-14,14-14c6.38,0,11.74,4.26,13.44,10.09C48.39,19.81,53,24.86,53,31c0,6.63-5.37,12-12,12h-2"/>
+			<g clip-path="url(#livicon_cloud_upload_f)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'y':'+=15'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'-=30'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'y':'0'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="29" y1="45.3" x2="29" y2="39"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="33,43 29,47 25,43"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,33c5.52,0,10,4.48,10,10s-4.48,10-10,10s-10-4.48-10-10S23.48,33,29,33z"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_cloud_upload_l">
+					<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="29" cy="43" r="10"/>
+				</clipPath>
+			</defs>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M15,43c-0.34,0,0.23,0.03-0.1,0C9.85,42.5,7,38.19,7,33c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2c0-7.73,6.27-14,14-14c6.38,0,11.74,4.26,13.44,10.09C48.39,19.81,53,24.86,53,31c0,5.95-4.23,11.05-9.9,12H43"/>
+			<g clip-path="url(#livicon_cloud_upload_l)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'y':'+=15'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'-=30'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'y':'0'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="29" y1="45.3" x2="29" y2="39"/>
+					<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="33,43 29,47 25,43"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,33c5.52,0,10,4.48,10,10s-4.48,10-10,10s-10-4.48-10-10S23.48,33,29,33z"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_cloud_upload_s">
+					<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="29" cy="43" r="9"/>
+				</clipPath>
+			</defs>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42.44,19.09C40.74,13.26,35.38,9,29,9c-7.73,0-14,6.27-14,14c0,0.07,0.01,0.13,0.01,0.2C10.44,24.12,7,28.16,7,33c0,5.19,3.95,9.45,9,9.95C16.03,35.79,21.84,30,29,30c7.16,0,12.97,5.79,13,12.95c6.16-0.51,11-5.66,11-11.95C53,24.86,48.39,19.81,42.44,19.09z"/>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,34c4.97,0,9,4.03,9,9c0,4.97-4.03,9-9,9c-4.97,0-9-4.03-9-9C20,38.03,24.03,34,29,34z"/>
+			<g clip-path="url(#livicon_cloud_upload_s)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'y':'+=15'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'-=30'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'y':'0'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="29" y1="45.3" x2="29" y2="39"/>
+					<polyline class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="33,43 29,47 25,43"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

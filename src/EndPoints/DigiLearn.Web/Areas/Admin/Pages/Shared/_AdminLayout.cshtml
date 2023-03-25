@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="fa" data-textdirection="rtl" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>@ViewData["title"]</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/admin/images/ico/favicon.ico">
+    <meta name="theme-color" content="#5A8DEE">
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/vendors.min.css">
+    
+    @*//Date Picker*@
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/daterange/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/datepicker-jalali/bootstrap-datepicker.min.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="/admin/vendors/css/extensions/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/components.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/pages/dashboard-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+<body class="vertical-layout vertical-menu-modern semi-dark-layout 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" data-layout="semi-dark-layout">
+    <div class="modal fade" id="defaultModal" tabindex="-1" aria-labelledby="editAddressModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editAddressModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-navbar-shadow"></div>
+    <partial name="_Header" />
+    <partial name="_SideBar" />
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+
+    <script src="/admin/vendors/js/vendors.min.js"></script>
+    <script src="/admin/fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js"></script>
+    <script src="/admin/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="/admin/fonts/LivIconsEvo/js/LivIconsEvo.min.js"></script>
+    <script src="/admin/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="/admin/vendors/js/extensions/swiper.min.js"></script>
+    <script src="/admin/js/scripts/configs/vertical-menu-dark.js"></script>
+
+    @*//Date Picker*@
+    <script src="/admin/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <script src="/admin/vendors/js/pickers/datepicker-jalali/bootstrap-datepicker.min.js"></script>
+    <script src="/admin/vendors/js/pickers/datepicker-jalali/bootstrap-datepicker.fa.min.js"></script>
+
+    <script src="/admin/js/core/app-menu.js"></script>
+    <script src="/admin/js/core/app.js"></script>
+    <script src="/admin/js/scripts/components.js"></script>
+    <script src="/admin/js/scripts/footer.js"></script>
+    <script src="/admin/js/scripts/customizer.js"></script>
+    <script src="/assets/js/plugins/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/global.js"></script>
+    <script src="/admin/js/custom.js"></script>
+    <partial name="Shared/_ValidationScriptsPartial" />
+    <script src="/global/clientValidation.js"></script>
+    <div id="ajax-token">
+        @Html.AntiForgeryToken()
+    </div>
+    @await RenderSectionAsync("Scripts",false)
+</body>
+</html>

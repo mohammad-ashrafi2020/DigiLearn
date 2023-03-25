@@ -1,0 +1,56 @@
+/*   Form Validation css  */
+/*-----------------------*/
+.form-group.issue .help-block,
+.form-group.issue .help-inline,
+.form-group.error .help-block,
+.form-group.error .help-inline {
+	/*   when an issue or error occured  */
+	color: #FF5B5C;
+}
+
+.form-group.issue input,
+.form-group.issue select,
+.form-group.issue textarea,
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+	border-color: #FF5B5C;
+}
+
+.form-group.issue input:focus,
+.form-group.issue select:focus,
+.form-group.issue textarea:focus,
+.form-group.error input:focus,
+.form-group.error select:focus,
+.form-group.error textarea:focus {
+	border-color: #FF5B5C;
+	box-shadow: 0 3 10px 0 #FF5B5C;
+}
+
+.form-group .help-block {
+	line-height: 1.85;
+	margin-top: 0.25rem;
+}
+
+.form-group .help-block ul {
+	padding-right: 0;
+}
+
+.form-group .help-block ul li {
+	list-style-type: none;
+	font-size: 0.875rem;
+}
+
+.form-group .help-block ul li::before {
+	content: '\eb1b';
+	position: relative;
+	top: 3px;
+	font-family: boxicons !important;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	display: inline-block;
+	text-transform: none;
+	margin-left: 3px;
+}

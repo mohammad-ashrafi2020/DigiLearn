@@ -1,0 +1,71 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path class="lievo-altstroke" fill="#E74C3C" stroke="#C72C1C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M35.67,50c-1-3-1-3-1-3s-4-13.13-5.38-16.9l9.54-16.52c0,0-0.15,28.82-0.15,33.82l-2,0.46L35.67,50z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{'shape':'M45,28c-4,2-8.07,3.97-13,2c-5-2-10-2.52-14,0V10.93C21,8,27,9,32,11c4.93,1.97,9,1,13-1V28z','shapeIndex':'0'},
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M15.17,47.92l23-39.84" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M15,9v42',
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path class="lievo-altstroke" fill="#E74C3C" stroke="#C72C1C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M45,28c-4,2-8.07,3.97-13,2c-5-2-10-2.52-14,0V10.93C21,8,27,9,32,11c4.93,1.97,9,1,13-1V28z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{'shape':'M35.67,50c-1-3-1-3-1-3s-4-13.13-5.38-16.9l9.54-16.52c0,0-0.15,28.82-0.15,33.82l-2,0.46L35.67,50z','shapeIndex':'0'},
+									'ease':'Back.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M15,9v42" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M15.17,47.92l23-39.84',
+									'ease':'Back.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

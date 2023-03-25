@@ -1,0 +1,45 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,5c13.81,0,25,11.19,25,25c0,13.81-11.19,25-25,25C16.19,55,5,43.81,5,30C5,16.19,16.19,5,30,5z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M9,5l43,25L9,55V5z',
+										'shapeIndex':'0'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,5l43,25L9,55V5z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M30,5c13.81,0,25,11.19,25,25c0,13.81-11.19,25-25,25C16.19,55,5,43.81,5,30C5,16.19,16.19,5,30,5z',
+										'shapeIndex':'0'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

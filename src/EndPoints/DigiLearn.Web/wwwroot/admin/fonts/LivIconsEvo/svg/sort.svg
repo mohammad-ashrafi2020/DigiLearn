@@ -1,0 +1,105 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.8', 'repeat':'1', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-=14',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<path fill="#1ABC9C" stroke="#16A085" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,33h13L30,46L17,33H30z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'0.6',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'+=14',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<path class="lievo-altstroke" fill="#1ABC9C" stroke="#16A085" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,27H17l13-13l13,13H30z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'0.6',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

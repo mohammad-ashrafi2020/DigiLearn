@@ -1,0 +1,45 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,4.5l3.67,2.33l4.21-1.08l2.77,3.35l4.34,0.27l1.6,4.04l4.04,1.6l0.27,4.34l3.35,2.77l-1.08,4.21L55.5,30l-2.33,3.67l1.08,4.21l-3.35,2.77l-0.27,4.34l-4.04,1.6l-1.6,4.04l-4.34,0.27l-2.77,3.35l-4.21-1.08L30,55.5l-3.67-2.33l-4.21,1.08l-2.77-3.35l-4.34-0.27l-1.6-4.04l-4.04-1.6L9.1,40.65l-3.35-2.77l1.08-4.21L4.5,30l2.33-3.67l-1.08-4.21l3.35-2.77l0.27-4.34l4.04-1.6l1.6-4.04l4.34-0.27l2.77-3.35l4.21,1.08L30,4.5z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M9.4,5.2c0.32-0.27,0.82-0.28,1.37,0.05l40.5,23.72c0.98,0.57,0.98,1.5,0,2.07l-40.5,23.72C9.79,55.33,9,54.87,9,53.73V6.27C9,5.78,9.15,5.41,9.4,5.2z',
+										'shapeIndex':'auto'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path class="lievo-morphimage lievo-altstroke" fill="#29C5FF" stroke="#1297E0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9.4,5.2c0.32-0.27,0.82-0.28,1.37,0.05l40.5,23.72c0.98,0.57,0.98,1.5,0,2.07l-40.5,23.72C9.79,55.33,9,54.87,9,53.73V6.27C9,5.78,9.15,5.41,9.4,5.2z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'morphSVG':{
+										'shape':'M30,4.5l3.67,2.33l4.21-1.08l2.77,3.35l4.34,0.27l1.6,4.04l4.04,1.6l0.27,4.34l3.35,2.77l-1.08,4.21L55.5,30l-2.33,3.67l1.08,4.21l-3.35,2.77l-0.27,4.34l-4.04,1.6l-1.6,4.04l-4.34,0.27l-2.77,3.35l-4.21-1.08L30,55.5l-3.67-2.33l-4.21,1.08l-2.77-3.35l-4.34-0.27l-1.6-4.04l-4.04-1.6L9.1,40.65l-3.35-2.77l1.08-4.21L4.5,30l2.33-3.67l-1.08-4.21l3.35-2.77l0.27-4.34l4.04-1.6l1.6-4.04l4.34-0.27l2.77-3.35l4.21,1.08L30,4.5z',
+										'shapeIndex':'auto'
+									}
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

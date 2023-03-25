@@ -1,0 +1,115 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="xy" data-animoptions="{'duration':'0.8', 'repeat':'1', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M11,43v4c0,1.1,0.9,2,2,2h36c1.1,0,2-0.9,2-2v-4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M15,43v4c0,1.1,0.9,2,2,2h28c1.1,0,2-0.9,2-2v-4'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'path':'M7,43v4c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2v-4'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M11,43v4c0,1.1,0.9,2,2,2h36c1.1,0,2-0.9,2-2v-4'
+							}
+						}
+					]
+				}
+			"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-6'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'y':'6'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'0'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="10.7" x2="31" y2="39"/>
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="21,19 31,9 41,19"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M11,43v4c0,1.1,0.9,2,2,2h36c1.1,0,2-0.9,2-2v-4" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M15,43v4c0,1.1,0.9,2,2,2h28c1.1,0,2-0.9,2-2v-4'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'path':'M7,43v4c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2v-4'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'path':'M11,43v4c0,1.1,0.9,2,2,2h36c1.1,0,2-0.9,2-2v-4'
+							}
+						}
+					]
+				}
+			"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-6'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'y':'6'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'0'
+							}
+						}
+					]
+				}
+			">
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="31" y1="10.7" x2="31" y2="39"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="21,19 31,9 41,19"/>
+			</g>
+		</g>
+	</g>
+</svg>

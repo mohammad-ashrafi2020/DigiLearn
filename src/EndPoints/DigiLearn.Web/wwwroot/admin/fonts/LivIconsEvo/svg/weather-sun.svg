@@ -1,0 +1,41 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'3', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'6',
+							'vars':{
+								'rotation':'360',
+								'svgOrigin':'30 30',
+								'force3D':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<path fill="#ffcf4b" stroke="#f5ae3d" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,18c6.63,0,12,5.37,12,12c0,6.63-5.37,12-12,12s-12-5.37-12-12C18,23.37,23.37,18,30,18z"/>
+
+				<path class="lievo-altstroke" fill="none" stroke="#f5ae3d" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,14V7M46.26,13.74l-4.95,4.95 M53,30l-7,0 M41.31,41.31l4.95,4.95 M30,53l0-7 M13.74,46.26l4.95-4.95 M7,30h7 M18.69,18.69l-4.95-4.95" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,14v-1M42,18l-0.69,0.69 M47,30l-1,0 M41.31,41.31L42,42 M30,47l0-1 M18,42l0.69-0.69 M13,30h1 M18.69,18.69L18,18',
+									'repeat':'5',
+									'repeatDelay':'0',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

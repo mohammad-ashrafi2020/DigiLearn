@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.6', 'repeat':'3', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19.35,40.65C30.53,51.83,39.32,52.96,42.22,53c0.56,0.01,1.35-0.37,1.74-0.77l6.52-6.51c0.8-0.8,0.67-1.93-0.29-2.53l-8.11-5.07c-0.96-0.6-2.38-0.44-3.18,0.36l-2.49,2.49c-0.8,0.8-2.26,1.02-3.22,0.42c-2.35-1.46-5.06-3.54-8.05-6.53c-2.98-2.98-5.07-5.7-6.53-8.04c-0.6-0.96-0.38-2.42,0.42-3.22l2.49-2.49c0.8-0.8,0.96-2.22,0.36-3.18l-5.07-8.11c-0.6-0.96-1.73-1.09-2.53-0.29l-6.52,6.52c-0.4,0.4-0.77,1.18-0.77,1.75C7.03,20.68,8.17,29.47,19.35,40.65z"/>
+			
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,28c1.1,0,2,0.9,2,2" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,21c4.97,0,9,4.03,9,9',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,21c4.97,0,9,4.03,9,9" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,15c8.28,0,15,6.72,15,15'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,15c8.28,0,15,6.72,15,15" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,9c11.6,0,21,9.4,21,21'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,9c11.6,0,21,9.4,21,21" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,3c14.91,0,27,12.09,27,27',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

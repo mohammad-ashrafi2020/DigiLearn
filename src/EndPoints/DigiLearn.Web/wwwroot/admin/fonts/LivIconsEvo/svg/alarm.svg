@@ -1,0 +1,438 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.8', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<line fill="none" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="42" y1="47" x2="45" y2="51"/>
+			<line fill="none" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="18" y1="47" x2="15" y2="51"/>
+			<circle transform="rotate(-90, 30, 32)" fill="#FDE3A7" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="32" r="19"/>
+		</g>
+
+		<g class="lievo-filledicon">
+			<line fill="none" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="21" y2="37"/>
+
+			<line fill="none" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="30" y2="18" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-30',
+								'svgOrigin':'30 32'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'force3D':'true'
+							},
+							'position':'+=1'
+						}
+					]
+				}
+			"/>
+
+			<path fill="#FFCF4B" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M10.82,19.3c2.23-3.36,5.32-6.1,8.96-7.91C18.69,9.94,16.96,9,15,9c-3.31,0-6,2.69-6,6C9,16.69,9.7,18.21,10.82,19.3z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path fill="#FFCF4B" stroke="#E74C3C" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49.18,19.3c-2.23-3.36-5.32-6.1-8.96-7.91C41.31,9.94,43.04,9,45,9c3.31,0,6,2.69,6,6C51,16.69,50.3,18.21,49.18,19.3z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-lineicon">
+			<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="21" y2="37"/>
+				
+			<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="30" y2="18" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-30',
+								'svgOrigin':'30 32'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'force3D':'true'
+							},
+							'position':'+=1'
+						}
+					]
+				}
+			"/>
+
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19.79,11.39C18.69,9.94,16.96,9,15,9c-3.31,0-6,2.69-6,6c0,1.69,0.7,3.21,1.82,4.3" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.21,11.39C41.31,9.94,43.04,9,45,9c3.31,0,6,2.69,6,6c0,1.69-0.7,3.21-1.82,4.3" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+		
+		<g class="lievo-solidicon">
+			<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="22" y2="36.5"/>
+				
+			<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="30" y2="19" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-30',
+								'svgOrigin':'30 32'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'force3D':'true'
+							},
+							'position':'+=1'
+						}
+					]
+				}
+			"/>
+
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M10.82,19.3c2.23-3.36,5.32-6.1,8.96-7.91C18.69,9.94,16.96,9,15,9c-3.31,0-6,2.69-6,6C9,16.69,9.7,18.21,10.82,19.3z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M49.18,19.3c-2.23-3.36-5.32-6.1-8.96-7.91C41.31,9.94,43.04,9,45,9c3.31,0,6,2.69,6,6C51,16.69,50.3,18.21,49.18,19.3z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32',
+								'force3D':'true'
+							},
+							'position':'3.5'
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'rotation':'-10',
+								'svgOrigin':'30 32'
+							}
+						},
+						{
+							'duration':'0.25',
+							'vars':{
+								'rotation':'0',
+								'svgOrigin':'30 32'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

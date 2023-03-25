@@ -1,0 +1,113 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<path fill="#ECF0F1" stroke="#3C4A59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7c12.7,0,23,10.3,23,23c0,12.7-10.3,23-23,23C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'2',
+							'position':'0',
+							'vars':{
+								'rotation':'-=60',
+								'svgOrigin':'30 30',
+								'ease':'Back.easeOut'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'rotation':'+=90',
+								'ease':'Power3.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<polygon fill="#F75C4C" stroke="#3C4A59" stroke-width="0" points="34.24,34.24 19.39,40.61 25.76,25.76"/>
+				<polygon fill="#19B5FE" stroke="#3C4A59" stroke-width="0" points="25.76,25.76 40.61,19.39 34.24,34.24"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#3C4A59" stroke-width="2" stroke-miterlimit="10" x1="25.76" y1="25.76" x2="34.24" y2="34.24"/>
+				<path fill="none" stroke="#3C4A59" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.61,19.39l-6.36,14.85l-14.85,6.36l6.36-14.85L40.61,19.39z"/>
+			</g>
+		</g>
+
+		<g class="lievo-lineicon">
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30 7c12.7 0 23 10.3 23 23 0 12.7-10.3 23-23 23C17.3 53 7 42.7 7 30 7 17.3 17.3 7 30 7"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'2',
+							'position':'0',
+							'vars':{
+								'rotation':'-=60',
+								'svgOrigin':'30 30',
+								'ease':'Back.easeOut'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'rotation':'+=90',
+								'ease':'Power3.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#E67E22" stroke-width="2" stroke-miterlimit="10" x1="25.76" y1="25.76" x2="34.24" y2="34.24"/>
+				<path class="lievo-altstroke" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.61,19.39l-6.36,14.85l-14.85,6.36l6.36-14.85L40.61,19.39z"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30 7c12.7 0 23 10.3 23 23 0 12.7-10.3 23-23 23C17.3 53 7 42.7 7 30 7 17.3 17.3 7 30 7"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'2',
+							'position':'0',
+							'vars':{
+								'rotation':'-=60',
+								'svgOrigin':'30 30',
+								'ease':'Back.easeOut'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'rotation':'+=90',
+								'ease':'Power3.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'0',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-solidbg lievo-likestroke" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.61,19.39l-6.36,14.85l-14.85,6.36l6.36-14.85L40.61,19.39z"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="25.05" y1="25.05" x2="34.95" y2="34.95"/>
+			</g>
+		</g>
+	</g>
+</svg>

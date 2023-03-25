@@ -1,0 +1,318 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'position':'0',
+							'vars':{
+								'scale':'0',
+								'opacity':'0',
+								'repeat':'1',
+								'repeatDelay':'3.7',
+								'yoyo':'true',
+								'svgOrigin':'30 30'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-savelinecap" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="20.37" y1="27.33" x2="39.68" y2="17.77"/>
+				<path fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M51,15c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6s2.69-6,6-6C48.31,9,51,11.69,51,15z"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="20.37" y1="32.67" x2="39.68" y2="42.23"/>
+				<path fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M51,45c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6c0-3.31,2.69-6,6-6C48.31,39,51,41.69,51,45z"/>
+				<path class="lievo-altstroke" fill="#ef7265" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M21,30c0,3.31-2.69,6-6,6c-3.31,0-6-2.69-6-6c0-3.31,2.69-6,6-6C18.31,24,21,26.69,21,30z"/>
+			</g>
+			<g opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'position':'0',
+							'vars':{
+								'opacity':'1',
+								'repeat':'1',
+								'repeatDelay':'3.7',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			">
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="32" y1="26.54" x2="37.5" y2="17.01" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'0.7',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="39.5" cy="13.55" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'0.5',
+									'vars':{
+										'attr':{'cx':'39.5', 'cy':'13.55'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="28" y1="26.54" x2="22.5" y2="17.01" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'3.2',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="20.5" cy="13.55" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'3',
+									'vars':{
+										'attr':{'cx':'20.5', 'cy':'13.55'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="26" y1="30" x2="15" y2="30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'2.7',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="11" cy="30" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'2.5',
+									'vars':{
+										'attr':{'cx':'11', 'cy':'30'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="28" y1="33.46" x2="22.5" y2="42.99" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'2.2',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="20.5" cy="46.46" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'2',
+									'vars':{
+										'attr':{'cx':'20.5', 'cy':'46.46'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="32" y1="33.46" x2="37.5" y2="42.99" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'1.7',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="39.5" cy="46.45" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'1.5',
+									'vars':{
+										'attr':{'cx':'39.5', 'cy':'46.45'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<g>
+					<line class="lievo-savelinecap lievo-donotdraw" fill="none" stroke="#A5B5B6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="34" y1="30" x2="45" y2="30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'drawSVG':'0%'
+									}
+								},
+								{
+									'duration':'1.4',
+									'position':'1.2',
+									'vars':{
+										'drawSVG':'100%',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+					<circle class="lievo-donotdraw" fill="#5EFAF7" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" cx="49" cy="30" r="4" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'attr':{'cx':'30', 'cy':'30'}
+									}
+								},
+								{
+									'duration':'1',
+									'position':'1',
+									'vars':{
+										'attr':{'cx':'49', 'cy':'30'},
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+
+				<path class="lievo-donotdraw lievo-altstroke" fill="#ef7265" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M34,30c0,2.21-1.79,4-4,4c-2.21,0-4-1.79-4-4c0-2.21,1.79-4,4-4C32.21,26,34,27.79,34,30z"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,156 @@
+/* dashboard ecommerce page css */
+/*------------------------------*/
+.widget-earnings-scroll {
+	position: relative;
+}
+
+.widget-earnings-scroll .ps__rail-x {
+	opacity: 0.6;
+}
+
+.widget-earnings-scroll .widget-earnings-width {
+	min-width: 390px;
+}
+
+#widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide {
+	/* widget swiper slide */
+	font-weight: 500;
+	background-color: #F2F4F4;
+	height: auto;
+	width: auto !important;
+	color: #828D99;
+	cursor: pointer;
+	line-height: 2;
+}
+
+#widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide.swiper-slide-active {
+	/* swiper slide active */
+	color: #FFFFFF;
+	background-color: #5A8DEE !important;
+	box-shadow: 0 3px 6px 0 rgba(90, 141, 238, 0.5) !important;
+}
+
+#widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide .swiper-heading {
+	margin-top: -2px;
+}
+
+#widget-earnings .wrapper-content {
+	display: none;
+}
+
+#widget-earnings .wrapper-content.active {
+	display: block;
+}
+
+#widget-earnings .media-heading {
+	min-width: 70px;
+}
+
+.marketing-campaigns .table-responsive {
+	position: relative;
+}
+
+.marketing-campaigns .table-responsive .ps__rail-x {
+	opacity: 0.6;
+}
+
+.marketing-campaigns .table-marketing-campaigns thead tr {
+	border-top: 1px solid #DFE3E7 !important;
+	border-bottom: 1px solid #DFE3E7 !important;
+}
+
+.dashboard-latest-update .list-group .list-group-item:hover {
+	z-index: 0;
+}
+
+.dashboard-latest-update .show>.btn-outline-secondary.dropdown-toggle {
+	color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 768px) {
+	.order-summary {
+		border-left: 0 !important;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	.dashboard-latest-update .card-body {
+		height: 331px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+
+	.dashboard-users,
+	.dashboard-order-summary,
+	.dashboard-marketing-campaign {
+		max-width: 100% !important;
+		-webkit-box-flex: 1;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		flex: auto;
+	}
+
+	.dashboard-users-success,
+	.dashboard-users-danger {
+		max-width: 30% !important;
+		-webkit-box-flex: 1;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		flex: auto;
+		width: auto !important;
+	}
+
+	.dashboard-revenue-growth {
+		max-width: 60% !important;
+		-webkit-box-flex: 1;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		flex: auto;
+		width: auto !important;
+	}
+
+	.dashboard-greetings,
+	.dashboard-visit,
+	.dashboard-latest-update,
+	.dashboard-earning-swiper {
+		max-width: 50% !important;
+		-webkit-box-flex: 1;
+		-webkit-flex: auto;
+		-ms-flex: auto;
+		flex: auto;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.dashboard-greetings .card-content {
+		margin-top: 1rem;
+	}
+
+	.dashboard-users .dashboard-users-danger .card-body,
+	.dashboard-users .dashboard-users-success .card-body {
+		padding-top: 1.7rem !important;
+		padding-bottom: 1.7rem !important;
+	}
+}
+
+@media (max-width: 1360px) and (min-width: 1280px) {
+	.dashboard-greetings .card .greeting-text {
+		font-size: 1.53rem;
+	}
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1354px) {
+	.dashboard-greetings .card-content {
+		margin-top: 0.8rem;
+	}
+}
+
+.statistics-data {
+	line-height: 1.85;
+}
+
+.statistics-data .statistics {
+	margin-top: -2px;
+}

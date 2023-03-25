@@ -1,0 +1,110 @@
+/* user profile page css */
+/*-----------------------*/
+.page-user-profile .user-profile-images {
+	position: relative;
+}
+
+.page-user-profile .user-profile-images .user-timeline-image {
+	min-height: 150px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.page-user-profile .user-profile-images .user-profile-image {
+	position: absolute;
+	right: 20px;
+	bottom: -65px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.41);
+}
+
+.page-user-profile .user-profile-images .user-profile-card-image {
+	min-height: 190px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	min-width: 110px;
+}
+
+.page-user-profile .user-profile-images .user-profile-stories-image {
+	max-height: 300px;
+}
+
+.page-user-profile .user-profile-text {
+	position: absolute;
+	bottom: 100px;
+	right: 190px;
+	color: #FFFFFF;
+}
+
+.page-user-profile .user-profile-text .profile-text-color {
+	color: #FFFFFF;
+}
+
+.page-user-profile .user-profile-nav {
+	padding-right: 12rem;
+}
+
+.page-user-profile .user-profile-ellipsis {
+	/* user profile text ellipsis */
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.page-user-profile .user-profile-stories.swiper-container .swiper-slide {
+	width: auto !important;
+	cursor: pointer;
+	position: relative;
+}
+
+.page-user-profile .user-profile-stories.swiper-container .swiper-slide .user-swiper-text {
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 8px;
+	right: 15px;
+	line-height: 1.85;
+}
+
+.page-user-profile .card-header {
+	padding: 1.7rem 1.7rem 0;
+}
+
+.page-user-profile .card-footer {
+	padding: 0 1.7rem 1.7rem;
+	font-size: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+	.page-user-profile .user-profile-images .user-profile-image {
+		/* user profile image positioning */
+		height: 100px;
+		width: 100px;
+		top: 50%;
+		right: 50%;
+		margin-right: -45px;
+		margin-top: 30px;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.41);
+	}
+
+	.page-user-profile .user-profile-text {
+		/* user profile text positioning */
+		top: 48%;
+		right: 0;
+		left: 0;
+		margin-right: 0;
+		margin-top: 50px;
+		color: #475F7B !important;
+		text-align: center !important;
+	}
+
+	.page-user-profile .user-profile-text .profile-text-color {
+		color: #475F7B;
+	}
+
+	.page-user-profile .user-profile-nav {
+		/* user profile nav tabs positioning */
+		padding-right: 0rem;
+		padding-top: 9rem;
+	}
+}

@@ -1,0 +1,68 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.5', 'repeat':'2', 'repeatDelay':'0'}">
+	<g class="lievo-main" transform="rotate(90, 30, 30)">
+		<g class="lievo-lineicon lievo-filledicon">
+			<circle fill="#82cef9" stroke="#59addc" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'4'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-4',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'0'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-altstroke" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.3" y1="30" x2="17" y2="30"/>
+				<polyline class="lievo-altstroke" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="32,21 41,30 32,39"/>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<circle fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23"/>
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'4'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-4',
+								'ease':'none'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'0'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.3" y1="30" x2="17" y2="30"/>
+				<polyline class="lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="32,21 41,30 32,39"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,60 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.6', 'repeat':'1', 'repeatDelay':'0.2'}">
+	<g class="lievo-main">
+		<g class="common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'1.1',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<circle transform="rotate(-90, 30, 30)" fill="#39D5FF" stroke="#22A7F0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23"/>
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="27" x2="30" y2="39"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29.95" y="20.95" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'1',
+									'scaleX':'1',
+									'scaleY':'1',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scaleX':'2',
+									'scaleY':'1.5'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0',
+									'scaleX':'4',
+									'scaleY':'2'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="27" x2="30" y2="39"/>
+					<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29.95" y="20.95" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

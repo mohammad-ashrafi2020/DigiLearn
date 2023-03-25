@@ -1,0 +1,22 @@
+/* Context Menu css */
+/*----------------- */
+.context-menu-list {
+	/* context-menu-list */
+	border-radius: 0.267rem;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+	border: 1px solid #DFE3E7 !important;
+}
+
+.context-menu-list .context-menu-item {
+	padding: 0.6rem 2rem;
+}
+
+.context-menu-list .context-menu-item:not(:last-child) {
+	border-bottom: 1px solid #DFE3E7;
+}
+
+.context-menu-list .context-menu-item:hover,
+.context-menu-item.context-menu-hover {
+	background-color: #F2F4F4;
+	color: inherit;
+}

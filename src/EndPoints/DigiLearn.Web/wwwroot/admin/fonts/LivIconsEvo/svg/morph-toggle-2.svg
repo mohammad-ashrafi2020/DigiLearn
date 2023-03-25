@@ -1,0 +1,271 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.25'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon">
+				<defs>
+					<clipPath id="livicon_toggle_fill_1_s">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_fill_2_s">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<path fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19z"/>
+				<g clip-path="url(#livicon_toggle_fill_1_s)">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'+=24'
+									}
+								}
+							]
+						}
+					">
+						<circle fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_fill_2_s)">
+							<path class="lievo-likestroke" fill="#34495E" stroke="#34495E" stroke-width="0" d="M18,14C9.17,14,2,21.17,2,30c0,8.84,7.17,16,16,16s16-7.16,16-16C34,21.17,26.83,14,18,14zM18,41.2c-6.18,0-11.2-5.01-11.2-11.2c0-6.18,5.02-11.2,11.2-11.2S29.2,23.82,29.2,30C29.2,36.19,24.18,41.2,18,41.2z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'1',
+											'vars':{
+												'morphSVG':'M18,22c-4.42,0-8,3.58-8,8c0,4.42,3.58,8,8,8s8-3.58,8-8C26,25.58,22.42,22,18,22zM18,30L18,30L18,30L18,30L18,30z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+
+			<g class="lievo-lineicon">
+				<defs>
+					<clipPath id="livicon_toggle_line_1_s">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_line_2_s">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_toggle_line_1_s)">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'+=24'
+									}
+								}
+							]
+						}
+					">
+						<circle class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_line_2_s)">
+							<path class="lievo-likestroke lievo-altstroke" stroke="#34495E" stroke-width="0" fill="#34495E" d="M18,14C9.17,14,2,21.17,2,30c0,8.84,7.17,16,16,16s16-7.16,16-16C34,21.17,26.83,14,18,14zM18,41.2c-6.18,0-11.2-5.01-11.2-11.2c0-6.18,5.02-11.2,11.2-11.2S29.2,23.82,29.2,30C29.2,36.19,24.18,41.2,18,41.2z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'1',
+											'vars':{
+												'morphSVG':'M18,22c-4.42,0-8,3.58-8,8c0,4.42,3.58,8,8,8s8-3.58,8-8C26,25.58,22.42,22,18,22zM18,30L18,30L18,30L18,30L18,30z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19z"/>
+			</g>
+			
+			<g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+				<defs>
+					<clipPath id="livicon_toggle_sol_1_s">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_line_2_s">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_toggle_sol_1_s)">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'x':'+=24'
+									}
+								}
+							]
+						}
+					">
+						<circle fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_line_2_s)">
+							<path fill="#34495E" d="M18,11C7.51,11-1,19.51-1,30c0,10.49,8.51,19,19,19s19-8.51,19-19C37,19.51,28.49,11,18,11z M18,43.3c-7.34,0-13.3-5.95-13.3-13.3c0-7.34,5.96-13.3,13.3-13.3S31.3,22.66,31.3,30C31.3,37.35,25.34,43.3,18,43.3z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'1',
+											'vars':{
+												'morphSVG':'M18,19c-6.07,0-11,4.93-11,11c0,6.08,4.93,11,11,11s11-4.92,11-11C29,23.93,24.07,19,18,19z M18,30L18,30L18,30L18,30L18,30z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon">
+				<defs>
+					<clipPath id="livicon_toggle_fill_1_e">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_fill_2_e">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<path fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19z"/>
+				<g clip-path="url(#livicon_toggle_fill_1_e)">
+					<g transform="translate(24, 0)" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'1',
+									'vars':{
+										'x':'-=24'
+									}
+								}
+							]
+						}
+					">
+						<circle fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_fill_2_e)">
+							<path class="lievo-likestroke" fill="#34495E" stroke="#34495E" stroke-width="0" d="M18,22c-4.42,0-8,3.58-8,8c0,4.42,3.58,8,8,8s8-3.58,8-8C26,25.58,22.42,22,18,22zM18,30L18,30L18,30L18,30L18,30z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'0',
+											'vars':{
+												'morphSVG':'M18,14C9.17,14,2,21.17,2,30c0,8.84,7.17,16,16,16s16-7.16,16-16C34,21.17,26.83,14,18,14zM18,41.2c-6.18,0-11.2-5.01-11.2-11.2c0-6.18,5.02-11.2,11.2-11.2S29.2,23.82,29.2,30C29.2,36.19,24.18,41.2,18,41.2z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+
+			<g class="lievo-lineicon">
+				<defs>
+					<clipPath id="livicon_toggle_line_1_e">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_line_2_e">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_toggle_line_1_e)">
+					<g transform="translate(24, 0)" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'1',
+									'vars':{
+										'x':'-=24'
+									}
+								}
+							]
+						}
+					">
+						<circle class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_line_2_e)">
+							<path class="lievo-likestroke lievo-altstroke" stroke="#34495E" stroke-width="0" fill="#34495E" d="M18,22c-4.42,0-8,3.58-8,8c0,4.42,3.58,8,8,8s8-3.58,8-8C26,25.58,22.42,22,18,22zM18,30L18,30L18,30L18,30L18,30z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'0',
+											'vars':{
+												'morphSVG':'M18,14C9.17,14,2,21.17,2,30c0,8.84,7.17,16,16,16s16-7.16,16-16C34,21.17,26.83,14,18,14zM18,41.2c-6.18,0-11.2-5.01-11.2-11.2c0-6.18,5.02-11.2,11.2-11.2S29.2,23.82,29.2,30C29.2,36.19,24.18,41.2,18,41.2z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19z"/>
+			</g>
+			
+			<g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+				<defs>
+					<clipPath id="livicon_toggle_sol_1_e">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,19c4.48,0,8.96,0,12,0c6.08,0,11,4.92,11,11s-4.92,11-11,11s-17.92,0-24,0S7,36.08,7,30s4.92-11,11-11C21.04,19,25.52,19,30,19"/>
+					</clipPath>
+					<clipPath id="livicon_toggle_line_2_e">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="18" cy="30" r="11"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_toggle_sol_1_e)">
+					<g transform="translate(24, 0)" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'1',
+									'vars':{
+										'x':'-=24'
+									}
+								}
+							]
+						}
+					">
+						<circle fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="30" r="11"/>
+						<g clip-path="url(#livicon_toggle_line_2_e)">
+							<path fill="#34495E" d="M18,19c-6.07,0-11,4.93-11,11c0,6.08,4.93,11,11,11s11-4.92,11-11C29,23.93,24.07,19,18,19z M18,30L18,30L18,30L18,30L18,30z" data-animdata="
+								{
+									'steps':[
+										{
+											'duration':'1',
+											'position':'0',
+											'vars':{
+												'morphSVG':'M18,11C7.51,11-1,19.51-1,30c0,10.49,8.51,19,19,19s19-8.51,19-19C37,19.51,28.49,11,18,11z M18,43.3c-7.34,0-13.3-5.95-13.3-13.3c0-7.34,5.96-13.3,13.3-13.3S31.3,22.66,31.3,30C31.3,37.35,25.34,43.3,18,43.3z'
+											}
+										}
+									]
+								}
+							"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

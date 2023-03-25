@@ -1,0 +1,51 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.6', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<defs>
+				<clipPath id="livicon_loader_14">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M60,60H0V0h60V60zM30,30C30,30,30,30,30,30C30,30,30,30,30,30C30,30,30,30,30,30C30,30,30,30,30,30z" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0.9',
+									'position':'0.1',
+									'vars':{
+										'path':'M60,60H0V0h60V60z M30,0.5C13.708,0.5,0.5,13.708,0.5,30c0,16.292,13.208,29.5,29.5,29.5c16.292,0,29.5-13.208,29.5-29.5C59.5,13.708,46.292,0.5,30,0.5z'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'path':'M60,60H0V0h60V60zM30,30C30,30,30,30,30,30C30,30,30,30,30,30C30,30,30,30,30,30C30,30,30,30,30,30z'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_loader_14)">
+				<circle class="lievo-altstroke" transform="rotate(-90, 30, 30)" fill="#9B59B6" stroke="#7E349D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1',
+								'vars':{
+									'attr':{'r':'0.001'}
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'r':'23'},
+									'ease':'Power1.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

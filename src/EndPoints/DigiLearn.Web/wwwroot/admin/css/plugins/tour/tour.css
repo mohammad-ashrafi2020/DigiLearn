@@ -1,0 +1,94 @@
+/* Tour css */
+/*----------*/
+.tippy-popper {
+	border: none;
+	border-radius: 0.5rem;
+	-webkit-filter: drop-shadow(-8px 12px 18px rgba(25, 42, 70, 0.13));
+	filter: drop-shadow(-8px 12px 18px rgba(25, 42, 70, 0.13));
+}
+
+.tippy-popper .tippy-tooltip {
+	/* tour tippy tooltip width */
+	width: auto !important;
+}
+
+.tippy-popper .tippy-tooltip .tippy-arrow {
+	/* border-color tippy arrow */
+	border-bottom-color: #5A8DEE;
+	-webkit-transform: scale(1.5) !important;
+	-ms-transform: scale(1.5) !important;
+	transform: scale(1.5) !important;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content {
+	background-color: #5A8DEE;
+	padding: 1.3rem 1rem;
+	border-radius: 0.5rem;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-header {
+	padding: 0;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-text {
+	color: #FFFFFF;
+	font-size: 1rem;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-footer {
+	padding: 0;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-footer .shepherd-buttons {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-footer .shepherd-buttons li {
+	margin: 0;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-footer .shepherd-buttons .shepherd-button {
+	/* Tour content buttons */
+	background-color: #E2ECFF !important;
+	border-radius: 6px;
+	padding: 0.7rem 2rem;
+	color: #5A8DEE;
+	margin: 0 5px;
+}
+
+.tippy-popper .tippy-tooltip .tippy-content .shepherd-content .shepherd-footer .shepherd-buttons .shepherd-button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tippy-popper .tippy-tooltip .tippy-content [data-shepherd-step-id='step-4'] .shepherd-footer .shepherd-buttons {
+	/* to align footer buttons at center */
+	text-align: center;
+}
+
+/*  For border-color on placement */
+.tippy-popper[x-placement='top'] .tippy-arrow {
+	border-color: transparent;
+	border-top-color: #5A8DEE;
+}
+
+.tippy-popper[x-placement='bottom'] .tippy-arrow {
+	border-color: transparent;
+	border-bottom-color: #5A8DEE;
+}
+
+.tippy-popper[x-placement='right'] .tippy-arrow {
+	border-color: transparent;
+	border-left-color: #5A8DEE;
+}
+
+.tippy-popper[x-placement='left'] .tippy-arrow {
+	border-color: transparent;
+	border-right-color: #5A8DEE;
+}

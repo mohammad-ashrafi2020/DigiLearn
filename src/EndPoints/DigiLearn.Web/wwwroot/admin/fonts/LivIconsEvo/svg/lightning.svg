@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.1', 'repeat':'4', 'repeatDelay':'0.1'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<polygon class="lievo-altstroke" fill="#FDE3A7" stroke="#F9BF3B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="33,11 29,27 41,27 27,49 31,33 19,33" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

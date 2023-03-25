@@ -1,0 +1,22 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'360',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'none'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<path class="lievo-altstroke" fill="#C5D3E2" stroke="#9CAAB9" stroke-width="2" stroke-miterlimit="10" d="M44.78,16.81c6.05,5.62,7.85,13.79,5.08,21.77c-3.25,9.34-12.21,15.16-22.54,14.34C17.29,52.14,9.01,44.1,7.32,34.27c-1.66-9.65,3.19-19.56,11.76-24.29c5.54-3.06,12.46-3.87,18.52-1.95c2.46,0.78,6.65,2.04,7.7,4.74c1.26,3.24-2.45,6.77-5.87,4.39c-6.63-4.61-15.99-3.91-21.8,1.54c-7.33,6.87-7.28,18.56-0.38,25.69c6.79,7.01,18.27,7.36,25.7,1.14c6.71-5.63,8.93-15.37,5.32-23.36C47.31,20.08,46.26,18.55,44.78,16.81z"/>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,172 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.2',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'3.7'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'6'
+						}
+					]
+				}
+			">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="10" x2="50" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x1':'30', 'y1':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x2':'30', 'y2':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'1.8'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'attr':{'x1':'10', 'y1':'10', 'x2':'50', 'y2':'50'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'4'
+							}
+						]
+					}
+				"/>
+			
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="50" y1="10" x2="10" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x1':'30', 'y1':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'0.9'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x2':'30', 'y2':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'2.7'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'attr':{'x1':'50', 'y1':'10', 'x2':'10', 'y2':'50'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'4'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.2',
+							'vars':{
+								'opacity':'0'
+							},
+							'position':'3.7'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'opacity':'1'
+							},
+							'position':'6'
+						}
+					]
+				}
+			">
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="10" x2="50" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x1':'30', 'y1':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x2':'30', 'y2':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'1.8'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'attr':{'x1':'10', 'y1':'10', 'x2':'50', 'y2':'50'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'4'
+							}
+						]
+					}
+				"/>
+			
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="50" y1="10" x2="10" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x1':'30', 'y1':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'0.9'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'attr':{'x2':'30', 'y2':'30'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'2.7'
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'attr':{'x1':'50', 'y1':'10', 'x2':'10', 'y2':'50'},
+									'ease':'Power1.easeOut'
+								},
+								'position':'4'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

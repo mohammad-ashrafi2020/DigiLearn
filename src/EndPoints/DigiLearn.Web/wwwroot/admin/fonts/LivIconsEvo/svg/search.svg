@@ -1,0 +1,63 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<defs>
+				<mask id="livicon_search">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-savefill" fill="#ffffff" stroke="none" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+				</mask>
+			</defs>
+
+			<path fill="#B2E4F9" stroke="#34495E" stroke-width="0" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+
+			<g mask="url(#livicon_search)">
+				<path class="lievo-donotdraw lievo-likestroke lievo-altstroke lievo-solidbg" fill="#34495E" stroke="none" d="M64.39,34h-3.63v-3.6h-10.9V34h-3.63V21.4c0-3.6,1.81-5.4,5.45-5.4h7.26c3.63,0,5.45,1.8,5.45,5.4V34z M60.76,26.8v-5.4c0-1.2-0.6-1.8-1.81-1.8h-7.26c-1.21,0-1.82,0.6-1.82,1.8v5.4H60.76z M84.37,28.6c0,3.6-1.82,5.4-5.45,5.4H66.21V16h12.71c3.61,0,5.43,1.79,5.45,5.37c0,1.66-0.38,2.86-1.15,3.6C83.98,25.75,84.37,26.96,84.37,28.6z M80.73,21.4c0-1.2-0.6-1.8-1.81-1.8h-9.08v3.6h9.08C80.13,23.2,80.73,22.6,80.73,21.4zM80.73,28.6c0-1.2-0.6-1.8-1.81-1.8h-9.08v3.6h9.08C80.13,30.4,80.73,29.8,80.73,28.6z M104.35,34H91.63c-3.63,0-5.45-1.8-5.45-5.4v-7.2c0-3.6,1.82-5.4,5.45-5.4h12.71v3.6H91.63c-1.21,0-1.82,0.6-1.82,1.8v7.2c0,1.2,0.61,1.8,1.82,1.8h12.71V34z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'-=98',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'40',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0',
+									'ease':'none'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'0',
+									'ease':'none'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+		<g class="lievo-filledicon lievo-lineicon">
+			<g>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36.31" y1="36.31" x2="52" y2="52"/>
+				<path class="lievo-savelinecap" fill="none" stroke-linecap="butt" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<g>
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="36.31" y1="36.31" x2="52" y2="52"/>
+				<path class="lievo-savelinecap" fill="none" stroke-linecap="butt" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M13.69,13.69C16.58,10.79,20.58,9,25,9c8.83,0,16,7.16,16,16c0,8.83-7.17,16-16,16c-8.84,0-16-7.17-16-16C9,20.58,10.79,16.58,13.69,13.69z"/>
+			</g>
+		</g>
+	</g>
+</svg>

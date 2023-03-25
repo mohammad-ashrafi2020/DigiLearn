@@ -1,0 +1,97 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="y" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-lineicon lievo-filledicon">
+ 			<defs>
+				<clipPath id="livicon_pulse_f">
+					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" width="48" height="60" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'5.2',
+								'position':'0',
+								'vars':{
+									'attr':{'width':'24'}
+								}
+							},
+							{
+								'duration':'2.8',
+								'vars':{
+									'attr':{'width':'48'}
+								}
+							}
+						]
+					}
+				"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_pulse_f)">
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5,31 19,31 23,12 31,49 39,19 43,31 67,31 71,12 79,49 87,19 91,31 104,31" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'8',
+								'position':'0',
+								'vars':{
+									'x':'-=48'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+ 		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_pulse_f">
+					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="6" width="48" height="60" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'5.2',
+								'position':'0',
+								'vars':{
+									'attr':{'width':'24'}
+								}
+							},
+							{
+								'duration':'2.8',
+								'vars':{
+									'attr':{'width':'48'}
+								}
+							}
+						]
+					}
+				"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_pulse_f)">
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="5,31 19,31 23,12 31,49 39,19 43,31 67,31 71,12 79,49 87,19 91,31 104,31" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'8',
+								'position':'0',
+								'vars':{
+									'x':'-=48'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'x':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

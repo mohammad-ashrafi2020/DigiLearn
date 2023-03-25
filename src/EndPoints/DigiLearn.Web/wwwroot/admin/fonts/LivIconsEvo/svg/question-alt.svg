@@ -1,0 +1,57 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.6', 'repeat':'1', 'repeatDelay':'0.2'}">
+	<g class="lievo-main">
+		<g class="common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scale':'1.1',
+								'transformOrigin':'center center',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<circle transform="rotate(-90, 30, 30)" fill="#FF926B" stroke="#E3724B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="23"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29.95" y="42.95" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,37v-1.71c0.07-1.13,0.4-2.11,1.71-3.43C33.43,30.14,36,27.57,36,25c0-3.79-2.57-6-6-6c-3.43,0-6,2.5-6,5.92L24,25"/>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'1',
+									'scale':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1.38',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'opacity':'0',
+									'scale':'1.62'
+								}
+							}
+						]
+					}
+				">
+					<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29.95" y="42.95" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+					<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,37v-1.71c0.07-1.13,0.4-2.11,1.71-3.43C33.43,30.14,36,27.57,36,25c0-3.79-2.57-6-6-6c-3.43,0-6,2.5-6,5.92L24,25"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

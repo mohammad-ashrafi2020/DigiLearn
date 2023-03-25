@@ -1,0 +1,87 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_lamp_s">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="21" y="0" width="30" height="27" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'0.2',
+										'position':'1',
+										'vars':{
+											'attr':{'y':'27'}
+										}
+									}
+								]
+							}
+						"/>
+					</clipPath>
+				</defs>
+				<path class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M32,12h-2c-8.15,0-13,6.6-13,14.76V53"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="53" x2="21" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'+=90',
+									'transformOrigin':'right bottom'
+								}
+							}
+						]
+					}
+				"/>
+				<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11" y1="53" x2="27" y2="53"/>
+				<g clip-path="url(#livicon_morph_lamp_s)">
+					<polygon class="lievo-likestroke lievo-altstroke" opacity="0.3" fill="#F9E5A0" stroke="#F9E5A0" stroke-width="0" points="50,54 22,54 28,27 44,27"/>
+				</g>
+				<path class="lievo-altstroke" fill="#F3825B" stroke="#E3724B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.09,14.68c0-0.87,0-2.46,0-3.89C40.09,8.69,38.26,7,36,7c-2.26,0-4.09,1.69-4.09,3.79c0,1.43,0,3.02,0,3.89C29,16.19,27,19.27,27,22.83C27,26.5,27,27,27,27h18c0,0,0-0.5,0-4.17C45,19.27,43,16.19,40.09,14.68z"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_lamp_e">
+						<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="21" y="27" width="30" height="27" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'0.2',
+										'position':'0',
+										'vars':{
+											'attr':{'y':'0'}
+										}
+									}
+								]
+							}
+						"/>
+					</clipPath>
+				</defs>
+				<path class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" d="M32,12h-2c-8.15,0-13,6.6-13,14.76V53"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="53" x2="27" y2="50" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0.2',
+								'vars':{
+									'rotation':'-=90',
+									'transformOrigin':'left bottom'
+								}
+							}
+						]
+					}
+				"/>
+				<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11" y1="53" x2="27" y2="53"/>
+				<g clip-path="url(#livicon_morph_lamp_e)">
+					<polygon class="lievo-likestroke lievo-altstroke" opacity="0.3" fill="#F9E5A0" stroke="#F9E5A0" stroke-width="0" points="50,54 22,54 28,27 44,27"/>
+				</g>
+				<path class="lievo-altstroke" fill="#F3825B" stroke="#E3724B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.09,14.68c0-0.87,0-2.46,0-3.89C40.09,8.69,38.26,7,36,7c-2.26,0-4.09,1.69-4.09,3.79c0,1.43,0,3.02,0,3.89C29,16.19,27,19.27,27,22.83C27,26.5,27,27,27,27h18c0,0,0-0.5,0-4.17C45,19.27,43,16.19,40.09,14.68z"/>
+			</g>
+		</g>
+	</g>
+</svg>

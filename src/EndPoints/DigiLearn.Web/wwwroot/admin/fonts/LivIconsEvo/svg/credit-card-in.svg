@@ -1,0 +1,157 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-lineicon lievo-filledicon">
+			<defs>
+				<clipPath id="livicon_creditcardin_f">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M53,43c0,1.1-0.9,2-2,2H9c-1.1,0-2-0.9-2-2V21h46V43z M72-12h-84v84h84V-12z"/>
+				</clipPath>
+			</defs>
+			
+			<path fill="#27CBC0" stroke="#009B90" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M53,43c0,1.1-0.9,2-2,2H9c-1.1,0-2-0.9-2-2V17c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2V43z"/>
+			<rect class="lievo-likestroke" x="7" y="21" fill="#4C5A69" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" width="46" height="4"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="12" y1="33" x2="18" y2="33"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="22" y1="33" x2="28" y2="33"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="32" y1="33" x2="38" y2="33"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="42" y1="33" x2="48" y2="33"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="12" y1="39" x2="30" y2="39"/>
+			<line class="lievo-altstroke lievo-savelinecap" fill="none" stroke="#4C5A69" stroke-width="2" stroke-miterlimit="10" x1="34" y1="39" x2="44" y2="39"/>
+
+			<g clip-path="url(#livicon_creditcardin_f)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=20',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#F1892D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=25',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#F1892D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'1',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=30',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#FFCF4B" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#F1892D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_creditcardin_s">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M53,43c0,1.1-0.9,2-2,2H9c-1.1,0-2-0.9-2-2V21h46V43z M72-12h-84v84h84V-12z"/>
+				</clipPath>
+			</defs>
+
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M53,43c0,1.1-0.9,2-2,2H9c-1.1,0-2-0.9-2-2V17c0-1.1,0.9-2,2-2h42c1.1,0,2,0.9,2,2V43z"/>
+			<rect class="lievo-donotdraw lievo-solidbg" x="7" y="21" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" width="47" height="4"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="12" y1="33" x2="18" y2="33"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="22" y1="33" x2="28" y2="33"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="32" y1="33" x2="38" y2="33"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="42" y1="33" x2="48" y2="33"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="12" y1="39" x2="30" y2="39"/>
+			<line class="lievo-solidbg lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-miterlimit="10" x1="34" y1="39" x2="44" y2="39"/>
+
+			<g clip-path="url(#livicon_creditcardin_s)">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=20',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=25',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'1',
+								'vars':{
+									'scale':'0.5',
+									'transformOrigin':'center center',
+									'x':'+=30',
+									'y':'+=52'
+								}
+							}
+						]
+					}
+				">
+					<circle class="lievo-donotdraw" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="0" cy="-22" r="9"/>
+					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M0-27v-2 M0-17v2 M-3-19v0.5c0,0.83,0.9,1.5,2,1.5h2c1.1,0,2-0.9,2-2v-1c0-1.1-0.9-2-2-2h-2c-1.1,0-2-0.9-2-2v-1c0-1.1,0.9-2,2-2h2c1.1,0,2,0.67,2,1.5v0.5"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

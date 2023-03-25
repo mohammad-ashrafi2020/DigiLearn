@@ -1,0 +1,543 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-solidshift="xy" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<g>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="23" y1="23" x2="10.2" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+		
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="23" x2="49.8" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="37" x2="49.8" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="23" y1="37" x2="10.2" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="9,19 9,9 19,9" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="41,9 51,9 51,19" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="51,41 51,51 41,51" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="9,41 9,51 19,51" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+
+			<g class="lievo-solidicon">
+				<g>
+					<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="23" y1="23" x2="10.2" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+		
+					<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="23" x2="49.8" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="37" x2="49.8" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="23" y1="37" x2="10.2" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'30','y1':'30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="9,19 9,9 19,9" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="41,9 51,9 51,19" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="51,41 51,51 41,51" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="9,41 9,51 19,51" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'30,30 30,30 30,30'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<g>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="10.2" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'23','y1':'23'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+		
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="49.8" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'37','y1':'23'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="49.8" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'37','y1':'37'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="10.2" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'23','y1':'37'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				">
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'9,19 9,9 19,9'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'41,9 51,9 51,19'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'51,41 51,51 41,51'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'9,41 9,51 19,51'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+
+			<g class="lievo-solidicon">
+				<g>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="10.2" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'23','y1':'23'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+		
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="49.8" y2="10.2" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'37','y1':'23'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="49.8" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'37','y1':'37'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="30" x2="10.2" y2="49.8" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'attr':{'x1':'23','y1':'37'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<g opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				">
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'9,19 9,9 19,9'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'41,9 51,9 51,19'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'51,41 51,51 41,51'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+					<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="30,30 30,30 30,30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'9,41 9,51 19,51'},
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

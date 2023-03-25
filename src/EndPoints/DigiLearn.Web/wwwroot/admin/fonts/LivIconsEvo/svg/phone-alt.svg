@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.5', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'y':'-=2',
+								'repeat':'1',
+								'repeatDelay':'7',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			">
+				<path fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,11c-12.97,0-18.73,4.43-20.43,6.09C9.24,17.41,9,18.08,9,18.55v4.81c0,1.1,0.88,1.82,1.96,1.61L17.04,24c1.08-0.22,1.96-1.29,1.96-2.39l0,0c0-1.1,0.17-2.08,1.97-2.97C22.86,17.71,25,17,30,17s7.14,0.71,9.03,1.64c1.8,0.88,1.97,1.86,1.97,2.97l0,0c0,1.1,0.88,2.18,1.96,2.39l6.08,0.96c1.08,0.22,1.96-0.5,1.96-1.61v-4.81c0-0.46-0.24-1.13-0.57-1.46C48.73,15.43,42.97,11,30,11z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'rotation':'-=10',
+									'svgOrigin':'30 16'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'+=20',
+									'repeat':'6',
+									'repeatDelay':'0',
+									'yoyo':'true'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'rotation':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<path fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,23h5c1.1,0,2.04,1.98,2.81,2.77c1.02,1.04,2.91,1.82,5.2,2.1c1.1,0.14,2,1.02,2,2.12v18c0,1.66-1.34,3-3,3H18c-1.66,0-3-1.34-3-3V30c0-1.1,0.9-1.98,1.99-2.12c2.29-0.29,4.18-1.06,5.2-2.1C22.96,24.98,23.9,23,25,23H30z"/>
+			<g>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="23" y="31" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29" y="31" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="35" y="31" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="23" y="37" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29" y="37" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="35" y="37" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="23" y="43" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29" y="43" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="35" y="43" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="2" height="2"/>
+			</g>
+		</g>
+	</g>
+</svg>

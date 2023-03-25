@@ -1,0 +1,232 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<rect x="9" y="23" display="inline" fill="#BEEFBB" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1.5',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect x="15" y="17" display="inline" fill="#A2DED0" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'-=6',
+									'y':'+=6',
+									'ease':'Power1.easeInOut'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'1.5',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect class="lievo-altstroke" x="21" y="11" display="inline" fill="#82CEF9" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'x':'-=12',
+									'y':'+=12',
+									'ease':'Power1.easeInOut'
+
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<polygon fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="39,49 9,49 9,23 11,23 11,47 39,47" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'1.5',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+
+				<polygon fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="45,43 15,43 15,17 17,17 17,41 45,41" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'-=6',
+									'y':'+=6',
+									'morphSVG':'45,43 15,43 15,17 27,17 27,31 45,31',
+									'ease':'Power1.easeInOut'
+
+								}
+							},
+							{
+								'duration':'0',
+								'position':'1.5',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect x="21" y="11" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'x':'-=12',
+									'y':'+=12',
+									'ease':'Power1.easeInOut'
+
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<rect class="lievo-donotdraw" x="9" y="23" display="inline" fill="#BEEFBB" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect class="lievo-donotdraw" x="9" y="23" display="inline" fill="#A2DED0" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'x':'+=6',
+									'y':'-=6',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect class="lievo-altstroke" x="9" y="23" display="inline" fill="#82CEF9" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'+=12',
+									'y':'-=12',
+									'ease':'Power1.easeInOut'
+
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<polygon class="lievo-donotdraw" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="39,49 9,49 9,23 11,23 11,47 39,47" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+
+				<polygon class="lievo-donotdraw" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="39,49 9,49 9,23 21,23 21,37 39,37" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0.5',
+								'vars':{
+									'morphSVG':'45,43 15,43 15,17 17,17 17,41 45,41',
+									'ease':'Power1.easeInOut'
+
+								}
+							}
+						]
+					}
+				"/>
+		
+				<rect x="9" y="23" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="30" height="26" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'+=12',
+									'y':'-=12',
+									'ease':'Power1.easeInOut'
+
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

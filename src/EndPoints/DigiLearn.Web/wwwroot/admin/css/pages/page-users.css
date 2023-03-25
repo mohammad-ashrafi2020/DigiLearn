@@ -1,0 +1,28 @@
+/* user page css */
+/*---------------*/
+.users-list-wrapper .dataTables_length {
+	margin-top: 0 !important;
+}
+
+.users-list-wrapper .dataTables_length select {
+	margin: 0 0.5rem 0 0.5rem;
+}
+
+.users-list-wrapper .dataTables_filter {
+	margin-top: 0 !important;
+}
+
+.users-view .table-borderless td {
+	padding: 0.3rem 0 0.3rem 0;
+	word-break: break-word;
+	white-space: normal;
+}
+
+.users-view .table-borderless td:first-child {
+	width: 140px;
+}
+
+.users-view .users-avatar-shadow,
+.users-edit .users-avatar-shadow {
+	box-shadow: -2px 4px 14px 0 rgba(0, 0, 0, 0.4);
+}

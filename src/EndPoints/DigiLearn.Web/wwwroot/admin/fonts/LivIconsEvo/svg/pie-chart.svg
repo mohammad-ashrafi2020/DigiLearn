@@ -1,0 +1,108 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'1.6', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<path fill="#A2DED0" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M27,33h19c0,5.25-2.13,10-5.57,13.43L27,33z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'32 32'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'0.5',
+							'vars':{
+								'scale':'1',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path fill="#36D7B7" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M27,33l13.43,13.43C37,49.87,32.25,52,27,52s-10-2.13-13.43-5.56L27,33z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'28 32'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'1',
+							'vars':{
+								'scale':'1',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path fill="#1ABC9C" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M27,33L13.57,46.44C10.13,43,8,38.25,8,33c0-10.49,8.51-19,19-19V33z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'28 28'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'2',
+							'vars':{
+								'scale':'1',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+
+			<path class="lievo-altstroke" fill="#AEA8D3" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M33,27V8c10.49,0,19,8.51,19,19H33z" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'33 27',
+								'x':'-=6',
+								'y':'+=6'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'3',
+							'vars':{
+								'scale':'1',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=0.5',
+							'vars':{
+								'x':'+=6',
+								'y':'-=6',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

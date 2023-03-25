@@ -1,0 +1,87 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'y':'+=2',
+								'repeat':'1',
+								'repeatDelay':'5',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			">
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="30" y1="13" x2="30" y2="9" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'attr':{'y1':'11'},
+									'repeat':'1',
+									'repeatDelay':'5',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="27" y1="9" x2="33" y2="9"/>
+			</g>
+
+			<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="42.4" y1="17.6" x2="45" y2="15" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'attr':{'x2':'43', 'y2':'17'},
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true'
+							}
+						}
+					]
+				}
+			"/>
+
+			<circle transform="rotate(-90, 30, 32)" fill="#82CEF9" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="32" r="19"/>
+
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'5',
+							'vars':{
+								'rotation':'+=270',
+								'svgOrigin':'30 32',
+								'force3D':'true',
+								'ease':'SteppedEase.config(17)'
+							},
+							'position':'1'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'rotation':'0',
+								'force3D':'true'
+							},
+							'position':'7'
+						}
+					]
+				}
+			">
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="32" x2="20" y2="22"/>
+				<circle class="lievo-likestroke lievo-altstroke lievo-solidbg" fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="32" r="1"/>
+			</g>
+		</g>
+	</g>
+</svg>

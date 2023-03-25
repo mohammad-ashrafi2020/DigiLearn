@@ -1,0 +1,125 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.2',
+							'position':'0',
+							'vars':{
+								'x':'-=6',
+								'y':'+=6'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=0',
+							'vars':{
+								'x':'+=40',
+								'y':'-=40',
+								'scale':'0.001',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'x':'0',
+								'y':'0',
+								'scale':'1'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=103',
+								'svgOrigin':'48 70',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'rotation':'+=103',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			">
+				<polyline class="lievo-altstroke" fill="#A7EBFD" stroke="#39D5FF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="25,35 25,49 31.58,39.39"/>
+				<polygon fill="#A7EBFD" stroke="#39D5FF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="51,11 43,47 25,35 9,31"/>
+				<line class="lievo-savelinecap" fill="none" stroke="#39D5FF" stroke-width="2" stroke-miterlimit="10" x1="51" y1="11" x2="25" y2="35"/>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.2',
+							'position':'0',
+							'vars':{
+								'x':'-=6',
+								'y':'+=6'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=0',
+							'vars':{
+								'x':'+=40',
+								'y':'-=40',
+								'scale':'0.001',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'x':'0',
+								'y':'0',
+								'scale':'1'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'rotation':'-=103',
+								'svgOrigin':'48 70',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'rotation':'+=103',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			">
+				<polyline fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="25,35 25,49 31.58,39.39"/>
+				<polygon fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="51,11 43,47 25,35 9,31"/>
+				<line class="lievo-solidbg lievo-donotdraw" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="55" y1="6" x2="21" y2="38"/>
+			</g>
+		</g>
+	</g>
+</svg>

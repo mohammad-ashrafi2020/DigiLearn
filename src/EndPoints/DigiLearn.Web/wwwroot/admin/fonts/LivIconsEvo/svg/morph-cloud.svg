@@ -1,0 +1,95 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_cloud_s">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,90.81L-30.81,30L30-30.81L90.81,30L30,90.81z M62.53,3.13l-5.66-5.66l-59.4,59.4l5.66,5.66L62.53,3.13z" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'position':'0',
+										'vars':{
+											'path':'M30,90.81L-30.81,30L30-30.81L90.81,30L30,90.81z M32.83,32.83l-5.66-5.66l0,0L32.83,32.83L32.83,32.83z',
+											'ease':'Power1.easeInOut'
+										}
+									}
+								]
+							}
+						"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_cloud_s)">
+					<path fill="#ECF0F1" stroke="#C2C6C7" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,11c6.38,0,11.74,4.26,13.44,10.09C48.39,21.81,53,26.86,53,33c0,6.63-5.37,12-12,12H17c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2C15,17.27,21.27,11,29,11z"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#C2C6C7" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M50,10L10,50" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,30L30,30',
+									'ease':'Power1.easeInOut'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_cloud_e">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,90.81L-30.81,30L30-30.81L90.81,30L30,90.81z M32.83,32.83l-5.66-5.66l0,0L32.83,32.83L32.83,32.83z" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'position':'0',
+										'vars':{
+											'path':'M30,90.81L-30.81,30L30-30.81L90.81,30L30,90.81z M62.53,3.13l-5.66-5.66l-59.4,59.4l5.66,5.66L62.53,3.13z',
+											'ease':'Power1.easeInOut'
+										}
+									}
+								]
+							}
+						"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_cloud_e)">
+					<path fill="#ECF0F1" stroke="#C2C6C7" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29,11c6.38,0,11.74,4.26,13.44,10.09C48.39,21.81,53,26.86,53,33c0,6.63-5.37,12-12,12H17c-5.52,0-10-4.48-10-10c0-4.84,3.44-8.88,8.01-9.8c0-0.07-0.01-0.13-0.01-0.2C15,17.27,21.27,11,29,11z"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#C2C6C7" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M30,30L30,30" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M50,10L10,50',
+									'ease':'Power1.easeInOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,129 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.3'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-lineicon lievo-solidicon">
+				<defs>
+					<clipPath id="livicon_morph_star_s_ls">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_star_s_ls)">
+					<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#FFCF4B" stroke="none" d="M30,30l4.75-5.11L30,30l7.69,3.89L30,30v9.47V30l-7.69,3.89L30,30l-4.75-5.11L30,30z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M30,10.36l4.75,14.53H50l-12.31,9l4.67,14.51L30,39.47L17.64,48.4l4.67-14.51l-12.31-9h15.25L30,10.36z',
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+			</g>
+			<g class="lievo-filledicon">
+				<defs>
+					<clipPath id="livicon_morph_star_s_f">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_star_s_f)">
+					<path class="lievo-donotdraw" fill="#FFCF4B" stroke="none" d="M30,30l4.75-5.11L30,30l7.69,3.89L30,30v9.47V30l-7.69,3.89L30,30l-4.75-5.11L30,30z" opacity="0" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'1',
+									'vars':{
+										'path':'M30,10.36l4.75,14.53H50l-12.31,9l4.67,14.51L30,39.47L17.64,48.4l4.67-14.51l-12.31-9h15.25L30,10.36z',
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-lineicon lievo-solidicon">
+				<defs>
+					<clipPath id="livicon_morph_star_e_ls">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_star_e_ls)">
+					<path class="lievo-likestroke lievo-altstroke" fill="#FFCF4B" stroke="none" d="M30,10.36l4.75,14.53H50l-12.31,9l4.67,14.51L30,39.47L17.64,48.4l4.67-14.51l-12.31-9h15.25L30,10.36z" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'M30,30l4.75-5.11L30,30l7.69,3.89L30,30v9.47V30l-7.69,3.89L30,30l-4.75-5.11L30,30z','shapeIndex':'0'},
+										'ease':'Power1.easeInOut'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'opacity':'0'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+			</g>
+			<g class="lievo-filledicon">
+				<defs>
+					<clipPath id="livicon_morph_star_e_f">
+						<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+					</clipPath>
+				</defs>
+				<g clip-path="url(#livicon_morph_star_e_f)">
+					<path fill="#FFCF4B" stroke="none" d="M30,10.36l4.75,14.53H50l-12.31,9l4.67,14.51L30,39.47L17.64,48.4l4.67-14.51l-12.31-9h15.25L30,10.36z" opacity="1" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'morphSVG':{'shape':'M30,30l4.75-5.11L30,30l7.69,3.89L30,30v9.47V30l-7.69,3.89L30,30l-4.75-5.11L30,30z','shapeIndex':'0'},
+										'ease':'Power1.easeInOut'
+									}
+								},
+								{
+									'duration':'0',
+									'vars':{
+										'opacity':'0'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+				<path class="lievo-altstroke" fill="none" stroke="#F5AB35" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,10.83L34.63,25H49.5l-12,8.77l4.55,14.15L30,39.22l-12.05,8.7l4.55-14.15L10.5,25h14.87L30,10.83z"/>
+			</g>
+		</g>
+	</g>
+</svg>

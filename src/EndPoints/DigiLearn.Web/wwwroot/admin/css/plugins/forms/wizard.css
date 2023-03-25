@@ -1,0 +1,254 @@
+/* Form Wizard css  */
+/*-----------------*/
+.wizard .steps .current-info {
+	/* default current steps information hide */
+	display: none;
+}
+
+.wizard .steps ul {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.wizard .steps ul li {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+
+.wizard .steps ul li a {
+	position: relative;
+	padding-top: 3.25rem;
+	margin-top: 1.33rem;
+	margin-bottom: 1.33rem;
+	display: block;
+}
+
+.wizard .steps ul li a .step {
+	/* Default step */
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0.95rem;
+	right: 50%;
+	z-index: 1;
+	width: 1.33rem;
+	height: 1.33rem;
+	border-radius: 50%;
+	margin-right: -10px;
+}
+
+.wizard .steps ul li a .step i {
+	/* icon inside step */
+	position: relative;
+	right: -2px;
+	top: -2px;
+	font-size: 1.6rem;
+}
+
+.wizard .steps ul li a .step+.fonticon-wrap {
+	/*wizard Icon upon step icon */
+	position: absolute;
+	top: -50px;
+	right: 0;
+	left: 0;
+}
+
+.wizard .steps ul li::before,
+.wizard .steps ul li::after {
+	/* wizard horizontal line */
+	content: '';
+	position: absolute;
+	top: 2.86rem;
+	width: 50%;
+	height: 3px;
+}
+
+.wizard .steps ul li::before {
+	right: 0;
+}
+
+.wizard .steps ul li:after {
+	left: 0;
+}
+
+.wizard .steps ul li:last-child:after {
+	content: none;
+}
+
+.wizard .steps ul li.current a {
+	/* current step */
+	color: #5A8DEE;
+	cursor: default;
+}
+
+.wizard .steps ul li.current::before {
+	background-color: #5A8DEE;
+}
+
+.wizard .steps ul li.current:after {
+	background-color: #E4E8E8;
+}
+
+.wizard .steps ul li.current~li a {
+	color: #828D99;
+}
+
+.wizard .steps ul li.current~li:before {
+	background-color: #E4E8E8;
+}
+
+.wizard .steps ul li.current~li:after {
+	background-color: #E4E8E8;
+}
+
+.wizard .steps ul li.disabled a {
+	/* disabled step */
+	cursor: default;
+}
+
+.wizard .steps ul li.disabled a .step {
+	border: 3px solid;
+}
+
+.wizard .steps ul li.done a {
+	/* done step */
+	color: #39DA8A;
+}
+
+.wizard .steps ul li.done::after,
+.wizard .steps ul li.done::before {
+	background-color: #39DA8A;
+}
+
+.wizard .steps ul li.error a {
+	/* error for form wizard validation */
+	color: #FF5B5C;
+}
+
+.wizard .steps ul li.error a .step {
+	color: #FF5B5C;
+}
+
+.wizard .content {
+	/* form wizard content */
+	padding: 0;
+	margin: 0;
+}
+
+.wizard .content .title {
+	display: none;
+}
+
+.wizard .actions ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wizard .actions ul li {
+	float: right;
+}
+
+.wizard .actions ul li.disabled {
+	display: none;
+}
+
+.wizard .actions ul li+li {
+	margin-right: 0.66rem;
+	float: left;
+}
+
+.wizard.vertical .steps {
+	/* steps for vertical */
+	float: right;
+	width: 30%;
+}
+
+.wizard.vertical .steps ul li {
+	margin: 0 0.5rem;
+	display: block;
+}
+
+.wizard.vertical .steps ul li a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: right;
+	margin: 0 0.5rem;
+	padding: 1rem;
+	border-radius: 0.267rem;
+	-webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wizard.vertical .steps ul li a .icon-title {
+	line-height: 1.85;
+}
+
+.wizard.vertical .steps ul li a i {
+	font-size: 2.4rem;
+}
+
+.wizard.vertical .steps ul li a i+span {
+	color: #475F7B;
+}
+
+.wizard.vertical .steps ul li a .number {
+	/* step indicator number */
+	display: none;
+}
+
+.wizard.vertical .steps ul li.current {
+	background: #F2F4F4;
+	border-radius: 0.267rem;
+}
+
+.wizard.vertical .steps ul li::before,
+.wizard.vertical .steps ul li::after {
+	content: none;
+}
+
+.wizard.vertical .content {
+	/* content inside vertical */
+	float: right;
+	width: 70%;
+	border-right: 1px solid #DFE3E7;
+}
+
+.wizard.vertical .content .body {
+	padding: 2.5%;
+}
+
+.wizard.vertical .actions {
+	/* action inside vertical */
+	text-align: left;
+}
+
+.wizard.vertical .actions ul {
+	display: inline-block;
+}
+
+/* vertical wizard section becomes 100% on small screen */
+@media (max-width: 767.98px) {
+	.wizard.vertical .steps {
+		width: 100%;
+	}
+
+	.wizard.vertical .content {
+		width: 100%;
+		border-right: none;
+	}
+}
+
+/* specific media query for below screen to hide subtitle */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.wizard.vertical .steps ul li a small {
+		display: none;
+	}
+}

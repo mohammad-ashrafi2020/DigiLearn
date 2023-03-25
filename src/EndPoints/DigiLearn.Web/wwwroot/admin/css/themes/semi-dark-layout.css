@@ -1,0 +1,59 @@
+/* Semi Dark Layout */
+/* ---------------- */
+body.semi-dark-layout .main-menu {
+	background-color: #1A233A !important;
+}
+
+body.semi-dark-layout .main-menu .shadow-bottom {
+	background: -webkit-linear-gradient(top, #1A233AF0 44%, #1A233ABF 73%, #2C303C00);
+	background: linear-gradient(-180deg, #1A233AF0 44%, #1A233ABF 73%, #2C303C00);
+}
+
+body.semi-dark-layout .main-menu .navbar-header {
+	z-index: 3;
+}
+
+body.semi-dark-layout .main-menu .navbar-header .modern-nav-toggle {
+	background-color: transparent !important;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main {
+	background-color: transparent;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .nav-item i {
+	color: #8A99B5;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .nav-item a:after {
+	color: #8A99B5;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .nav-item .menu-content .active .menu-item {
+	color: #5A8DEE !important;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .active .menu-title,
+body.semi-dark-layout .main-menu-content .navigation-main .active i {
+	color: #5A8DEE;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .sidebar-group-active {
+	background: #272E48 !important;
+}
+
+body.semi-dark-layout .main-menu-content .navigation-main .sidebar-group-active .menu-content .active {
+	background-color: #343B53;
+}
+
+body.semi-dark-layout .main-menu .ps__rail-y,
+body.semi-dark-layout .main-menu .ps__rail-y:focus {
+	background-color: #EEEEEE0D !important;
+	width: 10px !important;
+}
+
+body.semi-dark-layout .main-menu .ps__rail-y .ps__thumb-y,
+body.semi-dark-layout .main-menu .ps__rail-y:focus .ps__thumb-y {
+	width: 6px !important;
+	background-color: #D1D7DE !important;
+}

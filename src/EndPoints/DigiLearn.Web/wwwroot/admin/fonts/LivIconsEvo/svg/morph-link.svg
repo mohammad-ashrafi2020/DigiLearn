@@ -1,0 +1,503 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.25'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,23.44l-0.1-0.1c-1.17-1.17-1.17-3.07,0-4.24L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0l-0.1-0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'0',
+								'vars':{
+									'x':'+=2',
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M29.9,19.1l0.2-0.2l0.1-0.1L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.09,9.09l0,0l-0.1,0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30.02,36.56l0.1,0.1c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l9.19-9.19c1.17-1.17,2.97-1.27,4.14-0.1l0.1,0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'0',
+								'vars':{
+									'x':'-=2',
+									'y':'+=2'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30.12,40.9l-0.1,0.1l0,0l-9.09,9.09c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l8.99-8.99l0.1-0.1l0.2-0.2'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.72" y1="23.28" x2="23.28" y2="36.72" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<g transform="matrix(0.001, 0, 0, 0.001, 36.4635, 36.4635)" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1',
+									'transformOrigin':'top left'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="42.5" y1="36.5" x2="49.5" y2="36.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="36.5" y1="42.5" x2="36.5" y2="49.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="41" x2="46" y2="46"/>
+				</g>
+
+				<g transform="matrix(0.001, 0, 0, 0.001, 23.4765, 23.4765)" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1',
+									'transformOrigin':'bottom right'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="17.5" y1="23.5" x2="10.5" y2="23.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="23.5" y1="17.5" x2="23.5" y2="10.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="14" y2="14"/>
+				</g>
+			</g>
+
+			<g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M30,23.44l-0.1-0.1c-1.17-1.17-1.17-3.07,0-4.24L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0l-0.1-0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'0',
+								'vars':{
+									'x':'+=2',
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M29.9,19.1l0.2-0.2l0.1-0.1L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.09,9.09l0,0l-0.1,0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M30.02,36.56l0.1,0.1c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l9.19-9.19c1.17-1.17,2.97-1.27,4.14-0.1l0.1,0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'0',
+								'vars':{
+									'x':'-=2',
+									'y':'+=2'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30.12,40.9l-0.1,0.1l0,0l-9.09,9.09c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l8.99-8.99l0.1-0.1l0.2-0.2'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.72" y1="23.28" x2="23.28" y2="36.72" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<g transform="matrix(0.001, 0, 0, 0.001, 36.4635, 36.4635)" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1',
+									'transformOrigin':'top left'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="42.5" y1="36.5" x2="49.5" y2="36.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="36.5" y1="42.5" x2="36.5" y2="49.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="41" x2="46" y2="46"/>
+				</g>
+
+				<g transform="matrix(0.001, 0, 0, 0.001, 23.4765, 23.4765)" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'2',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1',
+									'transformOrigin':'bottom right'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="17.5" y1="23.5" x2="10.5" y2="23.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="23.5" y1="17.5" x2="23.5" y2="10.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="14" y2="14"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon lievo-lineicon">
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.9,19.1l0.2-0.2l0.1-0.1L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.09,9.09l0,0l-0.1,0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,23.44l-0.1-0.1c-1.17-1.17-1.17-3.07,0-4.24L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0l-0.1-0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'+=2',
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30.12,40.9l-0.1,0.1l0,0l-9.09,9.09c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l8.99-8.99l0.1-0.1l0.2-0.2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30.02,36.56l0.1,0.1c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l9.19-9.19c1.17-1.17,2.97-1.27,4.14-0.1l0.1,0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'-=2',
+									'y':'+=2'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<line class="lievo-savelinecap lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.72" y1="23.28" x2="23.28" y2="36.72" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<g opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.001',
+									'transformOrigin':'top left'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="42.5" y1="36.5" x2="49.5" y2="36.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="36.5" y1="42.5" x2="36.5" y2="49.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="41" x2="46" y2="46"/>
+				</g>
+
+				<g opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.001',
+									'transformOrigin':'bottom right'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="17.5" y1="23.5" x2="10.5" y2="23.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="23.5" y1="17.5" x2="23.5" y2="10.5"/>
+					<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="14" y2="14"/>
+				</g>
+			</g>
+
+			<g class="lievo-solidicon">
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M29.9,19.1l0.2-0.2l0.1-0.1L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.09,9.09l0,0l-0.1,0.1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,23.44l-0.1-0.1c-1.17-1.17-1.17-3.07,0-4.24L39.1,9.9c1.17-1.17,3.07-1.17,4.24,0l6.78,6.78c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0l-0.1-0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'+=2',
+									'y':'-=2'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M30.12,40.9l-0.1,0.1l0,0l-9.09,9.09c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l8.99-8.99l0.1-0.1l0.2-0.2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30.02,36.56l0.1,0.1c1.17,1.17,1.17,3.07,0,4.24l-9.19,9.19c-1.17,1.17-3.07,1.17-4.24,0L9.9,43.31c-1.17-1.17-1.17-3.07,0-4.24l9.19-9.19c1.17-1.17,2.97-1.27,4.14-0.1l0.1,0.1'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'x':'-=2',
+									'y':'+=2'
+								}
+							},
+							{
+								'duration':'2',
+								'vars':{
+									'x':'0',
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<line class="lievo-savelinecap" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="36.72" y1="23.28" x2="23.28" y2="36.72" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+				
+				<g opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.001',
+									'transformOrigin':'top left'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="42.5" y1="36.5" x2="49.5" y2="36.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="36.5" y1="42.5" x2="36.5" y2="49.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="41" y1="41" x2="46" y2="46"/>
+				</g>
+
+				<g opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'scale':'0.001',
+									'transformOrigin':'bottom right'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="17.5" y1="23.5" x2="10.5" y2="23.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="23.5" y1="17.5" x2="23.5" y2="10.5"/>
+					<line fill="none" stroke="#34495E" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="19" x2="14" y2="14"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

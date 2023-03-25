@@ -1,0 +1,92 @@
+/* Dropzone css */
+/* ------------ */
+.dropzone {
+	min-height: 350px;
+	border: 2px dashed #5A8DEE;
+	background: #F2F4F4;
+}
+
+.dropzone .dz-message {
+	/* dropzone message customization */
+	font-size: 1.5rem;
+	position: absolute;
+	top: 44%;
+	right: 0;
+	width: 100%;
+	height: 300px;
+	margin-top: -30px;
+	color: #5A8DEE;
+	text-align: center;
+	line-height: 1.85;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dropzone .dz-message:before {
+	/* dropzone message icon */
+	content: '\ea81';
+	font-family: 'boxicons';
+	font-size: 3.5rem;
+	position: absolute;
+	top: 53px;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	right: 50%;
+	margin-right: -40px;
+	line-height: 1;
+	z-index: 2;
+	color: #5A8DEE;
+	text-indent: 0;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+.dropzone .dz-preview {
+	background: transparent;
+	direction: ltr;
+	text-align: left;
+}
+
+.dropzone .dz-preview .dz-error-mark,
+.dropzone .dz-preview .dz-success-mark {
+	background-image: url('../../../images/dropzone/spritemap.png');
+}
+
+.dropzone .dz-preview .dz-error-message {
+	/* dropzone error message */
+	min-width: 113px;
+	top: 0;
+	right: 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+	font-size: 1.1rem;
+	color: #FF5B5C;
+	line-height: 2rem;
+}
+
+.dropzone .dz-preview .dz-remove:before {
+	content: '\eb61';
+	font-family: 'boxicons';
+	display: inline-block;
+	line-height: 1;
+	z-index: 2;
+	text-indent: 0;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: middle;
+    margin-top: -2px;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+	text-decoration: none;
+	color: #FF2829;
+}
+
+/* For Small Screen drop Logo */
+@media (max-width: 575px) {
+	.dropzone .dz-message:before {
+		top: 7.14rem;
+	}
+}

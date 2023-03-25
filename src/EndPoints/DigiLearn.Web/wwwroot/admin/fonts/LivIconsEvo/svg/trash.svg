@@ -1,0 +1,161 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g opacity="1" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'-=47',
+								'y':'+=10'
+							},
+							'position':'0.5'
+						},
+						{
+							'duration':'0.2',
+							'vars':{
+								'x':'+=5',
+								'y':'-=4'
+							}
+						},
+						{
+							'duration':'0.5',
+							'vars':{
+								'x':'-=1',
+								'y':'+=31'
+							}
+						},
+						{
+							'duration':'0.1',
+							'vars':{
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-donotdraw lievo-likestroke lievo-altstroke" fill="#F9B32F" d="M68.38,7.91l-2.74,1.08c0,0-1.08,0.91-1.5,0.66c-0.46-0.27-0.1-1.8-0.1-1.8l0.88-1.12L63,4.48l2.43-1.12c0,0,0.96-1.68,1.19-1.68c0.52,0,2.58,1.68,2.58,1.68l-1.19-1.29l1.19-0.95l3.62,1.12c0,0-1.03,1.68-0.52,2.24c0.52,0.56,0.98,5.16,0.47,5.16C72.26,9.65,68.9,6,68.9,6l3.72,4.09l-1.97-0.21l-2.02,0.99l-3.46-1.07L68.38,7.91z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'rotation':'-=360',
+									'transformOrigin':'center center'
+								},
+								'position':'0.5'
+							},
+							{
+								'duration':'0.2',
+								'vars':{
+									'rotation':'+=180'
+								}
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'rotation':'+=270'
+								}
+							}
+						]
+					}
+				" />
+			</g>
+		</g>
+
+		<g class="lievo-filledicon lievo-lineicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'scale':'0.7',
+								'transformOrigin':'left bottom',
+								'repeat':'1',
+								'repeatDelay':'1.2',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<g>
+					<path fill="#E74C3C" stroke="#A70C00" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,15H17l1.88,32c0.06,1.1,1.01,2,2.12,2h18c1.1,0,2.05-0.89,2.12-2L43,15H30"/>
+					<line class="lievo-altstroke" fill="none" stroke="#870000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="23" x2="24" y2="41"/>
+					<line class="lievo-altstroke" fill="none" stroke="#870000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="23" x2="30" y2="41"/>
+					<line class="lievo-altstroke" fill="none" stroke="#870000" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="23" x2="36" y2="41"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'rotation':'-=90',
+									'transformOrigin':'left bottom',
+									'repeat':'1',
+									'repeatDelay':'1.2',
+									'yoyo':'true'
+								},
+								'position':'0'
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#5E2C0B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,15v-3c0-0.55,0.45-1,1-1h8c0.55,0,1,0.45,1,1v3"/>
+					<line fill="none" stroke="#5E2C0B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="15" y1="15" x2="45" y2="15"/>
+				</g>
+			</g>
+		</g>
+		
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0.5',
+							'vars':{
+								'scale':'0.7',
+								'transformOrigin':'left bottom',
+								'repeat':'1',
+								'repeatDelay':'1.4',
+								'yoyo':'true'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<g>
+					<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,18H17l1.88,29c0.06,1.1,1.01,2,2.12,2h18c1.1,0,2.05-0.89,2.12-2L43,18H30"/>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="24" x2="24" y2="41"/>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="24" x2="30" y2="41"/>
+					<line class="lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="24" x2="36" y2="41"/>
+				</g>
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'rotation':'-=90',
+									'transformOrigin':'left bottom',
+									'repeat':'1',
+									'repeatDelay':'1.4',
+									'yoyo':'true'
+								},
+								'position':'0'
+							}
+						]
+					}
+				">
+					<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,15v-3c0-0.55,0.45-1,1-1h8c0.55,0,1,0.45,1,1v3"/>
+					<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="15" y1="15" x2="45" y2="15"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,215 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1', 'repeat':'2', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<line class="lievo-savelinecap" fill="none" stroke="#1C2A39" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="27" y1="17" x2="27" y2="23"/>
+			<line class="lievo-savelinecap" fill="none" stroke="#1C2A39" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="27" y1="31" x2="27" y2="37"/>
+			<line class="lievo-savelinecap" fill="none" stroke="#1C2A39" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="27" y1="45" x2="27" y2="51"/>
+			<line fill="none" stroke="#1C2A39" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="9" y1="51" x2="51" y2="51"/>
+			<g>
+				<polyline fill="#4C5A69" stroke="#1C2A39" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,9 51,9 51,17 9,17 9,9 30,9"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="38" y="12" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'1',
+								'vars':{
+									'opacity':'0',
+									'repeat':'3',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="42" y="12" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'repeat':'5',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="46" y="12" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'opacity':'0',
+									'repeat':'3',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<g>
+				<polyline fill="#4C5A69" stroke="#1C2A39" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,23 51,23 51,31 9,31 9,23 30,23"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="38" y="26" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'1',
+								'vars':{
+									'opacity':'0',
+									'repeat':'5',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="42" y="26" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'3',
+								'vars':{
+									'opacity':'0',
+									'repeat':'1',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="46" y="26" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'opacity':'0',
+									'repeat':'3',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<g>
+				<polyline fill="#4C5A69" stroke="#1C2A39" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,37 51,37 51,45 9,45 9,37 30,37"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="38" y="40" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'repeat':'5',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="42" y="40" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'2',
+								'vars':{
+									'opacity':'0',
+									'repeat':'3',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" stroke="none" stroke-width="0" x="46" y="40" fill="#F1C40F" width="2" height="2" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'1',
+								'vars':{
+									'opacity':'0',
+									'repeat':'5',
+									'repeatDelay':'1',
+									'yoyo':'true'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+			<circle class="lievo-donotdraw lievo-likestroke" fill="#1C2A39" cx="10" cy="51" r="3" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'x':'+=17'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'y':'-=6',
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'+=1',
+							'vars':{
+								'y':'+=6',
+								'opacity':'1'
+							}
+						},
+						{
+							'duration':'3.5',
+							'vars':{
+								'x':'+=24'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'opacity':'0'
+							}
+						},
+						{
+							'duration':'0',
+							'vars':{
+								'x':'-=41'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

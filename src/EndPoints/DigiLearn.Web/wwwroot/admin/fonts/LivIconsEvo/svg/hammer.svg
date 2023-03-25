@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'4',
+							'position':'0',
+							'vars':{
+								'rotation':'-=60',
+								'svgOrigin':'23 37',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'+=80',
+								'ease':'Power1.easeIn'
+							}
+						},
+						{
+							'duration':'4',
+							'vars':{
+								'rotation':'-=90',
+								'svgOrigin':'23 37',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'+=103',
+								'ease':'Power1.easeIn'
+							}
+						},
+						{
+							'duration':'4',
+							'vars':{
+								'rotation':'-=90',
+								'svgOrigin':'23 37',
+								'ease':'Power1.easeOut'
+							}
+						},
+						{
+							'duration':'2',
+							'vars':{
+								'rotation':'+=102',
+								'ease':'Power1.easeIn'
+							}
+						},
+						{
+							'duration':'2',
+							'position':'+=2',
+							'vars':{
+								'rotation':'0',
+								'ease':'Power1.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<polyline fill="#EAB897" stroke="#D4A281" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="41.53,22.72 13.24,51 9,46.76 37.28,18.47"/>
+				<path class="lievo-altstroke" fill="#4C5A69" stroke="#1C2A39" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M50.01,25.54l-2.83,2.83L33.75,14.94l-1.93-6.8c-0.11-0.54,0.24-0.89,0.78-0.78l6.8,1.92l13.44,13.44L50.01,25.54z"/>
+			</g>
+			<defs>
+				<clipPath id="livicon_hammer">
+					<rect class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" x="43" y="21" width="16" height="31"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_hammer)">
+				<path fill="none" stroke="#455556" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M51,33v18 M49,33h4" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'0',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'0.2',
+								'position':'5.8',
+								'vars':{
+									'y':'+=6'
+								}
+							},
+							{
+								'duration':'0.2',
+								'position':'+=5.8',
+								'vars':{
+									'y':'+=6'
+								}
+							},
+							{
+								'duration':'0.2',
+								'position':'+=5.8',
+								'vars':{
+									'y':'+=6'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'+=2',
+								'vars':{
+									'opacity':'0'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'y':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

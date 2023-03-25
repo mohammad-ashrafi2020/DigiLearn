@@ -1,0 +1,106 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="y" data-solidshift="y" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<circle fill="#336e7b" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="21" r="3" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'y':'+=9'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1.6',
+							'vars':{
+								'y':'-=9'
+							},
+							'position':'0.4'
+						}
+					]
+				}
+			"/>
+
+			<circle fill="#336e7b" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="39" r="3" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'y':'-=9'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1.6',
+							'vars':{
+								'y':'+=9'
+							},
+							'position':'0.4'
+						}
+					]
+				}
+			"/>
+		</g>
+		<g class="lievo-lineicon lievo-filledicon">
+			<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="18" y1="30" x2="42" y2="30" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'x':'+=46',
+								'scaleY':'0.5',
+								'svgOrigin':'30px 30px'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-=46'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scaleY':'1'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+		
+		<g class="lievo-solidicon">
+			<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="18" y1="30" x2="42" y2="30" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'vars':{
+								'x':'+=46',
+								'scaleY':'0.5',
+								'svgOrigin':'30px 30px'
+							},
+							'position':'0'
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-=46'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'scaleY':'1'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

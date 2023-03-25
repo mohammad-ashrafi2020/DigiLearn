@@ -1,0 +1,56 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'0.4'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90, 30, 30)" fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="16"/>
+				<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.49,29.92c4.18-0.58-1.56,7.11-2.57,0.14c-0.51-3.54,7.04-4.41,7.83-0.98c2.3,9.96-14.05,9.43-11.21-0.98c1.12-4.1,4.73-5.62,8.92-4.35c4.32,1.26,5.92,3.92,5.78,8.69c-0.14,8.99-12.94,9.98-17.13,2.96c-5-8.7,2.43-16.52,11.08-15.25c7.97,1.12,11.03,12.58,5.49,19.04" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'drawSVG':'0%',
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'drawSVG':'100%',
+									'ease':'Power1.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<circle transform="rotate(-90, 30, 30)" fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="16"/>
+				<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M29.49,29.92c4.18-0.58-1.56,7.11-2.57,0.14c-0.51-3.54,7.04-4.41,7.83-0.98c2.3,9.96-14.05,9.43-11.21-0.98c1.12-4.1,4.73-5.62,8.92-4.35c4.32,1.26,5.92,3.92,5.78,8.69c-0.14,8.99-12.94,9.98-17.13,2.96c-5-8.7,2.43-16.52,11.08-15.25c7.97,1.12,11.03,12.58,5.49,19.04" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'drawSVG':'0%',
+									'ease':'Power1.easeOut'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,28 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<polyline class="lievo-altstroke" fill="#51F5EA" stroke="#37DBD0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,7 39.53,7 53,20.47 53,39.53 39.53,53 20.47,53 7,39.53 7,20.47 20.47,7 30,7" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'scale':'0.001',
+								'svgOrigin':'30 30'
+							}
+						},
+						{
+							'duration':'1',
+							'vars':{
+								'delay':'0.4',
+								'scale':'1',
+								'ease':'Back.easeOut'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>

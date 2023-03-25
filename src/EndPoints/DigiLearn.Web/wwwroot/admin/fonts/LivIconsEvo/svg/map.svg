@@ -1,0 +1,433 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<defs>
+				<clipPath id="livicon_map_f">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,13h9h16v34H39H21H5V13h16H30'
+									}
+								},
+								{
+									'duration':'1',
+									'position':'6',
+									'vars':{
+										'path':'M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+				<clipPath id="livicon_map_2_f">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,13h9h16v34H39H21H5V13h16H30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'scaleX':'0.001',
+										'transformOrigin':'left center'
+									}
+								},
+								{
+									'duration':'3',
+									'position':'1',
+									'vars':{
+										'scaleX':'1',
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+			</defs>
+			<path fill="#FFDCB5" stroke="#FFA27B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,13h9h16v34H39H21H5V13h16H30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'path':'M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13'
+							}
+						}
+					]
+				}
+			"/>
+			
+			<g clip-path="url(#livicon_map_f)">
+				<path fill="none" stroke="#FFA27B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,17v34" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M21,13v34',
+									'x':'-=2',
+									'scaleX':'0',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'6',
+								'vars':{
+									'path':'M23,17v34',
+									'x':'0',
+									'scaleX':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#FFA27B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,9v34" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M39,13v34',
+									'x':'+=2',
+									'scaleX':'0',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'6',
+								'vars':{
+									'path':'M37,9v34',
+									'x':'0',
+									'scaleX':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<g clip-path="url(#livicon_map_2_f)">
+					<path class="lievo-donotdraw" fill="none" stroke="#B3421B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" opacity="0" d="M64,34c-0.73,0.06-1.45,0.07-2.15,0.05 M52.47,31.48c1.13,0.57,2.31,1.08,3.54,1.5 M47.51,28.56c-1.2-0.77-2.37-1.55-3.52-2.26 M39,23.75C37.7,23.28,36.37,23,35,23 M30,24.92c-1.08,0.9-2.03,2.03-2.96,3.21 M19.92,34.52c1.38-0.48,2.54-1.29,3.58-2.27 M14.59,35.31c-1.31,0.32-2.61,0.89-3.89,1.61 M5.98,40.31C5.01,41.14,4.1,42,3.26,42.85 M-0.7,47.31C-1.53,48.34-2,49-2,49" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'0.5',
+									'position':'6',
+									'vars':{
+										'opacity':'0'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-lineicon">
+			<defs>
+				<clipPath id="livicon_map_l">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,13h9h16v34H39H21H5V13h16H30'
+									}
+								},
+								{
+									'duration':'1',
+									'position':'6',
+									'vars':{
+										'path':'M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+				<clipPath id="livicon_map_2_l">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,13h9h16v34H39H21H5V13h16H30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'scaleX':'0.001',
+										'transformOrigin':'left center'
+									}
+								},
+								{
+									'duration':'3',
+									'position':'1',
+									'vars':{
+										'scaleX':'1',
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+			</defs>
+			<g clip-path="url(#livicon_map_l)">
+				<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,17v34" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M21,13v34',
+									'x':'-=2',
+									'scaleX':'0',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'6',
+								'vars':{
+									'path':'M23,17v34',
+									'x':'0',
+									'scaleX':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,9v34" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M39,13v34',
+									'x':'+=2',
+									'scaleX':'0',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'1',
+								'position':'6',
+								'vars':{
+									'path':'M37,9v34',
+									'x':'0',
+									'scaleX':'1'
+								}
+							}
+						]
+					}
+				"/>
+				<!-- <path class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" opacity="0" d="M64,34c-0.73,0.06-1.45,0.07-2.15,0.05 M52.47,31.48c1.13,0.57,2.31,1.08,3.54,1.5 M47.51,28.56c-1.2-0.77-2.37-1.55-3.52-2.26 M39,23.75C37.7,23.28,36.37,23,35,23 M30,24.92c-1.08,0.9-2.03,2.03-2.96,3.21 M19.92,34.52c1.38-0.48,2.54-1.29,3.58-2.27 M14.59,35.31c-1.31,0.32-2.61,0.89-3.89,1.61 M5.98,40.31C5.01,41.14,4.1,42,3.26,42.85 M-0.7,47.31C-1.53,48.34-2,49-2,49" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'0.5',
+								'vars':{
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/> -->
+				<g clip-path="url(#livicon_map_2_l)">
+					<path class="lievo-donotdraw lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" opacity="0" d="M64,34c-0.73,0.06-1.45,0.07-2.15,0.05 M52.47,31.48c1.13,0.57,2.31,1.08,3.54,1.5 M47.51,28.56c-1.2-0.77-2.37-1.55-3.52-2.26 M39,23.75C37.7,23.28,36.37,23,35,23 M30,24.92c-1.08,0.9-2.03,2.03-2.96,3.21 M19.92,34.52c1.38-0.48,2.54-1.29,3.58-2.27 M14.59,35.31c-1.31,0.32-2.61,0.89-3.89,1.61 M5.98,40.31C5.01,41.14,4.1,42,3.26,42.85 M-0.7,47.31C-1.53,48.34-2,49-2,49" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'0.5',
+									'position':'6',
+									'vars':{
+										'opacity':'0'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,13h9h16v34H39H21H5V13h16H30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'path':'M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<defs>
+				<clipPath id="livicon_map_s">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M57,13v34H3V13H57z"/>
+				</clipPath>
+				<clipPath id="livicon_map_2_s">
+					<path class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" d="M30,13h9h16v34H39H21H5V13h16H30" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'0',
+									'vars':{
+										'scaleX':'0.001',
+										'transformOrigin':'left center'
+									}
+								},
+								{
+									'duration':'3',
+									'position':'1',
+									'vars':{
+										'scaleX':'1',
+										'ease':'Power1.easeInOut'
+									}
+								}
+							]
+						}
+					"/>
+				</clipPath>
+			</defs>
+			<path fill="#34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M30,13h9h16v34H39H21H5V13h16H30'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'path':'M30,13l7-4l14,8v34l-14-8l-14,8L9,43V9l14,8L30,13'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,14v38.5" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M21,12v36',
+								'x':'-=2',
+								'scaleX':'0',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'path':'M23,14v38.5',
+								'x':'0',
+								'scaleX':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M37,7.5v38" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M39,12v36',
+								'x':'+=2',
+								'scaleX':'0',
+								'transformOrigin':'center center'
+							}
+						},
+						{
+							'duration':'1',
+							'position':'6',
+							'vars':{
+								'path':'M37,7.5v38',
+								'x':'0',
+								'scaleX':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<g clip-path="url(#livicon_map_s)">
+				<g clip-path="url(#livicon_map_2_s)">
+					<path class="lievo-donotdraw lievo-solidbg" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" opacity="0" d="M64,34c-0.73,0.06-1.45,0.07-2.15,0.05 M52.47,31.48c1.13,0.57,2.31,1.08,3.54,1.5 M47.51,28.56c-1.2-0.77-2.37-1.55-3.52-2.26 M39,23.75C37.7,23.28,36.37,23,35,23 M30,24.92c-1.08,0.9-2.03,2.03-2.96,3.21 M19.92,34.52c1.38-0.48,2.54-1.29,3.58-2.27 M14.59,35.31c-1.31,0.32-2.61,0.89-3.89,1.61 M5.98,40.31C5.01,41.14,4.1,42,3.26,42.85 M-0.7,47.31C-1.53,48.34-2,49-2,49" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'0',
+									'position':'1',
+									'vars':{
+										'opacity':'1'
+									}
+								},
+								{
+									'duration':'0.5',
+									'position':'6',
+									'vars':{
+										'opacity':'0'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

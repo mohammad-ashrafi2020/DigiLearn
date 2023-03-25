@@ -1,0 +1,63 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-solidshift="xy" data-animoptions="{'duration':'1.4', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'360',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'none'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<line class="lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="30" y1="7" x2="30" y2="14"/>
+			<line opacity="0.23" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="41.5" y1="10.08" x2="38" y2="16.14"/>
+			<line opacity="0.3" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="49.92" y1="18.5" x2="43.86" y2="22"/>
+			<line opacity="0.37" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="53" y1="30" x2="46" y2="30"/>
+			<line opacity="0.44" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="49.92" y1="41.5" x2="43.86" y2="38"/>
+			<line opacity="0.51" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="41.5" y1="49.92" x2="38" y2="43.86"/>
+			<line opacity="0.58" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="30" y1="53" x2="30" y2="46"/>
+			<line opacity="0.65" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="18.5" y1="49.92" x2="22" y2="43.86"/>
+			<line opacity="0.72" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="10.08" y1="41.5" x2="16.14" y2="38"/>
+			<line opacity="0.79" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="7" y1="30" x2="14" y2="30"/>
+			<line opacity="0.86" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="10.08" y1="18.5" x2="16.14" y2="22"/>
+			<line opacity="0.93" fill="none" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" x1="18.5" y1="10.08" x2="22" y2="16.14"/>
+		</g>
+
+		<g class="lievo-solidicon" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'360',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'none'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<line class="lievo-altstroke" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="30" y1="7" x2="30" y2="14"/>
+			<line opacity="0.23" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="41.5" y1="10.08" x2="38" y2="16.14"/>
+			<line opacity="0.3" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="49.92" y1="18.5" x2="43.86" y2="22"/>
+			<line opacity="0.37" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="53" y1="30" x2="46" y2="30"/>
+			<line opacity="0.44" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="49.92" y1="41.5" x2="43.86" y2="38"/>
+			<line opacity="0.51" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="41.5" y1="49.92" x2="38" y2="43.86"/>
+			<line opacity="0.58" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="30" y1="53" x2="30" y2="46"/>
+			<line opacity="0.65" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="18.5" y1="49.92" x2="22" y2="43.86"/>
+			<line opacity="0.72" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="10.08" y1="41.5" x2="16.14" y2="38"/>
+			<line opacity="0.79" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="7" y1="30" x2="14" y2="30"/>
+			<line opacity="0.86" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="10.08" y1="18.5" x2="16.14" y2="22"/>
+			<line opacity="0.93" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round" x1="18.5" y1="10.08" x2="22" y2="16.14"/>
+		</g>
+	</g>
+</svg>

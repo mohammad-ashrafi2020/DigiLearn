@@ -1,0 +1,87 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,16c7.73,0,14,6.27,14,14c0,3.81-1.53,7.27-4,9.8c-2.54,2.59-6.08,4.2-10,4.2c-7.73,0-14-6.27-14-14C16,22.27,22.27,16,30,16z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,11c-10.49,0-19,8.51-19,19c0,10.49,8.51,19,19,19c5.18,0,9.87-2.08,13.3-5.44c-10.37-0.15-18.73-8.58-18.73-18.99C24.57,16.52,30,11,30,11z'
+								}
+							}
+						]
+					}
+				"/>
+				<g opacity ="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'scale':'0.62',
+									'transformOrigin':'center center'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="11" x2="30" y2="7"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="43.44" y1="16.57" x2="46.26" y2="13.74"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="49" y1="30" x2="53" y2="30"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="43.43" y1="43.44" x2="46.26" y2="46.26"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="49" x2="30" y2="53"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16.56" y1="43.43" x2="13.74" y2="46.26"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11" y1="30" x2="7" y2="30"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16.57" y1="16.56" x2="13.74" y2="13.74"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path class="lievo-altstroke" fill="#FDE3A7" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,11c-10.49,0-19,8.51-19,19c0,10.49,8.51,19,19,19c5.18,0,9.87-2.08,13.3-5.44c-10.37-0.15-18.73-8.58-18.73-18.99C24.57,16.52,30,11,30,11z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M30,16c7.73,0,14,6.27,14,14c0,3.81-1.53,7.27-4,9.8c-2.54,2.59-6.08,4.2-10,4.2c-7.73,0-14-6.27-14-14C16,22.27,22.27,16,30,16z'
+								}
+							}
+						]
+					}
+				"/>
+				<g transform="matrix(0.62, 0, 0, 0.62, 11.4, 11.4)" opacity ="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'opacity':'1',
+									'scale':'1',
+									'transformOrigin':'center center'
+								}
+							}
+						]
+					}
+				">
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="11" x2="30" y2="7"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="43.44" y1="16.57" x2="46.26" y2="13.74"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="49" y1="30" x2="53" y2="30"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="43.43" y1="43.44" x2="46.26" y2="46.26"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="49" x2="30" y2="53"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16.56" y1="43.43" x2="13.74" y2="46.26"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11" y1="30" x2="7" y2="30"/>
+					<line fill="none" stroke="#F9B32F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16.57" y1="16.56" x2="13.74" y2="13.74"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

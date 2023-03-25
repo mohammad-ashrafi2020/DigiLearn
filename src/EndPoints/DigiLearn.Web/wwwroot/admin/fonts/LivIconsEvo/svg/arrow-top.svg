@@ -1,0 +1,39 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-solidshift="x" data-animoptions="{'duration':'0.5', 'repeat':'2', 'repeatDelay':'0'}">
+	<g class="lievo-main" transform="rotate(270, 30, 30)">
+		<g data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'0.5',
+						'vars':{
+							'x':'6'
+						},
+						'position':'0'
+					},
+					{
+						'duration':'1',
+						'vars':{
+							'x':'-6'
+						}
+					},
+					{
+						'duration':'0.5',
+						'vars':{
+							'x':'0',
+							'ease':'none'
+						}
+					}
+				]
+			}
+		">
+			<g class="lievo-lineicon lievo-filledicon">
+				<line class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="43.3" y1="30" x2="15" y2="30"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="33,18 45,30 33,42"/>
+			</g>
+			<g class="lievo-solidicon">
+				<line fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="43.3" y1="30" x2="15" y2="30"/>
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="33,18 45,30 33,42"/>
+			</g>
+		</g>
+	</g>
+</svg>

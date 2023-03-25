@@ -1,0 +1,250 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'6.5',
+							'position':'10',
+							'vars':{
+								'x':'-=16',
+								'y':'-=15'
+							}
+						},
+						{
+							'duration':'9',
+							'vars':{
+								'x':'+=32'
+							}
+						},
+						{
+							'duration':'9',
+							'vars':{
+								'y':'+=32'
+							}
+						},
+						{
+							'duration':'9',
+							'vars':{
+								'x':'-=32'
+							}
+						},
+						{
+							'duration':'6.5',
+							'vars':{
+								'x':'0',
+								'y':'0'
+							}
+						}
+					]
+				}
+			">
+				<g data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'2',
+								'position':'9',
+								'vars':{
+									'rotation':'-=45',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'15.5',
+								'vars':{
+									'rotation':'+=135'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'24.5',
+								'vars':{
+									'rotation':'+=90'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'32.5',
+								'vars':{
+									'rotation':'+=90'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'42.5',
+								'vars':{
+									'rotation':'+=135'
+								}
+							},
+							{
+								'duration':'10',
+								'position':'52',
+								'vars':{
+									'rotation':'-=45'
+								}
+							},
+							{
+								'duration':'0',
+								'vars':{
+									'rotation':'0'
+								}
+							}
+						]
+					}
+				">
+					<g data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'10',
+									'position':'0',
+									'vars':{
+										'scale':'0.5',
+										'svgOrigin':'30 30',
+										'repeat':'1',
+										'repeatDelay':'42',
+										'yoyo':'true'
+									}
+								}
+							]
+						}
+					">
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.45,24.05L45,20" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'2',
+										'position':'10',
+										'vars':{
+											'rotation':'+60',
+											'transformOrigin':'left bottom',
+											'repeat':'19',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									}
+								]
+							}
+						"/>
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42.1,35H49" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'position':'11',
+										'vars':{
+											'rotation':'-45',
+											'transformOrigin':'left center'
+										}
+									},
+									{
+										'duration':'2',
+										'vars':{
+											'rotation':'+45',
+											'repeat':'18',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									},
+									{
+										'duration':'1',
+										'vars':{
+											'rotation':'0'
+										}
+									}
+								]
+							}
+						"/>
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.45,44.95L45,50" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'2',
+										'position':'12',
+										'vars':{
+											'rotation':'-60',
+											'transformOrigin':'left top',
+											'repeat':'19',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									}
+								]
+							}
+						"/>
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19.55,44.95L15,50" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'2',
+										'position':'10',
+										'vars':{
+											'rotation':'+60',
+											'transformOrigin':'right top',
+											'repeat':'19',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									}
+								]
+							}
+						"/>
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M17.9,35H11" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'1',
+										'position':'11',
+										'vars':{
+											'rotation':'-45',
+											'transformOrigin':'right center'
+										}
+									},
+									{
+										'duration':'2',
+										'vars':{
+											'rotation':'+45',
+											'repeat':'18',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									},
+									{
+										'duration':'1',
+										'vars':{
+											'rotation':'0'
+										}
+									}
+								]
+							}
+						"/>
+						<path fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19.55,24.05L15,20" data-animdata="
+							{
+								'steps':[
+									{
+										'duration':'2',
+										'position':'12',
+										'vars':{
+											'rotation':'-60',
+											'transformOrigin':'right bottom',
+											'repeat':'19',
+											'repeatDelay':'0',
+											'yoyo':'true'
+										}
+									}
+								]
+							}
+						"/>
+						<path class="lievo-altstroke" fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M33.23,13.35c0,0,1.53-5.25,3.77-6.35"/>
+						<path class="lievo-altstroke" fill="none" stroke="#7E4C2B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26.76,13.35c0,0-1.53-5.25-3.76-6.35"/>
+						<path class="lievo-savelinecap" fill="#F39C12" stroke="#D87400" stroke-width="2" stroke-miterlimit="10" d="M36.44,20.55c0.1-0.47,0.16-0.95,0.16-1.45c0-3.64-2.96-6.6-6.6-6.6c-3.65,0-6.6,2.96-6.6,6.6c0,0.5,0.06,0.98,0.16,1.44"/>
+						<path fill="#F9BF3B" stroke="#E67E22" stroke-width="2" stroke-miterlimit="10" d="M30,18c6.68,0,12.1,7.39,12.1,16.5C42.1,43.61,36.68,51,30,51c-6.68,0-12.1-7.39-12.1-16.5C17.9,25.39,23.32,18,30,18z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

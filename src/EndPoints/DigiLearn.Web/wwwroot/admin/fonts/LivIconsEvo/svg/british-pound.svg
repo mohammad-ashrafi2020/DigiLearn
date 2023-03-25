@@ -1,0 +1,41 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g class="lievo-common" data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'position':'0',
+						'vars':{
+							'x':'+=72',
+							'rotation':'+=144',
+							'transformOrigin':'center center',
+							'ease':'Power1.easeIn'
+						}
+					},
+					{
+						'duration':'0',
+						'vars':{
+							'x':'-=72',
+							'y':'-=72',
+							'rotation':'0'
+						}
+					},
+					{
+						'duration':'1.4',
+						'position':'+=0.6',
+						'vars':{
+							'y':'+=72',
+							'ease':'Bounce.easeOut'
+						}
+					}
+				]
+			}
+		">
+			<path fill="#BE90D4" stroke="#AB69C6" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M30,7c12.7,0,23,10.3,23,23c0,12.7-10.3,23-23,23C17.3,53,7,42.7,7,30C7,17.3,17.3,7,30,7z"/>
+			<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24,39L24,39v-0.1c0,0,3-2.71,3-4.9c0-3,0-12,0-12c0-1.66,1.79-3,4-3c1.07,0,2.04,0.31,2.76,0.83"/>
+			<polyline class="lievo-altstroke lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="23,39 35,39 37,37"/>
+			<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="25" y1="29" x2="33" y2="29"/>
+		</g>
+	</g>
+</svg>

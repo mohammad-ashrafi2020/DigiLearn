@@ -1,0 +1,117 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.4'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-filledicon">
+				<path fill="#9ee5ff" stroke="#9ee5ff" stroke-width="0" d="M41.19,49.01L41.19,49.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99l0,0c0.21,2.79,5,1.99,11.2,1.99C37.13,51,40.86,52,41.19,49.01z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M43.95,20l-2.76,29.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15.86,18c7.09,0,10.62,0.5,14.14,1C33.5,19.5,36.99,20,43.95,20z',
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#5C6A79" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9h15l-3.81,40.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15,9H30z"/>
+			</g>
+			
+			<g class="lievo-lineicon">
+				<path class="lievo-likestroke lievo-altstroke" fill="#34495E" stroke="#34495E" stroke-width="0" d="M41.19,49.01L41.19,49.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99l0,0c0.21,2.79,5,1.99,11.2,1.99C37.13,51,40.86,52,41.19,49.01z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M43.95,20l-2.76,29.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15.86,18c7.09,0,10.62,0.5,14.14,1C33.5,19.5,36.99,20,43.95,20z',
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+				<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9h15l-3.81,40.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15,9H30z"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<path fill="#ffffff" class="lievo-solidbg" stroke="#ffffff" stroke-width="0" d="M30,9.5h14.64l-3.72,39.06c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94L15.36,9.5H30z"/>
+				<path fill="#34495E" stroke="#34495E" stroke-width="0" d="M40.92,48.56L40.92,48.56c-0.1,1.1-0.82,1.86-1.92,1.86H21c-1.1,0-1.82-0.76-1.92-1.86l0,0c0.21,2.79,4.74,1.86,10.93,1.86C37.13,50.42,40.59,51.55,40.92,48.56z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M43.62,20.24l-2.7,28.32c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94l-2.88-30.27c6.92,0,10.37,0.49,13.81,0.98C33.42,19.75,36.83,20.24,43.62,20.24z',
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9.5h14.64l-3.72,39.06c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94L15.36,9.5H30z"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-filledicon">
+				<path fill="#9ee5ff" stroke="#9ee5ff" stroke-width="0" d="M43.95,20l-2.76,29.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15.86,18c7.09,0,10.62,0.5,14.14,1C33.5,19.5,36.99,20,43.95,20z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M41.19,49.01L41.19,49.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99l0,0c0.21,2.79,5,1.99,11.2,1.99C37.13,51,40.86,52,41.19,49.01z',
+									'ease':'Back.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#5C6A79" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9h15l-3.81,40.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15,9H30z"/>
+			</g>
+			
+			<g class="lievo-lineicon">
+				<path class="lievo-likestroke lievo-altstroke" fill="#34495E" stroke="#34495E" stroke-width="0" d="M43.95,20l-2.76,29.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15.86,18c7.09,0,10.62,0.5,14.14,1C33.5,19.5,36.99,20,43.95,20z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M41.19,49.01L41.19,49.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99l0,0c0.21,2.79,5,1.99,11.2,1.99C37.13,51,40.86,52,41.19,49.01z',
+									'ease':'Back.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+				<path class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9h15l-3.81,40.01C41.08,50.11,40.1,51,39,51H21c-1.1,0-2.08-0.89-2.19-1.99L15,9H30z"/>
+			</g>
+
+			<g class="lievo-solidicon">
+				<path fill="#ffffff" class="lievo-solidbg" stroke="#ffffff" stroke-width="0" d="M30,9.5h14.64l-3.72,39.06c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94L15.36,9.5H30z"/>
+				<path fill="#34495E" stroke="#34495E" stroke-width="0" d="M43.62,20.24l-2.7,28.32c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94l-2.88-30.27c6.92,0,10.37,0.49,13.81,0.98C33.42,19.75,36.83,20.24,43.62,20.24z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M40.92,48.56L40.92,48.56c-0.1,1.1-0.82,1.86-1.92,1.86H21c-1.1,0-1.82-0.76-1.92-1.86l0,0c0.21,2.79,4.74,1.86,10.93,1.86C37.13,50.42,40.59,51.55,40.92,48.56z',
+									'ease':'Back.easeIn'
+								}
+							}
+						]
+					}
+				"/>
+				<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M30,9.5h14.64l-3.72,39.06c-0.1,1.07-1.06,1.94-2.14,1.94H21.21c-1.08,0-2.04-0.87-2.14-1.94L15.36,9.5H30z"/>
+			</g>
+		</g>
+	</g>
+</svg>

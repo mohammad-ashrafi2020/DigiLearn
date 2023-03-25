@@ -1,0 +1,57 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="xy" data-animoptions="{'duration':'0.25'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_radio_1">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="30" cy="30" r="16"/>
+					</clipPath>
+				</defs>
+				<circle transform="rotate(-90, 30, 30)" fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="16"/>
+				<g clip-path="url(#livicon_morph_radio_1)">
+					<path class="lievo-likestroke lievo-altstroke lievo-solidbg" fill="#34495E" stroke="#34495E" stroke-width="0" d="M30,0C13.43,0,0,13.43,0,30c0,16.56,13.43,30,30,30c16.56,0,30-13.44,30-30C60,13.43,46.56,0,30,0z M30,50c-11.04,0-20-8.96-20-20c0-11.04,8.96-20,20-20c11.04,0,20,8.96,20,20C50,41.04,41.04,50,30,50z" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,21c-4.97,0-9,4.03-9,9c0,4.97,4.03,9,9,9c4.97,0,9-4.03,9-9C39,25.03,34.97,21,30,21zM30,30C30,30,29.99,30,30,30c-0.01-0.01,0-0.01,0-0.01C30,29.99,30,30,30,30C30,30,30,30,30,30z',
+										'ease':'Power1.easeOut'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<defs>
+					<clipPath id="livicon_morph_radio_1">
+						<circle class="lievo-donotdraw lievo-nohovercolor lievo-nohoverstroke" cx="30" cy="30" r="16"/>
+					</clipPath>
+				</defs>
+				<circle transform="rotate(-90, 30, 30)" fill="#ECF0F1" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="30" r="16"/>
+				<g clip-path="url(#livicon_morph_radio_1)">
+					<path class="lievo-likestroke lievo-altstroke lievo-solidbg" fill="#34495E" stroke="#34495E" stroke-width="0" d="M30,21c-4.97,0-9,4.03-9,9c0,4.97,4.03,9,9,9c4.97,0,9-4.03,9-9C39,25.03,34.97,21,30,21zM30,30C30,30,29.99,30,30,30c-0.01-0.01,0-0.01,0-0.01C30,29.99,30,30,30,30C30,30,30,30,30,30z" data-animdata="
+						{
+							'steps':[
+								{
+									'duration':'1',
+									'position':'0',
+									'vars':{
+										'path':'M30,0C13.43,0,0,13.43,0,30c0,16.56,13.43,30,30,30c16.56,0,30-13.44,30-30C60,13.43,46.56,0,30,0z M30,50c-11.04,0-20-8.96-20-20c0-11.04,8.96-20,20-20c11.04,0,20,8.96,20,20C50,41.04,41.04,50,30,50z',
+										'ease':'Power1.easeIn'
+									}
+								}
+							]
+						}
+					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

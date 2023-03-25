@@ -1,0 +1,214 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.8', 'repeat':'1', 'repeatDelay':'0'}">
+	<g class="lievo-main" transform="rotate(270, 30, 30)">
+		<g class="lievo-lineicon lievo-filledicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-=10',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<polyline fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="29,16 43,30 29,44" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'0.8',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'x':'+=10',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<polyline class="lievo-altstroke" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="19,16 33,30 19,44" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'0.8',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'x':'-=10',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="29,16 43,30 29,44" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'0.8',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							}
+						]
+					}
+				"/>
+			</g>
+
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'x':'+=10',
+								'repeat':'1',
+								'repeatDelay':'0',
+								'yoyo':'true',
+								'ease':'none'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<polyline fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="19,16 33,30 19,44" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1.2',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'0'
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'scale':'0.8',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							},
+							{
+								'duration':'0.5',
+								'vars':{
+									'scale':'1',
+									'svgOrigin':'30px 30px',
+									'ease':'none'
+								},
+								'position':'+=0'
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

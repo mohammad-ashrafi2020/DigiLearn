@@ -1,0 +1,225 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.6', 'repeat':'0', 'repeatDelay':'0.7'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'x':'+=72'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'x':'-=72',
+								'ease':'Power2.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<path fill="#8E2D28" d="M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'path':'M30,36c-3.23,0-5.49-1.2-7.18-2.17c0,0,2.76,0.68,3.7,0.82c1.79,0.26,3.82,1.02,7.23,0.14c0.9-0.23,3.56-1.04,3.56-1.04C34.97,35.14,33.1,35.99,30,36z'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'3',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.12-0.97c8.69-0.71,14.44,6.09,21.01-2.28l0.39,3.25C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.95-8.01c12.15,7.97,12.82-4.07,19.5-0.9l1.06,8.91C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16c7.41-6,13.2,4.25,18.34,1.99l1.47,12.32C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z'
+								}
+							}
+						]
+					}
+				"/>
+				<g>
+					<line fill="none" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21" y1="53" x2="39" y2="53"/>
+					<polyline fill="#FF926B" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,39 31,39 31,53 29,53 29,39 30,39"/>
+					<path fill="none" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7h11l2.74,22.99c0.08,0.69-0.09,1.39-0.48,1.97C40.38,36.21,35.52,39,30,39c-5.52,0-10.39-2.8-13.26-7.05c-0.39-0.58-0.56-1.28-0.48-1.97L19,7H30"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-lineicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'x':'+=72'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'x':'-=72',
+								'ease':'Power2.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<path class="lievo-likestroke lievo-altstroke" stroke="none" stroke-width="0" fill="#8E2D28" d="M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'path':'M30,36c-3.23,0-5.49-1.2-7.18-2.17c0,0,2.76,0.68,3.7,0.82c1.79,0.26,3.82,1.02,7.23,0.14c0.9-0.23,3.56-1.04,3.56-1.04C34.97,35.14,33.1,35.99,30,36z'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'3',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.12-0.97c8.69-0.71,14.44,6.09,21.01-2.28l0.39,3.25C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.95-8.01c12.15,7.97,12.82-4.07,19.5-0.9l1.06,8.91C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16c7.41-6,13.2,4.25,18.34,1.99l1.47,12.32C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z'
+								}
+							}
+						]
+					}
+				"/>
+				<g>
+					<line fill="none" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21" y1="53" x2="39" y2="53"/>
+					<polyline class="lievo-likestroke" fill="#FF926B" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,39 31,39 31,53 29,53 29,39 30,39"/>
+					<path fill="none" stroke="#BE8C6B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7h11l2.74,22.99c0.08,0.69-0.09,1.39-0.48,1.97C40.38,36.21,35.52,39,30,39c-5.52,0-10.39-2.8-13.26-7.05c-0.39-0.58-0.56-1.28-0.48-1.97L19,7H30"/>
+				</g>
+			</g>
+		</g>
+
+		<g class="lievo-solidicon">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'x':'+=72'
+							}
+						},
+						{
+							'duration':'3',
+							'vars':{
+								'x':'-=72',
+								'ease':'Power2.easeOut'
+							}
+						}
+					]
+				}
+			">
+				<g>
+					<line fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21" y1="53" x2="39" y2="53"/>
+					<polyline fill="#FF926B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,39 31,39 31,53 29,53 29,39 30,39"/>
+					<path fill="34495E" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,7h11l2.74,22.99c0.08,0.69-0.09,1.39-0.48,1.97C40.38,36.21,35.52,39,30,39c-5.52,0-10.39-2.8-13.26-7.05c-0.39-0.58-0.56-1.28-0.48-1.97L19,7H30"/>
+				</g>
+				<path class="lievo-solidbg" stroke="#ffffff" stroke-width="1" fill="#ffffff" d="M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z" opacity="1" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'opacity':'0',
+									'path':'M30,36c-3.23,0-5.49-1.2-7.18-2.17c0,0,2.76,0.68,3.7,0.82c1.79,0.26,3.82,1.02,7.23,0.14c0.9-0.23,3.56-1.04,3.56-1.04C34.97,35.14,33.1,35.99,30,36z'
+								}
+							},
+							{
+								'duration':'0',
+								'position':'3',
+								'vars':{
+									'opacity':'1'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.12-0.97c8.69-0.71,14.44,6.09,21.01-2.28l0.39,3.25C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7l0.95-8.01c12.15,7.97,12.82-4.07,19.5-0.9l1.06,8.91C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16c7.41-6,13.2,4.25,18.34,1.99l1.47,12.32C38.35,33.84,34.31,36,30,36z'
+								}
+							},
+							{
+								'duration':'1',
+								'vars':{
+									'path':'M30,36c-4.31,0-8.35-2.16-10.76-5.7L20.95,16h18.1l1.7,14.3C38.35,33.84,34.31,36,30,36z'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

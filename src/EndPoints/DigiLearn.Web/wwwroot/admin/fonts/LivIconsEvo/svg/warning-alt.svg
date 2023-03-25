@@ -1,0 +1,25 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-shift="x" data-animoptions="{'duration':'0.6', 'repeat':'1', 'repeatDelay':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'vars':{
+								'scaleX':'-1',
+								'svgOrigin':'30 30',
+								'ease':'Power1.easeOut'
+							},
+							'position':'0'
+						}
+					]
+				}
+			">
+				<path fill="#F5AB35" stroke="#F1892D" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,9c0.18,0,0.37,0.12,0.51,0.36l22.37,38.75c0.28,0.49,0.05,0.88-0.51,0.88H7.63c-0.56,0-0.79-0.39-0.51-0.88L29.49,9.36C29.63,9.12,29.82,9,30,9z"/>
+				<rect class="lievo-likestroke lievo-altstroke lievo-solidbg" x="29.95" y="42.95" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="0.1" height="0.1"/>
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="30" y1="23" x2="30" y2="37"/>
+			</g>
+		</g>
+	</g>
+</svg>

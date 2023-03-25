@@ -1,0 +1,55 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1', 'repeat':'0', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-common">
+			<g data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'0',
+							'position':'0',
+							'vars':{
+								'rotation':'+=90',
+								'svgOrigin':'70 51'
+							}
+						},
+						{
+							'duration':'3',
+							'position':'1',
+							'vars':{
+								'rotation':'0',
+								'force3D':'true',
+								'ease':'none'
+							}
+						}
+					]
+				}
+			">
+				<path fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M44.92,17.83c-1.23-0.73-2.17-1.76-2.17-2.83c0-2.21,2.04-4,4.25-4c2.25,0,4,1.79,4,4c0,9-11.29,12.45-12.67,15.67"/>
+				<path fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M15.08,17.83c1.23-0.73,2.17-1.76,2.17-2.83c0-2.21-2.04-4-4.25-4c-2.25,0-4,1.79-4,4c0,9,11.29,12.45,12.67,15.67"/>
+				<path fill="#FFCF4B" stroke="#F39C12" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,9H17c0,24.51,8.8,23.49,12,31v7l0,0.02C23.89,47.23,23,49,23,49h-3c-0.55,0-1,0.45-1,1v1h22v-1c0-0.55-0.45-1-1-1h-3c0,0-0.89-1.77-6-1.98L31,47v-7c3.18-7.57,12-6.43,12-31H30"/>
+				<polygon class="lievo-likestroke lievo-altstroke lievo-solidbg" fill="#F1892D" stroke="#F1892D" stroke-width="0" points="30,23.1 25.67,26.28 27.34,21.15 23,18 28.36,18 30,12.86 31.64,18 37,18 32.66,21.15 34.32,26.28" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0',
+								'position':'0',
+								'vars':{
+									'scale':'0.001',
+									'transformOrigin':'center center'
+								}
+							},
+							{
+								'duration':'2',
+								'position':'5',
+								'vars':{
+									'scale':'1',
+									'ease':'Back.easeOut'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

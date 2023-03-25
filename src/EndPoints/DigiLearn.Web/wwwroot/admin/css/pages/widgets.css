@@ -1,0 +1,267 @@
+/* Widgets Advance */
+/*-----------------*/
+.widget-todo .dropdown .dropdown-toggle:after {
+	right: 0.1rem;
+	color: #828D99;
+}
+
+.widget-todo .widget-todo-list-wrapper {
+	padding-right: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item {
+	padding: 0.6rem 0.5rem 0.1rem 1.5rem;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item .widget-todo-item-action .dropdown {
+	margin-top: -2px;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item .widget-todo-title-area i {
+	visibility: hidden;
+	color: #828D99;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item:hover {
+	background-color: #F2F4F4;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item:hover .widget-todo-title-area i {
+	visibility: visible;
+}
+
+.widget-todo .widget-todo-list-wrapper .widget-todo-item.completed .widget-todo-title {
+	text-decoration: line-through;
+}
+
+.widget-todo-title {
+	line-height: 2;
+}
+
+.widget-overlay .widget-overlay-card .overlay-primary {
+	/* Widget Card Overlay */
+	background: rgba(90, 141, 238, 0.9);
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.widget-overlay .widget-overlay-card .dropdown a {
+	color: inherit;
+}
+
+.widget-overlay .widget-overlay-card .dropdown a:active {
+	color: #FFFFFF !important;
+}
+
+.widget-overlay .widget-overlay-card .widget-overlay-card-title {
+	/* widget-overlay-card-title */
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	margin-top: -27px;
+	color: #FFFFFF;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.widget-overlay .widget-overlay-content .inclusive-btn {
+	margin-top: -24px;
+}
+
+.widget-overlay .widget-overlay-content .table-responsive {
+	position: relative;
+}
+
+.widget-followers .widget-followers-heading-right i {
+	position: relative;
+	top: 4px;
+}
+
+.widget-img-top .card-footer {
+	background-color: #F2F4F4;
+}
+
+.widget-order-activity .badge-circle small {
+	position: relative;
+	top: -3px;
+}
+
+.widget-order-activity .widget-order-activity-footer h1,
+.widget-order-activity .widget-order-activity-footer h2,
+.widget-order-activity .widget-order-activity-footer h3,
+.widget-order-activity .widget-order-activity-footer h4,
+.widget-order-activity .widget-order-activity-footer h5,
+.widget-order-activity .widget-order-activity-footer h6 {
+	color: #475F7B;
+}
+
+.widget-notification .list-group-item .readable-mark-icon {
+	cursor: pointer;
+}
+
+.widget-notification .list-group-item:last-child {
+	border-bottom-left-radius: 0.267rem;
+	border-bottom-right-radius: 0.267rem;
+}
+
+.widget-notification .list-group-item.list-group-item-action:active {
+	color: inherit;
+	background-color: inherit;
+}
+
+.widget-user-details .table-responsive {
+	position: relative;
+}
+
+/* Widgets Charts Starts */
+/*-----------------------*/
+.widget-state-multi-radial .nav.nav-tabs {
+	border: 0 !important;
+}
+
+.widget-state-multi-radial .nav-item.current:after,
+.widget-state-multi-radial .nav-item.current:before,
+.widget-state-multi-radial .nav-item .nav-link:after,
+.widget-state-multi-radial .nav-item .nav-link:before {
+	border: 0 !important;
+}
+
+#donut-chart-spending .apexcharts-canvas,
+#donut-chart-statistics .apexcharts-canvas {
+	margin: 0 auto;
+}
+
+.widget-timeline {
+	/* widget timeline */
+	position: relative;
+	height: 415px;
+	padding-left: 1rem;
+}
+
+.widget-earnings-scroll {
+	position: relative;
+}
+
+.widget-earnings-scroll .ps__rail-x {
+	opacity: 0.6;
+}
+
+.widget-earnings-scroll .widget-earnings-width {
+	min-width: 390px;
+}
+
+#widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide {
+	/* widget Earnings swiper */
+	font-weight: 500;
+	background-color: #F2F4F4;
+	height: auto;
+	width: auto !important;
+	color: #828D99;
+	cursor: pointer;
+}
+
+#widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide.swiper-slide-active {
+	/* widget Earnings swiper slide active */
+	color: #FFFFFF;
+	background-color: #5A8DEE !important;
+	box-shadow: 0 3px 6px 0 rgba(90, 141, 238, 0.5) !important;
+}
+
+#widget-earnings .wrapper-content {
+	display: none;
+}
+
+#widget-earnings .wrapper-content.active {
+	display: block;
+}
+
+#widget-earnings .media-heading {
+	min-width: 70px;
+}
+
+@media screen and (max-width: 600px) {
+	.widget-todo-list-wrapper .widget-todo-title-wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.widget-todo-list-wrapper .widget-todo-title-wrapper .widget-todo-title-area {
+		margin-left: auto;
+	}
+
+	.widget-todo-list-wrapper .widget-todo-title-wrapper .widget-todo-item-action {
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.widget-radial-charts .widget-card-details {
+		padding-bottom: 0 !important;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+	.widget-img-top .content-post {
+		display: none !important;
+	}
+
+	.widget-state-multi-radial .card-header {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+
+	.progress-card,
+	.overlay-image-card {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.whether-card {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.user-details-card {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.img-top-card,
+	.timline-card,
+	.widget-chat-card,
+	.earnings-card,
+	.user-profile-card,
+	.whether {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+	/* IE Specific CSS for charts - radial-primary/success/danger */
+	.widget-radial-charts .widget-card-details {
+		display: block !important;
+	}
+}

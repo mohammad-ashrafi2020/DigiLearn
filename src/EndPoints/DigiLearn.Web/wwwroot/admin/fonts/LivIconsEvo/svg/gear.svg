@@ -1,0 +1,28 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'2', 'repeat':'0', 'repeatDelay':'0.5'}">
+	<g class="lievo-main">
+		<g data-animdata="
+			{
+				'steps':[
+					{
+						'duration':'1',
+						'vars':{
+							'rotation':'720',
+							'svgOrigin':'30 30',
+							'force3D':'true',
+							'ease':'Power2.easeOut'
+						},
+						'position':'0'
+					}
+				]
+			}
+		">
+			<g class="lievo-filledicon lievo-solidicon">
+				<path fill="#C5D5D6" stroke="#95A5A6" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M46.26,13.74l2.12,2.12l-3.83,4.86l2.29,5.54L53,27v6l-6.15,0.73l-2.3,5.54l3.83,4.87l-4.24,4.24l-4.87-3.83l-5.54,2.29L33,53h-6l-0.73-6.15l-5.54-2.3l-4.86,3.83l-4.24-4.24l3.83-4.87l-2.3-5.54L7,33v-6l6.15-0.73l2.3-5.54l-3.83-4.86l4.24-4.24l4.87,3.83l5.54-2.3L27,7h6l0.73,6.15l5.54,2.3l4.87-3.83L46.26,13.74z M38.5,21.5L37,20l-2.32,2.31C33.32,21.48,31.72,21,30,21c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-1.72-0.48-3.32-1.31-4.69L40,23L38.5,21.5z"/>
+			</g>
+			<g class="lievo-lineicon">
+				<path fill="#none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M46.26,13.74l2.12,2.12l-3.83,4.86l2.29,5.54L53,27v6l-6.15,0.73l-2.3,5.54l3.83,4.87l-4.24,4.24l-4.87-3.83l-5.54,2.29L33,53h-6l-0.73-6.15l-5.54-2.3l-4.86,3.83l-4.24-4.24l3.83-4.87l-2.3-5.54L7,33v-6l6.15-0.73l2.3-5.54l-3.83-4.86l4.24-4.24l4.87,3.83l5.54-2.3L27,7h6l0.73,6.15l5.54,2.3l4.87-3.83L46.26,13.74z"/>
+				<path class="lievo-altstroke" fill="#none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38.5,21.5L37,20l-2.32,2.31C33.32,21.48,31.72,21,30,21c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-1.72-0.48-3.32-1.31-4.69L40,23L38.5,21.5z"/>
+			</g>
+		</g>
+	</g>
+</svg>

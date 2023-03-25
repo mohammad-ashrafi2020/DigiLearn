@@ -1,0 +1,75 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.2'}">
+	<g class="lievo-main">
+		<g class="lievo-morphstartstate">
+			<g class="lievo-common">
+				<path fill="#22A7F0" stroke="#0287D0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M30,7c-5,5.5-8.83,5.97-15,6c-1.1,0.01-2,0.92-2,2.03V37c0,7.14,6.91,9.78,17,16c9.44-5.82,17-8.77,17-16V15.03c0-1.1-0.9-2.02-2-2.03C38.83,12.97,35,12.5,30,7z"/>
+			
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="23" x2="23" y2="37" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'0',
+								'vars':{
+									'rotation':'-=90',
+									'transformOrigin':'center center',
+									'opacity':'0'
+								}
+							}
+						]
+					}
+				"/>
+			
+				<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23,23l14,14" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M39,23L27,35l-6-6'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+
+		<g class="lievo-morphendstate">
+			<g class="lievo-common">
+				<path fill="#22A7F0" stroke="#0287D0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="2" d="M30,7c-5,5.5-8.83,5.97-15,6c-1.1,0.01-2,0.92-2,2.03V37c0,7.14,6.91,9.78,17,16c9.44-5.82,17-8.77,17-16V15.03c0-1.1-0.9-2.02-2-2.03C38.83,12.97,35,12.5,30,7z"/>
+			
+				<line class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="23" x2="23" y2="37" transform="matrix(0, -1, 1, 0, 0, 60)" opacity="0" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'0.5',
+								'position':'0.5',
+								'vars':{
+									'rotation':'+=90',
+									'transformOrigin':'center center',
+									'opacity':'1'
+								}
+							}
+						]
+					}
+				"/>
+			
+				<path class="lievo-altstroke lievo-solidbg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M39,23L27,35l-6-6" data-animdata="
+					{
+						'steps':[
+							{
+								'duration':'1',
+								'position':'0',
+								'vars':{
+									'path':'M23,23l14,14'
+								}
+							}
+						]
+					}
+				"/>
+			</g>
+		</g>
+	</g>
+</svg>

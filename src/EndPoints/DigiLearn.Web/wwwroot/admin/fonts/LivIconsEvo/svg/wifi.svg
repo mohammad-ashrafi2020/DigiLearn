@@ -1,0 +1,121 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'0.6', 'repeat':'3', 'repeatDelay':'0'}">
+	<g class="lievo-main">
+		<g class="lievo-filledicon lievo-lineicon">
+			<circle class="lievo-altstroke" fill="#336E7B" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="40" r="3"/>
+			<path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M27.88,37.88c1.17-1.17,3.07-1.17,4.24,0" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M23.64,33.64c3.51-3.51,9.21-3.51,12.73,0',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M23.64,33.64c3.51-3.51,9.21-3.51,12.73,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M19.39,29.4c5.86-5.86,15.36-5.86,21.21,0',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M19.39,29.4c5.86-5.86,15.36-5.86,21.21,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M15.15,25.15c8.2-8.2,21.5-8.2,29.7,0',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M15.15,25.15c8.2-8.2,21.5-8.2,29.7,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M10.91,20.91c10.54-10.54,27.64-10.54,38.18,0',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+
+		<g class="lievo-solidicon">
+			<circle fill="#34495E" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="40" r="2.5"/>
+			<path class="lievo-donotdraw" fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M28.23,38.23c0.98-0.98,2.56-0.98,3.54,0" opacity="0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M23.99,33.99c3.32-3.32,8.7-3.32,12.02,0',
+								'opacity':'1'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M23.99,33.99c3.32-3.32,8.7-3.32,12.02,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M19.75,29.75c5.66-5.66,14.84-5.66,20.51,0'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M19.75,29.75c5.66-5.66,14.84-5.66,20.51,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M15.5,25.5c8-8,20.99-8.01,28.99,0'
+							}
+						}
+					]
+				}
+			"/>
+			<path fill="none" stroke="#34495E" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M15.5,25.5c8-8,20.99-8.01,28.99,0" data-animdata="
+				{
+					'steps':[
+						{
+							'duration':'1',
+							'position':'0',
+							'vars':{
+								'path':'M11.26,21.26c10.34-10.34,27.13-10.35,37.48,0',
+								'opacity':'0'
+							}
+						}
+					]
+				}
+			"/>
+		</g>
+	</g>
+</svg>
