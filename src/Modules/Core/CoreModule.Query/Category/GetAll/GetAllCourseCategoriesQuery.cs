@@ -19,9 +19,9 @@ class GetAllCourseCategoriesQueryHandler : IQueryHandler<GetAllCourseCategoriesQ
     }
 
     public async Task<List<CourseCategoryDto>> Handle(GetAllCourseCategoriesQuery request, CancellationToken cancellationToken)
-
     {
         var mainModel = await _context.CourseCategories
+            .Where(c=>c.ParentId==null)
             .Include(c => c.Children)
             .OrderByDescending(d => d.CreationDate)
             .Select(s => new CourseCategoryDto
