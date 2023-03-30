@@ -1,0 +1,20 @@
+﻿@page
+@model DigiLearn.Web.Areas.Admin.Pages.Courses.Categories.AddModel
+@{
+    ViewData["title"] = "افزودن دسته بندی جدید";
+    ViewData["selected"] = "courses_categories";
+
+}
+<div class="card">
+    <form class="card-body row" method="post">
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.Title)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.Slug)
+        </div>
+        <div class="col-md-12 d-flex mt-2 justify-content-end">
+            <submit />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,51 @@
+﻿@page
+@model DigiLearn.Web.Areas.Admin.Pages.Courses.Categories.IndexModel
+@{
+    ViewData["title"] = "مدیریت دیسته بندی ها";
+    ViewData["selected"] = "courses_categories";
+}
+<a asp-page="Add" class="btn btn-success mb-1">افزودن مورد جدید</a>
+<div class="card ">
+    <div class="table-responsive card-body p-0 mb-0">
+        <table class="table table-bordered table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>عنوان</th>
+                    <th>ُSlug</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Categories)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Slug</td>
+                        <td>
+
+                            <a asp-page="Add" asp-route-parentId="@item.Id" class="btn btn-sm btn-primary ">افزودن زیر دسته بندی </a>
+                            <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">ویرایش</a>
+                            <delete-item>حذف</delete-item>
+                        </td>
+                    </tr>
+                    @if (item.Children.Any())
+                    {
+                        @foreach (var child in item.Children)
+                        {
+                            <tr style="opacity: .8;color: #4b96dd">
+                                <td class="pl-5">@child.Title</td>
+                                <td class="pl-5">@child.Slug</td>
+                                <td class="pl-5">
+
+                                    <a asp-page="Edit" asp-route-id="@child.Id" class="btn btn-sm btn-primary">ویرایش</a>
+                                    <delete-item>حذف</delete-item>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    @*<partial name="_Pagination" model="null"/>*@
+</div>

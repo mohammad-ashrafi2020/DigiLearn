@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Eshop.RazorPage.TagHelpers
+namespace DigiLearn.Web.TagHelpers
 {
     // You may need to install the Microsoft.AspNetCore.Razor.Runtime package into your project
     [HtmlTargetElement("submit", TagStructure = TagStructure.WithoutEndTag)]
