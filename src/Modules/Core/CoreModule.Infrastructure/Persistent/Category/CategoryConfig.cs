@@ -40,7 +40,24 @@ public class CourseCategoryRepository : BaseRepository<CourseCategory, CoreModul
         {
             throw new Exception("این دسته بندی دارای چندین دوره است");
         }
-        //TODO Should Remove Childs
+
+        var children = await Context.Categories.Where(r => r.ParentId == category.Id).ToListAsync();
+        if (children.Any())
+        {
+            foreach (var child in children)
+            {
+                var isAnyCourse = await Context.Courses
+                    .AnyAsync(f => f.CategoryId == category.Id || f.SubCategoryId == category.Id);
+                if (isAnyCourse)
+                {
+                    throw new Exception("این دسته بندی دارای چندین دوره است");
+                }
+                else
+                {
+                    Context.Remove(child);
+                }
+            }
+        }
         Context.Remove(category);
         await Context.SaveChangesAsync();
     }

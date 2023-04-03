@@ -20,5 +20,10 @@ namespace DigiLearn.Web.Areas.Admin.Pages.Courses.Categories
         {
             Categories = await _categoryFacade.GetMainCategories();
         }
+
+        public async Task<IActionResult> OnPostDelete(Guid id)
+        {
+            return await AjaxTryCatch(() => _categoryFacade.Delete(id));
+        }
     }
 }

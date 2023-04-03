@@ -8,12 +8,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="/admin/images/ico/favicon.ico">
     <meta name="theme-color" content="#5A8DEE">
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/vendors.min.css">
-    
+
     @*//Date Picker*@
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/pickadate/pickadate.css">
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/daterange/daterangepicker.css">
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/pickers/datepicker-jalali/bootstrap-datepicker.min.css">
-    
+
 
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/extensions/swiper.min.css">
@@ -58,7 +58,9 @@
     </div>
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
-
+    <div id="token-value">
+        @Html.AntiForgeryToken()
+    </div>
 
     <script src="/admin/vendors/js/vendors.min.js"></script>
     <script src="/admin/fonts/LivIconsEvo/js/LivIconsEvo.tools.min.js"></script>
@@ -78,15 +80,12 @@
     <script src="/admin/js/scripts/components.js"></script>
     <script src="/admin/js/scripts/footer.js"></script>
     <script src="/admin/js/scripts/customizer.js"></script>
-    <script src="/assets/js/plugins/sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="/global.js"></script>
+    <script src="/global/global.js"></script>
     <script src="/admin/js/custom.js"></script>
     <partial name="Shared/_ValidationScriptsPartial" />
     <script src="/global/clientValidation.js"></script>
-    <div id="ajax-token">
-        @Html.AntiForgeryToken()
-    </div>
     @await RenderSectionAsync("Scripts",false)
 </body>
 </html>
