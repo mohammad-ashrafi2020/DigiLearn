@@ -106,9 +106,13 @@ function Question(url, QuestionTitle, QuestionText, successText, callBack) {
         showCancelButton: true,
         cancelButtonText: "خیر",
         preConfirm: () => {
+            var token = $("#token-value input").val();
             $.ajax({
                 url: url,
-                type: "get",
+                type: "post",
+                data: {
+                    __RequestVerificationToken: token
+                },
                 beforeSend: function () {
                     $(".loading").show();
                 },

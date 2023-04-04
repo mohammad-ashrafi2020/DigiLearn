@@ -32,12 +32,16 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
 
         if (request.FilterParams.TeacherId != null)
             result = result.Where(r => r.TeacherId == request.FilterParams.TeacherId);
-
+        if (request.FilterParams.ActionStatus != null)
+        {
+            result = result.Where(r => r.Status == request.FilterParams.ActionStatus);
+        }
 
         var skip = (request.FilterParams.PageId - 1) * request.FilterParams.Take;
 
         var data = await result.Skip(skip).Take(request.FilterParams.Take)
             .ToListAsync(cancellationToken);
+
         var model = new CourseFilterResult()
         {
             Data =
@@ -49,7 +53,8 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
                     Title = s.Title,
                     Slug = s.Slug,
                     Price = s.Price,
-                    EpisodeCount = s.Sections.Sum(r => r.Episodes.Count)
+                    EpisodeCount = s.Sections.Sum(r => r.Episodes.Count),
+                    CourseStatus = s.Status
                 }).ToList()
         };
 

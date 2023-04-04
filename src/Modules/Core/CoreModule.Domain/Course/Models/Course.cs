@@ -138,6 +138,17 @@ public class Course : AggregateRoot
         episode.ToggleStatus();
         LastUpdate = DateTime.Now;
     }
+    public Episode DeleteEpisode(Guid episodeId)
+    {
+        var section = Sections.FirstOrDefault(f => f.Episodes.Any(e => e.Id == episodeId));
+        if (section == null)
+            throw new InvalidDomainDataException();
+
+        var episode = section.Episodes.First(f => f.Id == episodeId);
+
+        section.Episodes.Remove(episode);
+        return episode;
+    }
     void Guard(string title, string description, string imageName, string slug)
     {
         NullOrEmptyDomainDataException.CheckString(title, nameof(title));

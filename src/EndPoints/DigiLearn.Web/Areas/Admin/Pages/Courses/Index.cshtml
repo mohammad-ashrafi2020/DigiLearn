@@ -1,0 +1,79 @@
+﻿@page
+@using Common.Application
+@using Common.Application.DateUtil
+@using CoreModule.Domain.Course.Enums
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model DigiLearn.Web.Areas.Admin.Pages.Courses.IndexModel
+@{
+    ViewData["title"] = "مدیریت دوره ها";
+    ViewData["selected"] = "courses_index";
+}
+<form class="card mb-2">
+    <div class="card-header mb-0 pb-0 d-flex justify-content-between">
+        <h5>فیلتر</h5>
+        <div class="">
+            <a asp-page="Index" class="btn btn-sm btn-danger">حذف فیلتر</a>
+            <button type="submit" class="btn btn-success btn-sm">اعمال فیلتر</button>
+        </div>
+    </div>
+    <div class="card-body  mb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <label>وضعیت</label>
+                <select class="form-control" asp-for="FilterParams.ActionStatus">
+                    <option value="null">همه</option>
+                    <option value="@CourseActionStatus.Active">فعال</option>
+                    <option value="@CourseActionStatus.DeActive">غیرفعال</option>
+                    <option value="@CourseActionStatus.Pending">درحال برسی</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="card ">
+    <div class="table-responsive card-body p-0 mb-0">
+        <table class="table table-bordered table-hover mb-0">
+            <thead>
+            <tr>
+                <th>عنوان</th>
+                <th>Slug</th>
+                <th>قیمت</th>
+                <th>وضعیت</th>
+                <th>تاریخ ثبت</th>
+                <th>عملیات</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.FilterResult.Data)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Slug</td>
+                    <td>@item.Price.TooMan(true)</td>
+                    <td>
+                        @switch (item.CourseStatus)
+                        {
+                            case CourseActionStatus.Pending:
+                                <span class="badge badge-info">درحال برسی</span>
+                                break;
+                            case CourseActionStatus.Active:
+                                <span class="badge badge-success">فعال</span>
+                                break;
+                            case CourseActionStatus.DeActive:
+                                <span class="badge badge-danger">غیرفعال</span>
+                                break;
+                        }
+                    </td>
+                    <td>@item.CreationDate.ToPersianDateTime()</td>
+                    <td>
+                        <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-primary">ویرایش</a>
+                        <a asp-page="Sections/Index" asp-route-courseId="@item.Id" class="btn  btn-warning">مدیریت سرفصل ها</a>
+                    </td>
+                </tr>
+            }
+         
+            </tbody>
+        </table>
+    </div>
+</div>
+<partial name="_Pagination" model="Model.FilterResult"/>

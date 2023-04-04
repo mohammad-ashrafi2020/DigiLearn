@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="/admin/css/themes/semi-dark-layout.css">
     <link rel="stylesheet" type="text/css" href="/admin/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="/admin/css/pages/dashboard-ecommerce.css">
-    <link rel="stylesheet" type="text/css" href="/admin/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/admin/css/custom.css" asp-append-version="true">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
@@ -82,8 +82,8 @@
     <script src="/admin/js/scripts/customizer.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="/global/global.js"></script>
-    <script src="/admin/js/custom.js"></script>
+    <script src="/global/global.js" asp-append-version="true"></script>
+    <script src="/admin/js/custom.js" asp-append-version="true"></script>
     <partial name="Shared/_ValidationScriptsPartial" />
     <script src="/global/clientValidation.js"></script>
     @await RenderSectionAsync("Scripts",false)

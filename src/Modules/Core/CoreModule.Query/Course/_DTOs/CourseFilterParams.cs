@@ -7,6 +7,7 @@ namespace CoreModule.Query.Course._DTOs;
 public class CourseFilterParams : BaseFilterParam
 {
     public Guid? TeacherId { get; set; }
+    public CourseActionStatus? ActionStatus { get; set; } = null;
 }
 public class CourseFilterResult : BaseFilter<CourseFilterData>
 {
