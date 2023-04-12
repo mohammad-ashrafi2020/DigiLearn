@@ -3,6 +3,7 @@ using Common.Domain.Exceptions;
 using Common.Domain.ValueObjects;
 using CoreModule.Domain.Course.DomainServices;
 using CoreModule.Domain.Course.Enums;
+using System.Net.Mail;
 
 namespace CoreModule.Domain.Course.Models;
 
@@ -101,6 +102,19 @@ public class Course : AggregateRoot
 
         Sections.Remove(section);
     }
+
+
+    public void EditEpisode(Guid episodeId, Guid sectionId, string title, bool isActive, TimeSpan timeSpan, string? attachmentName)
+    {
+        var section = Sections.FirstOrDefault(f => f.Id == sectionId);
+        if (section == null) throw new InvalidDomainDataException("Section NotFound");
+
+        var episode = section.Episodes.FirstOrDefault(f => f.Id == episodeId);
+        if (episode == null) throw new InvalidDomainDataException("episode NotFound");
+
+        episode.Edit(title, isActive, timeSpan, attachmentName);
+    }
+
     public Episode AddEpisode(Guid sectionId, string? attachmentExtension, string videoExtension, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
     {
 
@@ -148,6 +162,14 @@ public class Course : AggregateRoot
 
         section.Episodes.Remove(episode);
         return episode;
+    }
+
+    public Episode? GetEpisodeById(Guid sectionId, Guid episodeId)
+    {
+        var section = Sections.FirstOrDefault(f => f.Episodes.Any(e => e.Id == episodeId));
+        if (section == null)
+            return null;
+        return section.Episodes.FirstOrDefault(f => f.Id == episodeId);
     }
     void Guard(string title, string description, string imageName, string slug)
     {

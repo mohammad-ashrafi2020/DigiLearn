@@ -35,7 +35,7 @@ public class Episode : BaseEntity
     {
         IsActive = !IsActive;
     }
-    
+
     void Guard(string videoName, string englishTitle, string title)
     {
         NullOrEmptyDomainDataException.CheckString(videoName, nameof(videoName));
@@ -44,6 +44,18 @@ public class Episode : BaseEntity
         if (englishTitle.IsUniCode())
         {
             throw new InvalidDomainDataException("Invalid EnglishTitle");
+        }
+    }
+
+    public void Edit(string title, bool isActive, TimeSpan timeSpan, string? attachmentName)
+    {
+        NullOrEmptyDomainDataException.CheckString(title, nameof(title));
+        Title = title;
+        IsActive = isActive;
+        TimeSpan = timeSpan;
+        if (string.IsNullOrWhiteSpace(attachmentName) == false)
+        {
+            AttachmentName = attachmentName;
         }
     }
 }

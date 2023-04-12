@@ -56,14 +56,14 @@ public class CreateCourseEpisodeCommandHandler : IBaseCommandHandler<AddCourseEp
 
     private async Task SaveFiles(AddCourseEpisodeCommand request, Episode episode)
     {
-        await _ftpFileService.SaveFile(request.VideoFile.OpenReadStream(),
+        await _localFileService.SaveFile(request.VideoFile,
             CoreModuleDirectories.CourseEpisode(request.CourseId, episode.Token), episode.VideoName);
 
         if (request.AttachmentFile != null)
         {
             if (request.AttachmentFile.IsValidCompressFile())
             {
-                await _ftpFileService.SaveFile(request.VideoFile.OpenReadStream(),
+                await _localFileService.SaveFile(request.VideoFile,
                     CoreModuleDirectories.CourseEpisode(request.CourseId, episode.Token), episode.AttachmentName!);
             }
         }

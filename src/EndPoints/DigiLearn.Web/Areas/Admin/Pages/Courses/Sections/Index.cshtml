@@ -44,9 +44,10 @@
                                     }
                                 </td>
                                 <td>
+                                    <a class="btn btn-primary" asp-page="EditEpisode" asp-route-episodeId="@episode.Id" asp-route-courseId="@item.CourseId">ویرایش</a>
                                     @if (episode.IsActive == false)
                                     {
-                                        <Question url="@Url.Page("Index","Accept",new {courseId=item.CourseId,episodeId=episode.Id})" class="btn btn-success btn-sm">تایید</Question>
+                                        <Question url="@Url.Page("Index", "Accept", new { courseId = item.CourseId, episodeId = episode.Id })" class="btn btn-success btn-sm">تایید</Question>
                                     }
                                     <delete-item url="@Url.Page("Index", "Delete", new { courseId = item.CourseId, episodeId = episode.Id })">حدف</delete-item>
                                 </td>

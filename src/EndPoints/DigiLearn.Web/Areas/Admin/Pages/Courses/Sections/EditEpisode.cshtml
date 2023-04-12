@@ -1,0 +1,35 @@
+﻿@page "{episodeId}/{courseId}"
+@using DigiLearn.Web.Infrastructure
+@using CoreModule.Application._Utilities
+@model DigiLearn.Web.Areas.Admin.Pages.Courses.Sections.EditEpisodeModel
+@{
+    ViewData["title"] = "";
+    ViewData["selected"] = "";
+}
+<div class="card">
+    <form class="card-body row" method="post" enctype="multipart/form-data">
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.Title)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.Time)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.AttachmentFile)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.VideoFile)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f=>f.IsActive)
+        </div>
+        <div class="col-md-12">
+            <video controls="" style="width: 100%" src="@CoreModuleDirectories.GetEpisodeFile((Guid)Model.CourseId,Model.EpisodeDto.Token,Model.EpisodeDto.VideoName)">
+            </video>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-12 d-flex mt-2 justify-content-end">
+            <submit />
+        </div>
+    </form>
+</div>
