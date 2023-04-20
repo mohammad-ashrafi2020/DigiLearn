@@ -1,0 +1,11 @@
+﻿@model string
+<div class="date-picker">
+    <label asp-for="@Model"></label>
+    <fieldset class="form-group position-relative has-icon-left">
+        <input autocomplete="off" type="text" asp-for="@Model" class="form-control shamsi-datepicker-list" placeholder="انتخاب تاریخ">
+        <div class="form-control-position">
+            <i class="bx bx-calendar"></i>
+        </div>
+    </fieldset>
+    <span asp-validation-for="@Model" class="text-danger"></span>
+</div>

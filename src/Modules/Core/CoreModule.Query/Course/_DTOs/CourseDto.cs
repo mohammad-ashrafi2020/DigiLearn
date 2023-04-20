@@ -21,7 +21,7 @@ public class CourseDto : BaseDto
 
     public CourseLevel CourseLevel { get; set; }
     public CourseStatus CourseStatus { get; set; }
-
+    public CourseActionStatus Status { get; set; }
     public List<CourseSectionDto> Sections { get; set; }
 }
 

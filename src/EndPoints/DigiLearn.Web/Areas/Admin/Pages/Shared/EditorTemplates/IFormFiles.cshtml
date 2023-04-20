@@ -1,0 +1,7 @@
+﻿@model List<Microsoft.AspNetCore.Http.IFormFile>
+
+<fieldset class="form-group">
+    <label asp-for="@Model"></label>
+    <input type="file" multiple="" class="form-control" asp-for="@Model">
+    <span asp-validation-for="@Model" class="text-danger"></span>
+</fieldset>

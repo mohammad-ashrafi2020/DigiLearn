@@ -66,7 +66,7 @@
                     </td>
                     <td>@item.CreationDate.ToPersianDateTime()</td>
                     <td>
-                        <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-primary">ویرایش</a>
+                        <a asp-page="Edit" asp-route-courseId="@item.Id" class="btn btn-primary">ویرایش</a>
                         <a asp-page="Sections/Index" asp-route-courseId="@item.Id" class="btn  btn-warning">مدیریت سرفصل ها</a>
                     </td>
                 </tr>

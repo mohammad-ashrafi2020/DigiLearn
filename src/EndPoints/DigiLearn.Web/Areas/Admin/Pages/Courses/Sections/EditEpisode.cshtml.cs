@@ -85,6 +85,6 @@ public class EditEpisodeModel : BaseRazor
             VideoFile = VideoFile,
             TimeSpan = Time
         });
-        return RedirectAndShowAlert(result, RedirectToPage("../Index", new { courseId }));
+        return RedirectAndShowAlert(result, RedirectToPage("Index", new { courseId }));
     }
 }

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Infrastructure\ViewModels\" />
     <Folder Include="Pages\Shared\Menu\" />
     <Folder Include="wwwroot\css\fonts\" />
   </ItemGroup>
@@ -41,6 +42,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Boolean.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Ckeditor4.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Ckeditor5.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\DatePicker.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\DateTime.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\EmailAddress.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Enum.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\IFormFile.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\IFormFiles.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Int32.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\MultilineText.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Password.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\SeoDataViewModel.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\String.cshtml" />
+    <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Url.cshtml" />
     <None Include="Pages\Profile\Edit.cshtml" />
     <None Include="Pages\Shared\EditorTemplates\Enum.cshtml" />
     <None Include="Pages\Shared\EditorTemplates\IFormFile.cshtml" />

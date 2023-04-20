@@ -1,0 +1,9 @@
+﻿@model Microsoft.AspNetCore.Http.IFormFile
+@{
+    var id = Guid.NewGuid();
+}
+<fieldset class="form-group">
+    <label asp-for="@Model"></label>
+    <input type="file" class="form-control" id="@id" asp-for="@Model">
+    <span asp-validation-for="@Model" class="text-danger"></span>
+</fieldset>
