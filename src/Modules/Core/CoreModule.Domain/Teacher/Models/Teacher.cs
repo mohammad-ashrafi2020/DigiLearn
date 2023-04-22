@@ -3,6 +3,7 @@ using Common.Domain.Exceptions;
 using Common.Domain.Utils;
 using CoreModule.Domain.Teacher.DomainServices;
 using CoreModule.Domain.Teacher.Enums;
+using CoreModule.Domain.Teacher.Events;
 
 namespace CoreModule.Domain.Teacher.Models;
 
@@ -10,7 +11,7 @@ public class Teacher : AggregateRoot
 {
     private Teacher()
     {
-        
+
     }
     public Teacher(string cvFileName, string userName, Guid userId, ITeacherDomainService domainService)
     {
@@ -51,6 +52,10 @@ public class Teacher : AggregateRoot
         if (Status == TeacherStatus.Pending)
         {
             //Event
+            AddDomainEvent(new AcceptTeacherRequestEvent()
+            {
+                UserId = UserId
+            });
             Status = TeacherStatus.Active;
         }
     }

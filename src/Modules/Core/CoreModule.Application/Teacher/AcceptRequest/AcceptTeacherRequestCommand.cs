@@ -26,7 +26,6 @@ public class AcceptTeacherRequestCommandHandler : IBaseCommandHandler<AcceptTeac
 
 
         teacher.AcceptRequest();
-
         await _repository.Save();
         return OperationResult.Success();
     }

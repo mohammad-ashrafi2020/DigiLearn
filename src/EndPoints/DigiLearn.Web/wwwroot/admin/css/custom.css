@@ -7,3 +7,12 @@
 .col-md-6,.col-md-12 {
     margin-bottom: .5rem;
 }
+.table.dataTable thead .sorting:before {
+    right: 8px !important;
+}
+.table.dataTable thead .sorting_asc:before {
+    right: 9px !important;
+}
+.table.dataTable thead .sorting_desc:before {
+    right: 9px !important;
+}

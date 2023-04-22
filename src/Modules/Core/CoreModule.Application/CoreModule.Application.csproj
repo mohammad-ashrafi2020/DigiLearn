@@ -16,6 +16,7 @@
     <Folder Include="Course\Episodes\Delete\" />
     <Folder Include="Course\Sections\EditSection\" />
     <Folder Include="Course\Sections\DeleteSection\" />
+    <Folder Include="Teacher\_EventHandlers\" />
     <Folder Include="_Utilities\" />
     <Folder Include="Teacher\AcceptRequest\" />
     <Folder Include="Teacher\Register\" />

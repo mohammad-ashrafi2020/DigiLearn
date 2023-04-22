@@ -1,6 +1,8 @@
 ﻿using Common.Application;
 using CoreModule.Application.Teacher.AcceptRequest;
+using CoreModule.Domain.Teacher.Events;
 using CoreModule.Domain.Teacher.Repository;
+using MediatR;
 
 namespace CoreModule.Application.Teacher.RejectRequest;
 
@@ -13,10 +15,11 @@ public class RejectTeacherRequestCommand : IBaseCommand
 public class RejectTeacherRequestCommandHandler : IBaseCommandHandler<RejectTeacherRequestCommand>
 {
     private readonly ITeacherRepository _repository;
-
-    public RejectTeacherRequestCommandHandler(ITeacherRepository repository)
+    private IMediator _mediator;
+    public RejectTeacherRequestCommandHandler(ITeacherRepository repository, IMediator mediator)
     {
         _repository = repository;
+        _mediator = mediator;
     }
 
 
@@ -27,9 +30,15 @@ public class RejectTeacherRequestCommandHandler : IBaseCommandHandler<RejectTeac
             return OperationResult.NotFound();
 
 
+
         _repository.Delete(teacher);
         //Send Event
         await _repository.Save();
+        await _mediator.Publish(new RejectTeacherRequestEvent()
+        {
+            Description = request.Description,
+            UserId = teacher.UserId
+        }, cancellationToken);
         return OperationResult.Success();
     }
 }

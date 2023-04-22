@@ -1,0 +1,57 @@
+﻿@page "{id}/{handler?}"
+@using UserModule.Core
+@using CoreModule.Application._Utilities
+@using Common.Application.DateUtil
+@using CoreModule.Domain.Teacher.Enums
+@model DigiLearn.Web.Areas.Admin.Pages.Teachers.ShowModel
+@{
+    ViewData["title"] = "نمایش اطلاعات مدرس";
+    ViewData["selected"] = "teachers";
+}
+<h2>اطلاعات مدرس</h2>
+@if (Model.Teacher.Status == TeacherStatus.Pending)
+{
+    <Question class="btn btn-success" url="@Url.Page("Show","Accept",new {id=Model.Teacher.Id})">تایید درخواست</Question>
+}
+<div class="card card-body mt-1">
+    <img src="@UserModuleDirectories.GetUserAvatar(Model.Teacher.User.Avatar)" style="max-width: 150px" class="mb-2" />
+    <div class="row">
+        <div class="col-md-6">نام کاربری : @Model.Teacher.UserName</div>
+        <div class="col-md-6">نام و نام خانوادگی : @Model.Teacher.User.Name @Model.Teacher.User.Family</div>
+
+        <div class="col-md-6">شماره تلفن : @Model.Teacher.User.PhoneNumber</div>
+
+        <div class="col-md-6">ایمیل : @Model.Teacher.User.Email</div>
+
+        <div class="col-md-6">تاریخ ثبت نام : @Model.Teacher.CreationDate.ToPersianDateTime()</div>
+
+        <div class="col-md-6">
+            وضعیت :
+            @switch (Model.Teacher.Status)
+            {
+                case TeacherStatus.Active:
+                    <label class="badge bg-success">فعال</label>
+                    break;
+                case TeacherStatus.Inactive:
+                    <label class="badge bg-danger">غیرفعال</label>
+
+                    break;
+
+                case TeacherStatus.Pending:
+                    <label class="badge bg-primary">درحال برسی</label>
+
+                    break;
+            }
+        </div>
+        <div class="col-md-12">رزومه : <a href="@CoreModuleDirectories.GetCvFile(Model.Teacher.CvFileName)" target="_blank">نمایش</a></div>
+    </div>
+</div>
+@if (Model.Teacher.Status == TeacherStatus.Pending)
+{
+    <div class="card card-body mt-2">
+        <form method="post" asp-page-handler="Reject">
+            <textarea class="form-control" placeholder="دلیل رد درخواست"></textarea>
+            <button class="btn btn-danger mt-1" onclick="return confirm('آیا از انجام عملیات اطمینان دارید')">رد درخواست</button>
+        </form>
+    </div>
+}
