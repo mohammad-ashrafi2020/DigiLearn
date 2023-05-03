@@ -100,6 +100,12 @@ class TicketService : ITicketService
         if (filterParams.UserId != null)
             result = result.Where(r => r.UserId == filterParams.UserId);
 
+        if (string.IsNullOrWhiteSpace(filterParams.Title) == false)
+            result = result.Where(r => r.Title.Contains(filterParams.Title));
+
+        if (filterParams.Status != null)
+            result = result.Where(r => r.TicketStatus == filterParams.Status);
+
 
         var skip = (filterParams.PageId - 1) * filterParams.Take;
         var data = new TicketFilterResult()
@@ -111,7 +117,8 @@ class TicketService : ITicketService
                     UserId = n.UserId,
                     Title = n.Title,
                     Status = n.TicketStatus,
-                    CreationDate = n.CreationDate
+                    CreationDate = n.CreationDate,
+                    OwnerFullName = n.OwnerFullName
                 }).ToListAsync()
         };
         data.GeneratePaging(result, filterParams.Take, filterParams.PageId);

@@ -1,0 +1,94 @@
+﻿@page "{id}"
+@using Common.Application.DateUtil
+@using DigiLearn.Web.Infrastructure
+@using DigiLearn.Web.TagHelpers
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using TicketModule.Data.Entities
+@model DigiLearn.Web.Areas.Admin.Pages.Tickets.ShowModel
+@{
+    ViewData["title"] = @Model.Ticket.Title;
+    ViewData["selected"] = "tickets";
+}
+@section Meta{
+    <link rel="stylesheet" type="text/css" href="/admin/css/pages/app-chat.css">
+}
+
+<div class="chat-application content-wrapper mt-0">
+    <div class="chat-window-wrapper">
+        <div class="chat-start" style="height: fit-content">
+            <div class="chat-area w-100">
+                <div class="chat-header bg-white" >
+                    <div class="title d-flex align-items-center pl-2 pr-2 justify-content-between">
+                        <h2>
+                            @ViewData["title"]
+                            @switch (Model.Ticket.TicketStatus)
+                            {
+                                case TicketStatus.Pending:
+                                    <span class="badge badge-info" style="height: fit-content">درحال برسی</span>
+                                    break;
+                                case TicketStatus.Answered:
+                                    <span class="badge badge-success" style="height: fit-content">پاسخ داده شده</span>
+                                    break;
+                                case TicketStatus.Closed:
+                                    <span class="badge badge-danger" style="height: fit-content">بسته شده</span>
+                                    break;
+                            }
+                        </h2>
+                        @if (Model.Ticket.TicketStatus != TicketStatus.Closed)
+                        {
+                            <delete-item description="آیا از بستن تیکت اطمینان دارید ؟"
+                                     url="@Url.Page("Show","CloseTicket",new {ticketId=Model.Ticket.Id})"
+                                     class="btn btn-sm  btn-danger pull-left" style="height: fit-content">بستن تیکت</delete-item>
+                        }
+                    </div>
+                </div>
+                <div class="card chat-wrapper shadow-none m-0">
+                    <div class="card-content">
+                        <div class="card-body chat-container ps ps--active-y">
+                            <div class="chat-content">
+
+                                @foreach (var item in Model.Ticket.Messages.OrderBy(d => d.CreationDate))
+                                {
+                                    <div class="chat @(item.UserId == User.GetUserId() ? "" : "chat-left")">
+                                        <div class="chat-avatar">
+                                            <a class="avatar m-0">
+                                                <img src="/images/avatar04.png" alt="avatar" height="36" width="36">
+                                            </a>
+                                        </div>
+                                        <div class="chat-body">
+                                            <div class="chat-message">
+                                                <p>@item.Text</p>
+                                                <span class="chat-time">@item.CreationDate.ToPersianDateTime()</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                            </div>
+                            <div class="ps__rail-y" style="top: 0px; left: 1296px; height: 696px;">
+                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 388px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer chat-footer border-top px-2 pt-1 pb-0 mb-1">
+                        <form class="d-flex align-items-center" method="post">
+                            <input type="text" asp-for="Text" class="form-control chat-message-send mx-1" placeholder="پیام خود را اینجا بنویسید ...">
+                            <button type="submit" class="btn btn-primary glow  d-lg-flex">
+                                <i class="bx bx-paper-plane"></i>
+                                <span class="d-none d-lg-block ml-1">ارسال</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script src="/admin/js/scripts/pages/app-chat.js"></script>
+}
