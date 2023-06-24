@@ -37,6 +37,7 @@ public class RegisterUserCommandHandler : IBaseCommandHandler<RegisterUserComman
         };
         _context.Add(user);
         await _context.SaveChangesAsync(cancellationToken);
+
         return OperationResult<Guid>.Success(user.Id);
     }
 }

@@ -13,6 +13,11 @@ public class TeacherActionFilter : ActionFilterAttribute
     {
         _teacherFacade = teacherFacade;
     }
+    //TODO Should Move Codes To OnResultExecutionAsync
+    public override Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
+    {
+        return base.OnResultExecutionAsync(context, next);
+    }
 
     public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
     {

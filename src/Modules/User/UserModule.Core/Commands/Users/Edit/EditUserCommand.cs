@@ -34,6 +34,7 @@ public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
             user.Email = request.Email;
 
         await _context.SaveChangesAsync(cancellationToken);
+
         return OperationResult.Success();
     }
 }
