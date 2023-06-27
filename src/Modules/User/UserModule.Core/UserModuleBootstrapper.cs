@@ -22,7 +22,6 @@ public static class UserModuleBootstrapper
 
         services.AddScoped<IUserFacade, UserFacade>();
         services.AddScoped<INotificationFacade, NotificationFacade>();
-
         services.AddAutoMapper(typeof(UserModuleBootstrapper).Assembly);
         services.AddValidatorsFromAssembly(typeof(UserModuleBootstrapper).Assembly);
         return services;

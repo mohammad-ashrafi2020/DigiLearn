@@ -25,7 +25,6 @@ builder.Services
     .RegisterWebDependencies();
 
 
-
 services.AddJwtAuthentication(builder.Configuration);
 
 var app = builder.Build();

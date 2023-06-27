@@ -19,7 +19,7 @@ public class CoreModuleEfContext : BaseEfContext<CoreModuleEfContext>
     public DbSet<Domain.Course.Models.Course> Courses { get; set; }
     public DbSet<Domain.Teacher.Models.Teacher> Teachers { get; set; }
     public DbSet<CourseCategory> Categories { get; set; }
-    private DbSet<User> Users { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -33,4 +33,6 @@ public class CoreModuleEfContext : BaseEfContext<CoreModuleEfContext>
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(CourseConfig).Assembly);
         base.OnModelCreating(modelBuilder);
     }
+
+
 }

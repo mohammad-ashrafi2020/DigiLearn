@@ -22,7 +22,15 @@ public class EventBusRabbitMQ : IEventBus
         _password = configuration.GetSection("RabbitMQ")["Password"];
     }
 
-    public IConnection Connection { get; set; }
+    private IConnection _connection;
+    public IConnection Connection
+    {
+        get
+        {
+            CreateRabbitMqConnection();
+            return _connection;
+        }
+    }
 
     public void Publish(IntegrationEvent @event, string? queueName, string exchange = "", string exchangeType = ExchangeType.Direct, string routeKey = "")
     {
@@ -40,9 +48,13 @@ public class EventBusRabbitMQ : IEventBus
                 exclusive: false,
                 autoDelete: false,
                 arguments: null);
+            if (exchangeType == ExchangeType.Direct && exchange != "")
+            {
+                channel.QueueBind(queueName, exchange, queueName);
+            }
         }
 
-        if (string.IsNullOrWhiteSpace(exchange)==false)
+        if (string.IsNullOrWhiteSpace(exchange) == false)
         {
             channel.ExchangeDeclare(exchange, exchangeType, true, false);
         }
@@ -65,7 +77,7 @@ public class EventBusRabbitMQ : IEventBus
 
         try
         {
-            if (Connection != null)
+            if (_connection != null)
                 return;
 
             var factory = new ConnectionFactory()
@@ -74,7 +86,7 @@ public class EventBusRabbitMQ : IEventBus
                 Password = _password,
                 HostName = _hostName
             };
-            Connection = factory.CreateConnection();
+            _connection = factory.CreateConnection();
 
         }
         catch (Exception e)
