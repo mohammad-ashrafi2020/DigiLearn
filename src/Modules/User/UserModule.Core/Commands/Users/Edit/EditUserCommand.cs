@@ -37,14 +37,15 @@ public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
         user.Family = request.Family;
         if (string.IsNullOrWhiteSpace(request.Email) == false)
             user.Email = request.Email;
-        await _context.SaveChangesAsync(cancellationToken);
 
+        await _context.SaveChangesAsync(cancellationToken);
         _eventBus.Publish(new UserEdited()
         {
             Email = user.Email,
             Family = user.Family,
             Name = user.Name,
-            UserId = user.Id
+            UserId = user.Id,
+            PhoneNumber = user.PhoneNumber
         }, null, Exchanges.UserTopicExchange, ExchangeType.Topic, "user.edited");
         return OperationResult.Success();
     }

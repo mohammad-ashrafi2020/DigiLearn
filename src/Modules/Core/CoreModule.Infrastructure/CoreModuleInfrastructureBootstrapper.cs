@@ -22,6 +22,8 @@ public class CoreModuleInfrastructureBootstrapper
         services.AddScoped<ITeacherRepository, TeacherRepository>();
 
         services.AddHostedService<UserRegisteredEventHandler>();
+        services.AddHostedService<UserEditedEventHandler>();
+
         services.AddDbContext<CoreModuleEfContext>(option =>
         {
             option.UseSqlServer(configuration.GetConnectionString("CoreModule_Context"));

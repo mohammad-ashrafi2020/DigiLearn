@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EventHandlers\" />
     <Folder Include="Persistent\Category\" />
     <Folder Include="Persistent\Course\" />
     <Folder Include="Persistent\Users\" />
