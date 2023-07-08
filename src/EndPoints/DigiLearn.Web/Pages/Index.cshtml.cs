@@ -19,11 +19,7 @@ namespace DigiLearn.Web.Pages
 
         public void OnGet()
         {
-            _eventBus.Publish(new UserRegistered()
-            {
-                PhoneNumber = "091777",
-                Email = "Test@test.com"
-            }, "test");
+            
         }
     }
 }

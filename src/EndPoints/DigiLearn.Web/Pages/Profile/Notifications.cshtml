@@ -36,9 +36,9 @@
                         <tr>
                             <td>
                                 <p><b>@item.Title</b></p>
-                                <p>
-                                    @item.Text
-                                </p>
+                                <div>
+                                    @Html.Raw(item.Text)
+                                </div>
                             </td>
                             <td>
                                 @if (item.IsSeen)
