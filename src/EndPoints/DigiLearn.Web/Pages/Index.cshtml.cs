@@ -1,25 +1,22 @@
-﻿using Common.EventBus.Abstractions;
-using Common.EventBus.Events;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using DigiLearn.Web.Infrastructure.Services;
+using DigiLearn.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace DigiLearn.Web.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-        private IEventBus _eventBus;
-        public IndexModel(ILogger<IndexModel> logger, IEventBus eventBus)
+        private IHomePageService _service;
+
+        public IndexModel(IHomePageService service)
         {
-            _logger = logger;
-            _eventBus = eventBus;
+            _service = service;
         }
 
-        public void OnGet()
+        public HomePageViewModel HomePageData { get; set; }
+        public async Task OnGet()
         {
-            
+            HomePageData = await _service.GetData();
         }
     }
 }

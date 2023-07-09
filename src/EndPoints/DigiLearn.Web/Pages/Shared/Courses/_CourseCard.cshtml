@@ -1,0 +1,53 @@
+﻿@using CoreModule.Application._Utilities
+@model DigiLearn.Web.ViewModels.CourseCardViewModel
+@{
+    var href = $"/course/{Model.Slug}";
+}
+<div class="main-card shadow">
+    <div class="image-layer">
+        <div class="image-cover">
+            <a href="@href">
+                <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top"
+                   title="نمایش دوره"></i>
+            </a>
+        </div>
+        <img src="@CoreModuleDirectories.GetCourseImage(Model.ImageName)" alt="@Model.Title">
+    </div>
+    <h3>
+        <a href="@href">
+            @Model.Title
+        </a>
+    </h3>
+    <div class="info">
+        <div class="teacher">
+            <i class="zmdi zmdi-account-circle"></i>
+            <span>@Model.TeacherName</span>
+        </div>
+        <div class="visit">
+            <i class="zmdi zmdi-eye"></i>
+            <span>@Model.Visit.ToString("#,0")</span>
+        </div>
+        <div class="comment">
+            <i class="zmdi zmdi-comment"></i>
+            <span>@Model.CommentCounts.ToString("#,0")</span>
+        </div>
+    </div>
+    <div class="footer-card">
+        <div class="time pr-2 p-2">
+            <i class="zmdi zmdi-time-countdown"></i>
+            @Model.Duration
+        </div>
+        <div class="price text-left pl-2  p-2">
+            @if (Model.Price == 0)
+            {
+                <i class=""></i>
+                <text>رایگان</text>
+            }
+            else
+            {
+                <i class=""></i>
+                <text> @Model.Price.ToString("#,0") <span> تومان </span></text>
+            }
+        </div>
+    </div>
+</div>
