@@ -1,105 +1,30 @@
-﻿<div class="last-header container-fluid">
+﻿@model List<CoreModule.Query.Category._DTOs.CourseCategoryDto>
+<div class="last-header container-fluid">
     <ul class="main-menu">
-        <li class="menu">
-            <a href="#">
-                طراحی سایت
-                <i class="zmdi zmdi-chevron-down"></i>
-            </a>
-            <ul class="category">
-                <li>
-                    <a href="#d">
-                        Html
-                        <i class="zmdi zmdi-chevron-left pull-left"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Css</a>
-                </li>
-                <li>
-                    <a href="#">React</a>
-                </li>
-                <li>
-                    <a href="#">Java Script</a>
-                </li>
-                <li>
-                    <a href="#">Type Script</a>
-                </li>
-            </ul>
-        </li>
-        <li class="menu">
-            <a href="#">
-                برنامه نویسی وب
-                <i class="zmdi zmdi-chevron-down"></i>
+        @foreach (var item in Model)
+        {
+            var hasChild = item.Children.Any();
 
-            </a>
-        </li>
-        <li class="menu">
-            <a href="#">
-                امنیت
-            </a>
-        </li>
-        <li class="menu">
-            <a href="#">
-                برنامه نویسی ویندوز
-            </a>
-        </li>
-        <li class="menu">
-            <a href="#s">
-                برنامه نویسی موبایل
-                <i class="zmdi zmdi-chevron-down"></i>
-            </a>
-            <ul class="category">
-                <li>
-                    <a href="#d">
-                        Kotlin
-                        <i class="zmdi zmdi-chevron-left pull-left"></i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
-                        <li>
-                            <a href="#">سلام</a>
-                        </li>
+            <li class="menu">
+                <a href="/categories?category=@item.Slug">
+                    @item.Title
+                    @if (hasChild)
+                    {
+                        <i class="zmdi zmdi-chevron-down"></i>
+                    }
+                </a>
+                @if (hasChild)
+                {
+                    <ul class="category">
+                        @foreach (var child in item.Children)
+                        {
+                            <li>
+                                <a href="/categories?category=@item.Slug">@child.Title</a>
+                            </li>
+                        }
                     </ul>
-                </li>
-                <li>
-                    <a href="#">React Native</a>
-                </li>
-                <li>
-                    <a href="#">JavaJavaJavaJavaJavaJavaJavaJava</a>
-                </li>
-                <li>
-                    <a href="#">Object C</a>
-                </li>
-            </ul>
-        </li>
-
+                }
+            </li>
+        }
     </ul>
 </div>

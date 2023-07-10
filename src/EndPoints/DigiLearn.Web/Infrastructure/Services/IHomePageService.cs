@@ -35,7 +35,7 @@ namespace DigiLearn.Web.Infrastructure.Services
                     Slug = s.Slug,
                     ImageName = s.ImageName,
                     Price = s.Price,
-                    Duration = "",
+                    Duration = s.GetDuration(),
                     Visit = 0,
                     CommentCounts = 0,
                     TeacherName = s.Teacher

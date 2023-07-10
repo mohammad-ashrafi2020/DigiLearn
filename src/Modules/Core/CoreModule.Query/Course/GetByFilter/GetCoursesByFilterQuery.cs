@@ -68,9 +68,29 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
                     Title = s.Title,
                     Slug = s.Slug,
                     Price = s.Price,
-                    EpisodeCount = s.Sections.Sum(r => r.Episodes.Count),
                     CourseStatus = s.Status,
-                    Teacher = $"{s.Teacher.User.Name} {s.Teacher.User.Family}"
+                    Teacher = $"{s.Teacher.User.Name} {s.Teacher.User.Family}",
+                    Sections = s.Sections.Select(r => new CourseSectionDto
+                    {
+                        Id = r.Id,
+                        CreationDate = r.CreationDate,
+                        CourseId = r.CourseId,
+                        Title = r.Title,
+                        DisplayOrder = r.DisplayOrder,
+                        Episodes = r.Episodes.Select(e => new EpisodeDto
+                        {
+                            Id = e.Id,
+                            CreationDate = e.CreationDate,
+                            SectionId = e.SectionId,
+                            Title = e.Title,
+                            EnglishTitle = e.EnglishTitle,
+                            Token = e.Token,
+                            TimeSpan = e.TimeSpan,
+                            VideoName = e.VideoName,
+                            AttachmentName = e.AttachmentName,
+                            IsActive = e.IsActive
+                        }).ToList()
+                    }).ToList()
 
                 }).ToList()
         };
