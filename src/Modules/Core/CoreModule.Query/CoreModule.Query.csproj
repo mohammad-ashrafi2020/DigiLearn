@@ -12,6 +12,7 @@
     <Folder Include="Category\_DTOs\" />
     <Folder Include="Course\GetByFilter\" />
     <Folder Include="Course\GetById\" />
+    <Folder Include="Course\GetBySlug\" />
     <Folder Include="Course\_DTOs\" />
     <Folder Include="_DTOs\" />
     <Folder Include="Teacher\GetById\" />

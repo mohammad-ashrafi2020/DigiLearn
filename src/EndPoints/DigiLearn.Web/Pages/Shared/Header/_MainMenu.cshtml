@@ -6,7 +6,7 @@
             var hasChild = item.Children.Any();
 
             <li class="menu">
-                <a href="/categories?category=@item.Slug">
+                <a href="/courses?category=@item.Slug">
                     @item.Title
                     @if (hasChild)
                     {
@@ -19,7 +19,7 @@
                         @foreach (var child in item.Children)
                         {
                             <li>
-                                <a href="/categories?category=@item.Slug">@child.Title</a>
+                                <a href="/courses?category=@item.Slug">@child.Title</a>
                             </li>
                         }
                     </ul>

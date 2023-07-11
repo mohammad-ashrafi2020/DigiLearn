@@ -1,0 +1,1202 @@
+﻿@page "{slug}"
+@model DigiLearn.Web.Pages.CourseModel
+@{
+    ViewData["title"] = Model.Course.Title;
+}
+@section meta
+    {
+    <link rel="stylesheet" href="/css/single-Page.min.css">
+    <link rel="stylesheet" href="/videoJs/video-js.css">
+}
+<div class="main-content">
+    <div class="breadcrumb">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  col-xl-8 col-lg-7">
+                    <h1>@Model.Course.Title</h1>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                خانه
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/courses?category=@Model.Course.MainCategory.Slug">
+                                @Model.Course.MainCategory.Title
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/courses?category=@Model.Course.SubCategory.Slug">
+                                @Model.Course.SubCategory.Title
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="current">
+                                @Model.Course.Title
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-sm-8 col-xl-4 col-lg-5 left-side">
+                    <div class="course-shortlink shadow-sm">
+                        <span class="title"> لینک کوتاه </span>
+                        <span class="link">
+                            codeyad.com/Q/xG99
+                        </span>
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="" class="copy-btn" data-clipboard-text="codeyad.com/c/xG99" data-original-title="کپی"><i class="zmdi zmdi-copy"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-2 mt-4">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-lg-4  mb-3">
+                <div class="course-info p-3">
+
+                    <div class="price mt-2 mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-money text-success"></i>
+                            قیمت دوره :
+                        </div>
+                        <div class="pull-left d-inline-block ">
+                            @if (Model.Course.Price == 0)
+                            {
+                                <label class="text-success">رایگان</label>
+                            }
+                            else
+                            {
+                                <span style="font-size: 15px;">@Model.Course.Price.ToString("#,0")</span> <label class="text-success">تومان</label>
+                            }
+                        </div>
+                    </div>
+                    <div class="teacher mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-account-o"></i>
+                            مدرس :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <a href="/master/@Model.Course.Teacher.UserName">@Model.Course.Teacher.User.Name @Model.Course.Teacher.User.Family</a>
+                        </div>
+                    </div>
+                    <div class="students mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-accounts-outline"></i>
+                            تعداد دانشجویان
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>150</span> <label>نفر</label>
+                        </div>
+                    </div>
+                    <div class="countEpisode mb-3">
+                        <div class="d-inline-block">
+                            <i class="fa fa-th-list text-uppercase"></i>
+                            تعداد قسمت :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>
+                                @Model.Course.Sections.Sum(r=>r.Episodes.Count) قسمت
+                            </span>
+                        </div>
+                    </div>
+                    <div class="time mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-time"></i>
+                            مدت زمان آموزش:
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>@Model.Course.GetDuration()</span>
+                        </div>
+                    </div>
+
+                    <div class="status mb-3">
+                        <div class="d-inline-block">
+                            <i class="fa fa-info"></i>
+                            وضعیت دوره :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span class="text-primary">
+                                @Model.Course.GetCourseStatus()
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="level mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-layers"></i>
+                            سطح دوره :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>
+                                @Model.Course.GetCourseLevel()
+                            </span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-block btn-success">ثبت نام</a>
+
+                </div>
+                <div class="teacher shadow mt-3">
+                    <div class="title">
+                        <h5>مدرس دوره</h5>
+                    </div>
+                    <div class="middel  p-2 bg-white">
+                        <img class="d-inline-block" src="images/avatar04.png" alt="">
+
+                        <a href="#">
+                            محمد اشرافی
+                        </a>
+
+                    </div>
+                    <div class="about-teacher  bg-white">
+                        <p>
+                            اول داستان، طراح گرافیک بودم و ۲ سالی به عنوان طراح مشغول بودم، بعد به برنامه‌نویسی
+                            علاقمند شدم و الان بیشتر از ۱۰ ساله که عاشق کدزنی و چالش‌های پروژه‌های مالش‌های
+                            پروژه‌های مالش‌های پروژه‌های مالش‌های پروژه‌های مختلفم. به تدریس
+                            علاقه خاصی دارم و دوست دارم دانشی که در این راه بدست آوردم را در اختیار دیگران هم قرار
+                            بدم.
+                        </p>
+                        <div class="filter"></div>
+                    </div>
+                </div>
+                <a href="/questions.html" class="btn btn-block btn-primary mt-2">پرسش و پاسخ</a>
+                <a href="#" class="btn btn-block btn-danger mt-2">
+                    <i class="fa fa-heart"></i>
+                    افزودن به علاقه مندی ها
+                </a>
+
+            </div>
+            <div class="col-12 col-xl-9 col-lg-8 ">
+                <div class="course-body">
+                    <div id="instructions">
+                        <p class="video-cover">معرفی دوره</p>
+                        <div id="instructions" style="direction: ltr !important;">
+                            <div data-setup="{ &quot;aspectRatio&quot;:&quot;640:267&quot;, &quot;playbackRates&quot;: [1, 1.5, 2] }" lang="fa-ir" poster="images/course.jpg" preload="none" class="video-js vjs-default-skin vjs-paused my_video_1-dimensions vjs-fluid vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active" id="my_video_1" tabindex="-1" role="region" aria-label="Video Player">
+                                <video id="my_video_1_html5_api" class="vjs-tech" preload="none" poster="images/course.jpg" lang="fa-ir" data-setup="{ &quot;aspectRatio&quot;:&quot;640:267&quot;, &quot;playbackRates&quot;: [1, 1.5, 2] }" tabindex="-1" role="application">
+                                    <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                                    <source src="https://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                                </video><div class="vjs-poster" aria-disabled="false" style="background-image: url(&quot;images/course.jpg&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" aria-live="off" role="presentation">0:00</span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" aria-live="off" role="presentation">-:-</span></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true">0:00</div></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type&nbsp;</span>LIVE</div></div><button class="vjs-seek-to-live-control vjs-control" type="button" title="Seek to live, currently behind live" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Seek to live, currently behind live</span><span class="vjs-seek-to-live-text" aria-hidden="true">LIVE</span></button><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" aria-live="off" role="presentation">0:00</span></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Chapters" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Chapters</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title">Chapters</li></ul></div></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Descriptions" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Descriptions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">descriptions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Subtitles" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Subtitles</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" role="menuitem" aria-disabled="false" tabindex="-1"><span class="vjs-menu-item-text">subtitles settings</span><span class="vjs-control-text" aria-live="polite">, opens subtitles settings dialog</span></li><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">subtitles off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Audio Track" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Audio Track</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button" title="Picture-in-Picture" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " aria-describedby="my_video_1_component_390_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="my_video_1_component_390_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" aria-describedby="my_video_1_component_395_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="my_video_1_component_395_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg-color vjs-track-setting"><legend id="captions-text-legend-my_video_1_component_395">Text</legend><label id="captions-foreground-color-my_video_1_component_395" class="vjs-label">Color</label><select aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395"><option id="captions-foreground-color-my_video_1_component_395-White" value="#FFF" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-White">White</option><option id="captions-foreground-color-my_video_1_component_395-Black" value="#000" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Black">Black</option><option id="captions-foreground-color-my_video_1_component_395-Red" value="#F00" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Red">Red</option><option id="captions-foreground-color-my_video_1_component_395-Green" value="#0F0" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Green">Green</option><option id="captions-foreground-color-my_video_1_component_395-Blue" value="#00F" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Blue">Blue</option><option id="captions-foreground-color-my_video_1_component_395-Yellow" value="#FF0" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Yellow">Yellow</option><option id="captions-foreground-color-my_video_1_component_395-Magenta" value="#F0F" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Magenta">Magenta</option><option id="captions-foreground-color-my_video_1_component_395-Cyan" value="#0FF" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-color-my_video_1_component_395 captions-foreground-color-my_video_1_component_395-Cyan">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-my_video_1_component_395" class="vjs-label">Transparency</label><select aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-opacity-my_video_1_component_395"><option id="captions-foreground-opacity-my_video_1_component_395-Opaque" value="1" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-opacity-my_video_1_component_395 captions-foreground-opacity-my_video_1_component_395-Opaque">Opaque</option><option id="captions-foreground-opacity-my_video_1_component_395-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-my_video_1_component_395 captions-foreground-opacity-my_video_1_component_395 captions-foreground-opacity-my_video_1_component_395-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-track-setting"><legend id="captions-background-my_video_1_component_395">Background</legend><label id="captions-background-color-my_video_1_component_395" class="vjs-label">Color</label><select aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395"><option id="captions-background-color-my_video_1_component_395-Black" value="#000" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Black">Black</option><option id="captions-background-color-my_video_1_component_395-White" value="#FFF" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-White">White</option><option id="captions-background-color-my_video_1_component_395-Red" value="#F00" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Red">Red</option><option id="captions-background-color-my_video_1_component_395-Green" value="#0F0" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Green">Green</option><option id="captions-background-color-my_video_1_component_395-Blue" value="#00F" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Blue">Blue</option><option id="captions-background-color-my_video_1_component_395-Yellow" value="#FF0" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Yellow">Yellow</option><option id="captions-background-color-my_video_1_component_395-Magenta" value="#F0F" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Magenta">Magenta</option><option id="captions-background-color-my_video_1_component_395-Cyan" value="#0FF" aria-labelledby="captions-background-my_video_1_component_395 captions-background-color-my_video_1_component_395 captions-background-color-my_video_1_component_395-Cyan">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-my_video_1_component_395" class="vjs-label">Transparency</label><select aria-labelledby="captions-background-my_video_1_component_395 captions-background-opacity-my_video_1_component_395"><option id="captions-background-opacity-my_video_1_component_395-Opaque" value="1" aria-labelledby="captions-background-my_video_1_component_395 captions-background-opacity-my_video_1_component_395 captions-background-opacity-my_video_1_component_395-Opaque">Opaque</option><option id="captions-background-opacity-my_video_1_component_395-SemiTransparent" value="0.5" aria-labelledby="captions-background-my_video_1_component_395 captions-background-opacity-my_video_1_component_395 captions-background-opacity-my_video_1_component_395-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-my_video_1_component_395-Transparent" value="0" aria-labelledby="captions-background-my_video_1_component_395 captions-background-opacity-my_video_1_component_395 captions-background-opacity-my_video_1_component_395-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-track-setting"><legend id="captions-window-my_video_1_component_395">Window</legend><label id="captions-window-color-my_video_1_component_395" class="vjs-label">Color</label><select aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395"><option id="captions-window-color-my_video_1_component_395-Black" value="#000" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Black">Black</option><option id="captions-window-color-my_video_1_component_395-White" value="#FFF" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-White">White</option><option id="captions-window-color-my_video_1_component_395-Red" value="#F00" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Red">Red</option><option id="captions-window-color-my_video_1_component_395-Green" value="#0F0" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Green">Green</option><option id="captions-window-color-my_video_1_component_395-Blue" value="#00F" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Blue">Blue</option><option id="captions-window-color-my_video_1_component_395-Yellow" value="#FF0" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Yellow">Yellow</option><option id="captions-window-color-my_video_1_component_395-Magenta" value="#F0F" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Magenta">Magenta</option><option id="captions-window-color-my_video_1_component_395-Cyan" value="#0FF" aria-labelledby="captions-window-my_video_1_component_395 captions-window-color-my_video_1_component_395 captions-window-color-my_video_1_component_395-Cyan">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-my_video_1_component_395" class="vjs-label">Transparency</label><select aria-labelledby="captions-window-my_video_1_component_395 captions-window-opacity-my_video_1_component_395"><option id="captions-window-opacity-my_video_1_component_395-Transparent" value="0" aria-labelledby="captions-window-my_video_1_component_395 captions-window-opacity-my_video_1_component_395 captions-window-opacity-my_video_1_component_395-Transparent">Transparent</option><option id="captions-window-opacity-my_video_1_component_395-SemiTransparent" value="0.5" aria-labelledby="captions-window-my_video_1_component_395 captions-window-opacity-my_video_1_component_395 captions-window-opacity-my_video_1_component_395-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-my_video_1_component_395-Opaque" value="1" aria-labelledby="captions-window-my_video_1_component_395 captions-window-opacity-my_video_1_component_395 captions-window-opacity-my_video_1_component_395-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-my_video_1_component_395" class="">Font Size</legend><select aria-labelledby="captions-font-size-my_video_1_component_395"><option id="captions-font-size-my_video_1_component_395-50" value="0.50" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-50">50%</option><option id="captions-font-size-my_video_1_component_395-75" value="0.75" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-75">75%</option><option id="captions-font-size-my_video_1_component_395-100" value="1.00" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-100">100%</option><option id="captions-font-size-my_video_1_component_395-125" value="1.25" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-125">125%</option><option id="captions-font-size-my_video_1_component_395-150" value="1.50" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-150">150%</option><option id="captions-font-size-my_video_1_component_395-175" value="1.75" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-175">175%</option><option id="captions-font-size-my_video_1_component_395-200" value="2.00" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-200">200%</option><option id="captions-font-size-my_video_1_component_395-300" value="3.00" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-300">300%</option><option id="captions-font-size-my_video_1_component_395-400" value="4.00" aria-labelledby="captions-font-size-my_video_1_component_395 captions-font-size-my_video_1_component_395-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="my_video_1_component_395" class="">Text Edge Style</legend><select aria-labelledby="my_video_1_component_395"><option id="my_video_1_component_395-None" value="none" aria-labelledby="my_video_1_component_395 my_video_1_component_395-None">None</option><option id="my_video_1_component_395-Raised" value="raised" aria-labelledby="my_video_1_component_395 my_video_1_component_395-Raised">Raised</option><option id="my_video_1_component_395-Depressed" value="depressed" aria-labelledby="my_video_1_component_395 my_video_1_component_395-Depressed">Depressed</option><option id="my_video_1_component_395-Uniform" value="uniform" aria-labelledby="my_video_1_component_395 my_video_1_component_395-Uniform">Uniform</option><option id="my_video_1_component_395-Dropshadow" value="dropshadow" aria-labelledby="my_video_1_component_395 my_video_1_component_395-Dropshadow">Dropshadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-my_video_1_component_395" class="">Font Family</legend><select aria-labelledby="captions-font-family-my_video_1_component_395"><option id="captions-font-family-my_video_1_component_395-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-ProportionalSansSerif">Proportional Sans-Serif</option><option id="captions-font-family-my_video_1_component_395-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-MonospaceSansSerif">Monospace Sans-Serif</option><option id="captions-font-family-my_video_1_component_395-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-ProportionalSerif">Proportional Serif</option><option id="captions-font-family-my_video_1_component_395-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-MonospaceSerif">Monospace Serif</option><option id="captions-font-family-my_video_1_component_395-Casual" value="casual" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-Casual">Casual</option><option id="captions-font-family-my_video_1_component_395-Script" value="script" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-Script">Script</option><option id="captions-font-family-my_video_1_component_395-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-my_video_1_component_395 captions-font-family-my_video_1_component_395-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button type="button" class="vjs-default-button" title="restore all settings to the default values">Reset<span class="vjs-control-text"> restore all settings to the default values</span></button><button type="button" class="vjs-done-button">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false" title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs mt-2">
+                        <div class="tab-titles row">
+                            <a href="javascript:void(0)" class="selected col-6 col-xl-3 col-lg-4 col-md-4 col-sm-5" id="episode">
+                                <i class="fa fa-th"></i>
+                                قسمت ها
+                            </a>
+                            <a href="javascript:void(0)" id="description" class="col-6 col-xl-3 col-lg-4 col-md-4 col-sm-5">
+                                <i class="zmdi zmdi-file"></i>
+                                توضیحات
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="tab-content  card shadow   mb-4">
+                        <div class=" ">
+                            <div class="episodes">
+                                <!-- <div class="alert alert-info">
+                                    درحال حاضر هیج بخشی برای این دوره منتشر نشده است
+                                </div> -->
+                                <div class="episode-item row">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">1</span>
+                                        <span class="title">معرفی دوره</span>
+                                    </div>
+                                    <span class="free">رایگان</span>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">2</span>
+                                        <span class="title">قسمت اول- تاریخچه چهارچوب مایکروسافت</span>
+                                    </div>
+                                    <span class="free">رایگان</span>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">3</span>
+                                        <span class="title">
+                                            آموزش کار با loading برای لود محصولات جدید
+                                        </span>
+                                    </div>
+                                    <span class="free">رایگان</span>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row ">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">4</span>
+                                        <span class="title">قرار دادن قسمت پرفروشترین محصولات</span>
+                                    </div>
+                                    <span class="free">رایگان</span>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row disabled">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">5</span>
+                                        <span class="title">
+                                            نمایش دقیق پر فروش ترین محصولات
+                                        </span>
+                                    </div>
+                                    <a href="#" data-toggle="tooltip" title="" class="notFree" data-original-title="ثبت نام در دوره">
+                                        <i class="fa fa-lock" style="font-size: 20px;"></i>
+                                    </a>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row disabled">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">6</span>
+                                        <span class="title">
+                                            اتمام بخش اسلایدر مشابه دیجی کالا
+                                        </span>
+                                    </div>
+                                    <a href="#" data-toggle="tooltip" title="" class="notFree" data-original-title="ثبت نام در دوره">
+                                        <i class="fa fa-lock" style="font-size: 20px;"></i>
+                                    </a>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row disabled">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">7</span>
+                                        <span class="title">
+                                            اتمام بخش اسلایدر مشابه دیجی کالا
+                                        </span>
+                                    </div>
+                                    <a href="#" data-toggle="tooltip" title="" class="notFree" data-original-title="ثبت نام در دوره">
+                                        <i class="fa fa-lock" style="font-size: 20px;"></i>
+                                    </a>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="episode-item row disabled">
+                                    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                        <span class="counter">8</span>
+                                        <span class="title">
+                                            مرتب سازی فایل ها
+                                        </span>
+                                    </div>
+                                    <a href="#" data-toggle="tooltip" title="" class="notFree" data-original-title="ثبت نام در دوره">
+                                        <i class="fa fa-lock" style="font-size: 20px;"></i>
+                                    </a>
+                                    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                        <span class="time">
+                                            30 :40
+                                        </span>
+                                        <div class="tools">
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                            <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <i class="fa fa-download"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Description p-3" style="display: none;">
+                                <p>
+                                    سلام بر شما عزیزان،
+                                    من اومدم تا یه دوره باحال و دوست داشتنی (مخصوصا که رایگان هم هست ) براتون
+                                    آموزش بدم.
+
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی خب اینا تازمانیکه
+                                    تو پروژه نیاد فایده ای نداره ، بنابراین بعد از این دوره برای شما عزیزان یک
+                                    دوره پروژه ای خیلییی باحال تر خواهم گذاشت.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Comments p-2 card custom-shadow mb-5">
+                        <div class="comment-title">
+                            <i class="zmdi zmdi-comments text-info">
+                            </i>
+                            <h6>
+                                نظرات کاربران
+                            </h6>
+                        </div>
+                        <form>
+                            <p>نظر خودرا وارد کنید :</p>
+                            <textarea id="text_area" placeholder="متن نظر خود را بنویسید" style="display: none;"></textarea><div class="ck ck-reset ck-editor ck-rounded-corners" role="application" dir="rtl" lang="fa" aria-labelledby="ck-editor__label_ec3e9881acb44be5ce01e0636f3838588"><label class="ck ck-label ck-voice-label" id="ck-editor__label_ec3e9881acb44be5ce01e0636f3838588">ویرایشگر متن غنی</label><div class="ck ck-editor__top ck-reset_all" role="presentation"><div class="ck ck-sticky-panel"><div class="ck ck-sticky-panel__placeholder" style="display: none;"></div><div class="ck ck-sticky-panel__content"><div class="ck ck-toolbar ck-toolbar_grouping" role="toolbar" aria-label="نوارابزار ویرایشگر"><div class="ck ck-toolbar__items"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e0d83d701f7a3d06ac103bb8bae1e47b6" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">درشت (CTRL+B)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e0d83d701f7a3d06ac103bb8bae1e47b6">درشت</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ed09cc4f227ce3827251b7647fd8b4edc" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M9.586 14.633l.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">کج (CTRL+I)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ed09cc4f227ce3827251b7647fd8b4edc">کج</span></button><div class="ck ck-dropdown ck-font-size-dropdown"><button class="ck ck-button ck-off ck-dropdown__button" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ed2a6d54dd9453e6cf11e3859e2960544" aria-haspopup="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M9.816 11.5L7.038 4.785 4.261 11.5h5.555zm.62 1.5H3.641l-1.666 4.028H.312l5.789-14h1.875l5.789 14h-1.663L10.436 13zm7.55 2.279l.779-.779.707.707-2.265 2.265-2.193-2.265.707-.707.765.765V4.825c0-.042 0-.083.002-.123l-.77.77-.707-.707L17.207 2.5l2.265 2.265-.707.707-.782-.782c.002.043.003.089.003.135v10.454z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">اندازه فونت</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ed2a6d54dd9453e6cf11e3859e2960544">اندازه فونت</span><svg class="ck ck-icon ck-dropdown__arrow" viewBox="0 0 10 10"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"></path></svg></button><div class="ck ck-reset ck-dropdown__panel ck-dropdown__panel_se"><ul class="ck ck-reset ck-list"><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-tiny ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e3d963495298703431b64e7db7eabbc27"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e3d963495298703431b64e7db7eabbc27">بسیار کوچک</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-small ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ea588683be5459c989d396e6decf2a083"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ea588683be5459c989d396e6decf2a083">کوچک</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option ck-on ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ec618246c6cea0a80e2d6639dd96cf971"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ec618246c6cea0a80e2d6639dd96cf971">پیش فرض</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-big ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_edfa916f1e20fb7fd7609a6b7e969fcbe"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_edfa916f1e20fb7fd7609a6b7e969fcbe">بزرگ</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-huge ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e29cdc15b9582c513d20179a1f59a10c8"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e29cdc15b9582c513d20179a1f59a10c8">بسیار بزرگ</span></button></li></ul></div></div><div class="ck ck-dropdown ck-color-ui-dropdown"><button class="ck ck-button ck-off ck-dropdown__button" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e7613a61beab84ea09bb255f6b8ce0510" aria-haspopup="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M12.4 10.3L10 4.5l-2.4 5.8h4.8zm.5 1.2H7.1L5.7 15H4.2l5-12h1.6l5 12h-1.5L13 11.5zm3.1 7H4a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">رنگ فونت</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e7613a61beab84ea09bb255f6b8ce0510">رنگ فونت</span><svg class="ck ck-icon ck-dropdown__arrow" viewBox="0 0 10 10"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"></path></svg></button><div class="ck ck-reset ck-dropdown__panel ck-dropdown__panel_se"><div class="ck ck-color-table"><button class="ck ck-button ck-color-table__remove-color ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ee9024b7f9fc873ffc40f10624a393b38"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M8.636 9.531l-2.758 3.94a.5.5 0 0 0 .122.696l3.224 2.284h1.314l2.636-3.736L8.636 9.53zm.288 8.451L5.14 15.396a2 2 0 0 1-.491-2.786l6.673-9.53a2 2 0 0 1 2.785-.49l3.742 2.62a2 2 0 0 1 .491 2.785l-7.269 10.053-2.147-.066z"></path><path d="M4 18h5.523v-1H4zm-2 0h1v-1H2z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">حذف رنگ</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ee9024b7f9fc873ffc40f10624a393b38">حذف رنگ</span></button></div></div></div><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ee7492e6edd062e6dbb72f35e2bb534a6" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955.741.741 0 0 1 .12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">پیوند (Ctrl+K)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ee7492e6edd062e6dbb72f35e2bb534a6">پیوند</span></button><div class="ck ck-dropdown ck-list-styles-dropdown ck-toolbar-dropdown"><div class="ck ck-splitbutton ck-dropdown__button"><button class="ck ck-button ck-off ck-splitbutton__action" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e355c37a89813a39e08e3feb2409f778c" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0C1 4.784 1.777 4 2.75 4c.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75C1.784 7.5 1 6.723 1 5.75zm6 9c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0c0-.966.777-1.75 1.75-1.75.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75-.966 0-1.75-.777-1.75-1.75z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">لیست نشانه‌دار</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e355c37a89813a39e08e3feb2409f778c">لیست نشانه‌دار</span></button><button class="ck ck-button ck-off ck-splitbutton__arrow" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ef9f1a9606861d2900bcfc575082bf71c" aria-haspopup="true" aria-expanded="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 10 10"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"></path></svg><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ef9f1a9606861d2900bcfc575082bf71c"></span></button></div><div class="ck ck-reset ck-dropdown__panel ck-dropdown__panel_se"><div class="ck ck-toolbar" role="toolbar" aria-label="Bulleted list styles toolbar"><div class="ck ck-toolbar__items"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e9ef7cd6ebc426537d358443019b29b0b"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M11 27a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0-9a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0-9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Disc</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e9ef7cd6ebc426537d358443019b29b0b">Toggle the disc list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ecb18ec3de1f2eaa683b2edda7e036ac3"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M11 27a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 1a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 1a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-10a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 1a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Circle</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ecb18ec3de1f2eaa683b2edda7e036ac3">Toggle the circle list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e206f6ef249ee14d0934df8ebbc679943"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M14 27v6H8v-6h6zm0-9v6H8v-6h6zm0-9v6H8V9h6z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Square</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e206f6ef249ee14d0934df8ebbc679943">Toggle the square list style</span></button></div></div></div></div><div class="ck ck-dropdown ck-list-styles-dropdown ck-toolbar-dropdown"><div class="ck ck-splitbutton ck-dropdown__button"><button class="ck ck-button ck-off ck-splitbutton__action" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ea80a2995d3f368338362a6e7e7d43bb8" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">لیست عددی</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ea80a2995d3f368338362a6e7e7d43bb8">لیست عددی</span></button><button class="ck ck-button ck-off ck-splitbutton__arrow" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e3cc7cd96e2b97c5c0d5b744cf972ec6c" aria-haspopup="true" aria-expanded="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 10 10"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"></path></svg><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e3cc7cd96e2b97c5c0d5b744cf972ec6c"></span></button></div><div class="ck ck-reset ck-dropdown__panel ck-dropdown__panel_se"><div class="ck ck-toolbar" role="toolbar" aria-label="Numbered list styles toolbar"><div class="ck ck-toolbar__items"><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e9c2643b071e24e0992f05bf0a9aca1ad"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M10.29 15V8.531H9.286c-.14.393-.4.736-.778 1.03-.378.295-.728.495-1.05.6v1.121a4.257 4.257 0 0 0 1.595-.936V15h1.235zm3.343 0v-1.235h-1.235V15h1.235zM11.3 24v-1.147H8.848c.064-.111.148-.226.252-.343.104-.117.351-.354.74-.712.39-.357.66-.631.81-.821.225-.288.39-.562.494-.824.104-.263.156-.539.156-.829 0-.51-.182-.936-.545-1.279-.363-.342-.863-.514-1.499-.514-.58 0-1.063.148-1.45.444-.387.296-.617.784-.69 1.463l1.23.124c.024-.36.112-.619.264-.774.153-.155.358-.233.616-.233.26 0 .465.074.613.222.148.148.222.36.222.635 0 .25-.085.501-.255.756-.126.185-.468.536-1.024 1.055-.692.641-1.155 1.156-1.389 1.544-.234.389-.375.8-.422 1.233H11.3zm2.333 0v-1.235h-1.235V24h1.235zM9.204 34.11c.615 0 1.129-.2 1.542-.598.413-.398.62-.88.62-1.446 0-.39-.11-.722-.332-.997a1.5 1.5 0 0 0-.886-.532c.619-.337.928-.788.928-1.353 0-.399-.151-.756-.453-1.073-.366-.386-.852-.58-1.459-.58a2.25 2.25 0 0 0-.96.2 1.617 1.617 0 0 0-.668.55c-.16.232-.28.544-.358.933l1.138.194c.032-.282.123-.495.272-.642.15-.146.33-.22.54-.22.215 0 .386.065.515.194s.193.302.193.518c0 .255-.087.46-.263.613-.176.154-.43.227-.765.218l-.136 1.006c.22-.061.409-.092.567-.092.24 0 .444.09.61.272.168.182.251.428.251.739 0 .328-.087.589-.261.782a.833.833 0 0 1-.644.29.841.841 0 0 1-.607-.242c-.167-.16-.27-.394-.307-.698l-1.196.145c.062.542.285.98.668 1.316.384.335.868.503 1.45.503zm4.43-.11v-1.235h-1.236V34h1.235z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Decimal</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e9c2643b071e24e0992f05bf0a9aca1ad">Toggle the decimal list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e8ddfc96a3bdb0cdbc4afe653e9f112cf"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M5.714 15.11c.624 0 1.11-.22 1.46-.66.421-.533.632-1.408.632-2.627 0-1.222-.21-2.096-.629-2.624-.351-.445-.839-.668-1.463-.668-.624 0-1.11.22-1.459.66-.422.533-.633 1.406-.633 2.619 0 1.236.192 2.095.576 2.577.384.482.89.723 1.516.723zm0-1.024a.614.614 0 0 1-.398-.14c-.115-.094-.211-.283-.287-.565-.077-.283-.115-.802-.115-1.558s.043-1.294.128-1.613c.064-.246.155-.417.272-.512a.617.617 0 0 1 .4-.143.61.61 0 0 1 .398.143c.116.095.211.284.288.567.076.283.114.802.114 1.558s-.043 1.292-.128 1.608c-.064.246-.155.417-.272.512a.617.617 0 0 1-.4.143zm6.078.914V8.531H10.79c-.14.393-.4.736-.778 1.03-.378.295-.728.495-1.05.6v1.121a4.257 4.257 0 0 0 1.595-.936V15h1.235zm3.344 0v-1.235h-1.235V15h1.235zm-9.422 9.11c.624 0 1.11-.22 1.46-.66.421-.533.632-1.408.632-2.627 0-1.222-.21-2.096-.629-2.624-.351-.445-.839-.668-1.463-.668-.624 0-1.11.22-1.459.66-.422.533-.633 1.406-.633 2.619 0 1.236.192 2.095.576 2.577.384.482.89.723 1.516.723zm0-1.024a.614.614 0 0 1-.398-.14c-.115-.094-.211-.283-.287-.565-.077-.283-.115-.802-.115-1.558s.043-1.294.128-1.613c.064-.246.155-.417.272-.512a.617.617 0 0 1 .4-.143.61.61 0 0 1 .398.143c.116.095.211.284.288.567.076.283.114.802.114 1.558s-.043 1.292-.128 1.608c-.064.246-.155.417-.272.512a.617.617 0 0 1-.4.143zm7.088.914v-1.147H10.35c.065-.111.149-.226.253-.343.104-.117.35-.354.74-.712.39-.357.66-.631.81-.821.225-.288.39-.562.493-.824.104-.263.156-.539.156-.829 0-.51-.181-.936-.544-1.279-.364-.342-.863-.514-1.499-.514-.58 0-1.063.148-1.45.444-.387.296-.617.784-.69 1.463l1.23.124c.024-.36.112-.619.264-.774.152-.155.357-.233.615-.233.261 0 .465.074.613.222.148.148.222.36.222.635 0 .25-.085.501-.255.756-.126.185-.467.536-1.024 1.055-.691.641-1.154 1.156-1.388 1.544-.235.389-.375.8-.422 1.233h4.328zm2.334 0v-1.235h-1.235V24h1.235zM5.714 34.11c.624 0 1.11-.22 1.46-.66.421-.533.632-1.408.632-2.627 0-1.222-.21-2.096-.629-2.624-.351-.445-.839-.668-1.463-.668-.624 0-1.11.22-1.459.66-.422.533-.633 1.406-.633 2.619 0 1.236.192 2.095.576 2.577.384.482.89.723 1.516.723zm0-1.024a.614.614 0 0 1-.398-.14c-.115-.094-.211-.283-.287-.565-.077-.283-.115-.802-.115-1.558s.043-1.294.128-1.613c.064-.246.155-.417.272-.512a.617.617 0 0 1 .4-.143.61.61 0 0 1 .398.143c.116.095.211.284.288.567.076.283.114.802.114 1.558s-.043 1.292-.128 1.608c-.064.246-.155.417-.272.512a.617.617 0 0 1-.4.143zm4.992 1.024c.616 0 1.13-.2 1.543-.598.413-.398.62-.88.62-1.446 0-.39-.111-.722-.332-.997a1.5 1.5 0 0 0-.886-.532c.618-.337.927-.788.927-1.353 0-.399-.15-.756-.452-1.073-.366-.386-.853-.58-1.46-.58a2.25 2.25 0 0 0-.96.2 1.617 1.617 0 0 0-.667.55c-.16.232-.28.544-.359.933l1.139.194c.032-.282.123-.495.272-.642.15-.146.33-.22.54-.22.214 0 .386.065.515.194s.193.302.193.518c0 .255-.088.46-.264.613-.175.154-.43.227-.764.218l-.136 1.006c.22-.061.408-.092.566-.092.24 0 .444.09.611.272.167.182.25.428.25.739 0 .328-.086.589-.26.782a.833.833 0 0 1-.644.29.841.841 0 0 1-.607-.242c-.167-.16-.27-.394-.308-.698l-1.195.145c.062.542.284.98.668 1.316.384.335.867.503 1.45.503zm4.43-.11v-1.235h-1.235V34h1.235z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Decimal with leading zero</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e8ddfc96a3bdb0cdbc4afe653e9f112cf">Toggle the decimal with leading zero list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ea018a34d678064e9dd5c5ccad3d19bca"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M11.88 8.7V7.558h-1.234V8.7h1.234zm0 5.3V9.333h-1.234V14h1.234zm2.5 0v-1.235h-1.234V14h1.235zm-4.75 4.7v-1.142H8.395V18.7H9.63zm0 5.3v-4.667H8.395V24H9.63zm2.5-5.3v-1.142h-1.234V18.7h1.235zm0 5.3v-4.667h-1.234V24h1.235zm2.501 0v-1.235h-1.235V24h1.235zM7.38 28.7v-1.142H6.145V28.7H7.38zm0 5.3v-4.667H6.145V34H7.38zm2.5-5.3v-1.142H8.646V28.7H9.88zm0 5.3v-4.667H8.646V34H9.88zm2.5-5.3v-1.142h-1.234V28.7h1.235zm0 5.3v-4.667h-1.234V34h1.235zm2.501 0v-1.235h-1.235V34h1.235z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Lower–roman</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ea018a34d678064e9dd5c5ccad3d19bca">Toggle the lower–roman list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ee08e0cc6dde060e5e21f11d2902967ff"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M11.916 15V8.558h-1.301V15h1.3zm2.465 0v-1.235h-1.235V15h1.235zM9.665 25v-6.442h-1.3V25h1.3zm2.5 0v-6.442h-1.3V25h1.3zm2.466 0v-1.235h-1.235V25h1.235zm-7.216 9v-6.442h-1.3V34h1.3zm2.5 0v-6.442h-1.3V34h1.3zm2.501 0v-6.442h-1.3V34h1.3zm2.465 0v-1.235h-1.235V34h1.235z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Upper-roman</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ee08e0cc6dde060e5e21f11d2902967ff">Toggle the upper–roman list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ee127930c66c057cab5d5441cffab8c29"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M9.62 14.105c.272 0 .528-.05.768-.153s.466-.257.677-.462c.009.024.023.072.044.145.047.161.086.283.119.365h1.221a2.649 2.649 0 0 1-.222-.626c-.04-.195-.059-.498-.059-.908l.013-1.441c0-.536-.055-.905-.165-1.105-.11-.201-.3-.367-.569-.497-.27-.13-.68-.195-1.23-.195-.607 0-1.064.108-1.371.325-.308.217-.525.55-.65 1.002l1.12.202c.076-.217.176-.369.299-.455.123-.086.294-.13.514-.13.325 0 .546.05.663.152.118.101.176.27.176.508v.123c-.222.093-.622.194-1.2.303-.427.082-.755.178-.982.288-.227.11-.403.268-.53.474a1.327 1.327 0 0 0-.188.706c0 .398.138.728.415.988.277.261.656.391 1.136.391zm.368-.87a.675.675 0 0 1-.492-.189.606.606 0 0 1-.193-.448c0-.176.08-.32.241-.435.106-.07.33-.142.673-.215a7.19 7.19 0 0 0 .751-.19v.247c0 .296-.016.496-.048.602a.773.773 0 0 1-.295.409 1.07 1.07 0 0 1-.637.22zm4.645.765v-1.235h-1.235V14h1.235zM10.2 25.105c.542 0 1.003-.215 1.382-.646.38-.43.57-1.044.57-1.84 0-.771-.187-1.362-.559-1.774a1.82 1.82 0 0 0-1.41-.617c-.522 0-.973.216-1.354.65v-2.32H7.594V25h1.147v-.686a1.9 1.9 0 0 0 .67.592c.26.133.523.2.79.2zm-.299-.975c-.354 0-.638-.164-.852-.492-.153-.232-.229-.59-.229-1.073 0-.468.098-.818.295-1.048a.93.93 0 0 1 .738-.345c.302 0 .55.118.743.354.193.236.29.62.29 1.154 0 .5-.096.868-.288 1.1-.192.233-.424.35-.697.35zm4.478.87v-1.235h-1.234V25h1.234zm-4.017 9.105c.6 0 1.08-.142 1.437-.426.357-.284.599-.704.725-1.261l-1.213-.207c-.061.326-.167.555-.316.688a.832.832 0 0 1-.576.2.916.916 0 0 1-.75-.343c-.185-.228-.278-.62-.278-1.173 0-.498.091-.853.274-1.066.183-.212.429-.318.736-.318.232 0 .42.061.565.184.145.123.238.306.28.55l1.216-.22c-.146-.501-.387-.874-.722-1.119-.336-.244-.788-.366-1.356-.366-.695 0-1.245.214-1.653.643-.407.43-.61 1.03-.61 1.8 0 .762.202 1.358.608 1.788.406.431.95.646 1.633.646zM14.633 34v-1.235h-1.235V34h1.235z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Lower-latin</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ee127930c66c057cab5d5441cffab8c29">Toggle the lower–latin list style</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_eddcd6ad5b02ad6f414f0f32bd5e3c235"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 44 44"><path d="M35 29a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17zm0-9a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H18a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h17z" fill-opacity=".163"></path><path d="M7.88 15l.532-1.463h2.575L11.549 15h1.415l-2.58-6.442H9.01L6.5 15h1.38zm2.69-2.549H8.811l.87-2.39.887 2.39zM14.88 15v-1.235h-1.234V15h1.234zM9.352 25c.83-.006 1.352-.02 1.569-.044.346-.038.636-.14.872-.305.236-.166.422-.387.558-.664.137-.277.205-.562.205-.855 0-.372-.106-.695-.317-.97-.21-.276-.512-.471-.905-.585a1.51 1.51 0 0 0 .661-.567 1.5 1.5 0 0 0 .244-.83c0-.28-.066-.53-.197-.754a1.654 1.654 0 0 0-.495-.539 1.676 1.676 0 0 0-.672-.266c-.25-.042-.63-.063-1.14-.063H7.158V25h2.193zm.142-3.88H8.46v-1.49h.747c.612 0 .983.007 1.112.022.217.026.38.102.49.226.11.125.165.287.165.486a.68.68 0 0 1-.192.503.86.86 0 0 1-.525.23 11.47 11.47 0 0 1-.944.023h.18zm.17 2.795H8.46v-1.723h1.05c.592 0 .977.03 1.154.092.177.062.313.16.406.295a.84.84 0 0 1 .14.492c0 .228-.06.41-.181.547a.806.806 0 0 1-.473.257c-.126.026-.423.04-.892.04zM14.88 25v-1.235h-1.234V25h1.234zm-5.018 9.11c.691 0 1.262-.17 1.711-.512.45-.341.772-.864.965-1.567l-1.261-.4c-.109.472-.287.818-.536 1.037-.25.22-.547.33-.892.33-.47 0-.85-.173-1.143-.519-.293-.345-.44-.925-.44-1.74 0-.767.15-1.322.447-1.665.297-.343.684-.514 1.162-.514.346 0 .64.096.881.29.242.193.4.457.477.79l1.288-.307c-.147-.516-.367-.911-.66-1.187-.492-.465-1.132-.698-1.92-.698-.902 0-1.63.296-2.184.89-.554.593-.83 1.426-.83 2.498 0 1.014.275 1.813.825 2.397.551.585 1.254.877 2.11.877zM14.88 34v-1.235h-1.234V34h1.234z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">Upper-latin</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_eddcd6ad5b02ad6f414f0f32bd5e3c235">Toggle the upper–latin list style</span></button></div></div></div></div><div class="ck ck-dropdown ck-font-size-dropdown"><button class="ck ck-button ck-off ck-dropdown__button" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e3f8df18f7cdbf9fc4a0a21565feb5905" aria-haspopup="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M9.816 11.5L7.038 4.785 4.261 11.5h5.555zm.62 1.5H3.641l-1.666 4.028H.312l5.789-14h1.875l5.789 14h-1.663L10.436 13zm7.55 2.279l.779-.779.707.707-2.265 2.265-2.193-2.265.707-.707.765.765V4.825c0-.042 0-.083.002-.123l-.77.77-.707-.707L17.207 2.5l2.265 2.265-.707.707-.782-.782c.002.043.003.089.003.135v10.454z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">اندازه فونت</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e3f8df18f7cdbf9fc4a0a21565feb5905">اندازه فونت</span><svg class="ck ck-icon ck-dropdown__arrow" viewBox="0 0 10 10"><path d="M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z"></path></svg></button><div class="ck ck-reset ck-dropdown__panel ck-dropdown__panel_se"><ul class="ck ck-reset ck-list"><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-tiny ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_eb26d41d0fde2f4df3fab2490b5df1495"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_eb26d41d0fde2f4df3fab2490b5df1495">بسیار کوچک</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-small ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e5e6a3452d136ee44cde322f00e103fca"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e5e6a3452d136ee44cde322f00e103fca">کوچک</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option ck-on ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_ede60a97a48d590b32992afdd13e69a67"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_ede60a97a48d590b32992afdd13e69a67">پیش فرض</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-big ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e53ad9861f5aa514f689dc09a0637de56"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e53ad9861f5aa514f689dc09a0637de56">بزرگ</span></button></li><li class="ck ck-list__item"><button class="ck ck-button ck-fontsize-option text-huge ck-off ck-button_with-text" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e159fcf84f9758aaaf63310d5994b49b3"><span class="ck ck-tooltip ck-tooltip_s ck-hidden"><span class="ck ck-tooltip__text"></span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e159fcf84f9758aaaf63310d5994b49b3">بسیار بزرگ</span></button></li></ul></div></div><span class="ck ck-toolbar__separator"></span><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e17729f8005acd53f37d2ffa4e7f7a468"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M2 3.75c0 .414.336.75.75.75h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 0 0-.75.75zm5 6c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM2.75 16.5h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 1 0 0 1.5zm1.618-9.55L.98 9.358a.4.4 0 0 0 .013.661l3.39 2.207A.4.4 0 0 0 5 11.892V7.275a.4.4 0 0 0-.632-.326z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">افزایش تورفتگی</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e17729f8005acd53f37d2ffa4e7f7a468">افزایش تورفتگی</span></button><button class="ck ck-button ck-disabled ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e1e0b3871e4c2ecd38ddf7d64b640ceec" aria-disabled="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M2 3.75c0 .414.336.75.75.75h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 0 0-.75.75zm5 6c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM2.75 16.5h14.5a.75.75 0 1 0 0-1.5H2.75a.75.75 0 1 0 0 1.5zM1.632 6.95L5.02 9.358a.4.4 0 0 1-.013.661l-3.39 2.207A.4.4 0 0 1 1 11.892V7.275a.4.4 0 0 1 .632-.326z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">کاهش تورفتگی</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e1e0b3871e4c2ecd38ddf7d64b640ceec">کاهش تورفتگی</span></button><span class="ck ck-toolbar__separator"></span><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e56f7d3b5af9e3186a3f975e2602f4fd4" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M3 10.423a6.5 6.5 0 0 1 6.056-6.408l.038.67C6.448 5.423 5.354 7.663 5.22 10H9c.552 0 .5.432.5.986v4.511c0 .554-.448.503-1 .503h-5c-.552 0-.5-.449-.5-1.003v-4.574zm8 0a6.5 6.5 0 0 1 6.056-6.408l.038.67c-2.646.739-3.74 2.979-3.873 5.315H17c.552 0 .5.432.5.986v4.511c0 .554-.448.503-1 .503h-5c-.552 0-.5-.449-.5-1.003v-4.574z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text"> بلوک نقل قول</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e56f7d3b5af9e3186a3f975e2602f4fd4"> بلوک نقل قول</span></button><button class="ck ck-button ck-disabled ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e89fff45caf6441cab6c9c14dfbe207fa" aria-disabled="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M14.958 9.367l-2.189 1.837a.75.75 0 0 0 .965 1.149l3.788-3.18a.747.747 0 0 0 .21-.284.75.75 0 0 0-.17-.945L13.77 4.762a.75.75 0 1 0-.964 1.15l2.331 1.955H6.22A.75.75 0 0 0 6 7.9a4 4 0 1 0 1.477 7.718l-.344-1.489A2.5 2.5 0 1 1 6.039 9.4l-.008-.032h8.927z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">بازگردانی (CTRL+Z)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e89fff45caf6441cab6c9c14dfbe207fa">بازگردانی</span></button><button class="ck ck-button ck-disabled ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e3a9f82de65e70039e3ea65960c3833a9" aria-disabled="true"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M5.042 9.367l2.189 1.837a.75.75 0 0 1-.965 1.149l-3.788-3.18a.747.747 0 0 1-.21-.284.75.75 0 0 1 .17-.945L6.23 4.762a.75.75 0 1 1 .964 1.15L4.863 7.866h8.917A.75.75 0 0 1 14 7.9a4 4 0 1 1-1.477 7.718l.344-1.489a2.5 2.5 0 1 0 1.094-4.73l.008-.032H5.042z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">باز انجام (CTRL+Y)</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e3a9f82de65e70039e3ea65960c3833a9">باز انجام</span></button><button class="ck ck-button ck-off" type="button" tabindex="-1" aria-labelledby="ck-editor__aria-label_e43f6922c1b2e59ec721ebdf94a26d630" aria-pressed="false"><svg class="ck ck-icon ck-button__icon" viewBox="0 0 20 20"><path d="M12.5 5.7l5.2 3.9v1.3l-5.6 4c-.1.2-.3.2-.5.2-.3-.1-.6-.7-.6-1l.3-.4 4.7-3.5L11.5 7l-.2-.2c-.1-.3-.1-.6 0-.8.2-.2.5-.4.8-.4a.8.8 0 0 1 .4.1zm-5.2 0L2 9.6v1.3l5.6 4c.1.2.3.2.5.2.3-.1.7-.7.6-1 0-.1 0-.3-.2-.4l-5-3.5L8.2 7l.2-.2c.1-.3.1-.6 0-.8-.2-.2-.5-.4-.8-.4a.8.8 0 0 0-.3.1z"></path></svg><span class="ck ck-tooltip ck-tooltip_s"><span class="ck ck-tooltip__text">کد</span></span><span class="ck ck-button__label" id="ck-editor__aria-label_e43f6922c1b2e59ec721ebdf94a26d630">کد</span></button></div></div></div></div></div><div class="ck ck-editor__main" role="presentation"><div class="ck-blurred ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline" lang="fa" dir="rtl" role="textbox" aria-label="ویرایشگر متن غنی، main" contenteditable="true"><p class="ck-placeholder" data-placeholder="متن نظر خود را بنویسید"><br data-cke-filler="true"></p></div></div></div>
+                            <button type="submit" class="btn btn-success btn-block">ثبت</button>
+                        </form>
+                        <hr>
+                        <div class="main-comments">
+                            <div class="comment-item shadow-sm pb-5">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                                <br>
+                                <hr>
+                                <div class="answer pb-5">
+                                    <img src="images/avatar04.png" alt="">
+                                    <p class="title">
+                                        محمد اشرافی <span>
+                                            <i class="fa fa-paper-plane"></i>
+                                            ارسال شده در :
+                                            1399/5/8
+                                        </span>
+                                    </p>
+                                    <p class="text">
+                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                        خوایم
+                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                    </p>
+                                    <div class="pull-left">
+
+                                        <a href="#" class="btn btn-sm btn-danger">
+                                            حذف
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="answer pb-5">
+                                    <img src="images/avatar04.png" alt="">
+                                    <p class="title">
+                                        محمد اشرافی <span>
+                                            <i class="fa fa-paper-plane"></i>
+                                            ارسال شده در :
+                                            1399/5/8
+                                        </span>
+                                    </p>
+                                    <p class="text">
+                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                        خوایم
+                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                    </p>
+                                    <div class="pull-left">
+
+                                        <a href="#" class="btn btn-sm btn-danger">
+                                            حذف
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item shadow-sm pb-5 mt-2">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="comment-item shadow-sm pb-5 mt-2">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+    <div class="card p-2 pt-4 custom-shadow" style="border-top: 2px solid rgb(1, 182, 85) !important;border-radius: 0;">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-12 mb-5 ">
+                    <div class="section-title mb-4">
+                        <h1 class="green-line">دوره های مشابه</h1>
+                        <a href="#">
+                            مشاهده همه
+                            <i class="zmdi zmdi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme owl-rtl owl-loaded owl-drag">
+
+
+
+
+
+
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(3095px, 0px, 0px); transition: all 1.5s ease 0s; width: 4643px;">
+                            <div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/3.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/4.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/5.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/1.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card  custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/course.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/1.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/2.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/3.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/4.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/5.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item active" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/1.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned active" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card  custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/course.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/1.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/2.png" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 299.5px; margin-left: 10px;">
+                                <div class="item p-2">
+                                    <div class="main-card custom-shadow">
+                                        <div class="image-layer">
+                                            <div class="image-cover">
+                                                <a href="#">
+                                                    <i class="fa fa-play-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="نمایش دوره"></i>
+                                                </a>
+                                            </div>
+                                            <img src="images/Course/3.jpg" alt="">
+                                        </div>
+                                        <h3>
+                                            <a href="#">
+                                                آموزش asp.netCore 3 پروژه محور
+                                            </a>
+                                        </h3>
+                                        <div class="info">
+                                            <div class="teacher">
+                                                <i class="zmdi zmdi-account-circle"></i>
+                                                <span>محمد اشرافی</span>
+                                            </div>
+                                            <div class="visit">
+                                                <i class="zmdi zmdi-eye"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                            <div class="comment">
+                                                <i class="zmdi zmdi-comment"></i>
+                                                <span>2,000</span>
+                                            </div>
+                                        </div>
+                                        <div class="footer-card">
+                                            <div class="time pr-2 p-2">
+                                                <i class="zmdi zmdi-time-countdown"></i>
+                                                10:05:06
+                                            </div>
+                                            <div class="price text-left pl-2  p-2">
+                                                <i class=""></i>
+                                                55,000 <span>تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts
+    {
+    <script src="/ckeditor5/build/ckeditor.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+    <script src="/js/SinglePage.js"></script>
+}
