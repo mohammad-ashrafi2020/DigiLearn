@@ -1,0 +1,94 @@
+﻿@model CoreModule.Query.Course._DTOs.CourseDto
+@{
+    var counter = 1;
+}
+<div class="episodes">
+    @if (Model.Sections.Sum(s => s.Episodes.Count) == 0)
+    {
+        <div class="alert alert-info">
+            درحال حاضر هیج بخشی برای این دوره منتشر نشده است
+        </div>
+    }
+    else
+    {
+        <div id="accordion">
+            @foreach (var item in Model.Sections)
+            {
+                <div class="card">
+                    <div class="card-header" id="h_@item.Id">
+                        <h5 class="mb-0">
+                            <button class="btn section-title " data-toggle="collapse" data-target="#a_@item.Id" aria-expanded="true" aria-controls="a_@item.Id">
+                                @item.Title
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="a_@item.Id" class="collapse " aria-labelledby="h_@item.Id" data-parent="#accordion">
+                        <div class="">
+                            @if (item.Episodes.Any())
+                            {
+                                @foreach (var episode in item.Episodes)
+                                {
+                                    <div class="episode-item row">
+                                        <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+                                            <span class="counter">@counter</span>
+                                            <span class="title">@episode.Title</span>
+                                        </div>
+                                        <span class="free">رایگان</span>
+                                        <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                                            <span class="time">
+                                                @episode.TimeSpan
+                                            </span>
+                                            <div class="tools">
+                                                <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                                <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                    <i class="fa fa-download"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    counter += 1;
+                                }
+                            }
+                            else
+                            {
+                                <div class="alert alert-info mb-0">درحال حاضر قسمتی در این فصل منتشر نشده است</div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    }
+
+
+    @* <div class="episode-item row disabled">
+    <div class="right col-12 col-xl-9 col-lg-8 col-md-9 col-sm-7">
+    <span class="counter">5</span>
+    <span class="title">
+    نمایش دقیق پر فروش ترین محصولات
+    </span>
+    </div>
+    <a href="#" data-toggle="tooltip" title="" class="notFree" data-original-title="ثبت نام در دوره">
+    <i class="fa fa-lock" style="font-size: 20px;"></i>
+    </a>
+    <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
+    <span class="time">
+    30 :40
+    </span>
+    <div class="tools">
+    <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+    <i class="fa fa-play"></i>
+    </a>
+    <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+    <i class="fa fa-download"></i>
+    </a>
+    </div>
+    </div>
+    </div>*@
+
+</div>
