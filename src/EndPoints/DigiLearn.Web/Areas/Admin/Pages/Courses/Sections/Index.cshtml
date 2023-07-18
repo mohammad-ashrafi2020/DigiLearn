@@ -23,6 +23,7 @@
                             <th>عنوان</th>
                             <th>زمان</th>
                             <th>وضعیت</th>
+                            <th>رایگان</th>
                             <th>عملیات</th>
                         </tr>
                     </thead>
@@ -44,7 +45,17 @@
                                     }
                                 </td>
                                 <td>
-                                    <a class="btn btn-primary" asp-page="EditEpisode" asp-route-episodeId="@episode.Id" asp-route-courseId="@item.CourseId">ویرایش</a>
+                                    @if (episode.IsFree)
+                                    {
+                                        <i class="bx bx-check text-success"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="bx bx-window-close  text-danger"></i>
+                                    }
+                                </td>
+                                <td>
+                                    <a class="btn btn-primary btn-sm" asp-page="EditEpisode" asp-route-episodeId="@episode.Id" asp-route-courseId="@item.CourseId">ویرایش</a>
                                     @if (episode.IsActive == false)
                                     {
                                         <Question url="@Url.Page("Index", "Accept", new { courseId = item.CourseId, episodeId = episode.Id })" class="btn btn-success btn-sm">تایید</Question>

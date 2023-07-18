@@ -23,6 +23,9 @@
         <div class="col-md-6">
             @Html.EditorFor(f=>f.IsActive)
         </div>
+        <div class="col-12 col-lg-6 col-md-6 ">
+            @Html.EditorFor(f=>f.IsFree)
+        </div>
         <div class="col-md-12">
             <video controls="" style="width: 100%" src="@CoreModuleDirectories.GetEpisodeFile((Guid)Model.CourseId,Model.EpisodeDto.Token,Model.EpisodeDto.VideoName)">
             </video>

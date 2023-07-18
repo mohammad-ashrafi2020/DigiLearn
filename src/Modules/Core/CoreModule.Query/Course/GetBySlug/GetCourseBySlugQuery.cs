@@ -107,7 +107,8 @@ class GetCourseBySlugQueryHandler : IQueryHandler<GetCourseBySlugQuery, CourseDt
                     TimeSpan = r.TimeSpan,
                     VideoName = r.VideoName,
                     AttachmentName = r.AttachmentName,
-                    IsActive = r.IsActive
+                    IsActive = r.IsActive,
+                    IsFree = r.IsFree
                 }).ToList(),
             }).ToList()
         };

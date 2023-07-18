@@ -21,8 +21,8 @@ class GetCourseByIdQueryHandler : IQueryHandler<GetCourseByIdQuery, CourseDto?>
     public async Task<CourseDto?> Handle(GetCourseByIdQuery request, CancellationToken cancellationToken)
     {
         var course = await _context.Courses
-            .Include(c=>c.Sections)
-            .ThenInclude(c=>c.Episodes)
+            .Include(c => c.Sections)
+            .ThenInclude(c => c.Episodes)
             .FirstOrDefaultAsync(f => f.Id == request.Id, cancellationToken: cancellationToken);
         if (course == null)
         {
@@ -65,7 +65,8 @@ class GetCourseByIdQueryHandler : IQueryHandler<GetCourseByIdQuery, CourseDto?>
                     TimeSpan = r.TimeSpan,
                     VideoName = r.VideoName,
                     AttachmentName = r.AttachmentName,
-                    IsActive = r.IsActive
+                    IsActive = r.IsActive,
+                    IsFree = r.IsFree,
                 }).ToList()
             }).ToList()
         };

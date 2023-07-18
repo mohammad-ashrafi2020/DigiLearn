@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Pages\Profile\Edit.cshtml" />
+    <Content Remove="Pages\Shared\EditorTemplates\Boolean.cshtml" />
     <Content Remove="Pages\Shared\EditorTemplates\Int32.cshtml" />
   </ItemGroup>
 
@@ -58,6 +59,7 @@
     <None Include="Areas\Admin\Pages\Shared\EditorTemplates\String.cshtml" />
     <None Include="Areas\Admin\Pages\Shared\EditorTemplates\Url.cshtml" />
     <None Include="Pages\Profile\Edit.cshtml" />
+    <None Include="Pages\Shared\EditorTemplates\Boolean.cshtml" />
     <None Include="Pages\Shared\EditorTemplates\Enum.cshtml" />
     <None Include="Pages\Shared\EditorTemplates\IFormFile.cshtml" />
     <None Include="Pages\Shared\EditorTemplates\Password.cshtml" />

@@ -12,7 +12,7 @@ namespace CoreModule.Query.Course.Episodes.GetById;
 
 public record GetEpisodeByIdQuery(Guid EpisodeId) : IQuery<EpisodeDto?>;
 
-class GetEpisodeByIdQueryHandler:IQueryHandler<GetEpisodeByIdQuery,EpisodeDto?>
+class GetEpisodeByIdQueryHandler : IQueryHandler<GetEpisodeByIdQuery, EpisodeDto?>
 {
     private readonly QueryContext _context;
 
@@ -40,7 +40,8 @@ class GetEpisodeByIdQueryHandler:IQueryHandler<GetEpisodeByIdQuery,EpisodeDto?>
             TimeSpan = episode.TimeSpan,
             VideoName = episode.VideoName,
             AttachmentName = episode.AttachmentName,
-            IsActive = episode.IsActive
+            IsActive = episode.IsActive,
+            IsFree = episode.IsFree
         };
     }
 }

@@ -27,9 +27,9 @@ public class Section : BaseEntity
         DisplayOrder = displayOrder;
         Title = title;
     }
-    public Episode AddEpisode(string? attachmentName, string videoName, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
+    public Episode AddEpisode(string? attachmentName, string videoName, TimeSpan timeSpan, Guid token, string title, bool isActive, bool isFree, string englishTitle)
     {
-        var episode = new Episode(attachmentName, videoName, timeSpan, token, title, isActive, Id, englishTitle);
+        var episode = new Episode(attachmentName, videoName, timeSpan, token, title, isActive,isFree, Id, englishTitle);
         Episodes.Add(episode);
         return episode;
     }

@@ -28,6 +28,9 @@ public class AddModel : BaseRazor
     [Display(Name = "ترتیب نمایش")]
     [Required(ErrorMessage = "{0} را وارد کنید")]
     public int DisplayOrder { get; set; }
+
+
+  
     public void OnGet()
     {
     }
@@ -38,7 +41,7 @@ public class AddModel : BaseRazor
         {
             Title = Title,
             DisplayOrder = DisplayOrder,
-            CourseId = courseId
+            CourseId = courseId,
         });
 
         return RedirectAndShowAlert(result, RedirectToPage("Index", new { courseId }));

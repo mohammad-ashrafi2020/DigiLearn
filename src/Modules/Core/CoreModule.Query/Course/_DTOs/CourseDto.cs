@@ -108,4 +108,5 @@ public class EpisodeDto : BaseDto
     public string VideoName { get; set; }
     public string? AttachmentName { get; set; }
     public bool IsActive { get; set; }
+    public bool IsFree { get; set; }
 }

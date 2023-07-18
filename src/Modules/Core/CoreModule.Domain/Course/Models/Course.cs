@@ -106,7 +106,7 @@ public class Course : AggregateRoot
     }
 
 
-    public void EditEpisode(Guid episodeId, Guid sectionId, string title, bool isActive, TimeSpan timeSpan, string? attachmentName)
+    public void EditEpisode(Guid episodeId, Guid sectionId, string title, bool isActive, bool isFree, TimeSpan timeSpan, string? attachmentName)
     {
         var section = Sections.FirstOrDefault(f => f.Id == sectionId);
         if (section == null) throw new InvalidDomainDataException("Section NotFound");
@@ -114,10 +114,10 @@ public class Course : AggregateRoot
         var episode = section.Episodes.FirstOrDefault(f => f.Id == episodeId);
         if (episode == null) throw new InvalidDomainDataException("episode NotFound");
 
-        episode.Edit(title, isActive, timeSpan, attachmentName);
+        episode.Edit(title, isActive,isFree, timeSpan, attachmentName);
     }
 
-    public Episode AddEpisode(Guid sectionId, string? attachmentExtension, string videoExtension, TimeSpan timeSpan, Guid token, string title, bool isActive, string englishTitle)
+    public Episode AddEpisode(Guid sectionId, string? attachmentExtension, string videoExtension, TimeSpan timeSpan, Guid token, string title, bool isActive, bool isFree, string englishTitle)
     {
 
         var section = Sections.FirstOrDefault(f => f.Id == sectionId);
@@ -140,7 +140,7 @@ public class Course : AggregateRoot
                 CourseStatus = CourseStatus.InProgress;
             }
         }
-        return section.AddEpisode(attName, vidName, timeSpan, token, title, isActive, englishTitle);
+        return section.AddEpisode(attName, vidName, timeSpan, token, title, isActive, isFree, englishTitle);
 
     }
     public void AcceptEpisode(Guid episodeId)

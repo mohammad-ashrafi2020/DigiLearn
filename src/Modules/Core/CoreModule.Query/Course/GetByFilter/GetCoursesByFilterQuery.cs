@@ -88,7 +88,8 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
                             TimeSpan = e.TimeSpan,
                             VideoName = e.VideoName,
                             AttachmentName = e.AttachmentName,
-                            IsActive = e.IsActive
+                            IsActive = e.IsActive,
+                            IsFree = e.IsFree
                         }).ToList()
                     }).ToList()
 
