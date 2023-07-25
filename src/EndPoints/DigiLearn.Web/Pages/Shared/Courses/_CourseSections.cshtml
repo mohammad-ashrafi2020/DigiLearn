@@ -34,16 +34,23 @@
                                             <span class="counter">@counter</span>
                                             <span class="title">@episode.Title</span>
                                         </div>
-                                        <span class="free">رایگان</span>
+                                        @if (episode.IsFree)
+                                        {
+                                            <span class="free">رایگان</span>
+                                        }
+                                        else
+                                        {
+
+                                        }
                                         <div class="left col-12 col-xl-3 col-lg-4 col-md-3 col-sm-5">
                                             <span class="time">
                                                 @episode.TimeSpan
                                             </span>
                                             <div class="tools">
-                                                <a href="#" title="" data-toggle="tooltip" data-original-title="نمایش آنلاین">
+                                                <a href="#" onclick="showEpisode('@episode.SectionId','@episode.Token')" data-toggle="tooltip" data-original-title="نمایش آنلاین">
                                                     <i class="fa fa-play"></i>
                                                 </a>
-                                                <a href="#" title="" data-toggle="tooltip" data-original-title="دانلود">
+                                                <a target="_blank" href="/course/@Model.Slug/downloadEpisode?sectionId=@episode.SectionId&token=@episode.Token" title="" data-toggle="tooltip" data-original-title="دانلود">
                                                     <i class="fa fa-download"></i>
                                                 </a>
                                             </div>

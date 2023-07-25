@@ -1,3 +1,5 @@
+using System.Net.Mime;
+using CoreModule.Application._Utilities;
 using CoreModule.Domain.Course.Models;
 using CoreModule.Facade.Course;
 using CoreModule.Query.Course._DTOs;
@@ -26,6 +28,45 @@ namespace DigiLearn.Web.Pages
 
             Course = course;
             return Page();
+        }
+
+        public async Task<IActionResult> OnGetShowOnline(string slug, Guid sectionId, Guid token)
+        {
+            var course = await _courseFacade.GetCourseBySlug(slug);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var section = course.Sections.First(f => f.Id == sectionId);
+            var episode = section.Episodes.FirstOrDefault(f => f.Token == token);
+            if (episode == null)
+            {
+                return NotFound();
+            }
+
+
+            return Content(CoreModuleDirectories.GetEpisodeFile(course.Id, token, episode.VideoName));
+        }
+        public async Task<IActionResult> OnGetDownloadEpisode(string slug, Guid sectionId, Guid token)
+        {
+            var course = await _courseFacade.GetCourseBySlug(slug);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var section = course.Sections.First(f => f.Id == sectionId);
+            var episode = section.Episodes.FirstOrDefault(f => f.Token == token);
+            if (episode == null)
+            {
+                return NotFound();
+            }
+
+            var fileName = Path.Combine(Directory.GetCurrentDirectory(), 
+                CoreModuleDirectories.CourseEpisode(course.Id, token), episode.VideoName);
+            var file = new FileStream(fileName, FileMode.Open);
+            return File(file, "application/force-download", episode.VideoName);
         }
     }
 }

@@ -22,7 +22,7 @@ if (document.getElementById("text_area")) {
                 ]
             },
             language: 'fa',
-            removePlugins:['Title'],
+            removePlugins: ['Title'],
             licenseKey: '',
         }).then(editor => { window.editor = editor; });
 
@@ -121,3 +121,16 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
+function showEpisode(sectionId, token) {
+    var slug = $("#course").val();
+    $.ajax({
+        url: `/course/${slug}/showOnline?sectionId=${sectionId}&token=${token}`,
+        type: "get"
+    }).done(function (data) {
+        var myPlayer = videojs('my_video_1');
+        myPlayer.src({ type: 'video/mp4', src: data });
+        myPlayer.play();
+    });
+}

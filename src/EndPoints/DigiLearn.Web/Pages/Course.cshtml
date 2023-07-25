@@ -1,4 +1,4 @@
-﻿@page "{slug}"
+﻿@page "{slug}/{handler?}"
 @using CoreModule.Application._Utilities
 @model DigiLearn.Web.Pages.CourseModel
 @{
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/single-Page.min.css">
     <link rel="stylesheet" href="/videoJs/video-js.css">
 }
+<input type="hidden" id="course" value="@Model.Course.Slug" />
 <div class="main-content">
     <div class="breadcrumb">
         <div class="container-fluid">
@@ -149,13 +150,14 @@
             <div class="col-12 col-xl-9 col-lg-8 ">
                 <div class="course-body">
                     <div id="instructions">
+
                         <p class="video-cover">معرفی دوره</p>
                         <div id="instructions" style="direction: ltr !important;">
+
                             <video id="my_video_1" class="video-js vjs-default-skin" width="100%" height="567px"
                                    controls preload="none" poster='@CoreModuleDirectories.GetCourseImage(Model.Course.ImageName)' lang="fa-ir"
-                                   data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
-                                <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
-                                <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+                                   data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }' src="@CoreModuleDirectories.GetCourseDemo(Model.Course.Id, Model.Course.VideoName)">
+                            
                             </video>
                         </div>
                     </div>
@@ -174,9 +176,9 @@
                     </div>
                     <div class="tab-content  card shadow   mb-4">
                         <div class=" ">
-                            <partial name="Shared/Courses/_CourseSections" model="Model.Course"/>
+                            <partial name="Shared/Courses/_CourseSections" model="Model.Course" />
                             <div class="Description p-3" style="display: none;">
-                               @Html.Raw(Model.Course.Description)
+                                @Html.Raw(Model.Course.Description)
                             </div>
                         </div>
                     </div>
@@ -985,5 +987,5 @@
     {
     <script src="/ckeditor5/build/ckeditor.js"></script>
     <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
-    <script src="/js/SinglePage.js"></script>
+    <script src="/js/SinglePage.js" asp-append-version="true"></script>
 }
