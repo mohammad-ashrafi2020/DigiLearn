@@ -25,6 +25,8 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
     {
         var result = _context.Courses
             .Include(c => c.Teacher.User)
+            .Include(c => c.Category)
+            .Include(c => c.SubCategory)
             .Include(c => c.Sections)
             .ThenInclude(c => c.Episodes)
             .AsQueryable();
@@ -40,6 +42,38 @@ class GetCoursesByFilterQueryHandler : IQueryHandler<GetCoursesByFilterQuery, Co
             case CourseFilterSort.Oldest:
                 result = result.OrderBy(d => d.LastUpdate);
                 break;
+        }
+        switch (request.FilterParams.SearchByPrice)
+        {
+            case SearchByPrice.Free:
+                result = result.Where(r => r.Price == 0);
+                break;
+            case SearchByPrice.NotFree:
+                result = result.Where(r => r.Price > 0);
+                break;
+        }
+
+        if (request.FilterParams.CourseStatus != null)
+        {
+            result = result.Where(r => r.CourseStatus == request.FilterParams.CourseStatus);
+
+        }
+        if (request.FilterParams.CourseLevel != null)
+        {
+            result = result.Where(r => r.CourseLevel == request.FilterParams.CourseLevel);
+
+        }
+        if (string.IsNullOrWhiteSpace(request.FilterParams.CategorySlug) == false)
+        {
+            result = result.Where(r => r.Category.Slug == request.FilterParams.CategorySlug ||
+                                       r.SubCategory.Slug == request.FilterParams.CategorySlug);
+
+        }
+
+        if (string.IsNullOrWhiteSpace(request.FilterParams.Search) == false)
+        {
+            result = result.Where(r => r.Slug.Contains(request.FilterParams.Search) ||
+                                       r.Title.Contains(request.FilterParams.Search));
         }
 
         if (request.FilterParams.TeacherId != null)

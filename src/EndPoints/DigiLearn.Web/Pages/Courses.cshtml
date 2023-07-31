@@ -1,0 +1,166 @@
+﻿@page
+@using CoreModule.Query.Course._DTOs
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using CoreModule.Domain.Course.Enums
+@using CoreModule.Facade.Category
+@using DigiLearn.Web.ViewModels
+@model DigiLearn.Web.Pages.CoursesModel
+@inject ICourseCategoryFacade _CategoryFacade
+@{
+    var categories = await _CategoryFacade.GetMainCategories();
+}
+@section meta
+    {
+    <link rel="stylesheet" href="/css/category.min.css">
+}
+<div class="category-content pt-2">
+    <div class="row top-title">
+        <div class="col-12 col-lg-8 col-xl-9 col-md-8 col-sm-6">
+            <h5>دوره های آموزشی</h5>
+            <span>@Model.FilterResult.EntityCount دوره</span>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-3 col-md-4 col-sm-6 breadcrumb">
+            <ul class="">
+                <li>
+                    <a href="/">
+                        خانه
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="current">
+                        لیست دوره ها
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <form id="filter_Form">
+        <input type="hidden" value="@Model.FilterParams.CategorySlug" asp-for="FilterParams.CategorySlug" />
+        <input type="hidden" value="@Model.FilterParams.SearchByPrice" asp-for="FilterParams.SearchByPrice" />
+        <div class="container-fluid mt-3 ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box shadow-sm p-3">
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-xl-4 col-md-4 select">
+                                <select asp-for="FilterParams.FilterSort">
+                                    <option value="@CourseFilterSort.Latest">جدید ترین دوره ها</option>
+                                    <option value="@CourseFilterSort.Oldest">قدیمی ترین دوره ها</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-4 col-md-4 select">
+                                <select asp-for="FilterParams.CourseStatus">
+                                    <option value="null" selected>همه</option>
+                                    <option value="@CourseStatus.Completed">به اتمام رسید</option>
+                                    <option value="@CourseStatus.InProgress">درحال برگزاری</option>
+                                    <option value="@CourseStatus.StartSoon">به زودی</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-4 col-md-4 select last-select">
+                                <select asp-for="FilterParams.CourseLevel">
+                                    <option value="null" selected>همه</option>
+                                    <option value="@CourseLevel.Beginner">مقدماتی</option>
+                                    <option value="@CourseLevel.Expert">پیشرفته</option>
+                                    <option value="@CourseLevel.Intermediate">از مقدماتی تا پیشرفته</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-4 col-md-5">
+                    <div class="box">
+                        <div class="box-header">جستجو در نتایج:</div>
+                        <div class="box-content">
+                            <div class="ui-input quick-search">
+                                <i class="zmdi zmdi-search"></i>
+                                <input asp-for="FilterParams.Search" type="text" class="ui-input-field ui-input-field--cleanable"
+                                       placeholder="نام محصول یا برند مورد نظر را بنویسید…">
+                                <span class="ui-input-cleaner"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-header">فیلتر بر اساس قیمت</div>
+                        <div class="box-content">
+                            <div class="button-group">
+                                <div class="item ">
+                                    <input type="radio" value="@SearchByPrice.All" checked="@(Model.FilterParams.SearchByPrice==SearchByPrice.All?"checked":null)" name="priceFilter" id="all-course">
+                                    <span for="all-course" class="@(Model.FilterParams.SearchByPrice==SearchByPrice.All?"active":null)">همه</span>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" checked="@(Model.FilterParams.SearchByPrice==SearchByPrice.Free?"checked":null)" value="@SearchByPrice.Free" name="priceFilter" id="free-course">
+                                    <span for="free-course" class="@(Model.FilterParams.SearchByPrice==SearchByPrice.Free?"active":null)">رایگان</span>
+                                </div>
+                                <div class="item">
+                                    <input type="radio" checked="@(Model.FilterParams.SearchByPrice==SearchByPrice.NotFree?"checked":null)" value="@SearchByPrice.NotFree" name="priceFilter" id="price-course">
+                                    <span for="price-course" class="@(Model.FilterParams.SearchByPrice==SearchByPrice.NotFree?"active":null)">نقدی</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-header">دسته بندی</div>
+                        <div class="box-content scroller">
+                            @foreach (var item in categories)
+                            {
+                                <div class="checkbox mb-3 main">
+                                    <input value="@item.Slug" name="category" checked="@(Model.FilterParams.CategorySlug==item.Slug?"checked":null)" type="radio" id="@item.Id" />
+                                    <span class="@(Model.FilterParams.CategorySlug==item.Slug?"selected":null)" checkfor="@item.Id">@item.Title</span>
+                                </div>
+                                @if (item.Children.Any())
+                                {
+                                    @foreach (var child in item.Children)
+                                    {
+                                        <div class="checkbox mb-3">
+                                            <input value="@child.Slug" name="category" checked="@(Model.FilterParams.CategorySlug==child.Slug?"checked":null)" type="radio" id="@child.Id" />
+                                            <span class="@(Model.FilterParams.CategorySlug==child.Slug?"selected":null)" checkfor="@child.Id">@child.Title</span>
+                                        </div>
+                                    }
+                                }
+                            }
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9 col-lg-8 col-md-7 mb-5 ">
+                    <div class="row bg-white custom-shadow">
+                        @foreach (var item in Model.FilterResult.Data)
+                        {
+                            var card = new CourseCardViewModel()
+                {
+                    ImageName = item.ImageName,
+                    Price = item.Price,
+                    Title = item.Title,
+                    Slug = item.Slug,
+                    Visit = 0,
+                    TeacherName = item.Teacher,
+                    Duration = item.GetDuration(),
+                    CommentCounts = 0
+                };
+
+
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="item p-2">
+                                    <partial name="Shared/Courses/_CourseCard" model="card" />
+                                </div>
+                            </div>
+                        }
+
+
+                        <partial name="Shared/_Pagination" model="Model.FilterResult" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts
+    {
+    <script src="/js/category.js" asp-append-version="true"></script>
+}

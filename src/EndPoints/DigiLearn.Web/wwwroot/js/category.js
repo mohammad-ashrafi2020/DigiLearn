@@ -1,5 +1,10 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
+    $("select").change(function () {
+        $("#filter_Form").submit();
+    });
+
 });
 
 $(".show-menu").click(function () {
@@ -59,7 +64,12 @@ $("[for]").click(function () {
     $(this).addClass("active")
 
     var otherSelector = "[for!=" + value + "]";
-    $(otherSelector).removeClass("active")
+    $(otherSelector).removeClass("active");
+
+
+    $("#FilterParams_SearchByPrice").val($("input[name='priceFilter']:checked").val());
+    $("#filter_Form").submit();
+
 });
 $("[checkfor]").click(function () {
     var isSelected = $(this).hasClass("selected");
@@ -74,4 +84,8 @@ $("[checkfor]").click(function () {
         $(id).prop("checked", true);
         $(this).addClass("selected")
     }
+
+
+    $("#FilterParams_CategorySlug").val($("input[name='category']:checked").val());
+    $("#filter_Form").submit();
 });
