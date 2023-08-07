@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.EventBus\Common.EventBus.csproj" />
+    <ProjectReference Include="..\..\Modules\Blog\BlogModule\BlogModule.csproj" />
     <ProjectReference Include="..\..\Modules\Core\CoreModule.Config\CoreModule.Config.csproj" />
     <ProjectReference Include="..\..\Modules\Ticket\TicketModule\TicketModule.csproj" />
     <ProjectReference Include="..\..\Modules\User\UserModule.Core\UserModule.Core.csproj" />

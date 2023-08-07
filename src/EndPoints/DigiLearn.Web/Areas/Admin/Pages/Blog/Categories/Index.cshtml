@@ -1,0 +1,61 @@
+﻿@page "{handler?}"
+@model DigiLearn.Web.Areas.Admin.Pages.Blog.Categories.IndexModel
+@{
+    ViewData["title"] = "دسته بندی های بلاگ";
+    ViewData["selected"] = "blog_categories";
+}
+<a href="#" data-toggle="modal" data-target="#addModal" class="btn btn-success mb-1">افزودن مورد جدید</a>
+<div class="card ">
+    <div class="table-responsive card-body p-0 mb-0">
+        <table class="table table-bordered table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>عنوان</th>
+                    <th>slug</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Categories)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Slug</td>
+                        <td>
+                            <open-modal class="btn btn-sm btn-primary" is-bootstrap4="true" modal-title="ویرایش دسته بندی" url="@Url.Page("Index","ShowEditPage",new {id=item.Id})">ویرایش</open-modal>
+                            <delete-item url="@Url.Page("Index","Delete",new {id=item.Id})">حذف</delete-item>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editAddressModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editAddressModalLabel">افزودن دسته بندی</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="row" method="post" data-ajax="true">
+                    <div class="col-md-6">
+                        @Html.EditorFor(f => f.Title)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.EditorFor(f => f.Slug)
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-12 d-flex mt-2 justify-content-end">
+                        <submit />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

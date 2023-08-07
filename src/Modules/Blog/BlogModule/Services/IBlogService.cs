@@ -13,8 +13,8 @@ namespace BlogModule.Services;
 
 public interface IBlogService
 {
-    Task<OperationResult> CreateCategory(CreateCategoryCommand command);
-    Task<OperationResult> EditCategory(EditCategoryCommand command);
+    Task<OperationResult> CreateCategory(CreateBlogCategoryCommand command);
+    Task<OperationResult> EditCategory(EditBlogCategoryCommand command);
     Task<OperationResult> DeleteCategory(Guid categoryId);
     Task<List<BlogCategoryDto>> GetAllCategories();
     Task<BlogCategoryDto> GetCategoryById(Guid id);
@@ -39,7 +39,7 @@ class BlogService : IBlogService
         _localFileService = localFileService;
     }
 
-    public async Task<OperationResult> CreateCategory(CreateCategoryCommand command)
+    public async Task<OperationResult> CreateCategory(CreateBlogCategoryCommand command)
     {
         var category = _mapper.Map<Category>(command);
         if (await _categoryRepository.ExistsAsync(f => f.Slug == category.Slug))
@@ -52,7 +52,7 @@ class BlogService : IBlogService
         return OperationResult.Success();
     }
 
-    public async Task<OperationResult> EditCategory(EditCategoryCommand command)
+    public async Task<OperationResult> EditCategory(EditBlogCategoryCommand command)
     {
         var category = await _categoryRepository.GetAsync(command.Id);
         if (category == null)
@@ -60,7 +60,7 @@ class BlogService : IBlogService
 
         if (command.Slug != category.Slug)
         {
-            if (await _categoryRepository.ExistsAsync(f => f.Slug == category.Slug))
+            if (await _categoryRepository.ExistsAsync(f => f.Slug == command.Slug))
                 return OperationResult.Error("Slug is Exist");
         }
 

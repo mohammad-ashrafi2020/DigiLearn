@@ -391,7 +391,7 @@ function CallBackHandler(data) {
 }
 
 //modalSize:lg,sm,
-function OpenModal(url, name, title, modalSize = "lg", callback = "undefined") {
+function OpenModal(url, name, title, modalSize = "lg", callback = "undefined", version4 = false) {
     modalSize = modalSize || 'lg';
     modalSize = 'modal-' + modalSize;
 
@@ -412,16 +412,21 @@ function OpenModal(url, name, title, modalSize = "lg", callback = "undefined") {
             $('#' + name + ' .modal-body').html(result.Data);
             $('#' + name + ' .modal-title').html(title);
 
-            var modal = new bootstrap.Modal($('#' + name), {
-                backdrop: 'static',
-                keyboard: true
-            });
-            modal.toggle();
-            //$('#' + name).modal({
-            //    backdrop: 'static',
-            //    keyboard: true
-            //},
-            //    'show');
+            if (version4 == true) {
+                $('#' + name).modal({
+                    backdrop: 'static',
+                    keyboard: true
+                },
+                    'show');
+            } else {
+                var modal = new bootstrap.Modal($('#' + name), {
+                    backdrop: 'static',
+                    keyboard: true
+                });
+                modal.toggle();
+            }
+
+
 
             $('#' + name + ' .modal-dialog').removeClass('modal-lg modal-xl modal-sm modal-full');
             $('#' + name + ' .modal-dialog').addClass(modalSize);

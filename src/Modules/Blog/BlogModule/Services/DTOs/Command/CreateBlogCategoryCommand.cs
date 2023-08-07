@@ -1,11 +1,11 @@
 ﻿namespace BlogModule.Services.DTOs.Command;
 
-public class CreateCategoryCommand
+public class CreateBlogCategoryCommand
 {
     public string Title { get; set; }
     public string Slug { get; set; }
 }
-public class EditCategoryCommand
+public class EditBlogCategoryCommand
 {
     public Guid Id { get; set; }
     public string Title { get; set; }

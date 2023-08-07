@@ -10,7 +10,6 @@
     <Folder Include="Context\" />
     <Folder Include="Domain\" />
     <Folder Include="Repositories\Posts\" />
-    <Folder Include="Services\DTOs\Command\" />
     <Folder Include="Services\DTOs\Query\" />
     <Folder Include="Utils\" />
   </ItemGroup>
