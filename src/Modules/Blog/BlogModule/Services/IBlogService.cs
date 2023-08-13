@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BlogModule.Context;
 using BlogModule.Domain;
 using BlogModule.Repositories.Categories;
 using BlogModule.Repositories.Posts;
@@ -8,6 +9,7 @@ using BlogModule.Utils;
 using Common.Application;
 using Common.Application.FileUtil.Interfaces;
 using Common.Application.SecurityUtil;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogModule.Services;
 
@@ -24,6 +26,7 @@ public interface IBlogService
     Task<OperationResult> EditPost(EditPostCommand command);
     Task<OperationResult> DeletePost(Guid postId);
     Task<BlogPostDto?> GetPostById(Guid postId);
+    Task<BlogPostFilterResult> GetPostsByFilter(BlogPostFilterParams filterParams);
 }
 class BlogService : IBlogService
 {
@@ -31,12 +34,14 @@ class BlogService : IBlogService
     private readonly IPostRepository _postRepository;
     private readonly IMapper _mapper;
     private readonly ILocalFileService _localFileService;
-    public BlogService(ICategoryRepository categoryRepository, IMapper mapper, IPostRepository postRepository, ILocalFileService localFileService)
+    private readonly BlogContext _context;
+    public BlogService(ICategoryRepository categoryRepository, IMapper mapper, IPostRepository postRepository, ILocalFileService localFileService, BlogContext context)
     {
         _categoryRepository = categoryRepository;
         _mapper = mapper;
         _postRepository = postRepository;
         _localFileService = localFileService;
+        _context = context;
     }
 
     public async Task<OperationResult> CreateCategory(CreateBlogCategoryCommand command)
@@ -166,5 +171,48 @@ class BlogService : IBlogService
             return null;
 
         return _mapper.Map<BlogPostDto>(post);
+    }
+
+    public async Task<BlogPostFilterResult> GetPostsByFilter(BlogPostFilterParams filterParams)
+    {
+        var result = _context.Posts.OrderByDescending(d => d.CreationDate)
+            .Include(c => c.Category).AsQueryable();
+
+
+        if (string.IsNullOrWhiteSpace(filterParams.Search) == false)
+            result = result.Where(r =>
+                r.Title.Contains(filterParams.Search) || r.Description.Contains(filterParams.Search));
+
+
+        if (string.IsNullOrWhiteSpace(filterParams.CategorySlug) == false)
+            result = result.Where(r => r.Category.Slug == filterParams.CategorySlug);
+
+
+        var skip = (filterParams.PageId - 1) * filterParams.Take;
+        var model = new BlogPostFilterResult()
+        {
+            Data = await result.Skip(skip).Take(filterParams.Take).Select(s => new BlogPostFilterItemDto
+            {
+                CreationDate = s.CreationDate,
+                Id = s.Id,
+                UserId = s.UserId,
+                Title = s.Title,
+                OwnerName = s.OwnerName,
+                Description = s.Description,
+                Slug = s.Slug,
+                Visit = s.Visit,
+                ImageName = s.ImageName,
+                Category = new BlogCategoryDto()
+                {
+                    Title = s.Category.Title,
+                    Id = s.CategoryId,
+                    Slug = s.Category.Slug
+                }
+            }).ToListAsync()
+        };
+
+        model.GeneratePaging(result, filterParams.Take, filterParams.PageId);
+        return model;
+
     }
 }

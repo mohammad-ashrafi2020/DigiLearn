@@ -1,0 +1,69 @@
+﻿@page
+@model DigiLearn.Web.Areas.Admin.Pages.Blog.Posts.IndexModel
+@{
+    ViewData["title"] = "مدیریت پست های بلاگ";
+    ViewData["selected"] = "blog_posts";
+    var category =
+}
+<form class="card mb-2">
+    <div class="card-header mb-0 pb-0 d-flex justify-content-between">
+        <h5>فیلتر</h5>
+        <div class="">
+            <a asp-page="Index" class="btn btn-sm btn-danger">حذف فیلتر</a>
+            <button type="submit" class="btn btn-success btn-sm">اعمال فیلتر</button>
+        </div>
+    </div>
+    <div class="card-body  mb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <label>جستجو:</label>
+                <input type="text" asp-for="FilterParams.Search" class="form-control" placeholder="متن جستوجوی خود را وارد کنید"/>
+            </div>
+            <div class="col-md-6">
+                <label>دسته بندی</label>
+                <select class="form-control select2" asp-for="FilterParams.CategorySlug">
+                    <option value="">انتخاب کنید</option>
+                    @foreach (var item in Model.Categories)
+                    {
+                        <option value="@item.Slug">@item.Title</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
+
+<a asp-page="Add" class="btn btn-success mb-1">افزودن مورد جدید</a>
+<div class="card ">
+    <div class="table-responsive card-body p-0 mb-0">
+        <table class="table table-bordered table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>عنوان</th>
+                    <th>slug</th>
+                    <th>نویسنده</th>
+                    <th>دسته بندی</th>
+                    <th>تعداد بازدید</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FilterResult.Data)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Slug</td>
+                        <td>@item.OwnerName</td>
+                        <td>@item.Category.Title</td>
+                        <td>@item.Visit</td>
+                        <td>
+                            <delete-item>حذف</delete-item>
+                            <open-modal class="btn btn-sm btn-primary">ویرایش</open-modal>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <partial name="_Pagination" model="Model.FilterResult" />
+</div>
