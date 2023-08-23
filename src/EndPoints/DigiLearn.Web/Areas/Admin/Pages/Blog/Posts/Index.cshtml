@@ -3,7 +3,6 @@
 @{
     ViewData["title"] = "مدیریت پست های بلاگ";
     ViewData["selected"] = "blog_posts";
-    var category =
 }
 <form class="card mb-2">
     <div class="card-header mb-0 pb-0 d-flex justify-content-between">
@@ -17,7 +16,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label>جستجو:</label>
-                <input type="text" asp-for="FilterParams.Search" class="form-control" placeholder="متن جستوجوی خود را وارد کنید"/>
+                <input type="text" asp-for="FilterParams.Search" class="form-control" placeholder="متن جستوجوی خود را وارد کنید" />
             </div>
             <div class="col-md-6">
                 <label>دسته بندی</label>
@@ -33,7 +32,7 @@
     </div>
 </form>
 
-<a asp-page="Add" class="btn btn-success mb-1">افزودن مورد جدید</a>
+<button data-toggle="modal" data-target="#addModal" class="btn btn-success mb-1">افزودن مورد جدید</button>
 <div class="card ">
     <div class="table-responsive card-body p-0 mb-0">
         <table class="table table-bordered table-hover mb-0">
@@ -66,4 +65,53 @@
         </table>
     </div>
     <partial name="_Pagination" model="Model.FilterResult" />
+</div>
+
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="editAddressModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editAddressModalLabel">افزودن دسته بندی</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="row" enctype="multipart/form-data" method="post">
+                    <div class="col-md-6">
+                        @Html.EditorFor(f => f.Title)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.EditorFor(f => f.Slug)
+                    </div>
+                    <div class="col-md-6">
+                        @Html.EditorFor(f => f.OwnerName)
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="CategoryId"></label>
+                        <select class="form-control select2" asp-for="CategoryId" style="width: 100%">
+                            <option>انتخاب دسته بندی</option>
+                            @foreach (var item in Model.Categories)
+                            {
+                                <option value="@item.Id">@item.Title</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        @Html.EditorFor(f => f.ImageFile)
+                    </div>
+                    <div class="col-md-12">
+                        @Html.EditorFor(f => f.Description)
+                    </div>
+                    <div class="col-md-6"></div>
+                    <div class="col-md-12 d-flex mt-2 justify-content-end">
+                        <submit />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </div>
