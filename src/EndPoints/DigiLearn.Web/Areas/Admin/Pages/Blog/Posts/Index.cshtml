@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{handler?}"
 @model DigiLearn.Web.Areas.Admin.Pages.Blog.Posts.IndexModel
 @{
     ViewData["title"] = "مدیریت پست های بلاگ";
@@ -56,8 +56,8 @@
                         <td>@item.Category.Title</td>
                         <td>@item.Visit</td>
                         <td>
-                            <delete-item>حذف</delete-item>
-                            <open-modal class="btn btn-sm btn-primary">ویرایش</open-modal>
+                            <delete-item url="@Url.Page("Index","Delete",new {id=item.Id})">حذف</delete-item>
+                            <open-modal is-bootstrap4="true" url="@Url.Page("Index","ShowEditPage",new {id=item.Id})" class="btn btn-sm btn-primary">ویرایش</open-modal>
                         </td>
                     </tr>
                 }

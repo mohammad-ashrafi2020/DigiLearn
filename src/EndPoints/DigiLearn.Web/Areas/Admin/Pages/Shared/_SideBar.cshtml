@@ -43,6 +43,26 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item ">
+                <a href="javascript:void(0)">
+                    <i class="menu-livicon" data-icon="Dashboard"></i>
+                    <span class="menu-title" data-i18n="Dashboard">مدیریت بلاگ</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="@(selected=="blog_posts"?"active":null)">
+                        <a href="/admin/blog/posts">
+                            <i class="bx bx-left-arrow-alt"></i>
+                            <span class="menu-item" data-i18n="eCommerce">پست ها</span>
+                        </a>
+                    </li>
+                    <li class="@(selected=="blog_categories"?"active":null)">
+                        <a href="/admin/blog/categories">
+                            <i class="bx bx-left-arrow-alt"></i>
+                            <span class="menu-item" data-i18n="Analytics">دسته بندی ها</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item @(selected=="teachers"?"active":null)">
                 <a href="/admin/teachers">
                     <i class="menu-livicon" data-icon="box"></i>

@@ -72,7 +72,8 @@ public class BaseRazor : PageModel
     }
     public async Task<ContentResult> AjaxTryCatch(Func<Task<OperationResult>> func,
         bool isSuccessReloadPage = true,
-        string successMessage = "")
+        string successMessage = "",
+        bool isErrorReloadPage = false)
     {
         try
         {
@@ -87,23 +88,25 @@ public class BaseRazor : PageModel
             switch (res.Status)
             {
                 case OperationResultStatus.Success:
-                {
-                    if (string.IsNullOrWhiteSpace(successMessage) == false)
-                        model.Message = successMessage;
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                    {
+                        if (string.IsNullOrWhiteSpace(successMessage) == false)
+                            model.Message = successMessage;
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 case OperationResultStatus.Error:
-                {
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                    {
+                        model.IsReloadPage = isErrorReloadPage;
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 case OperationResultStatus.NotFound:
-                {
-                    model.Title ??= "نتیجه ای یافت نشد";
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                    {
+                        model.Title ??= "نتیجه ای یافت نشد";
+                        model.IsReloadPage = isErrorReloadPage;
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 default:
                     return Content("Success");
 
@@ -155,25 +158,25 @@ public class BaseRazor : PageModel
             switch (res.Status)
             {
                 case OperationResultStatus.Success:
-                {
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                    {
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 case OperationResultStatus.Error:
-                {
-                    model.IsReloadPage = isErrorReloadPage;
+                    {
+                        model.IsReloadPage = isErrorReloadPage;
 
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 case OperationResultStatus.NotFound:
-                {
-                    model.IsReloadPage = isErrorReloadPage;
+                    {
+                        model.IsReloadPage = isErrorReloadPage;
 
-                    model.Title ??= "Error";
-                    var jsonResult = JsonConvert.SerializeObject(model);
-                    return Content(jsonResult);
-                }
+                        model.Title ??= "Error";
+                        var jsonResult = JsonConvert.SerializeObject(model);
+                        return Content(jsonResult);
+                    }
                 default:
                     return Content("Success");
 

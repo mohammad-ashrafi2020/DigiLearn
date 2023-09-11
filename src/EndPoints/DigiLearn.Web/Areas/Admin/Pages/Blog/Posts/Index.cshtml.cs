@@ -3,8 +3,10 @@ using System.Security.Cryptography;
 using BlogModule.Services;
 using BlogModule.Services.DTOs.Command;
 using BlogModule.Services.DTOs.Query;
+using Common.Application;
 using DigiLearn.Web.Infrastructure;
 using DigiLearn.Web.Infrastructure.RazorUtils;
+using DigiLearn.Web.ViewModels.Admin;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using UserModule.Core.Services;
@@ -15,10 +17,13 @@ public class IndexModel : BaseRazorFilter<BlogPostFilterParams>
 {
     private IBlogService _blogService;
     private IUserFacade _userFacade;
-    public IndexModel(IBlogService blogService, IUserFacade userFacade)
+    private IRenderViewToString _renderViewToString;
+
+    public IndexModel(IBlogService blogService, IUserFacade userFacade, IRenderViewToString renderViewToString)
     {
         _blogService = blogService;
         _userFacade = userFacade;
+        _renderViewToString = renderViewToString;
     }
 
 
@@ -71,6 +76,48 @@ public class IndexModel : BaseRazorFilter<BlogPostFilterParams>
         }
     }
 
+    public async Task<IActionResult> OnGetShowEditPage(Guid id)
+    {
+        return await AjaxTryCatch(async () =>
+        {
+            var post = await _blogService.GetPostById(id);
+            if (post == null)
+                return OperationResult<string>.NotFound();
+
+            var categories = await _blogService.GetAllCategories();
+
+            var viewModel = new EditPostViewModel
+            {
+                Categories = categories,
+                Id = post.Id,
+                CategoryId = post.CategoryId,
+                Title = post.Title,
+                UserId = post.UserId,
+                OwnerName = post.OwnerName,
+                Description = post.Description,
+                Slug = post.Slug,
+            };
+            var view = await _renderViewToString.RenderToStringAsync("_Edit", viewModel, PageContext);
+            return OperationResult<string>.Success(view);
+        });
+    }
+    public async Task<IActionResult> OnPostEdit(EditPostViewModel viewModel)
+    {
+        return await AjaxTryCatch(async () => await _blogService.EditPost(new EditPostCommand()
+        {
+            Title = viewModel.Title,
+            Slug = viewModel.Slug,
+            CategoryId = viewModel.CategoryId,
+            Description = viewModel.Description,
+            Id = viewModel.Id,
+            ImageFile = viewModel.ImageFile,
+            OwnerName = viewModel.OwnerName,
+        }));
+    }
+    public async Task<IActionResult> OnPostDelete(Guid id)
+    {
+        return await AjaxTryCatch(() => _blogService.DeletePost(id));
+    }
     public async Task<IActionResult> OnPost()
     {
         var result = await _blogService.CreatePost(new CreatePostCommand()

@@ -1,0 +1,33 @@
+﻿@model DigiLearn.Web.ViewModels.Admin.EditPostViewModel
+<form class="row" data-ajax="true" asp-page="Index" asp-page-handler="Edit" enctype="multipart/form-data" method="post">
+    @Html.HiddenFor(f=>f.Id)
+    <div class="col-md-6">
+        @Html.EditorFor(f => f.Title)
+    </div>
+    <div class="col-md-6">
+        @Html.EditorFor(f => f.Slug)
+    </div>
+    <div class="col-md-6">
+        @Html.EditorFor(f => f.OwnerName)
+    </div>
+    <div class="col-md-6">
+        <label asp-for="CategoryId"></label>
+        <select class="form-control select2" asp-for="CategoryId" style="width: 100%">
+            <option>انتخاب دسته بندی</option>
+            @foreach (var item in Model.Categories)
+            {
+                <option value="@item.Id">@item.Title</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-12">
+        @Html.EditorFor(f => f.ImageFile)
+    </div>
+    <div class="col-md-12">
+        @Html.EditorFor(f => f.Description)
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-12 d-flex mt-2 justify-content-end">
+        <submit />
+    </div>
+</form>
