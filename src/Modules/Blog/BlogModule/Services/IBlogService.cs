@@ -21,11 +21,12 @@ public interface IBlogService
     Task<List<BlogCategoryDto>> GetAllCategories();
     Task<BlogCategoryDto> GetCategoryById(Guid id);
 
-
+    Task AddPostVisit(Guid id);
     Task<OperationResult> CreatePost(CreatePostCommand command);
     Task<OperationResult> EditPost(EditPostCommand command);
     Task<OperationResult> DeletePost(Guid postId);
     Task<BlogPostDto?> GetPostById(Guid postId);
+    Task<BlogPostFilterItemDto?> GetPostBySlug(string slug);
     Task<BlogPostFilterResult> GetPostsByFilter(BlogPostFilterParams filterParams);
 }
 class BlogService : IBlogService
@@ -105,6 +106,18 @@ class BlogService : IBlogService
         return _mapper.Map<BlogCategoryDto>(category);
     }
 
+    public async Task AddPostVisit(Guid id)
+    {
+        var post = await _postRepository.GetAsync(id);
+        if (post != null)
+        {
+            post.Visit += 1;
+            _postRepository.Update(post);
+            await _context.SaveChangesAsync();
+        }
+
+    }
+
     public async Task<OperationResult> CreatePost(CreatePostCommand command)
     {
         var post = _mapper.Map<Post>(command);
@@ -170,6 +183,32 @@ class BlogService : IBlogService
             return null;
 
         return _mapper.Map<BlogPostDto>(post);
+    }
+
+    public async Task<BlogPostFilterItemDto?> GetPostBySlug(string slug)
+    {
+        var post = await _context.Posts.Include(c => c.Category).FirstOrDefaultAsync(f => f.Slug == slug);
+        if (post == null)
+            return null;
+
+        return new BlogPostFilterItemDto
+        {
+            CreationDate = post.CreationDate,
+            Id = post.Id,
+            UserId = post.UserId,
+            Title = post.Title,
+            OwnerName = post.OwnerName,
+            Description = post.Description,
+            Slug = post.Slug,
+            Visit = post.Visit,
+            ImageName = post.ImageName,
+            Category = new BlogCategoryDto()
+            {
+                Title = post.Category.Title,
+                Id = post.CategoryId,
+                Slug = post.Category.Slug
+            }
+        };
     }
 
     public async Task<BlogPostFilterResult> GetPostsByFilter(BlogPostFilterParams filterParams)

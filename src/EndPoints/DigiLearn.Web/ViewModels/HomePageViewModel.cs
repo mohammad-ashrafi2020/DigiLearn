@@ -1,4 +1,5 @@
-﻿using CoreModule.Query.Category._DTOs;
+﻿using BlogModule.Services.DTOs.Query;
+using CoreModule.Query.Category._DTOs;
 using CoreModule.Query.Course._DTOs;
 
 namespace DigiLearn.Web.ViewModels
@@ -6,6 +7,7 @@ namespace DigiLearn.Web.ViewModels
     public class HomePageViewModel
     {
         public List<CourseCardViewModel> LatestCourses { get; set; }
+        public List<BlogPostFilterItemDto> LatestArticles { get; set; }
     }
 
     public class CourseCardViewModel

@@ -1,9 +1,11 @@
 ﻿using Common.Application;
+using Common.Domain.ValueObjects;
 using MediatR;
 using UserModule.Core.Commands.Users.ChangePassword;
 using UserModule.Core.Commands.Users.Edit;
 using UserModule.Core.Commands.Users.Register;
 using UserModule.Core.Queries._DTOs;
+using UserModule.Core.Queries.Users.GetById;
 using UserModule.Core.Queries.Users.GetByPhoneNumber;
 
 namespace UserModule.Core.Services;
@@ -14,6 +16,7 @@ public interface IUserFacade
     Task<OperationResult> EditUserProfile(EditUserCommand command);
     Task<OperationResult> ChangePassword(ChangeUserPasswordCommand command);
     Task<UserDto?> GetUserByPhoneNumber(string phoneNumber);
+    Task<UserDto?> GetById(Guid id);
 }
 
 
@@ -44,5 +47,11 @@ public class UserFacade : IUserFacade
     public async Task<UserDto?> GetUserByPhoneNumber(string phoneNumber)
     {
         return await _mediator.Send(new GetUserByPhoneNumberQuery(phoneNumber));
+    }
+
+    public async Task<UserDto?> GetById(Guid id)
+    {
+        return await _mediator.Send(new GetUserByIdQuery(id));
+
     }
 }

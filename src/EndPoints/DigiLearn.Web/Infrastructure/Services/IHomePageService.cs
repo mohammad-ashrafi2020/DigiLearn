@@ -1,4 +1,6 @@
-﻿using CoreModule.Domain.Course.Enums;
+﻿using BlogModule.Services;
+using BlogModule.Services.DTOs.Query;
+using CoreModule.Domain.Course.Enums;
 using CoreModule.Facade.Course;
 using CoreModule.Query.Course._DTOs;
 using DigiLearn.Web.ViewModels;
@@ -12,9 +14,11 @@ namespace DigiLearn.Web.Infrastructure.Services
     public class HomePageService : IHomePageService
     {
         private readonly ICourseFacade _courseFacade;
-        public HomePageService(ICourseFacade courseFacade)
+        private readonly IBlogService _blogService;
+        public HomePageService(ICourseFacade courseFacade, IBlogService blogService)
         {
             _courseFacade = courseFacade;
+            _blogService = blogService;
         }
 
         public async Task<HomePageViewModel> GetData()
@@ -26,7 +30,12 @@ namespace DigiLearn.Web.Infrastructure.Services
                 PageId = 1,
                 FilterSort = CourseFilterSort.Latest
             });
+            var posts = await _blogService.GetPostsByFilter(new BlogPostFilterParams()
+            {
+                Take = 6,
+                PageId = 1,
 
+            });
             var model = new HomePageViewModel()
             {
                 LatestCourses = courses.Data.Select(s => new CourseCardViewModel
@@ -39,7 +48,8 @@ namespace DigiLearn.Web.Infrastructure.Services
                     Visit = 0,
                     CommentCounts = 0,
                     TeacherName = s.Teacher
-                }).ToList()
+                }).ToList(),
+                LatestArticles = posts.Data
             };
             return model;
         }

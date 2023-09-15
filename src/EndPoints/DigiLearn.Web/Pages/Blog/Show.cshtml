@@ -1,0 +1,272 @@
+﻿@page "/blog/{slug}"
+@using MongoDB.Driver
+@using Common.Application.DateUtil
+@using BlogModule.Utils
+@using UserModule.Core
+@using UserModule.Core.Services
+@model DigiLearn.Web.Pages.Blog.ShowModel
+@inject IUserFacade _userFacade;
+@{
+    var writer = await _userFacade.GetById(Model.BlogPost.UserId);
+}
+@section meta
+    {
+    <link rel="stylesheet" href="/css/Article.min.css">
+}
+<div class="main-content">
+    <div class="breadcrumb">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  col-xl-8 col-lg-7">
+                    <h1>@Model.BlogPost.Title</h1>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                خانه
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog">
+                                بلاگ
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog?category=@Model.BlogPost.Category.Slug">
+                                @Model.BlogPost.Category.Title
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="current">
+                                @Model.BlogPost.Title
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12  col-xl-4 col-lg-5 left-side">
+                    <div class="course-shortlink shadow-sm">
+                        <span class="title"> لینک کوتاه </span>
+                        <span class="link">
+                            codeyad.com/Q/xG99
+                        </span>
+                        <a href="javascript:void(0)" data-toggle="tooltip" title="کپی" class="copy-btn"
+                           data-clipboard-text="codeyad.com/c/xG99"><i class="zmdi zmdi-copy"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-2 mt-4">
+        <div class="row">
+            <div class="col-12 col-xl-3 col-lg-4  mb-3">
+                <div class="article-info p-3">
+                    <div class="avatar">
+                        <img src="@UserModuleDirectories.GetUserAvatar(writer.Avatar)" alt="@Model.BlogPost.OwnerName" />
+
+                    </div>
+                    <div class="teacher mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-account-o"></i>
+                            نویسنده :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <a href="#">@Model.BlogPost.OwnerName</a>
+                        </div>
+                    </div>
+                    <div class="students mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-accounts-outline"></i>
+                            بازدید
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>@Model.BlogPost.Visit.ToString("#,0")</span> <label>نفر</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-comments text-uppercase"></i>
+                            تعداد نظرات :
+                        </div>
+                        <div class="pull-left d-inline-block">
+
+                            8
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-inline-block">
+                            <i class="zmdi zmdi-calendar"></i>
+                            تاریخ انتشار :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span>@Model.BlogPost.CreationDate.ToPersianDate("ds dd ms Y")</span>
+                        </div>
+                    </div>
+                    <div class="status mb-3">
+                        <div class="d-inline-block">
+                            <i class="fa fa-info"></i>
+                            موضوع :
+                        </div>
+                        <div class="pull-left d-inline-block">
+                            <span class="text-primary">@Model.BlogPost.Category.Title</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-9 col-lg-8 ">
+                <div class="Article-body">
+                    <div class="baner">
+                        <img src="@BlogDirectories.GetPostImage(Model.BlogPost.ImageName)" alt="@Model.BlogPost.Title" />
+                    </div>
+                    <div class="custom-shadow">
+                        <div class="tabs mt-2">
+                            <div class="tab-titles row">
+                                <a>
+                                    <i class="zmdi zmdi-file"></i>
+                                    متن مقاله
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-content  card  mb-4">
+                            <div class="Description p-3">
+                                @Html.Raw(Model.BlogPost.Description)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Comments p-2 card custom-shadow mb-5">
+                        <div class="comment-title">
+                            <i class="zmdi zmdi-comments text-info">
+                            </i>
+                            <h6>
+                                نظرات کاربران
+                            </h6>
+                        </div>
+                        <form>
+                            <p>نظر خودرا وارد کنید :</p>
+                            <textarea id="text_area" placeholder="متن نظر خود را بنویسید"></textarea>
+                            <button type="submit" class="btn btn-success btn-block">ثبت</button>
+                        </form>
+                        <hr />
+                        <div class="main-comments">
+                            <div class="comment-item shadow-sm pb-5">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                                <br>
+                                <hr>
+                                <div class="answer pb-5">
+                                    <img src="images/avatar04.png" alt="">
+                                    <p class="title">
+                                        محمد اشرافی <span>
+                                            <i class="fa fa-paper-plane"></i>
+                                            ارسال شده در :
+                                            1399/5/8
+                                        </span>
+                                    </p>
+                                    <p class="text">
+                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                        خوایم
+                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                    </p>
+                                    <div class="pull-left">
+
+                                        <a href="#" class="btn btn-sm btn-danger">
+                                            حذف
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="answer pb-5">
+                                    <img src="images/avatar04.png" alt="">
+                                    <p class="title">
+                                        محمد اشرافی <span>
+                                            <i class="fa fa-paper-plane"></i>
+                                            ارسال شده در :
+                                            1399/5/8
+                                        </span>
+                                    </p>
+                                    <p class="text">
+                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                        خوایم
+                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                    </p>
+                                    <div class="pull-left">
+
+                                        <a href="#" class="btn btn-sm btn-danger">
+                                            حذف
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-item shadow-sm pb-5 mt-2">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="comment-item shadow-sm pb-5 mt-2">
+                                <img src="images/avatar04.png" alt="">
+                                <p class="title">
+                                    محمد اشرافی <span>
+                                        <i class="fa fa-paper-plane"></i>
+                                        ارسال شده در :
+                                        1399/5/8
+                                    </span>
+                                </p>
+                                <p class="text">
+                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
+                                    خوایم
+                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
+                                </p>
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-sm btn-info">
+                                        پاسخ
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

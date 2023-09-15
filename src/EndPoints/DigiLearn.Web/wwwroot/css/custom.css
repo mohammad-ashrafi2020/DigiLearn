@@ -25,3 +25,6 @@
 button.section-title {
     font-size: 16px !important;
 }
+img {
+    object-fit: cover;
+}
