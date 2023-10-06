@@ -10,15 +10,19 @@ public static class TextHelper
         return !isNumber;
     }
 
-    public static string SetUnReadableEmail(this string email)
+    public static string SetUnReadableEmail(this string? email)
     {
+        if (email == null)
+        {
+            return "";
+        }
         email = email.Split('@')[0];
         var emailLenght = email.Length;
-        email = "..." + email.Substring(0, emailLenght - 1);
+        email = "..." + email.Substring(0, emailLenght - 2);
 
         return email;
     }
-
+ 
     public static string ToSlug(this string url)
     {
         return url.Trim().ToLower()
