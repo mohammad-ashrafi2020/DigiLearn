@@ -92,11 +92,126 @@ class CommentService : ICommentService
 
     public async Task<CommentFilterResult> GetCommentByFilter(CommentFilterParams filterParams)
     {
-        throw new NotImplementedException();
+        var query = _context.Comments
+            .Include(c => c.Replies)
+            .ThenInclude(c => c.User)
+            .Include(c => c.User)
+            .Where(r => r.ParentId == null)
+            .OrderByDescending(d => d.CreationDate).AsQueryable();
+
+        if (filterParams.CommentType != null)
+        {
+            query = query.Where(r => r.CommentType == filterParams.CommentType);
+        }
+
+        if (filterParams.EntityId != null)
+        {
+            query = query.Where(r => r.EntityId == filterParams.EntityId);
+        }
+        if (filterParams.StartDate != null)
+        {
+            query = query.Where(r => r.CreationDate.Date >= filterParams.StartDate.Value.Date);
+        }
+        if (filterParams.EndDate != null)
+        {
+            query = query.Where(r => r.CreationDate.Date <= filterParams.EndDate.Value.Date);
+        }
+        if (filterParams.Name != null)
+        {
+            query = query.Where(r => r.User.Name.Contains(filterParams.Name));
+        }
+        if (filterParams.Family != null)
+        {
+            query = query.Where(r => r.User.Family.Contains(filterParams.Family));
+        }
+
+        var skip = (filterParams.PageId - 1) * filterParams.Take;
+        var model = new CommentFilterResult()
+        {
+            Data = await query.Skip(skip).Take(filterParams.Take)
+                .Select(c => new CommentDto()
+                {
+                    Id = c.Id,
+                    CreationDate = c.CreationDate,
+                    UserId = c.UserId,
+                    EntityId = c.EntityId,
+                    Text = c.Text,
+                    FullName = $"{c.User.Name} {c.User.Family}",
+                    IsActive = c.IsActive,
+                    Email = c.User.Email.SetUnReadableEmail(),
+                    CommentType = c.CommentType,
+                    Replies = c.Replies.Select(s => new CommentReplyDto
+                    {
+                        Id = s.Id,
+                        CreationDate = s.CreationDate,
+                        UserId = s.UserId,
+                        EntityId = s.EntityId,
+                        Text = s.Text,
+                        FullName = $"{s.User.Name} {s.User.Family}",
+                        IsActive = s.IsActive,
+                        ParentId = s.ParentId,
+                        Email = s.User.Email.SetUnReadableEmail(),
+                        CommentType = s.CommentType
+                    }).ToList()
+                }).ToListAsync()
+        };
+        model.GeneratePaging(query, filterParams.Take, filterParams.PageId);
+        return model;
     }
 
     public async Task<AllCommentFilterResult> GetAllComments(CommentFilterParams filterParams)
     {
-        throw new NotImplementedException();
+        var query = _context.Comments
+            .Include(c => c.Replies)
+            .ThenInclude(c => c.User)
+            .Include(c => c.User)
+            .OrderByDescending(d => d.CreationDate).AsQueryable();
+
+        if (filterParams.CommentType != null)
+        {
+            query = query.Where(r => r.CommentType == filterParams.CommentType);
+        }
+
+        if (filterParams.EntityId != null)
+        {
+            query = query.Where(r => r.EntityId == filterParams.EntityId);
+        }
+        if (filterParams.StartDate != null)
+        {
+            query = query.Where(r => r.CreationDate.Date >= filterParams.StartDate.Value.Date);
+        }
+        if (filterParams.EndDate != null)
+        {
+            query = query.Where(r => r.CreationDate.Date <= filterParams.EndDate.Value.Date);
+        }
+        if (filterParams.Name != null)
+        {
+            query = query.Where(r => r.User.Name.Contains(filterParams.Name));
+        }
+        if (filterParams.Family != null)
+        {
+            query = query.Where(r => r.User.Family.Contains(filterParams.Family));
+        }
+
+        var skip = (filterParams.PageId - 1) * filterParams.Take;
+        var model = new AllCommentFilterResult()
+        {
+            Data = await query.Skip(skip).Take(filterParams.Take)
+                .Select(s => new CommentReplyDto
+                {
+                    Id = s.Id,
+                    CreationDate = s.CreationDate,
+                    UserId = s.UserId,
+                    EntityId = s.EntityId,
+                    Text = s.Text,
+                    FullName = $"{s.User.Name} {s.User.Family}",
+                    IsActive = s.IsActive,
+                    ParentId = s.ParentId,
+                    Email = s.User.Email.SetUnReadableEmail(),
+                    CommentType = s.CommentType
+                }).ToListAsync()
+        };
+        model.GeneratePaging(query, filterParams.Take, filterParams.PageId);
+        return model;
     }
 }

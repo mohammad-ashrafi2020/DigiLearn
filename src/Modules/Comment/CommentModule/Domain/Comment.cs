@@ -13,7 +13,7 @@ class Comment : BaseEntity
     [MaxLength(500)]
     public string Text { get; set; }
     public bool IsActive { get; set; }
-    public Guid ParentId { get; set; }
+    public Guid? ParentId { get; set; }
     public CommentType CommentType { get; set; }
 
 

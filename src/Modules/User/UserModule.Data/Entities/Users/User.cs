@@ -1,8 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Common.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace UserModule.Data.Entities.Users;
 
+
+[Index("Email", IsUnique = true)]
+[Index("PhoneNumber", IsUnique = true)]
 public class User : BaseEntity
 {
     [MaxLength(50)]

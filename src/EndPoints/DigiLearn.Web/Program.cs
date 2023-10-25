@@ -1,4 +1,5 @@
 using BlogModule;
+using CommentModule;
 using Common.Application.FileUtil.Interfaces;
 using Common.Application.FileUtil.Services;
 using CoreModule.Config;
@@ -24,6 +25,7 @@ builder.Services
     .InitTicketModule(builder.Configuration)
     .InitCoreModule(builder.Configuration)
     .InitBlogModule(builder.Configuration)
+    .InitCommentModule(builder.Configuration)
     .RegisterWebDependencies();
 
 

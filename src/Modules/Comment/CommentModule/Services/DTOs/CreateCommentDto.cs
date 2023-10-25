@@ -8,7 +8,6 @@ namespace CommentModule.Services.DTOs;
 public class CreateCommentCommand
 {
     public string Text { get; set; }
-
     public Guid? ParentId { get; set; } = null;
     public Guid UserId { get; set; }
     public Guid EntityId { get; set; }
@@ -46,7 +45,7 @@ public class CommentReplyDto
     public string FullName { get; set; }
     public string Email { get; set; }
     public bool IsActive { get; set; }
-    public Guid ParentId { get; set; }
+    public Guid? ParentId { get; set; }
     public CommentType CommentType { get; set; }
 }
 
