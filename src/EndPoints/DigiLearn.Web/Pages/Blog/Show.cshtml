@@ -2,6 +2,9 @@
 @using MongoDB.Driver
 @using Common.Application.DateUtil
 @using BlogModule.Utils
+@using CommentModule.Domain
+@using CommentModule.Services.DTOs
+@using DigiLearn.Web.Infrastructure
 @using UserModule.Core
 @using UserModule.Core.Services
 @model DigiLearn.Web.Pages.Blog.ShowModel
@@ -143,127 +146,26 @@
                                 نظرات کاربران
                             </h6>
                         </div>
-                        <form>
-                            <p>نظر خودرا وارد کنید :</p>
-                            <textarea id="text_area" placeholder="متن نظر خود را بنویسید"></textarea>
-                            <button type="submit" class="btn btn-success btn-block">ثبت</button>
-                        </form>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <form method="post" data-ajax="true" asp-controller="Comment" asp-action="CreateComment" id="send_comments">
+                                <input name="command.EntityId" value="@Model.BlogPost.Id" type="hidden" />
+                                <input name="command.CommentType" value="@CommentType.Article" type="hidden" />
+                                <input name="command.ParentId" value="null" id="parentId" type="hidden" />
+                                <input name="command.UserId" value="@User.GetUserId()" type="hidden" />
+                                <p>نظر خودرا وارد کنید :</p>
+                                <textarea name="command.Text" class="form-control" id="text_area" placeholder="متن نظر خود را بنویسید"></textarea>
+                                <button type="submit" class="btn btn-success btn-block">ثبت</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning">
+                                <p>برای ارسال نظر باید وارد<a href="/auth/login?redirectTo=/blog/show/@Model.BlogPost.Slug#send_comments"> حساب کاربری</a> خود شوید</p>
+                            </div>
+                        }
                         <hr />
-                        <div class="main-comments">
-                            <div class="comment-item shadow-sm pb-5">
-                                <img src="images/avatar04.png" alt="">
-                                <p class="title">
-                                    محمد اشرافی <span>
-                                        <i class="fa fa-paper-plane"></i>
-                                        ارسال شده در :
-                                        1399/5/8
-                                    </span>
-                                </p>
-                                <p class="text">
-                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
-                                    خوایم
-                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
-                                </p>
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-sm btn-info">
-                                        پاسخ
-                                    </a>
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        حذف
-                                    </a>
-                                </div>
-                                <br>
-                                <hr>
-                                <div class="answer pb-5">
-                                    <img src="images/avatar04.png" alt="">
-                                    <p class="title">
-                                        محمد اشرافی <span>
-                                            <i class="fa fa-paper-plane"></i>
-                                            ارسال شده در :
-                                            1399/5/8
-                                        </span>
-                                    </p>
-                                    <p class="text">
-                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
-                                        خوایم
-                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
-                                    </p>
-                                    <div class="pull-left">
-
-                                        <a href="#" class="btn btn-sm btn-danger">
-                                            حذف
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="answer pb-5">
-                                    <img src="images/avatar04.png" alt="">
-                                    <p class="title">
-                                        محمد اشرافی <span>
-                                            <i class="fa fa-paper-plane"></i>
-                                            ارسال شده در :
-                                            1399/5/8
-                                        </span>
-                                    </p>
-                                    <p class="text">
-                                        این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
-                                        خوایم
-                                        بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
-                                    </p>
-                                    <div class="pull-left">
-
-                                        <a href="#" class="btn btn-sm btn-danger">
-                                            حذف
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-item shadow-sm pb-5 mt-2">
-                                <img src="images/avatar04.png" alt="">
-                                <p class="title">
-                                    محمد اشرافی <span>
-                                        <i class="fa fa-paper-plane"></i>
-                                        ارسال شده در :
-                                        1399/5/8
-                                    </span>
-                                </p>
-                                <p class="text">
-                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
-                                    خوایم
-                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
-                                </p>
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-sm btn-info">
-                                        پاسخ
-                                    </a>
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        حذف
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="comment-item shadow-sm pb-5 mt-2">
-                                <img src="images/avatar04.png" alt="">
-                                <p class="title">
-                                    محمد اشرافی <span>
-                                        <i class="fa fa-paper-plane"></i>
-                                        ارسال شده در :
-                                        1399/5/8
-                                    </span>
-                                </p>
-                                <p class="text">
-                                    این دوره چیه ؟! ببینید این دوره یه مقداری سطحش متفاوته ، ما الان می
-                                    خوایم
-                                    بریم باهم کل مستندات سایت Next JS رو کامل باهم بخونیم. ولی
-                                </p>
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-sm btn-info">
-                                        پاسخ
-                                    </a>
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        حذف
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <partial name="Shared/Comments/_Comments" model="Model.CommentFilterResult" />
                     </div>
                 </div>
             </div>

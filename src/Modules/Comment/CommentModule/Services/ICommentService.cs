@@ -34,6 +34,7 @@ class CommentService : ICommentService
 
         comment.Text = comment.Text.SanitizeText();
         comment.IsActive = true;
+        comment.Id = Guid.NewGuid();
         _context.Comments.Add(comment);
         await _context.SaveChangesAsync();
         return OperationResult.Success();
@@ -153,7 +154,8 @@ class CommentService : ICommentService
                         Email = s.User.Email.SetUnReadableEmail(),
                         CommentType = s.CommentType
                     }).ToList()
-                }).ToListAsync()
+                }).ToListAsync(),
+            FilterParams = filterParams
         };
         model.GeneratePaging(query, filterParams.Take, filterParams.PageId);
         return model;

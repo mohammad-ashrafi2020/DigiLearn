@@ -7,9 +7,10 @@ namespace CommentModule.Services.DTOs;
 
 public class CreateCommentCommand
 {
+    [Required]
     public string Text { get; set; }
     public Guid? ParentId { get; set; } = null;
-    public Guid UserId { get; set; }
+    public Guid UserId { get; set; } = Guid.Empty;
     public Guid EntityId { get; set; }
     public CommentType CommentType { get; set; }
 }
@@ -51,7 +52,7 @@ public class CommentReplyDto
 
 public class CommentFilterResult : BaseFilter<CommentDto>
 {
-
+    public CommentFilterParams FilterParams { get; set; }
 }
 public class AllCommentFilterResult : BaseFilter<CommentReplyDto>
 {
