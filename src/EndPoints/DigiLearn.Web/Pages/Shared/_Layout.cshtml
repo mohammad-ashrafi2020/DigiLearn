@@ -21,6 +21,9 @@
 }
 <body>
     <div class="overlay"></div>
+    <div class="loading">
+        <img src="/global/loading.svg" alt="loading...">
+    </div>
     <partial name="Header/_MobileMenu" />
     <header>
         <partial name="Header/_TopNav" />
@@ -40,6 +43,7 @@
     <script src="/js/particles.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/global/global.js"></script>
+    <script src="/js/custom.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts",false)
 
 </body>

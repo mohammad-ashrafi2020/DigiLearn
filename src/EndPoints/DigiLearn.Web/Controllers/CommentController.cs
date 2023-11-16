@@ -26,14 +26,27 @@ namespace DigiLearn.Web.Controllers
         }
 
         [Route("/comment/getByFilter")]
-        public async Task<IActionResult> GetComments([FromQuery] Guid entityId, [FromQuery] CommentType commentType)
+        public async Task<IActionResult> GetComments([FromQuery] Guid entityId, [FromQuery] CommentType commentType, [FromQuery] int pageId = 1)
         {
             var model = await _commentService.GetCommentByFilter(new CommentFilterParams()
             {
                 EntityId = entityId,
-                CommentType = commentType
+                CommentType = commentType,
+                PageId = pageId,
             });
-            return PartialView("Shared/Comments/_Comments", model);
+            return PartialView("Comments/_Comments", model);
+        }
+
+        [HttpPost("/comment/delete")]
+        [Authorize]
+        public async Task<IActionResult> DeleteComment(Guid commentId)
+        {
+            var comment = await _commentService.GetCommentById(commentId);
+            if (comment == null || comment.UserId != User.GetUserId())
+            {
+                return await AjaxTryCatch(() => Task.FromResult(OperationResult.NotFound()));
+            }
+            return await AjaxTryCatch(() => _commentService.DeleteComment(commentId));
         }
     }
 }

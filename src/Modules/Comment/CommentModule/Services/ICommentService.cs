@@ -56,7 +56,7 @@ class CommentService : ICommentService
     public async Task<CommentDto?> GetCommentById(Guid id)
     {
         var comment = await _context.Comments.Include(c => c.User)
-            .Include(c => c.Replies).FirstOrDefaultAsync(f => f.Id == id);
+            .Include(c => c.Replies).ThenInclude(c => c.User).FirstOrDefaultAsync(f => f.Id == id);
 
 
         if (comment == null)

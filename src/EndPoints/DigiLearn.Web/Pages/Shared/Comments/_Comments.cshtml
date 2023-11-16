@@ -1,4 +1,5 @@
 ﻿@using Common.Application.DateUtil
+@using DigiLearn.Web.Infrastructure
 @model CommentModule.Services.DTOs.CommentFilterResult
 
 
@@ -18,12 +19,18 @@
                 @item.Text
             </p>
             <div class="pull-left">
-                <a href="#" class="btn btn-sm btn-info">
+                <a href="#send_comments" onclick="replyComment('@item.Id')" class="btn btn-sm btn-info">
                     پاسخ
                 </a>
-                <a href="#" class="btn btn-sm btn-danger">
-                    حذف
-                </a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.GetUserId() == item.UserId)
+                    {
+                        <button onclick="deleteComment('@item.Id')" class="btn btn-sm btn-danger">
+                            حذف
+                        </button>
+                    }
+                }
             </div>
             @if (item.Replies.Any())
             {
@@ -43,9 +50,15 @@
                             @item.Text
                         </p>
                         <div class="pull-left">
-                            <a href="#" class="btn btn-sm btn-danger">
-                                حذف
-                            </a>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                if (User.GetUserId() == reply.UserId)
+                                {
+                                    <button onclick="deleteComment('@reply.Id')" class="btn btn-sm btn-danger">
+                                        حذف
+                                    </button>
+                                }
+                            }
                         </div>
                     </div>
                     <hr>

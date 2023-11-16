@@ -17,6 +17,7 @@ builder.Services.AddScoped<ILocalFileService, LocalFileService>();
 builder.Services.AddScoped<IFtpFileService, FtpFileService>();
 
 builder.Services.AddTransient<TeacherActionFilter>();
+builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
   
