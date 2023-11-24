@@ -209,7 +209,7 @@ class CommentService : ICommentService
                     FullName = $"{s.User.Name} {s.User.Family}",
                     IsActive = s.IsActive,
                     ParentId = s.ParentId,
-                    Email = s.User.Email.SetUnReadableEmail(),
+                    Email = s.User.Email,
                     CommentType = s.CommentType
                 }).ToListAsync()
         };

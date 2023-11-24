@@ -59,7 +59,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.EventBus", "src\Comm
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{F4DF9E24-BE80-4499-8986-C615759BEDB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentModule", "src\Modules\Comment\CommentModule\CommentModule.csproj", "{9C2E7E12-AC2A-413E-B7DB-12BEC6450A38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentModule", "src\Modules\Comment\CommentModule\CommentModule.csproj", "{9C2E7E12-AC2A-413E-B7DB-12BEC6450A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

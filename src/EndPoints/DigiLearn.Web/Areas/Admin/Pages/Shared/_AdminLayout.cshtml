@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/tables/datatable/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="/admin/vendors/css/tables/datatable/responsive.bootstrap.min.css">
-    @await RenderSectionAsync("Meta",false)
+    @await RenderSectionAsync("Meta", false)
 </head>
 <body class="vertical-layout vertical-menu-modern semi-dark-layout 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" data-layout="semi-dark-layout">
     <div class="modal fade" id="defaultModal" tabindex="-1" aria-labelledby="editAddressModalLabel"
@@ -55,6 +55,7 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-body">
+                <h3>@ViewData["title"]</h3>
                 @RenderBody()
             </div>
         </div>
@@ -89,10 +90,18 @@
     <script src="/admin/js/scripts/customizer.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="/admin/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+
     <script src="/global/global.js" asp-append-version="true"></script>
     <script src="/admin/js/custom.js" asp-append-version="true"></script>
     <partial name="Shared/_ValidationScriptsPartial" />
     <script src="/global/clientValidation.js"></script>
-    @await RenderSectionAsync("Scripts",false)
+    <script>
+        $("document").ready(function () {
+            loadCalender();
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", false)
 </body>
 </html>
