@@ -7,7 +7,4 @@ public class RolePermission : BaseEntity
 {
     public Guid RoleId { get; set; }
     public Permissions Permissions { get; set; }
-
-
-    public Role Role { get; set; }
 }

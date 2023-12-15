@@ -14,14 +14,14 @@
 
   <ItemGroup>
     <Folder Include="Commands\Notifications\Create\" />
-    <Folder Include="Commands\Roles\" />
+    <Folder Include="Commands\Roles\Delete\" />
     <Folder Include="Commands\Users\Edit\" />
     <Folder Include="Commands\Users\ChangePassword\" />
     <Folder Include="Commands\Users\Register\" />
     <Folder Include="Queries\Notifications\GetFilter\" />
+    <Folder Include="Queries\Roles\GetById\" />
     <Folder Include="Services\" />
     <Folder Include="Queries\_DTOs\" />
-    <Folder Include="Queries\Roles\" />
     <Folder Include="Queries\Users\GetById\" />
   </ItemGroup>
 
