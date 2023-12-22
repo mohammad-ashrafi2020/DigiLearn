@@ -21,12 +21,6 @@ public class UserContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<RolePermission>()
-            .HasOne<Role>()
-            .WithMany()
-            .HasForeignKey(f => f.RoleId)
-            .OnDelete(DeleteBehavior.Cascade);
-
         base.OnModelCreating(modelBuilder);
     }
 }

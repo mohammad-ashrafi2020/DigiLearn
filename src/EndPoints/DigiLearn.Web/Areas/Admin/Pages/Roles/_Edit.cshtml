@@ -1,0 +1,29 @@
+﻿@using UserModule.Data.Entities._Enums
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using DigiLearn.Web.TagHelpers
+@model DigiLearn.Web.ViewModels.Admin.EditRoleViewModel
+
+<form class="row" method="post" asp-page-handler="Edit" data-ajax="true">
+    @Html.HiddenFor(f=>f.RoleId)
+    <div class="col-md-6">
+        @Html.EditorFor(f => f.Name)
+    </div>
+    <div class="col-md-6">
+        <ul>
+            @foreach (var item in Enum.GetNames(typeof(Permissions)))
+            {
+                <li>
+                    <label class="cursor-pointer">
+                        <input name="permissions"
+                               checked="@(Model.SelectedPermissions.Any(r => r.ToString() == item) ? "checked" : null)" value="@item" type="checkbox"/>
+                        @item.Replace("_", " ")
+                    </label>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-12 d-flex mt-2 justify-content-end">
+        <submit/>
+    </div>
+</form>

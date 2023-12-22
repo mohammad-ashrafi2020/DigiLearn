@@ -49,7 +49,7 @@ namespace UserModule.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("UserModule.Data.Entities.Roles.Role", b =>
@@ -68,7 +68,7 @@ namespace UserModule.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("UserModule.Data.Entities.Roles.RolePermission", b =>
@@ -90,7 +90,7 @@ namespace UserModule.Data.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("RolePermissions");
+                    b.ToTable("RolePermissions", (string)null);
                 });
 
             modelBuilder.Entity("UserModule.Data.Entities.Users.User", b =>
@@ -138,7 +138,7 @@ namespace UserModule.Data.Migrations
                     b.HasIndex("PhoneNumber")
                         .IsUnique();
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("UserModule.Data.Entities.Users.UserRole", b =>
@@ -162,7 +162,7 @@ namespace UserModule.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("UserRoles", (string)null);
                 });
 
             modelBuilder.Entity("UserModule.Data.Entities.Roles.RolePermission", b =>

@@ -40,7 +40,7 @@ class EditRoleCommandHandler : IBaseCommandHandler<EditRoleCommand>
             }
         }
 
-
+        role.Name = request.Name;
         _context.Roles.Update(role);
 
         _context.RolePermissions.RemoveRange(role.Permissions);
