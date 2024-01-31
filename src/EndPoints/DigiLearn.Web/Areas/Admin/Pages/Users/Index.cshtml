@@ -1,0 +1,79 @@
+﻿@page
+@using Common.Application.DateUtil
+@model DigiLearn.Web.Areas.Admin.Pages.Users.IndexModel
+@{
+    ViewData["title"] = "مدیریت کاربران";
+    ViewData["selected"] = "users";
+}
+
+<form class="card mb-2">
+    <div class="card-header mb-0 pb-0 d-flex justify-content-between">
+        <h5>فیلتر</h5>
+        <div class="">
+            <a asp-page="Index" class="btn btn-sm btn-danger">حذف فیلتر</a>
+            <button type="submit" class="btn btn-success btn-sm">اعمال فیلتر</button>
+        </div>
+    </div>
+    <div class="card-body  mb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <label>ایمیل</label>
+                <input type="text" class="form-control" asp-for="FilterParams.Email" />
+            </div>
+            <div class="col-md-6">
+                <label>شماره موبایل</label>
+                <input type="text" class="form-control" asp-for="FilterParams.PhoneNumber" />
+            </div>
+            <div class="col-md-6">
+                <label>از تاریخ</label>
+                <fieldset class="form-group position-relative has-icon-left">
+                    <input type="text" autocomplete="off" value="@Model.FilterParams.StartDate.ToPersianDate()" name="stDate" class="form-control shamsi-datepicker" placeholder="انتخاب تاریخ">
+                    <div class="form-control-position">
+                        <i class="bx bx-calendar"></i>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-6">
+                <label>تا تاریخ</label>
+                <fieldset class="form-group position-relative has-icon-left">
+                    <input type="text" autocomplete="off" value="@Model.FilterParams.EndDate.ToPersianDate()" name="enDate" class="form-control shamsi-datepicker" placeholder="انتخاب تاریخ">
+                    <div class="form-control-position">
+                        <i class="bx bx-calendar"></i>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="card ">
+    <div class="table-responsive card-body p-0 mb-0">
+        <table class="table table-bordered table-hover mb-0">
+            <thead>
+                <tr>
+                    <th>نام و نام خانوادگی</th>
+                    <th>ایمیل</th>
+                    <th>شماره تلفن</th>
+                    <th>تاریخ ثبت نام</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.FilterResult.Data)
+                {
+                    <tr>
+                        <td>@item.Name @item.Family</td>
+                        <td>@item.Email</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.CreationDate.ToPersianDateTime()</td>
+                        <td>
+                            <a asp-page="Show" asp-route-id="@item.Id" class="btn btn-primary">نمایش</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<partial name="_Pagination" model="Model.FilterResult" />
+

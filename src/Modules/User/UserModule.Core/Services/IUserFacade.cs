@@ -5,6 +5,7 @@ using UserModule.Core.Commands.Users.ChangePassword;
 using UserModule.Core.Commands.Users.Edit;
 using UserModule.Core.Commands.Users.Register;
 using UserModule.Core.Queries._DTOs;
+using UserModule.Core.Queries.Users.GetByFilter;
 using UserModule.Core.Queries.Users.GetById;
 using UserModule.Core.Queries.Users.GetByPhoneNumber;
 
@@ -17,6 +18,7 @@ public interface IUserFacade
     Task<OperationResult> ChangePassword(ChangeUserPasswordCommand command);
     Task<UserDto?> GetUserByPhoneNumber(string phoneNumber);
     Task<UserDto?> GetById(Guid id);
+    Task<UserFilterResult> GetByFilter(UserFilterParams filterParams);
 }
 
 
@@ -53,5 +55,10 @@ public class UserFacade : IUserFacade
     {
         return await _mediator.Send(new GetUserByIdQuery(id));
 
+    }
+
+    public async Task<UserFilterResult> GetByFilter(UserFilterParams filterParams)
+    {
+        return await _mediator.Send(new GetUsersByFilterQuery(filterParams));
     }
 }
