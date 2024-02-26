@@ -36,7 +36,13 @@ public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
         user.Name = request.Name;
         user.Family = request.Family;
         if (string.IsNullOrWhiteSpace(request.Email) == false)
-            user.Email = request.Email;
+        {
+            if (await EmailIsDuplicated(request.Email))
+            {
+                return OperationResult.Error("ایمیل وارد شده تکراری است");
+            }
+            user.Email = request.Email.ToLower();
+        }
 
         await _context.SaveChangesAsync(cancellationToken);
         _eventBus.Publish(new UserEdited()
@@ -48,6 +54,11 @@ public class EditUserCommandHandler : IBaseCommandHandler<EditUserCommand>
             PhoneNumber = user.PhoneNumber
         }, null, Exchanges.UserTopicExchange, ExchangeType.Topic, "user.edited");
         return OperationResult.Success();
+    }
+
+    private async Task<bool> EmailIsDuplicated(string email)
+    {
+        return await _context.Users.AnyAsync(f => f.Email == email.ToLower());
     }
 }
 public class EditUserCommandValidator : AbstractValidator<EditUserCommand>

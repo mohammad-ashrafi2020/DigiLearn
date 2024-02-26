@@ -66,7 +66,8 @@
                         <td>@item.PhoneNumber</td>
                         <td>@item.CreationDate.ToPersianDateTime()</td>
                         <td>
-                            <a asp-page="Show" asp-route-id="@item.Id" class="btn btn-primary">نمایش</a>
+                            <a asp-page="Show" asp-route-id="@item.Id" class="btn btn-sm btn-success">نمایش</a>
+                            <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">ویرایش</a>
                         </td>
 
                     </tr>

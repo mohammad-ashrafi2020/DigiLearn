@@ -1,0 +1,43 @@
+﻿@page "{id}"
+@using UserModule.Core.Services
+@model DigiLearn.Web.Areas.Admin.Pages.Users.EditModel
+@inject IRoleFacade _RoleFacade;
+@{
+    ViewData["title"] = "ویرایش کاربر";
+    ViewData["selected"] = "users";
+    var roles = await _RoleFacade.GetAllRoles();
+}
+<div class="card">
+    <form class="card-body row" method="post">
+        <div class="col-md-6">
+            @Html.EditorFor(f => f.Name)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f => f.Family)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f => f.Email)
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f => f.PhoneNumber)
+        </div>
+        <div class="col-md-6 ">
+            <div class="form-input">
+                <label>نقش ها</label>
+                <select class="select2 form-control" multiple="multiple" name="roles">
+                    @foreach (var item in roles)
+                    {
+                        <option selected="@(Model.CurrentUserRoles.Any(r=>r==item.Id)?"selected":null)" value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6">
+            @Html.EditorFor(f => f.Password)
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-12 d-flex mt-2 justify-content-end">
+            <submit />
+        </div>
+    </form>
+</div>

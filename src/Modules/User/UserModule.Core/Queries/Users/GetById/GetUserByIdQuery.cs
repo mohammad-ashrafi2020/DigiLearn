@@ -21,12 +21,18 @@ class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDto?>
 
     public async Task<UserDto?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(f => f.Id == request.Id, cancellationToken);
+        var user = await _context.Users.Include(c => c.UserRoles)
+            .ThenInclude(c => c.Role).FirstOrDefaultAsync(f => f.Id == request.Id, cancellationToken);
         if (user == null)
         {
             return null;
         }
-
-        return _mapper.Map<UserDto>(user);
+        var userDto = _mapper.Map<UserDto>(user);
+        userDto.Roles = user.UserRoles.Select(s => new RoleDto()
+        {
+            Id = s.RoleId,
+            Title = s.Role.Name
+        }).ToList();
+        return userDto;
     }
 }
