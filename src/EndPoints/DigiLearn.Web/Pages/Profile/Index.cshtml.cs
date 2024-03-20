@@ -1,12 +1,14 @@
 using DigiLearn.Web.Infrastructure;
+using DigiLearn.Web.Infrastructure.RazorUtils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using UserModule.Core.Commands.Users.ChangeAvatar;
 using UserModule.Core.Queries._DTOs;
 using UserModule.Core.Services;
 
 namespace DigiLearn.Web.Pages.Profile
 {
-    public class IndexModel : PageModel
+    public class IndexModel : BaseRazor
     {
         private IUserFacade _userFacade;
         private INotificationFacade _notificationFacade;
@@ -30,6 +32,17 @@ namespace DigiLearn.Web.Pages.Profile
                 UserId = UserDto!.Id
             });
             NewNotification = result.Data;
+        }
+
+        public async Task<IActionResult> OnPost(IFormFile avatar)
+        {
+            var res = await _userFacade.ChangeAvatar(new ChangeUserAvatarCommand()
+            {
+                AvatarFile = avatar,
+                UserId = User.GetUserId()
+            });
+
+            return RedirectAndShowAlert(res, Redirect("/profile"));
         }
 
     }

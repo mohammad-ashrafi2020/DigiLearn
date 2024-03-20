@@ -16,3 +16,7 @@ $(document).ready(function () {
         scrollTop: $('.ticket-Body .chat:last-child').position().top
     }, 'slow');
 });
+
+$("#upImgAvatar").change(function() {
+    $("#change_avatar").submit();
+})

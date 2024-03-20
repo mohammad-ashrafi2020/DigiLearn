@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/profile.min.css">
-    @await RenderSectionAsync("meta",false)
+    @await RenderSectionAsync("meta", false)
 </head>
 @inject ICourseCategoryFacade _CategoryFacade
 @{
@@ -80,9 +80,10 @@
     <script src="/js/particles.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/global/global.js"></script>
+    <script src="/js/Profile.js"></script>
     <partial name="_ValidationScriptsPartial" />
     <script src="/global/clientValidation.js"></script>
-    @await RenderSectionAsync("Scripts",false)
+    @await RenderSectionAsync("Scripts", false)
 
 </body>
 

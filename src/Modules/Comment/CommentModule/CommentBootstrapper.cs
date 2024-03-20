@@ -18,6 +18,7 @@ public static class CommentBootstrapper
         services.AddScoped<ICommentService, CommentService>();
         services.AddHostedService<UserRegisteredEventHandler>();
         services.AddHostedService<UserEditedEventHandler>();
+        services.AddHostedService<UserChangeAvatarEventHandler>();
         services.AddAutoMapper(typeof(MapperProfile).Assembly);
 
         return services;

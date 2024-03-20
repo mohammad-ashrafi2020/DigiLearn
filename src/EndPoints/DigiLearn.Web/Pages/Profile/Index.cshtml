@@ -4,6 +4,7 @@
 @{
     ViewData["title"] = "پنل کاربری";
     Layout = "Shared/_ProfileLayout";
+
 }
 <div class="row ">
     <div class="col-12 col-lg-6 col-xl-6 ">
@@ -16,18 +17,18 @@
 
             <div class="info-body p-2">
                 <div>
-                    <p>نام و نام خانوادگی : محمد اشرافی</p>
+                    <p>نام و نام خانوادگی :  @Model.UserDto.FullName</p>
                 </div>
                 <div>
-                    <p>ایمیل : <label>game.bikar@gmail.com</label></p>
+                    <p>ایمیل : <label>@Model.UserDto.Email</label></p>
                 </div>
                 <div>
-                    <p>شماره تلفن : 09351171196</p>
+                    <p>شماره تلفن : @Model.UserDto.PhoneNumber</p>
                 </div>
                 <div>
-                    <p> کد ملی : </p>
+                    <p> تاریخ ثبت نام : @Model.UserDto.CreationDate.ToPersianDate("ds dd ms Y") </p>
                 </div>
-                <a href="#" class="btn btn-info btn-block">تکمیل اطلاعات </a>
+                <a href="/profile/edit" class="btn btn-info btn-block">تکمیل اطلاعات </a>
             </div>
         </div>
 

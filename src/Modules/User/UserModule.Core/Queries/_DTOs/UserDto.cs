@@ -18,6 +18,9 @@ public class UserDto
 
     public string Avatar { get; set; }
     public List<RoleDto> Roles { get; set; } = new();
+
+
+    public string FullName => $"{Name} {Family}";
 }
 
 public class RoleDto
