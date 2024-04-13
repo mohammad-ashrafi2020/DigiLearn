@@ -20,6 +20,7 @@ public class CoreModuleEfContext : BaseEfContext<CoreModuleEfContext>
     public DbSet<Domain.Teacher.Models.Teacher> Teachers { get; set; }
     public DbSet<CourseCategory> Categories { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<Domain.Order.Models.Order> Orders { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
