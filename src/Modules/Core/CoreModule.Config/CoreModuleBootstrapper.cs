@@ -1,9 +1,11 @@
 ﻿using CoreModule.Application.Category;
 using CoreModule.Application.Category.Create;
 using CoreModule.Application.Course;
+using CoreModule.Application.Order;
 using CoreModule.Application.Teacher;
 using CoreModule.Domain.Category.DomainServices;
 using CoreModule.Domain.Course.DomainServices;
+using CoreModule.Domain.Order.DomainServices;
 using CoreModule.Domain.Teacher.DomainServices;
 using CoreModule.Facade;
 using CoreModule.Infrastructure;
@@ -29,6 +31,7 @@ namespace CoreModule.Config
             services.AddScoped<ICourseDomainService, CourseDomainService>();
             services.AddScoped<ITeacherDomainService, TeacherDomainService>();
             services.AddScoped<ICategoryDomainService, CategoryDomainService>();
+            services.AddScoped<IOrderDomainService, OrderDomainService>();
 
             return services;
         }

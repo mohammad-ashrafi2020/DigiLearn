@@ -1,5 +1,6 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
+using CoreModule.Domain.Order.DomainServices;
 
 namespace CoreModule.Domain.Order.Models;
 
@@ -34,11 +35,12 @@ public class Order : AggregateRoot
         }
     }
 
-    public void AddItem(Guid courseId, int price)
+    public async Task AddItem(Guid courseId, IOrderDomainService domainService)
     {
+        var price = await domainService.GetCoursePriceById(courseId);
         if (price <= 0)
         {
-            throw new InvalidDomainDataException("امکان اضافه کردن دوره رایگان به سبد خرید وجود ندارد");
+            throw new InvalidDomainDataException("امکان اضافه کردن این دوره  به سبد خرید وجود ندارد");
         }
         if (OrderItems.Any(f => f.CourseId == courseId))
         {
