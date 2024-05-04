@@ -14,12 +14,14 @@
     <Folder Include="Course\GetById\" />
     <Folder Include="Course\GetBySlug\" />
     <Folder Include="Course\_DTOs\" />
+    <Folder Include="Order\GetCurrent\" />
+    <Folder Include="Order\GetByFilter\" />
+    <Folder Include="Order\GetById\" />
     <Folder Include="_DTOs\" />
     <Folder Include="Teacher\GetById\" />
     <Folder Include="Teacher\GetByUserId\" />
     <Folder Include="Teacher\GetList\" />
     <Folder Include="Teacher\_DTOs\" />
-    <Folder Include="_Data\Entities\" />
   </ItemGroup>
 
   <ItemGroup>

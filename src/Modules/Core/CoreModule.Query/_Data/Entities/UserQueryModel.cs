@@ -24,4 +24,15 @@ class UserQueryModel : BaseEntity
 
     [MaxLength(110)]
     public string? Email { get; set; }
+
+
+    public string? FullName
+    {
+        get
+        {
+            if (string.IsNullOrWhiteSpace(Name) && string.IsNullOrWhiteSpace(Family))
+                return null;
+            return Name + " " + Family;
+        }
+    }
 }
