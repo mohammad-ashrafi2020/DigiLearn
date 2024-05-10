@@ -1,0 +1,77 @@
+﻿@page "{handler?}"
+@model DigiLearn.Web.Pages.CartModel
+@{
+    ViewData["title"] = "سبد خرید";
+    Layout = "Shared/_ProfileLayout";
+}
+<div class="row ">
+
+
+    @if (Model.Order == null || Model.Order.OrderItems.Count == 0)
+    {
+        <div class="col-12 null-basket text-center">
+            <img src="images/basket.png">
+            <p>سبد خرید شما خالی است!</p>
+        </div>
+    }
+    else
+    {
+        <div class="alert-warning alert col-12 ">
+            <i class="fa fa-warning"></i>
+            لطفا در خرید خود دقت کنید ، هزینه پرداختی به هیچ عنوان
+            قابل استرداد نمی باشد
+        </div>
+        <div class="col-12  pl-0 pr-0">
+            @foreach (var item in Model.Order.OrderItems)
+            {
+                <div class="course">
+                    <i onclick="deleteItem('@Url.Page("Cart","Delete",new {id=item.Id})','')" class="fa fa-trash"></i>
+                    <a href="#">
+                        <h6>@item.CourseTitle</h6>
+                    </a>
+                    <p>مدرس : @item.TeacherFullName</p>
+                    <span class="price"> @item.Price.ToString("#,0") تومان</span>
+                </div>
+            }
+
+
+            <div class="utils row  custom-shadow" style="margin-top: 12px !important;">
+                <div class="col-12 col-lg-6  p-2">
+                    <form class="discount p-2">
+                        <input type="text" class="form-control" placeholder="کد تخفیف">
+                        <button type="submit" class="btn btn-success">اعمال</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-6  pl-0">
+                    <form>
+                        <div class="order-info  p-2">
+                            <div class="info pl-2">
+                                <p>مبلغ کل : <span class="pull-left text-success">@Model.Order.TotalPrice.ToString("#,0") تومان</span></p>
+                                <p> تخفیف : <span class="pull-left text-success">0 تومان</span></p>
+                                <p> قابل پرداخت : <span class="pull-left text-success">@Model.Order.TotalPrice.ToString("#,0") تومان</span></p>
+                            </div>
+                            <hr>
+                            @*  <div class="payment-type">
+                        <span>نحوه پرداخت</span>
+                        <div class="pt-2">
+                        <div>
+                        <input type="radio" name="PaymentType" id="">
+                        <label>کیف پول  (موجودی : <span>150,000 تومان</span>)</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="PaymentType" id="">
+                        <label>پرداخت آنلاین</label>
+                        </div>
+                        </div>
+                        </div> *@
+                        </div>
+                        <hr>
+                        <button type="submit" class="btn btn-success btn-block">پرداخت</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

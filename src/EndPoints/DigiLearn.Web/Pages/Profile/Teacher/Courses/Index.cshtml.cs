@@ -23,7 +23,7 @@ public class IndexModel : BaseRazorFilter<CourseFilterParams>
     public async Task OnGet()
     {
         var teacher = await _teacherFacade.GetByUserId(User.GetUserId());
-        FilterParams.TeacherId = teacher!.Id;
+        FilterParams.TeacherId = teacher?.Id;
         FilterResult = await _courseFacade.GetCourseFilter(FilterParams);
     }
 }

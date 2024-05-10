@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Category\" />
     <Folder Include="Course\" />
+    <Folder Include="Orders\" />
     <Folder Include="Teacher\" />
   </ItemGroup>
 

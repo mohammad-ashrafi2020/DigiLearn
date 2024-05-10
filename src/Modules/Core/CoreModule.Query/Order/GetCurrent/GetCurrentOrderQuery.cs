@@ -22,7 +22,7 @@ class GetCurrentOrderQueryHandler : IQueryHandler<GetCurrentOrderQuery, OrderDto
     {
         var order = await _context.Orders
             .Include(c => c.OrderItems)
-            .ThenInclude(c => c.Course)
+            .ThenInclude(c => c.Course.Teacher.User)
             .Include(c => c.User)
             .FirstOrDefaultAsync(f => f.UserId == request.UserId && f.IsPay == false
                 , cancellationToken: cancellationToken);

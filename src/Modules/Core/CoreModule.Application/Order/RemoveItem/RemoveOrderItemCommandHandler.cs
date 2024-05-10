@@ -20,7 +20,7 @@ public class RemoveOrderItemCommandHandler:IBaseCommandHandler<RemoveOrderItemCo
             return OperationResult.NotFound();
         }
 
-        order.RemoveItem(request.CourseId);
+        order.RemoveItem(request.Id);
         await _orderRepository.Save();
         return OperationResult.Success();
     }

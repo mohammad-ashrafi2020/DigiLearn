@@ -18,7 +18,7 @@ class QueryContext : DbContext
     public DbSet<EpisodeQueryModel> Episodes { get; set; }
     public DbSet<SectionQueryModel> Sections { get; set; }
     public DbSet<OrderQueryModel> Orders { get; set; }
-    public DbSet<OrderItem> OrderItems { get; set; }
+    public DbSet<OrderItemQueryModel> OrderItems { get; set; }
 
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -43,6 +43,11 @@ class QueryContext : DbContext
                 .IsRequired()
                 .IsUnicode(false)
                 .HasMaxLength(20);
+
+        });
+        modelBuilder.Entity<OrderItemQueryModel>(builder =>
+        {
+            builder.ToTable("OrderItems");
 
         });
         modelBuilder.Entity<CourseQueryModel>(builder =>

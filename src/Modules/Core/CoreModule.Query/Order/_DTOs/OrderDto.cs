@@ -28,6 +28,7 @@ public class OrderItemDto : BaseDto
 {
     public Guid OrderId { get; set; }
     public string CourseTitle { get; set; }
+    public string TeacherFullName { get; set; }
     public int Price { get; set; }
 }
 

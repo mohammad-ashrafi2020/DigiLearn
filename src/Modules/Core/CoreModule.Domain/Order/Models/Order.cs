@@ -55,9 +55,9 @@ public class Order : AggregateRoot
         });
     }
 
-    public void RemoveItem(Guid courseId)
+    public void RemoveItem(Guid id)
     {
-        var item = OrderItems.FirstOrDefault(f => f.CourseId == courseId);
+        var item = OrderItems.FirstOrDefault(f => f.Id == id);
         if (item != null)
         {
             OrderItems.Remove(item);

@@ -16,6 +16,7 @@ public static class RegisterDependencyServices
         services.AddTransient<IRenderViewToString, RenderViewToString>();
         services.AddAutoMapper(typeof(RegisterDependencyServices).Assembly);
         services.AddScoped<IHomePageService, HomePageService>();
+
         return services;
     }
 }
