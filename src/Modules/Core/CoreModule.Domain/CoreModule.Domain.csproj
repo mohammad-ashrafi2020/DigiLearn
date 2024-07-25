@@ -13,6 +13,7 @@
     <Folder Include="Course\Models\" />
     <Folder Include="Course\Enums\" />
     <Folder Include="Course\Repository\" />
+    <Folder Include="HelperEntities\Repositories\" />
     <Folder Include="Order\Models\" />
     <Folder Include="Order\Repositories\" />
     <Folder Include="Teacher\Enums\" />
