@@ -9,8 +9,9 @@ class CategoryQueryModel : BaseEntity
 {
     public string Title { get; set; }
     public string Slug { get; set; }
-    public Guid? ParentId { get; set; }
 
     [ForeignKey("ParentId")]
+    public Guid? ParentId { get; set; }
+
     public List<CategoryQueryModel> Children { get; set; }
 }
