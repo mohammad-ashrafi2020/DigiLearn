@@ -1,0 +1,130 @@
+﻿@{
+    Layout = null;
+    var isSuccess = TempData["Success"] != null;
+    var IsError = TempData["Error"] != null;
+}
+@if (isSuccess == false && IsError == false)
+{
+
+}
+else
+{
+    <html>
+    <head>
+        <meta charset="utf-8">
+        @if (isSuccess)
+        {
+            <title>
+                پرداخت با موققیت انجام شد
+            </title>
+        }
+        else
+        {
+            <title>
+                پرداخت لغو شد !!
+            </title>
+        }
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <style type="text/css">
+
+            body {
+                background: #f2f2f2;
+            }
+
+            .payment {
+                border: 1px solid #f2f2f2;
+                height: 280px;
+                border-radius: 20px;
+                background: #fff;
+            }
+
+            .payment_header {
+                background: rgba(255,102,0,1);
+                padding: 20px;
+                border-radius: 20px 20px 0px 0px;
+            }
+
+            .check {
+                margin: 0px auto;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background: #fff;
+                text-align: center;
+            }
+
+                .check i {
+                    vertical-align: middle;
+                    line-height: 50px;
+                    font-size: 30px;
+                }
+
+            .content {
+                text-align: center;
+            }
+
+                .content h1 {
+                    font-size: 25px;
+                    padding-top: 25px;
+                }
+
+                .content a {
+                    width: 200px;
+                    height: 35px;
+                    color: #fff;
+                    border-radius: 30px;
+                    padding: 5px 10px;
+                    background: rgba(255,102,0,1);
+                    transition: all ease-in-out 0.3s;
+                }
+
+                    .content a:hover {
+                        text-decoration: none;
+                        background: #000;
+                    }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto mt-5">
+                    @if (isSuccess)
+                    {
+                        <div class="payment">
+                            <div class="payment_header" style="background: green">
+                                <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="content">
+
+                                <h1>تراکنش موفق</h1>
+                                <p>تراکنش با موفقیت انجام شد</p>
+                                <a href="/userPanel">پنل کاربری</a>
+                            </div>
+
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="payment">
+                            <div class="payment_header">
+                                <div class="check"><i class="fa fa-close" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="content">
+
+                                <h1>تراکنش ناموفق !!</h1>
+                                <p>تراکنش ناموفق بود ، درصورت کسر مبلغ از کارت ، طی 24 ساعت آینده به حساب شما بازمیگردد</p>
+                                <a href="/userPanel">پنل کاربری</a>
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+}

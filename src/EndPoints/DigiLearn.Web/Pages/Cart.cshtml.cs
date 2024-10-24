@@ -7,6 +7,8 @@ using DigiLearn.Web.Infrastructure.RazorUtils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TransactionModule.Domain;
+using TransactionModule.Services.DTOs.Commands;
 
 namespace DigiLearn.Web.Pages;
 
@@ -26,6 +28,17 @@ public class CartModel : BaseRazor
         Order = await _orderFacade.GetCurrentOrder(User.GetUserId());
     }
 
+    public IActionResult OnPost()
+    {
+        return RedirectToAction("CreateTransaction", "Transaction", new CreateTransactionCommand()
+        {
+            LinkId = Guid.NewGuid(),
+            PaymentAmount = 0,
+            UserId = User.GetUserId(),
+            PaymentGateway = PaymentGateway.ZarinPal,
+            TransactionFor = TransactionFor.CourseOrder
+        });
+    }
     public async Task<IActionResult> OnGetAddItem(Guid courseId)
     {
         var result = await _orderFacade.AddItem(new AddOrderItemCommand(User.GetUserId(), courseId));
@@ -35,4 +48,5 @@ public class CartModel : BaseRazor
     {
         return await AjaxTryCatch(() => _orderFacade.RemoveItem(new RemoveOrderItemCommand(User.GetUserId(), id)));
     }
+
 }

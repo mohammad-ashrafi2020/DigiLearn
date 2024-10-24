@@ -43,31 +43,16 @@
                     </form>
                 </div>
                 <div class="col-12 col-lg-6  pl-0">
-                    <form>
+                    <form method="post">
                         <div class="order-info  p-2">
                             <div class="info pl-2">
                                 <p>مبلغ کل : <span class="pull-left text-success">@Model.Order.TotalPrice.ToString("#,0") تومان</span></p>
                                 <p> تخفیف : <span class="pull-left text-success">0 تومان</span></p>
                                 <p> قابل پرداخت : <span class="pull-left text-success">@Model.Order.TotalPrice.ToString("#,0") تومان</span></p>
                             </div>
-                            <hr>
-                            @*  <div class="payment-type">
-                        <span>نحوه پرداخت</span>
-                        <div class="pt-2">
-                        <div>
-                        <input type="radio" name="PaymentType" id="">
-                        <label>کیف پول  (موجودی : <span>150,000 تومان</span>)</label>
-                        </div>
-                        <div>
-                        <input type="radio" name="PaymentType" id="">
-                        <label>پرداخت آنلاین</label>
-                        </div>
-                        </div>
-                        </div> *@
                         </div>
                         <hr>
                         <button type="submit" class="btn btn-success btn-block">پرداخت</button>
-
                     </form>
 
                 </div>

@@ -8,7 +8,7 @@ namespace TransactionModule.Context.Mapping
     {
         public void Configure(EntityTypeBuilder<UserTransaction> builder)
         {
-            builder.ToTable("dbo", "Transaction");
+            builder.ToTable("Transactions", "dbo");
             builder.HasKey(b => b.Id);
 
             builder.Property(b => b.Authority)

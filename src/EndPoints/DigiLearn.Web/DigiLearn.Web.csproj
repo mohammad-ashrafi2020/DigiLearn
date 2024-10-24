@@ -15,7 +15,6 @@
   <ItemGroup>
     <Folder Include="Infrastructure\ViewModels\" />
     <Folder Include="Pages\Shared\Menu\" />
-    <Folder Include="Views\" />
     <Folder Include="wwwroot\css\fonts\" />
   </ItemGroup>
 
@@ -26,6 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Zarinpal" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +34,7 @@
     <ProjectReference Include="..\..\Modules\Comment\CommentModule\CommentModule.csproj" />
     <ProjectReference Include="..\..\Modules\Core\CoreModule.Config\CoreModule.Config.csproj" />
     <ProjectReference Include="..\..\Modules\Ticket\TicketModule\TicketModule.csproj" />
+    <ProjectReference Include="..\..\Modules\Transaction\TransactionModule.csproj" />
     <ProjectReference Include="..\..\Modules\User\UserModule.Core\UserModule.Core.csproj" />
   </ItemGroup>
 
