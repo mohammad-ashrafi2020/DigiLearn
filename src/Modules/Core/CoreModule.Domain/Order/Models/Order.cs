@@ -1,6 +1,7 @@
 ﻿using Common.Domain;
 using Common.Domain.Exceptions;
 using CoreModule.Domain.Order.DomainServices;
+using CoreModule.Domain.Order.Events;
 
 namespace CoreModule.Domain.Order.Models;
 
@@ -55,6 +56,16 @@ public class Order : AggregateRoot
         });
     }
 
+    public void FinallyOrder()
+    {
+        IsPay = true;
+        PaymentDate = DateTime.Now;
+        AddDomainEvent(new OrderFinallyEvent()
+        {
+            OrderId = Id,
+            UserId = UserId
+        });
+    }
     public void RemoveItem(Guid id)
     {
         var item = OrderItems.FirstOrDefault(f => f.Id == id);

@@ -92,29 +92,31 @@ namespace DigiLearn.Web.Controllers
 
             try
             {
-                var result = await _zarinPalService.CreateVerificationRequest(authority, transaction.PaymentAmount);
-                if (result.Status == 100)
-                {
-                    TempData["Success"] = true;
-                    await _transactionService.PaymentSuccess(new TransactionPaymentSuccessCommand()
-                    {
-                        Authority = authority,
-                        CardPen = result.CardPan,
-                        RefId = result.RefId,
-                        TransactionId = id
-                    });
-                    await FinallyTransaction(transaction);
-                }
-                else
-                {
-                    await PayError(new TransactionPaymentErrorCommand
-                    {
-                        RefId = result.RefId,
-                        TransactionId = id,
-                        ErrorMessage = result.Message,
-                        Authority = authority
-                    });
-                }
+                await FinallyTransaction(transaction);
+
+                //var result = await _zarinPalService.CreateVerificationRequest(authority, transaction.PaymentAmount);
+                //if (result.Status == 100)
+                //{
+                //    TempData["Success"] = true;
+                //    await _transactionService.PaymentSuccess(new TransactionPaymentSuccessCommand()
+                //    {
+                //        Authority = authority,
+                //        CardPen = result.CardPan,
+                //        RefId = result.RefId,
+                //        TransactionId = id
+                //    });
+                //    await FinallyTransaction(transaction);
+                //}
+                //else
+                //{
+                //    await PayError(new TransactionPaymentErrorCommand
+                //    {
+                //        RefId = result.RefId,
+                //        TransactionId = id,
+                //        ErrorMessage = result.Message,
+                //        Authority = authority
+                //    });
+                //}
             }
             catch (Exception e)
             {
@@ -136,7 +138,7 @@ namespace DigiLearn.Web.Controllers
                         if (order.TotalPrice != transaction.PaymentAmount)
                             throw new InvalidDataException("اطلاعات پرداخت با اطلاعات سفارش همخوانی ندارند");
 
-                        //await _courseOrder.FinallyOrder(order);
+                        await _orderFacade.FinallyOrder(order.Id);
                         //await AddCourseStudent(order);
                         //await _callCenterProfitService.ProfitCalculation(order);
                         break;
