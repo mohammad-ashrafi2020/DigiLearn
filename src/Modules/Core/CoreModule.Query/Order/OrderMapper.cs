@@ -26,7 +26,8 @@ class OrderMapper
                 OrderId = s.OrderId,
                 CourseTitle = s.Course.Title,
                 Price = s.Price,
-                TeacherFullName = s.Course.Teacher.User.FullName
+                TeacherFullName = s.Course.Teacher.User.FullName,
+                CourseId = s.CourseId
             }).ToList(),
             User = new CoreModuleUserDto
             {

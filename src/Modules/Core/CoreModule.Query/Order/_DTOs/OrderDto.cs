@@ -27,6 +27,7 @@ public class OrderDto : BaseDto
 public class OrderItemDto : BaseDto
 {
     public Guid OrderId { get; set; }
+    public Guid CourseId { get; set; }
     public string CourseTitle { get; set; }
     public string TeacherFullName { get; set; }
     public int Price { get; set; }

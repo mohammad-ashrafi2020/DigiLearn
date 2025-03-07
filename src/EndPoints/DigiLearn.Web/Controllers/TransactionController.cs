@@ -46,6 +46,7 @@ namespace DigiLearn.Web.Controllers
             command.PaymentAmount = order.TotalPrice;
             command.UserId = User.GetUserId();
             command.PaymentGateway = PaymentGateway.ZarinPal;
+            command.LinkId = order.Id;
             var transactionId = await _transactionService.CreateTransaction(command);
 
 
@@ -92,7 +93,7 @@ namespace DigiLearn.Web.Controllers
 
             try
             {
-                await FinallyTransaction(transaction);
+               await FinallyTransaction(transaction);
 
                 //var result = await _zarinPalService.CreateVerificationRequest(authority, transaction.PaymentAmount);
                 //if (result.Status == 100)
@@ -139,8 +140,10 @@ namespace DigiLearn.Web.Controllers
                             throw new InvalidDataException("اطلاعات پرداخت با اطلاعات سفارش همخوانی ندارند");
 
                         await _orderFacade.FinallyOrder(order.Id);
-                        //await AddCourseStudent(order);
-                        //await _callCenterProfitService.ProfitCalculation(order);
+                        foreach (var item in order.OrderItems)
+                        {
+                            await _courseFacade.AddStudent(item.CourseId, order.UserId);
+                        };
                         break;
                     }
 
