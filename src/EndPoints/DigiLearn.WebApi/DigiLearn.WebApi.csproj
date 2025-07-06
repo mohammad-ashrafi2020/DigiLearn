@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\..\Common\Common.EventBus\Common.EventBus.csproj" />
+	  <ProjectReference Include="..\..\Modules\Blog\BlogModule\BlogModule.csproj" />
+    <ProjectReference Include="..\..\Modules\Comment\CommentModule\CommentModule.csproj" />
+    <ProjectReference Include="..\..\Modules\Core\CoreModule.Config\CoreModule.Config.csproj" />
+    <ProjectReference Include="..\..\Modules\Ticket\TicketModule\TicketModule.csproj" />
+    <ProjectReference Include="..\..\Modules\Transaction\TransactionModule.csproj" />
+    <ProjectReference Include="..\..\Modules\User\UserModule.Core\UserModule.Core.csproj" />
+  </ItemGroup>
+
+</Project>
